@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Fundo com gradiente suave -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBF2FA" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1966B4" />
+      <stop offset="100%" stop-color="#0F4C81" />
+    </linearGradient>
+    <style>
+      .document { fill: #ffffff; stroke: #1966B4; stroke-width: 1; }
+      .document-line { stroke: #1966B4; stroke-width: 1; opacity: 0.5; }
+      .graph-bar { fill: #1966B4; opacity: 0.8; }
+      .graph-bar-alt { fill: #28A745; opacity: 0.8; }
+      .graph-line { stroke: #1966B4; stroke-width: 2; fill: none; }
+      .desk { fill: #EAEAEA; stroke: #CCCCCC; stroke-width: 1; }
+      .device { fill: #FFFFFF; stroke: #CCCCCC; stroke-width: 1; }
+      .device-screen { fill: #E8F4FE; stroke: #CCCCCC; stroke-width: 0.5; }
+      .device-detail { fill: #1966B4; opacity: 0.7; }
+      .person-suit { fill: #1966B4; }
+      .person-shirt { fill: #FFFFFF; }
+      .person-skin { fill: #F5D0A9; }
+      .person-hair { fill: #6E4C1E; }
+      .person-pants { fill: #34495E; }
+      .numbers { fill: #1966B4; font-size: 6px; font-family: 'Arial', sans-serif; }
+      .card { fill: url(#cardGradient); }
+      .card-chip { fill: #FFD700; }
+      .card-text { fill: #FFFFFF; font-size: 6px; font-family: 'Arial', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Fundo sutil -->
+  <rect width="800" height="600" fill="url(#bgGradient)" />
+
+  <!-- Desk/Mesa de trabalho -->
+  <rect class="desk" x="100" y="350" width="600" height="20" rx="2" />
+  <rect class="desk" x="120" y="370" width="20" height="180" />
+  <rect class="desk" x="660" y="370" width="20" height="180" />
+
+  <!-- Documentos/Reports na mesa -->
+  <g transform="translate(150, 280)">
+    <rect class="document" x="0" y="0" width="120" height="70" />
+    <line class="document-line" x1="10" y1="15" x2="110" y2="15" />
+    <line class="document-line" x1="10" y1="25" x2="110" y2="25" />
+    <line class="document-line" x1="10" y1="35" x2="80" y2="35" />
+    <line class="document-line" x1="10" y1="45" x2="90" y2="45" />
+    <line class="document-line" x1="10" y1="55" x2="70" y2="55" />
+    <text class="numbers" x="95" y="55">R$</text>
+  </g>
+
+  <!-- Laptop -->
+  <g transform="translate(400, 290)">
+    <rect class="device" x="0" y="0" width="120" height="80" rx="3" />
+    <rect class="device-screen" x="5" y="5" width="110" height="70" rx="2" />
+    <rect class="device" x="-10" y="80" width="140" height="10" rx="2" />
+    
+    <!-- Gráfico na tela do laptop -->
+    <g transform="translate(15, 15)">
+      <rect class="graph-bar" x="0" y="30" width="10" height="20" />
+      <rect class="graph-bar" x="15" y="25" width="10" height="25" />
+      <rect class="graph-bar" x="30" y="15" width="10" height="35" />
+      <rect class="graph-bar" x="45" y="10" width="10" height="40" />
+      <rect class="graph-bar-alt" x="60" y="20" width="10" height="30" />
+      <rect class="graph-bar-alt" x="75" y="5" width="10" height="45" />
+      <polyline class="graph-line" points="5,40 20,35 35,25 50,20 65,25 80,15" />
+    </g>
+  </g>
+
+  <!-- Tablet -->
+  <g transform="translate(300, 320)">
+    <rect class="device" x="0" y="0" width="70" height="50" rx="3" />
+    <rect class="device-screen" x="5" y="5" width="60" height="40" rx="2" />
+    <circle class="device-detail" cx="35" cy="47" r="2" />
+    
+    <!-- Conteúdo na tela do tablet -->
+    <g transform="translate(10, 10)">
+      <line class="document-line" x1="2" y1="5" x2="50" y2="5" />
+      <line class="document-line" x1="2" y1="12" x2="45" y2="12" />
+      <line class="document-line" x1="2" y1="19" x2="40" y2="19" />
+      <line class="document-line" x1="2" y1="26" x2="48" y2="26" />
+      <rect class="graph-bar-alt" x="30" y="10" width="20" height="20" opacity="0.2" />
+    </g>
+  </g>
+
+  <!-- Cartão de crédito/corporativo -->
+  <g transform="translate(550, 310)">
+    <rect class="card" x="0" y="0" width="80" height="50" rx="5" />
+    <rect class="card-chip" x="10" y="15" width="15" height="10" rx="1" />
+    <text class="card-text" x="10" y="40">EXCLUSIVA CARD</text>
+    <text class="card-text" x="65" y="40">VISA</text>
+  </g>
+
+  <!-- Pessoa (Contador/Profissional) -->
+  <g transform="translate(350, 200)">
+    <!-- Corpo/Tronco -->
+    <rect class="person-suit" x="0" y="0" width="80" height="120" rx="20" />
+    <!-- Camisa/detalhes -->
+    <rect class="person-shirt" x="15" y="0" width="50" height="60" rx="10" />
+    <path class="person-suit" d="M15,30 Q40,50 65,30 V0 H15 V30" />
+    <!-- Gravata -->
+    <path class="person-suit" d="M35,0 L45,0 L45,20 L40,45 L35,20 Z" fill="#0F4C81" />
+    <!-- Cabeça -->
+    <circle class="person-skin" cx="40" cy="-30" r="30" />
+    <!-- Cabelo -->
+    <path class="person-hair" d="M10,-30 Q40,-70 70,-30 Q60,-45 40,-45 Q20,-45 10,-30" />
+    <!-- Olhos -->
+    <circle cx="30" cy="-30" r="3" fill="#000000" />
+    <circle cx="50" cy="-30" r="3" fill="#000000" />
+    <!-- Boca -->
+    <path d="M30,-15 Q40,-10 50,-15" stroke="#000000" stroke-width="1.5" fill="none" />
+    <!-- Braços -->
+    <rect class="person-suit" x="-20" y="10" width="25" height="60" rx="10" transform="rotate(-15, -20, 10)" />
+    <rect class="person-suit" x="75" y="10" width="25" height="60" rx="10" transform="rotate(15, 75, 10)" />
+    <!-- Mãos -->
+    <circle class="person-skin" cx="-15" cy="65" r="8" />
+    <circle class="person-skin" cx="95" cy="65" r="8" />
+    <!-- Pernas -->
+    <rect class="person-pants" x="10" y="120" width="25" height="80" rx="5" />
+    <rect class="person-pants" x="45" y="120" width="25" height="80" rx="5" />
+  </g>
+
+  <!-- Calculadora -->
+  <g transform="translate(180, 320)">
+    <rect class="device" x="0" y="0" width="40" height="60" rx="2" />
+    <rect class="device-screen" x="5" y="5" width="30" height="15" rx="1" />
+    <text class="numbers" x="20" y="15">7425</text>
+    
+    <!-- Botões calculadora -->
+    <g transform="translate(5, 25)">
+      <circle class="device-detail" cx="5" cy="5" r="3" opacity="0.3" />
+      <circle class="device-detail" cx="15" cy="5" r="3" opacity="0.3" />
+      <circle class="device-detail" cx="25" cy="5" r="3" opacity="0.3" />
+      
+      <circle class="device-detail" cx="5" cy="15" r="3" opacity="0.3" />
+      <circle class="device-detail" cx="15" cy="15" r="3" opacity="0.3" />
+      <circle class="device-detail" cx="25" cy="15" r="3" opacity="0.3" />
+      
+      <circle class="device-detail" cx="5" cy="25" r="3" opacity="0.3" />
+      <circle class="device-detail" cx="15" cy="25" r="3" opacity="0.3" />
+      <circle class="device-detail" cx="25" cy="25" r="3" opacity="0.3" />
+    </g>
+  </g>
+</svg>

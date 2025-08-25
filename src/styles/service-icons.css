@@ -1,0 +1,134 @@
+/* Ícones específicos para serviços */
+
+/* Garantir que os ícones apareçam */
+.service-icon {
+  width: 4rem;
+  height: 4rem;
+  background: var(--primary);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--text-white);
+  font-size: 1.75rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  transition: all 0.3s ease;
+}
+
+.service-icon::before {
+  z-index: 2;
+  position: relative;
+}
+
+/* Ícones específicos com fallback */
+.service-icon.contabilidade::before {
+  content: "\f0f6"; /* fa-file-text */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.service-icon.fiscal::before {
+  content: "\f0c0"; /* fa-users */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.service-icon.pessoal::before {
+  content: "\f007"; /* fa-user */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.service-icon.consultoria::before {
+  content: "\f4ad"; /* fa-comments */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.service-icon.mei::before {
+  content: "\f19c"; /* fa-bank */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.service-icon.societaria::before {
+  content: "\f0c0"; /* fa-users */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+/* Fallback com emojis se Font Awesome falhar */
+.service-icon.contabilidade:not(.fa-loaded)::before {
+  content: "📊";
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 2rem;
+}
+
+.service-icon.fiscal:not(.fa-loaded)::before {
+  content: "💼";
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 2rem;
+}
+
+.service-icon.pessoal:not(.fa-loaded)::before {
+  content: "👤";
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 2rem;
+}
+
+.service-icon.consultoria:not(.fa-loaded)::before {
+  content: "💬";
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 2rem;
+}
+
+.service-icon.mei:not(.fa-loaded)::before {
+  content: "🏦";
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 2rem;
+}
+
+.service-icon.societaria:not(.fa-loaded)::before {
+  content: "🤝";
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 2rem;
+}
+
+/* Variações de cores */
+.service-icon.secondary {
+  background: var(--secondary);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.2);
+}
+
+.service-icon.neutral {
+  background: var(--neutral);
+  box-shadow: 0 4px 12px rgba(100, 116, 139, 0.2);
+}
+
+/* Animação hover */
+.service-icon:hover {
+  transform: scale(1.1) rotate(5deg);
+  transition: all 0.3s ease;
+}
+
+/* Efeito de brilho */
+.service-icon::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  transform: rotate(45deg);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.service-icon:hover::after {
+  opacity: 1;
+  transform: rotate(45deg) translate(50%, 50%);
+}

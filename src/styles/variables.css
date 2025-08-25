@@ -1,0 +1,174 @@
+:root {
+  /* PALETA CONSOLIDADA - EXCLUSIVA CONTABILIDADE */
+  
+  /* Azul Principal - Corporativo */
+  --primary: #1e40af;        /* Azul corporativo */
+  --primary-dark: #1e3a8a;   /* Azul mais escuro */
+  --primary-light: #3b82f6;  /* Azul mais claro */
+  --primary-rgb: 30, 64, 175;
+  
+  /* Verde Secundário - Para sucesso e WhatsApp */
+  --secondary: #16a34a;      /* Verde equilibrado */
+  --secondary-dark: #15803d; /* Verde escuro */
+  --secondary-light: #22c55e;/* Verde claro */
+  --secondary-rgb: 22, 163, 74;
+  
+  /* Aliases para compatibilidade */
+  --primary-color: #1e40af;
+  --secondary-color: #16a34a;
+  --primary-rgb: 30, 64, 175;
+  --secondary-rgb: 22, 163, 74;
+  
+  /* Cinza Neutro - Para elementos secundários */
+  --neutral: #64748b;        /* Cinza médio */
+  --neutral-dark: #475569;   /* Cinza escuro */
+  --neutral-light: #94a3b8;  /* Cinza claro */
+  --neutral-rgb: 100, 116, 139;
+  
+  /* Cores de Texto - Hierarquia clara */
+  --text-primary: #0f172a;   /* Quase preto */
+  --text-secondary: #334155; /* Cinza escuro */
+  --text-muted: #64748b;     /* Cinza médio */
+  --text-light: #94a3b8;     /* Cinza claro */
+  --text-white: #ffffff;     /* Branco puro */
+  
+  /* Cores de Fundo - Sutis e profissionais */
+  --bg-primary: #ffffff;     /* Branco puro */
+  --bg-secondary: #f8fafc;   /* Branco azulado muito sutil */
+  --bg-light: #f1f5f9;       /* Cinza azulado claro */
+  --bg-dark: #0f172a;        /* Azul muito escuro */
+  --bg-gray: #e2e8f0;        /* Cinza neutro */
+  
+  /* Gradientes Sutis */
+  --gradient-primary: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  --gradient-secondary: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+  --gradient-neutral: linear-gradient(135deg, #64748b 0%, #94a3b8 100%);
+  
+  /* Cores de Estado */
+  --success: #16a34a;        /* Verde sucesso */
+  --warning: #f59e0b;        /* Amarelo alerta */
+  --error: #dc2626;          /* Vermelho erro */
+  --info: #2563eb;           /* Azul informação */
+  --secondary-gradient: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+  
+  /* Cores de destaque */
+  --accent-color: #10b981;
+  --accent-dark: #059669;
+  --accent-light: #34d399;
+  
+  /* Cores neutras - Versão moderna */
+  --dark: #1f2937;
+  --gray-dark: #374151;
+  --gray: #6b7280;
+  --gray-medium: #9ca3af;
+  --gray-light: #e5e7eb;
+  --gray-lighter: #f3f4f6;
+  --light: #f9fafb;
+  --white: #ffffff;
+  
+  /* Cores de superfície */
+  --surface-primary: #ffffff;
+  --surface-secondary: #f8fafc;
+  --surface-tertiary: #f1f5f9;
+  
+  /* Cores de alerta - Versão moderna */
+  --success: #10b981;
+  --success-light: #d1fae5;
+  --danger: #ef4444;
+  --danger-light: #fee2e2;
+  --warning: #f59e0b;
+  --warning-light: #fef3c7;
+  --info: #3b82f6;
+  --info-light: #dbeafe;
+  
+  /* Tipografia */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+  --font-size-base: 17px;
+  --font-size-small: 14px;
+  --font-size-xs: 12px;
+  --font-size-medium: 18px;
+  --font-size-large: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 42px;
+  
+  /* Espaçamento */
+  --spacing-xs: 5px;
+  --spacing-s: 10px;
+  --spacing-m: 15px;
+  --spacing-l: 20px;
+  --spacing-xl: 30px;
+  --spacing-xxl: 50px;
+  
+  /* Bordas */
+  --border-radius-s: 3px;
+  --border-radius-m: 5px;
+  --border-radius-l: 10px;
+  --border-radius-xl: 20px;
+  --border-radius-circle: 50%;
+  
+  /* Sombras modernas */
+  --box-shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --box-shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --box-shadow-heavy: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --box-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+  --box-shadow-colored: 0 10px 25px rgba(30, 64, 175, 0.2);
+  
+  /* Transições modernas */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-medium: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  --z-toast: 1080;
+  
+  /* Breakpoints */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+  
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-light) 100%);
+  --gradient-success: linear-gradient(135deg, var(--success) 0%, var(--accent-light) 100%);
+  --gradient-hero: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 50%, var(--primary-light) 100%);
+  
+  /* Blur e filtros */
+  --blur-sm: blur(4px);
+  --blur-md: blur(8px);
+  --blur-lg: blur(16px);
+  
+  /* Opacidades */
+  --opacity-disabled: 0.6;
+  --opacity-hover: 0.8;
+  --opacity-overlay: 0.9;
+}
+
+/* Acessibilidade e Marcas (Tokens adicionais) */
+:root {
+  /* Marca WhatsApp */
+  --whatsapp: #25d366;
+  --whatsapp-dark: #128c7e;
+  --whatsapp-contrast-text: #ffffff;
+
+  /* Anéis de foco e realces de acessibilidade */
+  --focus-outline: #93c5fd; /* azul claro para foco visível */
+  --focus-outline-offset: 2px;
+
+  /* Opacidades padrão para overlays do hero */
+  --hero-overlay-strong: 0.25; /* topo (mais forte) */
+  --hero-overlay-soft: 0.12;   /* meio (mais suave) */
+  --hero-overlay-side-strong: 0.22; /* overlay lateral inicial */
+  --hero-overlay-side-soft: 0.16;   /* overlay lateral intermediário */
+}

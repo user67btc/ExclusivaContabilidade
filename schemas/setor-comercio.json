@@ -1,0 +1,81 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Contabilidade para Comércio",
+        "description": "Serviços contábeis especializados para empresas comerciais, incluindo varejo, atacado, e-commerce e distribuidoras.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Exclusiva Contabilidade",
+          "url": "https://exclusivacontabilidade.com.br"
+        },
+        "serviceType": "Serviços Contábeis para Comércio",
+        "areaServed": "Brasil",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços para Comércio",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Gestão Fiscal e ICMS"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Controle de Estoque"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Documentos Fiscais"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Análise de Lucratividade"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Soluções para E-commerce"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como funciona a Substituição Tributária no comércio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Substituição Tributária (ST) é um regime onde o recolhimento do ICMS é antecipado e realizado por um contribuinte no início da cadeia. Para empresas comerciais, é fundamental verificar se o produto comercializado está sujeito a ST, pois isso impacta diretamente no preço de aquisição, margens e preço final."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual o melhor regime tributário para uma empresa comercial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O melhor regime tributário depende de diversos fatores como faturamento, margem de lucro, tipo de produtos comercializados e modelo de negócio. Uma análise contábil personalizada é essencial para determinar se Simples Nacional, Lucro Presumido ou Lucro Real é mais vantajoso para sua operação comercial específica."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

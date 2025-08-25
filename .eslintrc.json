@@ -1,0 +1,23 @@
+{
+  "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+    "no-console": ["warn", { "allow": ["warn", "error"] }]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "overrides": [
+    {
+      "files": ["scripts/**/*.js"],
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ]
+}

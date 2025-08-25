@@ -1,0 +1,50 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Service",
+          "name": "Contabilidade Empresarial",
+          "description": "Serviços contábeis completos para empresas de todos os portes, incluindo classificação e escrituração contábil",
+          "provider": {
+            "@type": "AccountingService",
+            "name": "Exclusiva Contabilidade"
+          },
+          "url": "https://exclusivacontabilidade.com.br/servicos/contabilidade-empresarial"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Service",
+          "name": "Departamento Fiscal",
+          "description": "Gerenciamento completo das obrigações fiscais da sua empresa, incluindo escrituração de documentos fiscais",
+          "provider": {
+            "@type": "AccountingService",
+            "name": "Exclusiva Contabilidade"
+          },
+          "url": "https://exclusivacontabilidade.com.br/servicos/departamento-fiscal"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Service",
+          "name": "Departamento Pessoal",
+          "description": "Gestão completa das rotinas trabalhistas, desde a admissão até o desligamento, incluindo folha de pagamento",
+          "provider": {
+            "@type": "AccountingService",
+            "name": "Exclusiva Contabilidade"
+          },
+          "url": "https://exclusivacontabilidade.com.br/servicos/departamento-pessoal"
+        }
+      }
+    ]
+  }
+]

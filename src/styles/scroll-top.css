@@ -1,0 +1,73 @@
+/* Estilos para o botão "voltar ao topo" */
+.scroll-top-button {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 99;
+  width: 45px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0.9;
+  font-size: 1.2rem;
+}
+
+.scroll-top-button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  opacity: 1;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Animação para o botão */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.9; }
+}
+
+.scroll-top-button {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Ajuste para não sobrepor o botão do WhatsApp */
+@media (max-width: 767px) {
+  .scroll-top-button {
+    bottom: 160px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* Para dispositivos muito pequenos */
+@media (max-width: 360px) {
+  .scroll-top-button {
+    bottom: 150px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Suporte para preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-top-button {
+    transition: none;
+    animation: none;
+  }
+  
+  .scroll-top-button:hover {
+    transform: none;
+  }
+}

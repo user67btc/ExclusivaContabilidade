@@ -1,0 +1,26 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Exclusiva Contabilidade",
+    "description": "Soluções contábeis personalizadas para empresas, profissionais e produtores rurais em Campo Grande - MS",
+    "url": "https://exclusivacontabilidade.com.br/contato/",
+    "logo": "https://exclusivacontabilidade.com.br/images/logo.png",
+    "telephone": "+556799846350",
+    "email": "contato@exclusivacontabilidade.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Antônio Maria Coelho, 3721 - Sala 2",
+      "addressLocality": "Campo Grande",
+      "addressRegion": "MS",
+      "postalCode": "79021-170",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-20.4435",
+      "longitude": "-54.6478"
+    },
+    "openingHours": "Mo,Tu,We,Th,Fr 08:00-18:00"
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Contabilidade para Produtores Rurais",
+        "description": "Serviços contábeis especializados para produtores rurais, incluindo pequenos, médios e grandes produtores e cooperativas rurais.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Exclusiva Contabilidade",
+          "url": "https://exclusivacontabilidade.com.br"
+        },
+        "serviceType": "Serviços Contábeis Rurais",
+        "areaServed": "Brasil",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços para Produtores Rurais",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Tributação Rural"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Notas Fiscais do Produtor"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Declaração ITR"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Imposto de Renda Rural"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Gestão de Custos"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Regularização Fundiária"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qual a melhor forma de tributação para produtores rurais?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Produtores rurais podem ser tributados como pessoa física (com inscrição estadual de produtor rural) ou como pessoa jurídica (constituindo empresa rural). A escolha ideal depende do porte da atividade, volume de investimentos, necessidade de financiamentos, tipo de produto e mercado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona a tributação do FUNRURAL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O FUNRURAL (Contribuição Social Rural) é uma contribuição previdenciária paga pelo produtor rural sobre a receita bruta da comercialização da produção. Para pessoas físicas, a alíquota é de 1,5% (sendo 1,2% para Seguridade Social e 0,1% para RAT), já para pessoas jurídicas a alíquota é de 2,6%."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

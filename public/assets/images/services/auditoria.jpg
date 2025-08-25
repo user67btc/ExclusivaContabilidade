@@ -1,0 +1,13 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#F8F9FA"/>
+  <rect x="50" y="50" width="500" height="300" fill="#FFEBEE" stroke="#F44336" stroke-width="2"/>
+  <rect x="150" y="100" width="300" height="200" fill="#FFCDD2"/>
+  <rect x="200" y="130" width="200" height="20" fill="#F44336"/>
+  <rect x="200" y="160" width="150" height="15" fill="#EF5350"/>
+  <rect x="200" y="180" width="180" height="15" fill="#EF5350"/>
+  <circle cx="120" cy="150" r="25" fill="#F44336"/>
+  <path d="M110 140 L115 150 L130 135" stroke="white" stroke-width="3" fill="none"/>
+  <circle cx="400" cy="140" r="20" fill="none" stroke="#F44336" stroke-width="3"/>
+  <path d="M390 130 L395 135 L410 120" stroke="#F44336" stroke-width="3" fill="none"/>
+  <text x="300" y="350" text-anchor="middle" fill="#D32F2F" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Auditoria Contábil</text>
+</svg>

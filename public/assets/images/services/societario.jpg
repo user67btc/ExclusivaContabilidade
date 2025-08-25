@@ -1,0 +1,13 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#F8F9FA"/>
+  <rect x="50" y="50" width="500" height="300" fill="#F3E5F5" stroke="#9C27B0" stroke-width="2"/>
+  <rect x="150" y="100" width="300" height="200" fill="#E1BEE7"/>
+  <rect x="200" y="130" width="200" height="20" fill="#9C27B0"/>
+  <rect x="200" y="160" width="150" height="15" fill="#BA68C8"/>
+  <rect x="200" y="180" width="180" height="15" fill="#BA68C8"/>
+  <circle cx="120" cy="150" r="25" fill="#9C27B0"/>
+  <path d="M110 140 L115 150 L130 135" stroke="white" stroke-width="3" fill="none"/>
+  <rect x="380" y="120" width="40" height="60" fill="#9C27B0"/>
+  <polygon points="400,120 420,130 400,140" fill="#BA68C8"/>
+  <text x="300" y="350" text-anchor="middle" fill="#7B1FA2" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Direito Societário</text>
+</svg>

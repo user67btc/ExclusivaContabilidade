@@ -1,0 +1,134 @@
+/* Estilos para ícones Font Awesome */
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon-large {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.icon-small {
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.75rem;
+}
+
+/* Ícones coloridos */
+.icon-primary {
+  color: var(--primary, #2563eb);
+}
+
+.icon-secondary {
+  color: var(--secondary, #10b981);
+}
+
+.icon-accent {
+  color: var(--accent, #f59e0b);
+}
+
+.icon-white {
+  color: var(--text-white, #ffffff);
+}
+
+/* Ícones com fundo */
+.icon-bg {
+  background: var(--bg-light, #f3f4f6);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.icon-bg-primary {
+  background: var(--primary, #2563eb);
+  color: var(--text-white, #ffffff);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.icon-bg-secondary {
+  background: var(--secondary, #10b981);
+  color: var(--text-white, #ffffff);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+/* Animações para ícones */
+.icon-hover {
+  transition: all 0.3s ease;
+}
+
+.icon-hover:hover {
+  transform: scale(1.1);
+  color: var(--primary, #2563eb);
+}
+
+/* Ícones flutuantes */
+.floating-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Fix para Font Awesome não carregando */
+.fa, .fas, .far, .fal, .fab, .fa-solid, .fa-regular, .fa-light, .fa-brands {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 6 Brands", "FontAwesome" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-rendering: auto !important;
+  line-height: 1 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.far, .fa-regular {
+  font-weight: 400 !important;
+}
+
+.fal, .fa-light {
+  font-weight: 300 !important;
+}
+
+.fab, .fa-brands {
+  font-weight: 400 !important;
+}
+
+/* Forçar carregamento dos ícones */
+.fas::before, .fa-solid::before {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+
+.far::before, .fa-regular::before {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 400 !important;
+}
+
+.fab::before, .fa-brands::before {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400 !important;
+}
+
+/* Fallback para ícones que não carregam */
+.icon-fallback::before {
+  content: "📊";
+  font-size: 1.5rem;
+}
+
+.icon-fallback.chart::before { content: "📈"; }
+.icon-fallback.calculator::before { content: "🧮"; }
+.icon-fallback.file::before { content: "📄"; }
+.icon-fallback.user::before { content: "👤"; }
+.icon-fallback.phone::before { content: "📞"; }
+.icon-fallback.email::before { content: "📧"; }
+.icon-fallback.location::before { content: "📍"; }
+.icon-fallback.whatsapp::before { content: "💬"; }

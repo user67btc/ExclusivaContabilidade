@@ -1,0 +1,102 @@
+/* ==========================================================================
+   CORREÇÃO DE ESPAÇAMENTO GLOBAL ENTRE SEÇÕES
+   Padronização do espaçamento entre todas as seções do site
+   ========================================================================== */
+
+/* RESET DE MARGENS PARA TODAS AS SEÇÕES */
+section,
+.hero-section,
+.services-section,
+.sectors-section,
+.faq-section,
+.contact-cta-section,
+.about-section,
+.blog-section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ESPAÇAMENTO PADRÃO ENTRE SEÇÕES */
+.hero-section {
+  padding-bottom: 8rem !important;
+}
+
+.services-section {
+  padding-top: 8rem !important;
+  padding-bottom: 8rem !important;
+}
+
+.sectors-section {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.faq-section {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.contact-cta-section {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+/* CORREÇÃO ESPECÍFICA PARA HEADERS DE SEÇÃO */
+.services-section .section-header,
+.sectors-section .section-header,
+.faq-section .section-header,
+.about-section .section-header {
+  margin-top: 0 !important;
+  margin-bottom: 3rem !important;
+}
+
+/* CORREÇÃO PARA CONTAINERS INTERNOS */
+.services-section .container,
+.sectors-section .container,
+.faq-section .container,
+.contact-cta-section .container {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* CORREÇÃO PARA ELEMENTOS COM CLASSE mt-5 */
+.text-center.mt-5,
+.mt-5 {
+  margin-top: 0 !important;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-bottom: 4rem !important;
+  }
+  
+  .services-section,
+  .sectors-section,
+  .faq-section,
+  .contact-cta-section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  
+  .services-section .section-header,
+  .sectors-section .section-header,
+  .faq-section .section-header,
+  .about-section .section-header {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding-bottom: 3rem !important;
+  }
+  
+  .services-section,
+  .sectors-section,
+  .faq-section,
+  .contact-cta-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}

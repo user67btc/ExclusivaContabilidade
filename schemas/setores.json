@@ -1,0 +1,64 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Service",
+          "name": "Contabilidade para Prestadores de Serviços",
+          "description": "Soluções contábeis especializadas para profissionais liberais, empresas de TI, marketing, consultoria e demais prestadores de serviços.",
+          "provider": {
+            "@type": "AccountingService",
+            "name": "Exclusiva Contabilidade"
+          },
+          "url": "https://exclusivacontabilidade.com.br/setores/prestadores"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Service",
+          "name": "Contabilidade para Comércio",
+          "description": "Atendimento especializado para empresas de varejo, atacado, e-commerce e distribuidoras com foco em gestão fiscal e controle de estoque.",
+          "provider": {
+            "@type": "AccountingService",
+            "name": "Exclusiva Contabilidade"
+          },
+          "url": "https://exclusivacontabilidade.com.br/setores/comercio"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Service",
+          "name": "Contabilidade para Produtores Rurais",
+          "description": "Contabilidade especializada para produtores rurais com conhecimento em tributação do agronegócio e incentivos fiscais do setor.",
+          "provider": {
+            "@type": "AccountingService",
+            "name": "Exclusiva Contabilidade"
+          },
+          "url": "https://exclusivacontabilidade.com.br/setores/rurais"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Service",
+          "name": "E-Social Doméstico",
+          "description": "Suporte completo para empregadores domésticos, desde o registro até a gestão mensal das obrigações no e-Social.",
+          "provider": {
+            "@type": "AccountingService",
+            "name": "Exclusiva Contabilidade"
+          },
+          "url": "https://exclusivacontabilidade.com.br/setores/esocial"
+        }
+      }
+    ]
+  }
+]

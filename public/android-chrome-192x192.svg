@@ -1,0 +1,32 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle with shadow -->
+  <circle cx="96" cy="96" r="88" fill="url(#logoGradient192)" filter="url(#shadow)" stroke="#ffffff" stroke-width="4"/>
+  
+  <!-- Inner circle for depth -->
+  <circle cx="96" cy="96" r="80" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Main letter E -->
+  <text x="96" y="120" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="white" text-anchor="middle" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">E</text>
+  
+  <!-- Accounting symbol background -->
+  <circle cx="140" cy="52" r="20" fill="#ffffff" opacity="0.9"/>
+  <circle cx="140" cy="52" r="18" fill="#1e40af"/>
+  
+  <!-- Dollar sign -->
+  <text x="140" y="60" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">$</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="60" cy="140" r="8" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="132" cy="140" r="6" fill="rgba(255,255,255,0.4)"/>
+</svg>

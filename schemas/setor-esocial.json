@@ -1,0 +1,88 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Serviços de E-Social Doméstico",
+        "description": "Suporte completo para empregadores domésticos no cadastro, folha de pagamento, cálculos trabalhistas e gestão do e-Social.",
+        "provider": {
+          "@type": "Organization",
+          "name": "Exclusiva Contabilidade",
+          "url": "https://exclusivacontabilidade.com.br"
+        },
+        "serviceType": "Serviços de E-Social Doméstico",
+        "areaServed": "Brasil",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços para Empregadores Domésticos",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cadastro do Empregador e Empregado"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Folha de Pagamento"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cálculo e Emissão de DAE"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Férias e 13º Salário"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Rescisão de Contrato"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Consultoria Trabalhista"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "O que é o eSocial Doméstico e quem deve utilizar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O eSocial Doméstico é um sistema online que unifica o envio de informações pelo empregador doméstico, relacionadas aos seus trabalhadores. Deve ser utilizado por qualquer pessoa que contrata empregado doméstico com registro em carteira de trabalho."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais são os direitos obrigatórios de um empregado doméstico?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Conforme a Lei Complementar 150/2015, os empregados domésticos têm direito a carteira de trabalho assinada, salário mínimo, jornada de trabalho definida, horas extras, FGTS, 13º salário, férias remuneradas e outros benefícios trabalhistas."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

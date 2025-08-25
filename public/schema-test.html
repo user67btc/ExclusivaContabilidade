@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Schema JSON-LD | Exclusiva Contabilidade</title>
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #0056b3;
+            margin-top: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .schema {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 30px;
+            overflow-x: auto;
+        }
+        code {
+            display: block;
+            white-space: pre;
+            font-family: monospace;
+        }
+        .test-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .test-button:hover {
+            background-color: #003d7e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Schema JSON-LD | Exclusiva Contabilidade</h1>
+    <p>Esta página contém os schemas JSON-LD implementados nas páginas de setores do site da Exclusiva Contabilidade para validação SEO.</p>
+    
+    <h2>Página de Prestadores de Serviços</h2>
+    <div class="schema">
+        <script type="application/ld+json">
+        [
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Contabilidade para Prestadores de Serviços",
+                "description": "Serviços contábeis especializados para prestadores de serviços, profissionais liberais, empresas de TI e consultorias em Campo Grande - MS.",
+                "provider": {
+                    "@type": "AccountingService",
+                    "name": "Exclusiva Contabilidade",
+                    "url": "https://exclusivacontabilidade.com.br"
+                },
+                "serviceType": "Serviços Contábeis",
+                "areaServed": {
+                    "@type": "City",
+                    "name": "Campo Grande",
+                    "@id": "https://www.wikidata.org/wiki/Q193760"
+                },
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Serviços para Prestadores",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Tributação Otimizada"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Gestão de Notas Fiscais"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Qual o melhor regime tributário para prestadores de serviços?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "A escolha depende de diversos fatores como faturamento, margem de lucro e tipo de serviço. Para muitos profissionais liberais e empresas de serviços com faturamento até R$ 4,8 milhões, o Simples Nacional é vantajoso pela simplificação fiscal. Para serviços com altas margens de lucro e menor custo operacional, o Lucro Presumido pode ser mais econômico. Realizamos uma análise personalizada para determinar o melhor enquadramento para cada caso."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Como funciona a tributação para profissionais liberais?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Profissionais liberais podem atuar como pessoa física (autônomo) ou pessoa jurídica (empresa). Como autônomo, há incidência de Imposto de Renda pela tabela progressiva (até 27,5%), INSS e ISS municipal. Como pessoa jurídica, dependendo do regime tributário, pode haver redução significativa da carga tributária, com impostos como ISS, PIS, COFINS, IRPJ, CSLL e INSS. Nossa consultoria analisa qual formato é mais vantajoso para cada situação específica."
+                        }
+                    }
+                ]
+            }
+        ]
+        </script>
+        <code id="prestadores-code">
+        </code>
+    </div>
+    <a href="https://search.google.com/test/rich-results?url=https://exclusivacontabilidade.com.br/schema-test.html" target="_blank" class="test-button">Testar no Google Rich Results</a>
+
+    <h2>Página de Produtores Rurais</h2>
+    <div class="schema">
+        <script type="application/ld+json">
+        [
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Contabilidade para Produtores Rurais",
+                "description": "Serviços contábeis especializados para produtores rurais, incluindo pequenos, médios e grandes produtores e cooperativas rurais.",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Exclusiva Contabilidade",
+                    "url": "https://exclusivacontabilidade.com.br"
+                },
+                "serviceType": "Contabilidade Rural",
+                "areaServed": {
+                    "@type": "State",
+                    "name": "Mato Grosso do Sul"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "description": "Serviços contábeis especializados para produtores rurais a partir de R$ 350,00/mês",
+                    "priceCurrency": "BRL"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "O que é o FUNRURAL e como funciona?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "O FUNRURAL (Fundo de Assistência ao Trabalhador Rural) é uma contribuição social rural, descontada sobre a comercialização da produção rural, destinada ao custeio de benefícios previdenciários dos trabalhadores rurais. Para pessoas físicas, a alíquota atual é de 1,5% (1,2% para o INSS e 0,1% para o RAT), enquanto para pessoas jurídicas é de 2,05% (1,7% INSS, 0,1% RAT e 0,25% SENAR). A base de cálculo é a receita bruta da comercialização rural."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Como é feito o cálculo do Imposto de Renda para produtores rurais?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "O cálculo do Imposto de Renda para produtores rurais pessoa física é diferenciado. A apuração é feita pelo confronto entre receitas e despesas da atividade rural através do Livro Caixa Rural. O resultado (lucro ou prejuízo) é transportado para a Declaração de Ajuste Anual no anexo específico para atividade rural. Os prejuízos podem ser compensados nos anos seguintes, sem limite de tempo."
+                        }
+                    }
+                ]
+            }
+        ]
+        </script>
+        <code id="rurais-code">
+        </code>
+    </div>
+
+    <script>
+        // Script para exibir os schemas na página
+        document.addEventListener('DOMContentLoaded', function() {
+            const prestadoresSchema = document.querySelector('.schema:nth-of-type(1) script').textContent;
+            document.getElementById('prestadores-code').textContent = prestadoresSchema;
+            
+            const ruraisSchema = document.querySelector('.schema:nth-of-type(2) script').textContent;
+            document.getElementById('rurais-code').textContent = ruraisSchema;
+        });
+    </script>
+</body>
+</html>

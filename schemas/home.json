@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Exclusiva Contabilidade - Soluções Contábeis em Campo Grande",
+    "description": "Assessoria contábil especializada para empresas, prestadores de serviços, comércio e produtores rurais em Campo Grande - MS.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços Contábeis",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Contabilidade Empresarial"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Departamento Fiscal"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Departamento Pessoal"
+          }
+        }
+      ]
+    }
+  }
+]

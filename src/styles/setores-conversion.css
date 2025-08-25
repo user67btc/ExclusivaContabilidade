@@ -1,0 +1,261 @@
+/* Setores Page Conversion Optimization Styles */
+
+/* Hero CTA Mobile */
+.hero-cta-mobile {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn-whatsapp-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  border: none;
+  min-height: 56px;
+}
+
+.btn-whatsapp-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-whatsapp-hero i {
+  font-size: 1.3rem;
+}
+
+/* Trust Indicators - DISABLED - Using inline styles only */
+/*
+.page-content .section-header-pattern .trust-indicators,
+.trust-indicators {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 1.5rem !important;
+  margin: 2rem auto !important;
+  flex-wrap: wrap !important;
+  background: #ffffff !important;
+  padding: 2rem !important;
+  border-radius: 20px !important;
+  max-width: 900px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+  border: 3px solid #0d47a1 !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+.page-content .section-header-pattern .trust-indicators .trust-item,
+.trust-indicators .trust-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb) !important;
+  backdrop-filter: blur(15px) !important;
+  padding: 1rem 1.5rem !important;
+  border-radius: 30px !important;
+  border: 2px solid #0d47a1 !important;
+  color: #0d47a1 !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 15px rgba(13, 71, 161, 0.3) !important;
+  transition: all 0.3s ease !important;
+  min-width: 200px !important;
+  justify-content: center !important;
+}
+
+.page-content .section-header-pattern .trust-indicators .trust-item:hover,
+.trust-indicators .trust-item:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(13, 71, 161, 0.4) !important;
+  background: linear-gradient(135deg, #bbdefb, #90caf9) !important;
+}
+
+.page-content .section-header-pattern .trust-indicators .trust-item i,
+.trust-indicators .trust-item i {
+  color: #25D366 !important;
+  font-size: 1.4rem !important;
+  text-shadow: 0 2px 4px rgba(37, 211, 102, 0.5) !important;
+  margin-right: 0.5rem !important;
+}
+
+.page-content .section-header-pattern .trust-indicators .trust-item span,
+.trust-indicators .trust-item span {
+  font-weight: 700 !important;
+  color: #0d47a1 !important;
+  text-shadow: none !important;
+}
+*/
+
+/* Intermediate CTA - Removed duplicate */
+
+/* Final CTA Section */
+.final-cta-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.urgency-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
+.urgency-badge i {
+  animation: tick 1s infinite;
+}
+
+@keyframes tick {
+  0%, 50% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.btn-large {
+  padding: 1.25rem 2.5rem !important;
+  font-size: 1.2rem !important;
+  min-height: 60px;
+  font-weight: 700 !important;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.trust-final {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.trust-final span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* CTA Intermediate Styling */
+.cta-intermediate {
+  margin: 2rem 0;
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(37, 211, 102, 0.05);
+  border-radius: 15px;
+  border: 2px dashed rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  animation: pulse-subtle 3s infinite;
+}
+
+.btn-whatsapp-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .btn-whatsapp-hero {
+    width: 100%;
+    max-width: 320px;
+    padding: 1.25rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .trust-indicators {
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  /* .trust-item {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  } */
+  
+  .btn-whatsapp-secondary {
+    width: 100%;
+    max-width: 280px;
+    padding: 1rem 1.5rem;
+  }
+  
+  .btn-large {
+    width: 100%;
+    max-width: 300px;
+    padding: 1.25rem 1.5rem !important;
+    font-size: 1.1rem !important;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .trust-final {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Enhanced WhatsApp Button Styles */
+.btn-pattern.btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-pattern.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-pattern.btn-primary:hover::before {
+  left: 100%;
+}
+
+/* Floating WhatsApp Button - REMOVIDO - usando whatsapp-float.css */
