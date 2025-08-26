@@ -301,38 +301,56 @@
   }
 }
 
-/* ===== CORREÇÕES ESPECÍFICAS PARA CARDS SETORES ===== */
+/* ===== CORREÇÕES ESPECÍFICAS PARA CARDS SETORES - MÁXIMA ESPECIFICIDADE ===== */
 
 @media (max-width: 768px) {
-  .sectors-grid {
+  /* Sobrescrever todos os outros arquivos CSS */
+  body .sectors-section .container .sectors-grid,
+  body .sectors-section .sectors-grid,
+  body .sectors-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 24px !important;
     padding: 0 16px !important;
   }
   
-  .sector-card {
+  body .sectors-section .container .sectors-grid .sector-card,
+  body .sectors-section .sectors-grid .sector-card,
+  body .sectors-section .sector-card,
+  body .sector-card {
     width: 100% !important;
     max-width: none !important;
     margin: 0 !important;
     border-radius: 16px !important;
     overflow: hidden !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    height: auto !important;
+    flex: none !important;
   }
   
-  .sector-card-header {
+  body .sectors-section .container .sectors-grid .sector-card .sector-card-header,
+  body .sectors-section .sectors-grid .sector-card .sector-card-header,
+  body .sectors-section .sector-card .sector-card-header,
+  body .sector-card .sector-card-header {
     position: relative !important;
     height: 200px !important;
     overflow: hidden !important;
+    flex-shrink: 0 !important;
   }
   
-  .sector-image {
+  body .sectors-section .container .sectors-grid .sector-card .sector-image,
+  body .sectors-section .sectors-grid .sector-card .sector-image,
+  body .sectors-section .sector-card .sector-image,
+  body .sector-card .sector-image {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
   }
   
-  .sector-icon-large {
+  body .sectors-section .container .sectors-grid .sector-card .sector-icon-large,
+  body .sectors-section .sectors-grid .sector-card .sector-icon-large,
+  body .sectors-section .sector-card .sector-icon-large,
+  body .sector-card .sector-icon-large {
     position: absolute !important;
     top: 16px !important;
     right: 16px !important;
@@ -347,31 +365,46 @@
     color: var(--primary-color) !important;
   }
   
-  .sector-card-content {
+  body .sectors-section .container .sectors-grid .sector-card .sector-card-content,
+  body .sectors-section .sectors-grid .sector-card .sector-card-content,
+  body .sectors-section .sector-card .sector-card-content,
+  body .sector-card .sector-card-content {
     padding: 24px !important;
     background: white !important;
   }
   
-  .sector-card-content h3 {
+  body .sectors-section .container .sectors-grid .sector-card .sector-card-content h3,
+  body .sectors-section .sectors-grid .sector-card .sector-card-content h3,
+  body .sectors-section .sector-card .sector-card-content h3,
+  body .sector-card .sector-card-content h3 {
     font-size: 1.25rem !important;
     margin-bottom: 12px !important;
     color: var(--dark) !important;
   }
   
-  .sector-description-contrast {
+  body .sectors-section .container .sectors-grid .sector-card .sector-description-contrast,
+  body .sectors-section .sectors-grid .sector-card .sector-description-contrast,
+  body .sectors-section .sector-card .sector-description-contrast,
+  body .sector-card .sector-description-contrast {
     font-size: 0.95rem !important;
     line-height: 1.5 !important;
     color: #666 !important;
     margin-bottom: 16px !important;
   }
   
-  .sector-features {
+  body .sectors-section .container .sectors-grid .sector-card .sector-features,
+  body .sectors-section .sectors-grid .sector-card .sector-features,
+  body .sectors-section .sector-card .sector-features,
+  body .sector-card .sector-features {
     list-style: none !important;
     padding: 0 !important;
     margin: 0 0 20px 0 !important;
   }
   
-  .sector-features li {
+  body .sectors-section .container .sectors-grid .sector-card .sector-features li,
+  body .sectors-section .sectors-grid .sector-card .sector-features li,
+  body .sectors-section .sector-card .sector-features li,
+  body .sector-card .sector-features li {
     display: flex !important;
     align-items: center !important;
     gap: 8px !important;
@@ -380,12 +413,18 @@
     color: #555 !important;
   }
   
-  .sector-features li i {
+  body .sectors-section .container .sectors-grid .sector-card .sector-features li i,
+  body .sectors-section .sectors-grid .sector-card .sector-features li i,
+  body .sectors-section .sector-card .sector-features li i,
+  body .sector-card .sector-features li i {
     color: var(--primary-color) !important;
     font-size: 0.8rem !important;
   }
   
-  .cta-button {
+  body .sectors-section .container .sectors-grid .sector-card .cta-button,
+  body .sectors-section .sectors-grid .sector-card .cta-button,
+  body .sectors-section .sector-card .cta-button,
+  body .sector-card .cta-button {
     width: 100% !important;
     padding: 12px 24px !important;
     font-size: 1rem !important;
@@ -405,28 +444,28 @@
     display: none !important;
   }
   
-  .sectors-section {
+  body .sectors-section {
     padding: 40px 0 !important;
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
   }
   
-  .section-header {
+  body .sectors-section .section-header {
     margin-bottom: 32px !important;
     padding: 0 16px !important;
   }
   
-  .section-title {
+  body .sectors-section .section-title {
     font-size: 1.75rem !important;
     color: var(--dark) !important;
     margin-bottom: 12px !important;
   }
   
-  .section-subtitle {
+  body .sectors-section .section-subtitle {
     color: var(--primary-color) !important;
     font-size: 1rem !important;
   }
   
-  .section-description {
+  body .sectors-section .section-description {
     color: #666 !important;
     font-size: 1.1rem !important;
   }
