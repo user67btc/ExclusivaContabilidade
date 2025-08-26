@@ -415,4 +415,159 @@
     min-height: 44px !important;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
   }
+  
+  /* CORREÇÕES DE CONTRASTE E LEGIBILIDADE - FOOTER */
+  html body .footer {
+    background: #1a202c !important;
+    color: #e2e8f0 !important;
+    padding: 40px 0 !important;
+  }
+  
+  html body .footer h3,
+  html body .footer .footer-title {
+    color: #ffffff !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 20px !important;
+  }
+  
+  html body .footer a,
+  html body .footer .footer-link {
+    color: #cbd5e0 !important;
+    text-decoration: none !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    transition: color 0.3s ease !important;
+  }
+  
+  html body .footer a:hover,
+  html body .footer .footer-link:hover {
+    color: #ffffff !important;
+  }
+  
+  html body .footer p,
+  html body .footer .footer-text {
+    color: #a0aec0 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* CORREÇÕES SEÇÃO ESPECIALIZAÇÃO */
+  html body .specialization-badge,
+  html body .section-badge {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 16px !important;
+    display: inline-block !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  /* CORREÇÕES TEXTOS EM FUNDOS ESCUROS */
+  html body .dark-section {
+    background: #2d3748 !important;
+    color: #e2e8f0 !important;
+    padding: 40px 0 !important;
+  }
+  
+  html body .dark-section h1,
+  html body .dark-section h2,
+  html body .dark-section h3 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+  }
+  
+  html body .dark-section p {
+    color: #cbd5e0 !important;
+    line-height: 1.6 !important;
+    font-size: 1rem !important;
+  }
+  
+  /* PADRONIZAÇÃO DE BOTÕES */
+  html body .btn,
+  html body .cta-button,
+  html body .contact-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    min-height: 44px !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+  }
+  
+  html body .btn-primary {
+    background: #3182ce !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3) !important;
+  }
+  
+  html body .btn-whatsapp {
+    background: #25D366 !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
+  }
+  
+  html body .btn-secondary {
+    background: #718096 !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(113, 128, 150, 0.3) !important;
+  }
+  
+  /* ALINHAMENTO DE TEXTOS - MELHOR ESTÉTICA */
+  html body .text-content {
+    text-align: left !important;
+    padding: 0 16px !important;
+    max-width: 100% !important;
+  }
+  
+  html body .content-section .container {
+    padding: 0 16px !important;
+  }
+  
+  html body .content-section h2 {
+    text-align: left !important;
+    margin-bottom: 20px !important;
+    padding-left: 0 !important;
+  }
+  
+  html body .content-section p {
+    text-align: left !important;
+    margin-bottom: 16px !important;
+    padding-left: 0 !important;
+  }
+  
+  /* CORREÇÕES ESPECÍFICAS PARA CARDS DE CONTATO */
+  html body .contact-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    margin-bottom: 16px !important;
+    backdrop-filter: blur(10px) !important;
+  }
+  
+  html body .contact-card h3 {
+    color: #ffffff !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 12px !important;
+  }
+  
+  html body .contact-card p,
+  html body .contact-card span {
+    color: #cbd5e0 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+  }
 }

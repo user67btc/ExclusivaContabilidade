@@ -157,7 +157,6 @@ const ContactCTA = memo(function ContactCTA({ customHeading, customText }) {
                 <i className="fab fa-whatsapp" aria-hidden="true"></i> 
                 <div className="btn-content">
                   <span className="btn-title">WhatsApp</span>
-                  <span className="btn-subtitle">(67) 9 9984-6350</span>
                 </div>
               </a>
               <a 

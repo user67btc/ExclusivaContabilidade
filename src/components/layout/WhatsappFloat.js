@@ -42,7 +42,7 @@ const WhatsappFloat = memo(function WhatsappFloat() {
         }}
       >
         <i className="fab fa-whatsapp" aria-hidden="true"></i>
-        <span className="whatsapp-text">Fale conosco</span>
+        <span className="whatsapp-text">WhatsApp</span>
       </a>
     </div>
   );
