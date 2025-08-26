@@ -141,4 +141,85 @@
     margin-top: 0 !important;
     padding-top: 40px !important;
   }
+  
+  /* FORÇA LANDING PAGE SETORES - VISIBILIDADE COMPLETA */
+  html body .page-content {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    padding: 40px 0 !important;
+    background: #f8fafc !important;
+    min-height: auto !important;
+  }
+  
+  html body .content-section-wrapper {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 0 16px !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+  }
+  
+  html body .content-card {
+    padding: 24px !important;
+    margin-bottom: 24px !important;
+    background: white !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  html body .content-text {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  html body .content-card p {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 16px !important;
+    color: #334155 !important;
+  }
+  
+  html body .cta-intermediate {
+    text-align: center !important;
+    margin: 24px 0 !important;
+  }
+  
+  html body .btn-whatsapp-secondary {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 12px 24px !important;
+    font-size: 1rem !important;
+    min-height: 44px !important;
+    border-radius: 8px !important;
+    background: #25D366 !important;
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+  }
+  
+  html body .features-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    padding: 20px !important;
+    background: rgba(13, 71, 161, 0.05) !important;
+    border-radius: 8px !important;
+    margin-top: 20px !important;
+  }
+  
+  html body .feature-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    font-size: 0.95rem !important;
+    color: #0d47a1 !important;
+  }
+  
+  html body .feature-item i {
+    color: #25D366 !important;
+    font-size: 1rem !important;
+  }
 }
