@@ -203,12 +203,20 @@ export default function ComercioPage() {
         description={seoData.description}
         keywords={seoData.keywords}
         url={seoData.url}
-        imageUrl={seoData.imageUrl}
         schemaData={schemaData}
+        imageUrl={seoData.imageUrl}
       />
 
+      <script dangerouslySetInnerHTML={{
+        __html: `
+          if (typeof document !== 'undefined') {
+            document.body.setAttribute('data-page', 'comercio');
+          }
+        `
+      }} />
+
       {/* Page Title */}
-      <section className="page-title">
+      <section className="page-title hero-section">
         <div className="container">
           <h1>Contabilidade para Comércio</h1>
           <ul className="breadcrumb">
@@ -220,12 +228,12 @@ export default function ComercioPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="section-padding">
+      <section className="section-padding content-section">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="section-header">
-                <h2>Soluções contábeis para empresas comerciais</h2>
+                <h2 className="section-title">Soluções contábeis para o setor comercial</h2>
               </div>
               <p>Na Exclusiva Contabilidade, entendemos os desafios específicos do setor comercial: gestão de estoque, complexidades tributárias do ICMS e substituição tributária, margens apertadas e alta competitividade.</p>
               <p>Oferecemos muito mais que serviços contábeis básicos: proporcionamos consultoria estratégica para otimizar a carga tributária, controlar eficientemente seu estoque e melhorar seus resultados financeiros.</p>

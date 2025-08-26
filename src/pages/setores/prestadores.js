@@ -209,8 +209,16 @@ export default function PrestadoresServicosPage() {
         imageUrl="/assets/images/sectors/prestadores.jpg"
       />
 
+      <script dangerouslySetInnerHTML={{
+        __html: `
+          if (typeof document !== 'undefined') {
+            document.body.setAttribute('data-page', 'prestadores');
+          }
+        `
+      }} />
+
       {/* Page Title */}
-      <section className="page-title">
+      <section className="page-title hero-section">
         <div className="container">
           <h1>Contabilidade para Prestadores de Serviços</h1>
           <ul className="breadcrumb">
@@ -222,12 +230,12 @@ export default function PrestadoresServicosPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="section-padding">
+      <section className="section-padding content-section">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="section-header">
-                <h2>Soluções contábeis para quem vive de serviços</h2>
+                <h2 className="section-title">Soluções contábeis para quem vive de serviços</h2>
               </div>
               <p>Na Exclusiva Contabilidade, entendemos os desafios específicos enfrentados por prestadores de serviços. Nosso time é especializado em oferecer soluções contábeis personalizadas que ajudam sua empresa a crescer com segurança fiscal e otimização tributária.</p>
               <p>Com nossa experiência no setor de serviços, proporcionamos muito mais do que contabilidade básica: oferecemos consultoria estratégica para maximizar seus resultados, reduzir a carga tributária e garantir conformidade com todas as obrigações fiscais.</p>

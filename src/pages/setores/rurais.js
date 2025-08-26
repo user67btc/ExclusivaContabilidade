@@ -195,12 +195,20 @@ export default function ProdutoresRuraisPage() {
         description={seoData.description}
         keywords={seoData.keywords}
         url={seoData.url}
-        imageUrl={seoData.imageUrl}
         schemaData={schemaData}
+        imageUrl={seoData.imageUrl}
       />
 
+      <script dangerouslySetInnerHTML={{
+        __html: `
+          if (typeof document !== 'undefined') {
+            document.body.setAttribute('data-page', 'rurais');
+          }
+        `
+      }} />
+
       {/* Page Title */}
-      <section className="page-title">
+      <section className="page-title hero-section">
         <div className="container">
           <h1>Contabilidade para Produtores Rurais</h1>
           <ul className="breadcrumb">
@@ -212,12 +220,12 @@ export default function ProdutoresRuraisPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="section-padding">
+      <section className="section-padding content-section">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="section-header">
-                <h2>Soluções contábeis especializadas para o campo</h2>
+                <h2 className="section-title">Contabilidade especializada para o agronegócio</h2>
               </div>
               <p>A atividade rural possui particularidades tributárias e fiscais que exigem conhecimento especializado. Na Exclusiva Contabilidade, oferecemos suporte completo para produtores rurais de todos os portes, ajudando a maximizar resultados e garantir conformidade legal.</p>
               <p>Nossa equipe entende os desafios do agronegócio e oferece soluções personalizadas para cada tipo de produtor, seja você da agricultura, pecuária ou qualquer outro segmento do setor rural.</p>

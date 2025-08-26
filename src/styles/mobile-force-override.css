@@ -491,11 +491,14 @@
   /* PADRONIZAÇÃO DE BOTÕES */
   html body .btn,
   html body .cta-button,
-  html body .contact-button {
+  html body .contact-button,
+  html body .btn-whatsapp-enhanced,
+  html body .btn-phone-enhanced,
+  html body .btn-pattern {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 8px !important;
+    gap: 12px !important;
     padding: 12px 24px !important;
     border-radius: 8px !important;
     font-size: 1rem !important;
@@ -504,6 +507,16 @@
     min-height: 44px !important;
     transition: all 0.3s ease !important;
     text-align: center !important;
+  }
+  
+  html body .btn i,
+  html body .cta-button i,
+  html body .contact-button i,
+  html body .btn-whatsapp-enhanced i,
+  html body .btn-phone-enhanced i,
+  html body .btn-pattern i {
+    margin-right: 8px !important;
+    font-size: 1.1rem !important;
   }
   
   html body .btn-primary {
@@ -525,26 +538,42 @@
   }
   
   /* ALINHAMENTO DE TEXTOS - MELHOR ESTÉTICA */
-  html body .text-content {
+  html body .text-content,
+  html body .content-text,
+  html body .sector-content,
+  html body .page-content {
     text-align: left !important;
-    padding: 0 16px !important;
+    padding: 0 20px !important;
     max-width: 100% !important;
+    margin: 0 auto !important;
   }
   
-  html body .content-section .container {
-    padding: 0 16px !important;
+  html body .content-section .container,
+  html body .sector-section .container {
+    padding: 0 20px !important;
+    margin: 0 auto !important;
   }
   
-  html body .content-section h2 {
+  html body .content-section h1,
+  html body .content-section h2,
+  html body .content-section h3,
+  html body .sector-section h1,
+  html body .sector-section h2,
+  html body .sector-section h3 {
     text-align: left !important;
     margin-bottom: 20px !important;
     padding-left: 0 !important;
+    margin-left: 0 !important;
   }
   
-  html body .content-section p {
+  html body .content-section p,
+  html body .sector-section p,
+  html body .page-description {
     text-align: left !important;
     margin-bottom: 16px !important;
     padding-left: 0 !important;
+    margin-left: 0 !important;
+    line-height: 1.6 !important;
   }
   
   /* CORREÇÕES ESPECÍFICAS PARA CARDS DE CONTATO */
@@ -569,5 +598,116 @@
     color: #cbd5e0 !important;
     font-size: 0.95rem !important;
     line-height: 1.4 !important;
+  }
+  
+  /* CORREÇÕES DE CONTRASTE PARA TEXTOS EM DESTAQUE */
+  html body .highlight-text,
+  html body .feature-text,
+  html body .trust-indicator,
+  html body .guarantee-text,
+  html body .service-highlight {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    margin: 8px 0 !important;
+    display: inline-block !important;
+  }
+  
+  /* CORREÇÕES ESPECÍFICAS PARA TÍTULOS E SUBTÍTULOS */
+  html body .section-title,
+  html body .page-title,
+  html body .service-title {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 16px !important;
+  }
+  
+  html body .section-subtitle,
+  html body .page-subtitle,
+  html body .service-subtitle {
+    color: #e2e8f0 !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    margin-bottom: 20px !important;
+  }
+  
+  /* PADRONIZAÇÃO GLOBAL PARA TODAS AS PÁGINAS */
+  html body[data-page] .hero-section,
+  html body[data-page] .main-hero {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%) !important;
+    color: #ffffff !important;
+    padding: 60px 0 !important;
+    text-align: center !important;
+  }
+  
+  html body[data-page] .hero-section h1,
+  html body[data-page] .main-hero h1 {
+    color: #ffffff !important;
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 16px !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  html body[data-page] .hero-section p,
+  html body[data-page] .main-hero p {
+    color: #e2e8f0 !important;
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 24px !important;
+  }
+  
+  html body[data-page] .content-section {
+    background: #f8fafc !important;
+    padding: 40px 0 !important;
+  }
+  
+  html body[data-page] .content-section h2 {
+    color: #1a202c !important;
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 20px !important;
+    text-align: left !important;
+  }
+  
+  html body[data-page] .content-section p {
+    color: #4a5568 !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+    margin-bottom: 16px !important;
+  }
+  
+  /* CORREÇÕES ESPECÍFICAS PARA SEÇÕES ESCURAS */
+  html body .dark-bg,
+  html body .gradient-bg,
+  html body .blue-section {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%) !important;
+    color: #e2e8f0 !important;
+    padding: 40px 0 !important;
+  }
+  
+  html body .dark-bg h1,
+  html body .dark-bg h2,
+  html body .dark-bg h3,
+  html body .gradient-bg h1,
+  html body .gradient-bg h2,
+  html body .gradient-bg h3,
+  html body .blue-section h1,
+  html body .blue-section h2,
+  html body .blue-section h3 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  html body .dark-bg p,
+  html body .gradient-bg p,
+  html body .blue-section p {
+    color: #cbd5e0 !important;
+    line-height: 1.6 !important;
   }
 }
