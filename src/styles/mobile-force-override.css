@@ -584,7 +584,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     border-radius: 12px !important;
     padding: 20px !important;
-    margin-bottom: 16px !important;
+    margin-bottom: 24px !important;
     backdrop-filter: blur(10px) !important;
   }
   
@@ -597,9 +597,43 @@
   
   html body .contact-card p,
   html body .contact-card span {
-    color: #cbd5e0 !important;
+    color: #ffffff !important;
     font-size: 0.95rem !important;
     line-height: 1.4 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  /* CORREÇÕES PARA TEXTOS DE BENEFÍCIOS/GARANTIAS */
+  html body p:contains("Compliance 100% garantido"),
+  html body p:contains("Atendimento em até 2h"),
+  html body p:contains("Consultoria estratégica"),
+  html body .guarantee-item,
+  html body .benefit-item,
+  html body .feature-item {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+    margin-bottom: 12px !important;
+  }
+  
+  /* FORÇA MÁXIMA PARA TEXTOS PROBLEMÁTICOS */
+  html body * {
+    color: inherit !important;
+  }
+  
+  html body .dark-section *,
+  html body .blue-section *,
+  html body .gradient-bg * {
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
+  }
+  
+  html body .dark-section p,
+  html body .blue-section p,
+  html body .gradient-bg p {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
   }
   
   /* CORREÇÕES DE CONTRASTE PARA TEXTOS EM DESTAQUE */
@@ -609,12 +643,39 @@
   html body .guarantee-text,
   html body .service-highlight {
     color: #ffffff !important;
-    font-weight: 600 !important;
-    background: rgba(0, 0, 0, 0.3) !important;
-    padding: 8px 12px !important;
-    border-radius: 6px !important;
-    margin: 8px 0 !important;
+    font-weight: 700 !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    padding: 10px 16px !important;
+    border-radius: 8px !important;
+    margin: 12px 0 !important;
     display: inline-block !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  /* CORREÇÕES ESPECÍFICAS PARA LISTA DE BENEFÍCIOS */
+  html body .trust-indicators,
+  html body .benefits-list,
+  html body .features-list {
+    margin: 20px 0 !important;
+  }
+  
+  html body .trust-indicators li,
+  html body .benefits-list li,
+  html body .features-list li {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
+    margin-bottom: 12px !important;
+    padding: 8px 0 !important;
+  }
+  
+  html body .trust-indicators li::before,
+  html body .benefits-list li::before,
+  html body .features-list li::before {
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
   }
   
   /* CORREÇÕES ESPECÍFICAS PARA TÍTULOS E SUBTÍTULOS */
