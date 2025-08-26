@@ -142,7 +142,7 @@ export default function Header() {
               <Link href="/sobre" onClick={handleLinkClick}>Sobre Nós</Link>
             </li>
             <li className={`has-submenu ${activeSubMenu === 'setores' ? 'submenu-active' : ''}`}>
-              <Link href="/setores" onClick={handleLinkClick}>Setores <i className="fas fa-chevron-down mobile-dropdown-icon"></i></Link>
+              <Link href="/setores" onClick={(e) => toggleSubmenu(e, 'setores')}>Setores <i className="fas fa-chevron-down mobile-dropdown-icon"></i></Link>
               <ul className={`sub-menu ${activeSubMenu === 'setores' ? 'show-submenu' : ''}`}>
                 <li><Link href="/setores/prestadores" onClick={handleLinkClick}>Prestadores de Serviços</Link></li>
                 <li><Link href="/setores/comercio" onClick={handleLinkClick}>Comércio</Link></li>

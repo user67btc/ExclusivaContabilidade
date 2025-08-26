@@ -2,13 +2,13 @@
 /* Este arquivo força a aplicação dos estilos mobile sobrescrevendo todos os outros */
 
 @media (max-width: 768px) {
-  /* FORÇA GRID 1FR PARA SETORES */
-  html body div.sectors-section div.container div.sectors-grid,
-  html body div.sectors-section div.sectors-grid,
-  html body div.sectors-grid,
-  html body section.sectors-section .sectors-grid,
-  html body .sectors-section .sectors-grid,
-  html body .sectors-grid {
+  /* FORÇA GRID 1FR PARA SETORES - APENAS HOMEPAGE */
+  html body.home-page div.sectors-section div.container div.sectors-grid,
+  html body.home-page div.sectors-section div.sectors-grid,
+  html body.home-page div.sectors-grid,
+  html body.home-page section.sectors-section .sectors-grid,
+  html body.home-page .sectors-section .sectors-grid,
+  html body.home-page .sectors-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 24px !important;
@@ -136,12 +136,12 @@
     margin-top: 0 !important;
   }
   
-  /* OCULTAR CARDS SERVIÇOS NA HOMEPAGE EM MOBILE */
-  html body .services-section .services-grid .service-card {
+  /* OCULTAR CARDS SERVIÇOS NA HOMEPAGE EM MOBILE - APENAS HOMEPAGE */
+  html body.home-page .services-section .services-grid .service-card {
     display: none !important;
   }
   
-  html body .services-section .services-grid {
+  html body.home-page .services-section .services-grid {
     display: none !important;
   }
   
@@ -151,56 +151,14 @@
     padding-top: 40px !important;
   }
   
-  /* FORÇA LANDING PAGE SETORES - VISIBILIDADE COMPLETA */
-  html body .page-content {
+  /* FORÇA LANDING PAGE SETORES - APENAS /setores */
+  html body[data-page="setores"] .page-content {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
     padding: 0 !important;
     background: transparent !important;
     min-height: auto !important;
-  }
-  
-  /* HERO SECTION SETORES - PADRÃO HOMEPAGE */
-  html body .hero-section {
-    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
-    padding: 80px 0 60px !important;
-    color: white !important;
-    text-align: center !important;
-    position: relative !important;
-    overflow: hidden !important;
-  }
-  
-  html body .hero-section::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    background: rgba(30, 64, 175, 0.1) !important;
-    z-index: 1 !important;
-  }
-  
-  html body .hero-section .container {
-    position: relative !important;
-    z-index: 2 !important;
-    padding: 0 16px !important;
-  }
-  
-  html body .hero-section h1 {
-    font-size: 2rem !important;
-    font-weight: 700 !important;
-    color: white !important;
-    margin-bottom: 16px !important;
-    line-height: 1.2 !important;
-  }
-  
-  html body .hero-section .hero-subtitle {
-    font-size: 1.1rem !important;
-    color: rgba(255, 255, 255, 0.9) !important;
-    margin-bottom: 32px !important;
-    line-height: 1.5 !important;
   }
   
   /* SEÇÕES DE CONTEÚDO PADRONIZADAS */

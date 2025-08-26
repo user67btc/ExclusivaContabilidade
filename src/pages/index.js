@@ -7,6 +7,10 @@ import ContactCTA from '../components/sections/ContactCTA';
 import SEOHead from '../components/SEOHead';
 
 export default function Home() {
+  // Adicionar classe ao body para identificar homepage
+  if (typeof window !== 'undefined') {
+    document.body.classList.add('home-page');
+  }
   // Dados estruturados específicos para a página inicial
   const schemaData = [
     {
