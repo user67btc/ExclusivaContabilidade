@@ -14,23 +14,23 @@
 
 /* ===== CORREÇÕES GLOBAIS MOBILE ===== */
 
-/* Reduzir tamanho base da fonte em mobile */
+/* Tamanho de fonte otimizado baseado em pesquisa 2024 */
 @media (max-width: 480px) {
   html {
-    font-size: 14px !important; /* Reduz de 16px para 14px */
+    font-size: 16px !important; /* Padrão recomendado: 16-20px */
   }
   
   body {
-    font-size: 0.9rem !important;
+    font-size: 1rem !important; /* 16px - mínimo para evitar zoom iOS */
     line-height: 1.5 !important;
   }
 }
 
-/* Container responsivo melhorado */
+/* Container com sistema de grid 8px */
 @media (max-width: 768px) {
   .container {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 16px !important; /* 8px grid system */
+    padding-right: 16px !important;
     max-width: 100% !important;
   }
 }
@@ -56,39 +56,39 @@
   }
 }
 
-/* Hero principal - mobile first */
+/* Hero otimizado - baseado em pesquisa UX 2024 */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 2rem 0 !important;
+    padding: 24px 0 !important; /* 8px grid */
     min-height: auto !important;
   }
   
   .hero-grid {
     display: block !important;
-    gap: 1.5rem !important;
+    gap: 24px !important; /* 8px grid */
   }
   
   .hero-main-content {
     text-align: center !important;
-    padding: 1rem !important;
+    padding: 16px !important; /* 8px grid */
   }
   
   .hero-title-modern {
-    font-size: 1.8rem !important; /* Reduzido de 2.5rem */
-    line-height: 1.2 !important;
-    margin-bottom: 1rem !important;
+    font-size: 2rem !important; /* Maior legibilidade */
+    line-height: 1.3 !important; /* Melhor para leitura */
+    margin-bottom: 16px !important;
   }
   
   .hero-subtitle-modern {
-    font-size: 1rem !important; /* Reduzido */
-    line-height: 1.4 !important;
-    margin-bottom: 1.5rem !important;
+    font-size: 1.125rem !important; /* 18px - melhor legibilidade */
+    line-height: 1.5 !important;
+    margin-bottom: 24px !important;
   }
   
   .hero-badge-modern {
-    font-size: 0.8rem !important;
-    padding: 0.5rem 1rem !important;
-    margin-bottom: 1rem !important;
+    font-size: 0.875rem !important; /* 14px */
+    padding: 8px 16px !important; /* 8px grid */
+    margin-bottom: 16px !important;
   }
 }
 
@@ -112,42 +112,44 @@
   }
 }
 
-/* Trust elements mobile */
+/* Trust elements - removidos para reduzir clutter */
 @media (max-width: 768px) {
   .hero-trust-elements-enhanced {
-    flex-direction: column !important;
-    gap: 0.8rem !important;
-    align-items: center !important;
-  }
-  
-  .trust-item-enhanced {
-    font-size: 0.8rem !important;
-    padding: 0.5rem 1rem !important;
+    display: none !important; /* Remove clutter visual */
   }
 }
 
-/* Social proof mobile */
+/* Social proof simplificado */
 @media (max-width: 768px) {
   .hero-social-proof-enhanced {
-    flex-direction: column !important;
-    gap: 1rem !important;
-    margin-top: 1.5rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    gap: 16px !important;
+    margin-top: 24px !important;
+    padding: 16px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
   }
   
   .proof-item-enhanced {
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 0.8rem !important;
-    padding: 1rem !important;
+    flex: 1 !important;
+    text-align: center !important;
+    padding: 8px !important;
   }
   
   .proof-number {
-    font-size: 1.5rem !important; /* Reduzido */
+    font-size: 1.25rem !important; /* 20px - legível */
+    font-weight: 700 !important;
   }
   
   .proof-label {
-    font-size: 0.8rem !important;
+    font-size: 0.75rem !important; /* 12px */
+    margin-top: 4px !important;
+  }
+  
+  .proof-icon {
+    display: none !important; /* Remove ícones para simplicidade */
   }
 }
 
@@ -261,49 +263,61 @@
   }
 }
 
-/* ===== SEÇÕES GERAIS MOBILE ===== */
+/* ===== SEÇÕES GERAIS MOBILE - SISTEMA 8PX ===== */
 
 @media (max-width: 768px) {
   .section-padding {
-    padding: 3rem 0 !important; /* Reduzido */
+    padding: 40px 0 !important; /* 8px grid: 5 * 8px */
+  }
+  
+  .section-header {
+    margin-bottom: 32px !important; /* 8px grid */
   }
   
   .section-header h2 {
-    font-size: 1.6rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 1rem !important;
+    font-size: 1.75rem !important; /* 28px - hierarquia clara */
+    line-height: 1.3 !important;
+    margin-bottom: 16px !important;
   }
   
   .section-subtitle {
-    font-size: 0.9rem !important;
+    font-size: 1rem !important; /* 16px - legível */
+    margin-bottom: 8px !important;
   }
   
   .section-header p {
-    font-size: 1rem !important;
-    line-height: 1.4 !important;
+    font-size: 1.125rem !important; /* 18px - melhor legibilidade */
+    line-height: 1.5 !important;
+    margin-bottom: 24px !important;
   }
 }
 
-/* ===== CARDS E COMPONENTES MOBILE ===== */
+/* ===== CARDS E COMPONENTES - TOUCH TARGETS ===== */
 
 @media (max-width: 768px) {
   .card {
-    margin-bottom: 1.5rem !important;
-    padding: 1.5rem !important;
+    margin-bottom: 24px !important; /* 8px grid */
+    padding: 24px !important;
+    border-radius: 12px !important;
   }
   
   .card-title {
-    font-size: 1.2rem !important;
+    font-size: 1.25rem !important; /* 20px */
+    line-height: 1.3 !important;
+    margin-bottom: 12px !important;
   }
   
   .card-text {
-    font-size: 0.9rem !important;
-    line-height: 1.4 !important;
+    font-size: 1rem !important; /* 16px - padrão legível */
+    line-height: 1.5 !important;
+    margin-bottom: 16px !important;
   }
   
   .btn {
-    font-size: 0.9rem !important;
-    padding: 0.8rem 1.5rem !important;
+    font-size: 1rem !important; /* 16px - evita zoom iOS */
+    padding: 12px 24px !important; /* Touch target adequado */
+    min-height: 44px !important; /* Padrão Apple/Google */
+    border-radius: 8px !important;
   }
 }
 
@@ -348,13 +362,28 @@
   }
 }
 
-/* ===== MELHORIAS DE UX MOBILE ===== */
+/* ===== MELHORIAS DE UX MOBILE - TOUCH TARGETS ===== */
 
-/* Aumentar área de toque */
+/* Área de toque otimizada - padrão 7-10mm */
 @media (max-width: 768px) {
-  a, button, .btn {
-    min-height: 44px !important;
+  a, button, .btn, input[type="submit"], input[type="button"] {
+    min-height: 44px !important; /* Padrão Apple */
     min-width: 44px !important;
+    padding: 12px 16px !important;
+  }
+  
+  /* Links em texto */
+  a:not(.btn) {
+    padding: 8px 4px !important;
+    margin: 4px 0 !important;
+    display: inline-block !important;
+  }
+  
+  /* Espaçamento entre elementos tocáveis */
+  .btn + .btn,
+  a + a,
+  button + button {
+    margin-left: 8px !important;
   }
 }
 
@@ -383,20 +412,101 @@ html {
   }
 }
 
-/* ===== ACESSIBILIDADE MOBILE ===== */
+/* ===== ELEMENTOS DESNECESSÁRIOS REMOVIDOS ===== */
 
 @media (max-width: 768px) {
-  /* Contraste melhorado */
-  .text-muted {
-    color: #495057 !important;
+  /* Remover elementos que causam clutter visual */
+  .hero-trust-elements-enhanced,
+  .floating-shapes,
+  .shape,
+  .gradient-mesh,
+  .btn-glow,
+  .card-glow,
+  .floating-interactive {
+    display: none !important;
   }
   
-  /* Focus visível */
+  /* Simplificar animações */
+  * {
+    animation-duration: 0.2s !important;
+    transition-duration: 0.2s !important;
+  }
+  
+  /* Remover sombras excessivas */
+  .card,
+  .btn,
+  .hero-main-image-modern {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+/* ===== OTIMIZAÇÕES ESPECÍFICAS PARA SETORES ===== */
+
+@media (max-width: 768px) {
+  /* Simplificar trust indicators */
+  .trust-indicators-fixed {
+    padding: 16px !important;
+    margin: 24px auto !important;
+    border: 1px solid rgba(13, 71, 161, 0.2) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .trust-item-fixed-1,
+  .trust-item-fixed-2,
+  .trust-item-fixed-3 {
+    padding: 12px 16px !important;
+    font-size: 0.875rem !important;
+    border-radius: 8px !important;
+  }
+  
+  /* Otimizar seção de conteúdo */
+  .content-section-wrapper {
+    padding: 0 16px !important;
+    gap: 24px !important;
+  }
+  
+  .content-card {
+    padding: 20px !important;
+    border-radius: 12px !important;
+  }
+  
+  .content-card p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 16px !important;
+  }
+}
+
+/* ===== ACESSIBILIDADE E LEGIBILIDADE MOBILE ===== */
+
+@media (max-width: 768px) {
+  /* Contraste melhorado para legibilidade */
+  .text-muted {
+    color: #6c757d !important; /* Contraste mínimo 4.5:1 */
+  }
+  
+  /* Focus visível e acessível */
   a:focus,
   button:focus,
   input:focus,
-  textarea:focus {
-    outline: 2px solid #007bff !important;
+  textarea:focus,
+  select:focus {
+    outline: 3px solid #0066cc !important;
     outline-offset: 2px !important;
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2) !important;
   }
+  
+  /* Texto com espaçamento adequado */
+  p, li, td {
+    line-height: 1.5 !important;
+    margin-bottom: 16px !important;
+  }
+  
+  /* Headings com hierarquia clara */
+  h1 { font-size: 2rem !important; margin-bottom: 24px !important; }
+  h2 { font-size: 1.75rem !important; margin-bottom: 20px !important; }
+  h3 { font-size: 1.5rem !important; margin-bottom: 16px !important; }
+  h4 { font-size: 1.25rem !important; margin-bottom: 12px !important; }
+  h5 { font-size: 1.125rem !important; margin-bottom: 12px !important; }
+  h6 { font-size: 1rem !important; margin-bottom: 8px !important; }
 }
