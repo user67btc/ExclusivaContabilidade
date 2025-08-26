@@ -156,26 +156,104 @@
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    padding: 40px 0 !important;
-    background: #f8fafc !important;
+    padding: 0 !important;
+    background: transparent !important;
     min-height: auto !important;
   }
   
+  /* HERO SECTION SETORES - PADRÃO HOMEPAGE */
+  html body .hero-section {
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+    padding: 80px 0 60px !important;
+    color: white !important;
+    text-align: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  
+  html body .hero-section::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(30, 64, 175, 0.1) !important;
+    z-index: 1 !important;
+  }
+  
+  html body .hero-section .container {
+    position: relative !important;
+    z-index: 2 !important;
+    padding: 0 16px !important;
+  }
+  
+  html body .hero-section h1 {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: white !important;
+    margin-bottom: 16px !important;
+    line-height: 1.2 !important;
+  }
+  
+  html body .hero-section .hero-subtitle {
+    font-size: 1.1rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    margin-bottom: 32px !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* SEÇÕES DE CONTEÚDO PADRONIZADAS */
   html body .content-section-wrapper {
     display: block !important;
     grid-template-columns: 1fr !important;
-    gap: 24px !important;
-    padding: 0 16px !important;
+    gap: 0 !important;
+    padding: 40px 0 !important;
     margin: 0 auto !important;
     max-width: 100% !important;
+    background: #f8fafc !important;
   }
   
   html body .content-card {
-    padding: 24px !important;
-    margin-bottom: 24px !important;
+    padding: 24px 16px !important;
+    margin: 0 16px 24px 16px !important;
     background: white !important;
     border-radius: 12px !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* TRUST INDICATORS PADRONIZADOS */
+  html body .trust-indicators {
+    background: #f8fafc !important;
+    padding: 40px 0 !important;
+    margin: 0 !important;
+  }
+  
+  html body .trust-indicators .container {
+    padding: 0 16px !important;
+  }
+  
+  html body .trust-indicators .trust-item {
+    background: white !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+    margin-bottom: 16px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+  
+  html body .trust-indicators .trust-item i {
+    font-size: 1.5rem !important;
+    color: #25D366 !important;
+    min-width: 24px !important;
+  }
+  
+  html body .trust-indicators .trust-item span {
+    font-size: 0.95rem !important;
+    color: #1e293b !important;
+    font-weight: 600 !important;
   }
   
   html body .content-text {
@@ -280,5 +358,103 @@
     color: #475569 !important;
     margin-bottom: 16px !important;
     padding: 0 16px !important;
+  }
+  
+  /* SEÇÃO NOSSOS SETORES ESPECIALIZADOS */
+  html body .sectors-specialized-section {
+    background: #f8fafc !important;
+    padding: 40px 0 !important;
+    margin: 0 !important;
+  }
+  
+  html body .sectors-specialized-section .section-header {
+    text-align: center !important;
+    padding: 0 16px !important;
+    margin-bottom: 32px !important;
+  }
+  
+  html body .sectors-specialized-section .section-badge {
+    background: rgba(30, 64, 175, 0.1) !important;
+    color: #1e40af !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 16px !important;
+    display: inline-block !important;
+  }
+  
+  html body .sectors-specialized-section h2 {
+    font-size: 1.75rem !important;
+    color: #1e293b !important;
+    margin-bottom: 16px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+  }
+  
+  html body .sectors-specialized-section .section-subtitle {
+    font-size: 1rem !important;
+    color: #64748b !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0 !important;
+  }
+  
+  /* IMAGEM DA EMPRESA */
+  html body .company-image-section {
+    background: #f8fafc !important;
+    padding: 0 16px 40px 16px !important;
+    margin: 0 !important;
+  }
+  
+  html body .company-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* SEÇÃO FINAL COM CTA */
+  html body .final-cta-section {
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+    padding: 40px 0 !important;
+    color: white !important;
+    text-align: center !important;
+  }
+  
+  html body .final-cta-section .container {
+    padding: 0 16px !important;
+  }
+  
+  html body .final-cta-section h2 {
+    font-size: 1.5rem !important;
+    color: white !important;
+    margin-bottom: 16px !important;
+    font-weight: 700 !important;
+  }
+  
+  html body .final-cta-section p {
+    font-size: 1rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    margin-bottom: 24px !important;
+    line-height: 1.5 !important;
+  }
+  
+  html body .final-cta-section .cta-button {
+    background: #25D366 !important;
+    color: white !important;
+    padding: 14px 28px !important;
+    border-radius: 8px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    min-height: 44px !important;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
   }
 }
