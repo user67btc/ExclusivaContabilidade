@@ -136,6 +136,15 @@
     margin-top: 0 !important;
   }
   
+  /* OCULTAR CARDS SERVIÇOS NA HOMEPAGE EM MOBILE */
+  html body .services-section .services-grid .service-card {
+    display: none !important;
+  }
+  
+  html body .services-section .services-grid {
+    display: none !important;
+  }
+  
   html body section + section,
   html body .hero-section + section {
     margin-top: 0 !important;
@@ -178,7 +187,7 @@
     font-size: 1rem !important;
     line-height: 1.5 !important;
     margin-bottom: 16px !important;
-    color: #334155 !important;
+    color: #1e293b !important;
   }
   
   html body .cta-intermediate {
@@ -215,11 +224,61 @@
     align-items: center !important;
     gap: 8px !important;
     font-size: 0.95rem !important;
-    color: #0d47a1 !important;
+    color: #1e293b !important;
   }
   
   html body .feature-item i {
     color: #25D366 !important;
     font-size: 1rem !important;
+  }
+  
+  /* CORREÇÕES ESPECÍFICAS PARA PÁGINAS DE SETORES */
+  html body .page-hero {
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+    padding: 60px 0 40px !important;
+    color: white !important;
+  }
+  
+  html body .page-hero h1 {
+    font-size: 1.75rem !important;
+    color: white !important;
+    margin-bottom: 16px !important;
+    text-align: center !important;
+  }
+  
+  html body .breadcrumb {
+    text-align: center !important;
+    margin-bottom: 0 !important;
+  }
+  
+  html body .breadcrumb a,
+  html body .breadcrumb span {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 0.9rem !important;
+  }
+  
+  html body .breadcrumb a:hover {
+    color: white !important;
+  }
+  
+  /* SEÇÃO DE CONTEÚDO DAS PÁGINAS DE SETORES */
+  html body .content-section {
+    padding: 40px 0 !important;
+    background: #f8fafc !important;
+  }
+  
+  html body .content-section h2 {
+    font-size: 1.5rem !important;
+    color: #1e293b !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+  
+  html body .content-section p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    color: #475569 !important;
+    margin-bottom: 16px !important;
+    padding: 0 16px !important;
   }
 }
