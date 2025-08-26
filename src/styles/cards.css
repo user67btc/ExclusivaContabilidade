@@ -93,18 +93,7 @@
 
 /* Removido: conflito com services.css - configuração movida para services.css */
 
-/* Seção de setores */
-.sectors-section {
-  padding: 5rem 0;
-  background: var(--bg-primary);
-}
-
-.sectors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
+/* Removido: duplicação com sectors.css - configuração movida para sectors.css */
 
 /* Títulos de seção */
 .section-title {
@@ -129,10 +118,6 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .sectors-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
   
   .card {
     padding: 1.5rem;

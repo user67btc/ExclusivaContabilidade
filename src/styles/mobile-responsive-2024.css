@@ -368,78 +368,7 @@
     color: var(--primary-color) !important;
   }
   
-  body .sectors-section .container .sectors-grid .sector-card .sector-card-content,
-  body .sectors-section .sectors-grid .sector-card .sector-card-content,
-  body .sectors-section .sector-card .sector-card-content,
-  body .sector-card .sector-card-content {
-    padding: 24px !important;
-    background: white !important;
-  }
-  
-  body .sectors-section .container .sectors-grid .sector-card .sector-card-content h3,
-  body .sectors-section .sectors-grid .sector-card .sector-card-content h3,
-  body .sectors-section .sector-card .sector-card-content h3,
-  body .sector-card .sector-card-content h3 {
-    font-size: 1.25rem !important;
-    margin-bottom: 12px !important;
-    color: var(--dark) !important;
-  }
-  
-  body .sectors-section .container .sectors-grid .sector-card .sector-description-contrast,
-  body .sectors-section .sectors-grid .sector-card .sector-description-contrast,
-  body .sectors-section .sector-card .sector-description-contrast,
-  body .sector-card .sector-description-contrast {
-    font-size: 0.95rem !important;
-    line-height: 1.5 !important;
-    color: #666 !important;
-    margin-bottom: 16px !important;
-  }
-  
-  body .sectors-section .container .sectors-grid .sector-card .sector-features,
-  body .sectors-section .sectors-grid .sector-card .sector-features,
-  body .sectors-section .sector-card .sector-features,
-  body .sector-card .sector-features {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 0 20px 0 !important;
-  }
-  
-  body .sectors-section .container .sectors-grid .sector-card .sector-features li,
-  body .sectors-section .sectors-grid .sector-card .sector-features li,
-  body .sectors-section .sector-card .sector-features li,
-  body .sector-card .sector-features li {
-    display: flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-    margin-bottom: 8px !important;
-    font-size: 0.9rem !important;
-    color: #555 !important;
-  }
-  
-  body .sectors-section .container .sectors-grid .sector-card .sector-features li i,
-  body .sectors-section .sectors-grid .sector-card .sector-features li i,
-  body .sectors-section .sector-card .sector-features li i,
-  body .sector-card .sector-features li i {
-    color: var(--primary-color) !important;
-    font-size: 0.8rem !important;
-  }
-  
-  body .sectors-section .container .sectors-grid .sector-card .cta-button,
-  body .sectors-section .sectors-grid .sector-card .cta-button,
-  body .sectors-section .sector-card .cta-button,
-  body .sector-card .cta-button {
-    width: 100% !important;
-    padding: 12px 24px !important;
-    font-size: 1rem !important;
-    border-radius: 8px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 8px !important;
-    min-height: 44px !important;
-    text-decoration: none !important;
-    font-weight: 600 !important;
-  }
+  /* Removido: duplicação com mobile-force-override.css */
   
   /* Remover elementos decorativos em mobile */
   .sectors-bg-elements,
@@ -447,31 +376,21 @@
     display: none !important;
   }
   
-  body .sectors-section {
-    padding: 40px 0 !important;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
-  }
+  /* Removido: duplicação com mobile-force-override.css */
   
   body .sectors-section .section-header {
     margin-bottom: 32px !important;
     padding: 0 16px !important;
   }
   
-  body .sectors-section .section-title {
-    font-size: 1.75rem !important;
-    color: var(--dark) !important;
-    margin-bottom: 12px !important;
-  }
+  /* Removido: duplicação com mobile-force-override.css */
   
   body .sectors-section .section-subtitle {
     color: var(--primary-color) !important;
     font-size: 1rem !important;
   }
   
-  body .sectors-section .section-description {
-    color: #666 !important;
-    font-size: 1.1rem !important;
-  }
+  /* Removido: duplicação com mobile-force-override.css */
 }
 
 /* ===== PADRONIZAÇÃO GLOBAL PARA TODAS AS PÁGINAS ===== */
