@@ -1,0 +1,402 @@
+/* ===== MOBILE RESPONSIVE FIXES 2024 ===== */
+/* Baseado nas melhores práticas de design mobile-first */
+
+/* Breakpoints modernos 2024 */
+:root {
+  --mobile-xs: 320px;
+  --mobile-sm: 375px;
+  --mobile-md: 414px;
+  --tablet-sm: 768px;
+  --tablet-lg: 1024px;
+  --desktop-sm: 1280px;
+  --desktop-lg: 1440px;
+}
+
+/* ===== CORREÇÕES GLOBAIS MOBILE ===== */
+
+/* Reduzir tamanho base da fonte em mobile */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px !important; /* Reduz de 16px para 14px */
+  }
+  
+  body {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* Container responsivo melhorado */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ===== HERO SECTION - MOBILE OPTIMIZATIONS ===== */
+
+/* Ocultar cards Bento em mobile para reduzir poluição visual */
+@media (max-width: 768px) {
+  .bento-grid-enhanced {
+    display: none !important;
+  }
+  
+  .features-showcase {
+    display: none !important;
+  }
+  
+  .floating-interactive {
+    display: none !important;
+  }
+  
+  .hero-visual-content {
+    margin-top: 2rem !important;
+  }
+}
+
+/* Hero principal - mobile first */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 0 !important;
+    min-height: auto !important;
+  }
+  
+  .hero-grid {
+    display: block !important;
+    gap: 1.5rem !important;
+  }
+  
+  .hero-main-content {
+    text-align: center !important;
+    padding: 1rem !important;
+  }
+  
+  .hero-title-modern {
+    font-size: 1.8rem !important; /* Reduzido de 2.5rem */
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .hero-subtitle-modern {
+    font-size: 1rem !important; /* Reduzido */
+    line-height: 1.4 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .hero-badge-modern {
+    font-size: 0.8rem !important;
+    padding: 0.5rem 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+/* CTAs mobile - stack vertical */
+@media (max-width: 768px) {
+  .hero-cta-group {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+  }
+  
+  .btn-modern {
+    width: 100% !important;
+    max-width: 280px !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .btn-badge {
+    font-size: 0.7rem !important;
+  }
+}
+
+/* Trust elements mobile */
+@media (max-width: 768px) {
+  .hero-trust-elements-enhanced {
+    flex-direction: column !important;
+    gap: 0.8rem !important;
+    align-items: center !important;
+  }
+  
+  .trust-item-enhanced {
+    font-size: 0.8rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+/* Social proof mobile */
+@media (max-width: 768px) {
+  .hero-social-proof-enhanced {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    margin-top: 1.5rem !important;
+  }
+  
+  .proof-item-enhanced {
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    padding: 1rem !important;
+  }
+  
+  .proof-number {
+    font-size: 1.5rem !important; /* Reduzido */
+  }
+  
+  .proof-label {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* ===== PÁGINA DE SETORES - PADRONIZAÇÃO ===== */
+
+/* Page hero padronizado */
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 2rem 0 !important;
+    text-align: center !important;
+  }
+  
+  .page-hero h1 {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .page-hero p {
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .breadcrumb {
+    justify-content: center !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .breadcrumb li {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Trust indicators mobile */
+@media (max-width: 768px) {
+  .trust-indicators-fixed {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    padding: 1.5rem !important;
+    margin: 2rem auto !important;
+  }
+  
+  .trust-item-fixed-1,
+  .trust-item-fixed-2,
+  .trust-item-fixed-3 {
+    min-width: auto !important;
+    width: 100% !important;
+    font-size: 0.9rem !important;
+    padding: 0.8rem 1rem !important;
+  }
+}
+
+/* Content section responsive */
+@media (max-width: 768px) {
+  .content-section-wrapper {
+    display: block !important;
+    gap: 2rem !important;
+    padding: 0 1rem !important;
+  }
+  
+  .content-card {
+    padding: 1.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .content-card p {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+  
+  .sectors-image {
+    min-height: 250px !important;
+    padding: 1rem !important;
+  }
+}
+
+/* ===== HEADER MOBILE MELHORADO ===== */
+
+@media (max-width: 991px) {
+  .site-header {
+    padding: 0.8rem 0 !important;
+  }
+  
+  .site-logo img {
+    width: 160px !important; /* Reduzido de 220px */
+    height: auto !important;
+  }
+  
+  .menu-toggle {
+    font-size: 1.2rem !important;
+    padding: 0.8rem !important;
+  }
+  
+  .main-navigation {
+    padding: 1rem !important;
+  }
+  
+  .main-navigation ul li a {
+    font-size: 1rem !important;
+    padding: 0.8rem 1rem !important;
+  }
+  
+  .sub-menu {
+    padding-left: 1rem !important;
+  }
+  
+  .sub-menu li a {
+    font-size: 0.9rem !important;
+    padding: 0.6rem 1rem !important;
+  }
+}
+
+/* ===== SEÇÕES GERAIS MOBILE ===== */
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 3rem 0 !important; /* Reduzido */
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem !important;
+  }
+  
+  .section-header p {
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* ===== CARDS E COMPONENTES MOBILE ===== */
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1.5rem !important;
+    padding: 1.5rem !important;
+  }
+  
+  .card-title {
+    font-size: 1.2rem !important;
+  }
+  
+  .card-text {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .btn {
+    font-size: 0.9rem !important;
+    padding: 0.8rem 1.5rem !important;
+  }
+}
+
+/* ===== FOOTER MOBILE ===== */
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 2rem 0 !important;
+  }
+  
+  .footer-content {
+    text-align: center !important;
+  }
+  
+  .footer-section {
+    margin-bottom: 2rem !important;
+  }
+  
+  .footer-section h4 {
+    font-size: 1.1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .footer-section p,
+  .footer-section li {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* ===== WHATSAPP FLOAT MOBILE ===== */
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .whatsapp-float i {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* ===== MELHORIAS DE UX MOBILE ===== */
+
+/* Aumentar área de toque */
+@media (max-width: 768px) {
+  a, button, .btn {
+    min-height: 44px !important;
+    min-width: 44px !important;
+  }
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* Evitar zoom em inputs */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* ===== ANIMAÇÕES REDUZIDAS MOBILE ===== */
+
+@media (max-width: 768px) {
+  * {
+    animation-duration: 0.3s !important;
+    transition-duration: 0.3s !important;
+  }
+}
+
+/* ===== ACESSIBILIDADE MOBILE ===== */
+
+@media (max-width: 768px) {
+  /* Contraste melhorado */
+  .text-muted {
+    color: #495057 !important;
+  }
+  
+  /* Focus visível */
+  a:focus,
+  button:focus,
+  input:focus,
+  textarea:focus {
+    outline: 2px solid #007bff !important;
+    outline-offset: 2px !important;
+  }
+}
