@@ -1,0 +1,144 @@
+/* ===== FORÇA BRUTA PARA MOBILE - ESPECIFICIDADE MÁXIMA ===== */
+/* Este arquivo força a aplicação dos estilos mobile sobrescrevendo todos os outros */
+
+@media (max-width: 768px) {
+  /* FORÇA GRID 1FR PARA SETORES */
+  html body div.sectors-section div.container div.sectors-grid,
+  html body div.sectors-section div.sectors-grid,
+  html body div.sectors-grid,
+  html body section.sectors-section .sectors-grid,
+  html body .sectors-section .sectors-grid,
+  html body .sectors-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 0 16px !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+  }
+  
+  /* FORÇA CARDS INDIVIDUAIS */
+  html body div.sectors-section .sector-card,
+  html body section.sectors-section .sector-card,
+  html body .sectors-section .sector-card,
+  html body .sector-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    flex: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  /* FORÇA HEADER DOS CARDS */
+  html body .sector-card .sector-card-header {
+    height: 200px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    flex-shrink: 0 !important;
+  }
+  
+  /* FORÇA IMAGENS DOS CARDS */
+  html body .sector-card .sector-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+  
+  /* FORÇA CONTEÚDO DOS CARDS */
+  html body .sector-card .sector-card-content {
+    padding: 24px !important;
+    background: white !important;
+    flex-grow: 1 !important;
+  }
+  
+  /* FORÇA TÍTULOS DOS CARDS */
+  html body .sector-card .sector-card-content h3 {
+    font-size: 1.25rem !important;
+    margin-bottom: 12px !important;
+    color: var(--dark) !important;
+  }
+  
+  /* FORÇA BOTÕES DOS CARDS */
+  html body .sector-card .cta-button {
+    width: 100% !important;
+    padding: 12px 24px !important;
+    font-size: 1rem !important;
+    min-height: 44px !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+  
+  /* FORÇA SEÇÃO SETORES */
+  html body div.sectors-section,
+  html body section.sectors-section,
+  html body .sectors-section {
+    padding: 40px 0 !important;
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+    margin-top: 0 !important;
+  }
+  
+  /* FORÇA HEADER DA SEÇÃO */
+  html body .sectors-section .section-header {
+    padding: 0 16px !important;
+    margin-bottom: 32px !important;
+    text-align: center !important;
+  }
+  
+  /* FORÇA TÍTULO DA SEÇÃO */
+  html body .sectors-section .section-title,
+  html body .sectors-section h2 {
+    font-size: 1.75rem !important;
+    color: white !important;
+    margin-bottom: 12px !important;
+  }
+  
+  /* FORÇA WHATSAPP FLOAT */
+  html body div.whatsapp-float-container {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important;
+  }
+  
+  html body a.whatsapp-float {
+    width: 56px !important;
+    height: 56px !important;
+    border-radius: 50% !important;
+    background: #25D366 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4) !important;
+  }
+  
+  html body .whatsapp-float i {
+    font-size: 1.8rem !important;
+    color: white !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+  }
+  
+  /* FORÇA SEÇÕES GERAIS */
+  html body .services-section {
+    background: #f8fafc !important;
+    padding: 40px 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  html body section + section,
+  html body .hero-section + section {
+    margin-top: 0 !important;
+    padding-top: 40px !important;
+  }
+}

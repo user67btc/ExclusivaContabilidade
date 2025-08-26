@@ -15,6 +15,8 @@ import '../styles/forms.css';
 import '../styles/faq.css';
 import '../styles/contact-cta.css';
 import '../styles/whatsapp-float.css';
+import '../styles/mobile-responsive-2024.css';
+import '../styles/mobile-force-override.css';
 import '../styles/scroll-top.css';
 import '../styles/hero-2025-trends.css';
 import '../styles/hero-breadcrumb.css';

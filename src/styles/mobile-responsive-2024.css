@@ -301,23 +301,26 @@
   }
 }
 
-/* ===== CORREÇÕES ESPECÍFICAS PARA CARDS SETORES - MÁXIMA ESPECIFICIDADE ===== */
+/* ===== CORREÇÕES ESPECÍFICAS PARA CARDS SETORES - ULTRA MÁXIMA ESPECIFICIDADE ===== */
 
 @media (max-width: 768px) {
-  /* Sobrescrever todos os outros arquivos CSS */
-  body .sectors-section .container .sectors-grid,
-  body .sectors-section .sectors-grid,
-  body .sectors-grid {
+  /* Sobrescrever sectors.css com especificidade ainda maior */
+  html body .sectors-section .container .sectors-grid,
+  html body .sectors-section .sectors-grid,
+  html body .sectors-grid,
+  html body div.sectors-section .sectors-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 24px !important;
     padding: 0 16px !important;
+    margin: 0 !important;
   }
   
-  body .sectors-section .container .sectors-grid .sector-card,
-  body .sectors-section .sectors-grid .sector-card,
-  body .sectors-section .sector-card,
-  body .sector-card {
+  html body .sectors-section .container .sectors-grid .sector-card,
+  html body .sectors-section .sectors-grid .sector-card,
+  html body .sectors-section .sector-card,
+  html body .sector-card,
+  html body div.sectors-section .sector-card {
     width: 100% !important;
     max-width: none !important;
     margin: 0 !important;
@@ -652,18 +655,25 @@
 
 @media (max-width: 768px) {
   /* Correção margem entre seções - evitar corte de conteúdo */
-  .services-section,
-  .sectors-section,
-  .hero-section + section,
-  section + section {
+  html body .services-section,
+  html body .sectors-section,
+  html body .hero-section + section,
+  html body section + section {
     margin-top: 0 !important;
     padding-top: 40px !important;
   }
   
   /* Seção Nossos Serviços - padronização */
-  .services-section {
+  html body .services-section {
     background: #f8fafc !important;
     padding: 40px 0 !important;
+  }
+  
+  /* Seção Nossos Setores - forçar aplicação */
+  html body .sectors-section {
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+    padding: 40px 0 !important;
+    margin-top: 0 !important;
   }
   
   .services-section .section-header {
@@ -714,16 +724,17 @@
   }
 }
 
-/* ===== CORREÇÕES WHATSAPP FLOAT MOBILE ===== */
+/* ===== CORREÇÕES WHATSAPP FLOAT MOBILE - ULTRA ESPECIFICIDADE ===== */
 
 @media (max-width: 768px) {
-  .whatsapp-float-container {
+  html body .whatsapp-float-container {
+    position: fixed !important;
     bottom: 20px !important;
     right: 20px !important;
     z-index: 9999 !important;
   }
   
-  .whatsapp-float {
+  html body .whatsapp-float {
     width: 56px !important;
     height: 56px !important;
     border-radius: 50% !important;
@@ -733,19 +744,26 @@
     padding: 0 !important;
     background: #25D366 !important;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4) !important;
+    text-decoration: none !important;
   }
   
-  .whatsapp-float i {
-    font-size: 1.5rem !important;
+  html body .whatsapp-float i {
+    font-size: 1.8rem !important;
     margin: 0 !important;
     color: white !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    line-height: 1 !important;
   }
   
-  .whatsapp-float .whatsapp-text {
+  html body .whatsapp-float .whatsapp-text {
     display: none !important;
+  }
+  
+  html body .whatsapp-float:hover {
+    transform: scale(1.1) !important;
+    background: #128C7E !important;
   }
 }
 
