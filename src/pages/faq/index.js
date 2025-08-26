@@ -6,6 +6,14 @@ import SEOHead from '../../components/SEO/SEOHead';
 
 export default function FAQPage() {
   const [activeCategory, setActiveCategory] = useState('geral');
+  
+  // Adicionar data-page ao body para CSS específico
+  useEffect(() => {
+    document.body.setAttribute('data-page', 'faq');
+    return () => {
+      document.body.removeAttribute('data-page');
+    };
+  }, []);
   const [activeQuestions, setActiveQuestions] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);

@@ -1,10 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Layout from '../../components/layout/Layout';
 import Link from 'next/link';
 import SEOHead from '../../components/SEO/SEOHead';
 
 export default function BlogPage() {
   const [activeCategory, setActiveCategory] = useState('all');
+  
+  // Adicionar data-page ao body para CSS específico
+  useEffect(() => {
+    document.body.setAttribute('data-page', 'blog');
+    return () => {
+      document.body.removeAttribute('data-page');
+    };
+  }, []);
   
   // Categorias do blog
   const categories = [

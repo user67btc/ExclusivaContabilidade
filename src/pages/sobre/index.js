@@ -1,8 +1,17 @@
+import { useEffect } from 'react';
 import Layout from '../../components/layout/Layout';
 import Link from 'next/link';
 import SEOHead from '../../components/SEO/SEOHead';
 
 export default function SobrePage() {
+  // Adicionar data-page ao body para CSS específico
+  useEffect(() => {
+    document.body.setAttribute('data-page', 'sobre');
+    return () => {
+      document.body.removeAttribute('data-page');
+    };
+  }, []);
+
   const schemaData = [
     {
       '@context': 'https://schema.org',

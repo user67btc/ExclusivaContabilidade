@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNotification } from '../../contexts/NotificationContext';
 import Layout from '../../components/layout/Layout';
 import Link from 'next/link';
@@ -6,6 +6,14 @@ import SEOHead from '../../components/SEO/SEOHead';
 
 export default function ContatoPage() {
   const { error: showError, success: showSuccess } = useNotification();
+  
+  // Adicionar data-page ao body para CSS específico
+  useEffect(() => {
+    document.body.setAttribute('data-page', 'contato');
+    return () => {
+      document.body.removeAttribute('data-page');
+    };
+  }, []);
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
