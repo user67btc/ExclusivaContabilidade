@@ -826,6 +826,18 @@
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
   }
   
+  /* FORÇA MÁXIMA PARA SUBTÍTULOS EM FUNDOS ESCUROS */
+  html body .services-section .section-subtitle,
+  html body .sectors-section .section-subtitle,
+  html body .home-page .services-section .section-subtitle,
+  html body .home-page .sectors-section .section-subtitle {
+    color: #e3f2fd !important;
+    font-weight: 500 !important;
+    font-size: 1.1rem !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+    opacity: 1 !important;
+  }
+  
   html body .home-page .services-section h2,
   html body .home-page .sectors-section h2,
   html body[data-page="setores"] .services-section h2,
@@ -849,11 +861,56 @@
   html body .section-badge,
   html body *[class*="badge"],
   html body *[class*="specialization"] {
-    background: rgba(0, 0, 0, 0.7) !important;
-    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #1e3a8a !important;
     font-weight: 800 !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+    text-shadow: none !important;
     border: 2px solid #ffffff !important;
     backdrop-filter: blur(15px) !important;
+  }
+  
+  /* CORREÇÕES ESPECÍFICAS PARA TEXTOS EM FUNDOS AZUIS ESCUROS */
+  html body .services-section .section-description,
+  html body .sectors-section .section-description,
+  html body .home-page .section-description {
+    color: #e3f2fd !important;
+    font-weight: 500 !important;
+    font-size: 1.1rem !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* CORREÇÕES PARA TEXTOS ESPECÍFICOS PROBLEMÁTICOS */
+  html body p:contains("Soluções contábeis personalizadas"),
+  html body p:contains("para o sucesso do seu negócio"),
+  html body p:contains("Soluções contábeis específicas"),
+  html body p:contains("diferentes segmentos do mercado") {
+    color: #e8f4fd !important;
+    font-weight: 500 !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7) !important;
+  }
+  
+  /* CORREÇÃO PARA BOTÃO "O QUE OFERECEMOS" */
+  html body .cta-button,
+  html body .section-cta,
+  html body .offer-button,
+  html body button:contains("O QUE OFERECEMOS"),
+  html body .services-cta,
+  html body .what-we-offer {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.6) !important;
+    font-weight: 800 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(15px) !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.5px !important;
+  }
+  
+  html body .cta-button:hover,
+  html body .section-cta:hover,
+  html body .offer-button:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+    border-color: rgba(255, 255, 255, 0.6) !important;
   }
 }
