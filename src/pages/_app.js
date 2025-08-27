@@ -9,13 +9,8 @@ import ForceStyles from '../components/ForceStyles';
 
 // CSS imports - ORDEM CRÍTICA: mobile por último para sobrescrever
 import '../styles/globals.css';
-import '../styles/bootstrap.min.css';
-import '../styles/all.min.css';
-import '../styles/layout.css';
-import '../styles/components.css';
 import '../styles/cards.css';
 import '../styles/forms.css';
-import '../styles/buttons.css';
 import '../styles/hero-breadcrumb.css';
 import '../styles/section-spacing-fix.css';
 import '../styles/global-page-patterns.css';
