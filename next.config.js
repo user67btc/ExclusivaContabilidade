@@ -27,8 +27,11 @@ const nextConfig = {
   optimizeFonts: false,
   // Force fresh CSS compilation
   webpack: (config, { dev }) => {
-    if (!dev) {
-      // Disable CSS caching in production
+    if (!dev && config.optimization && config.optimization.splitChunks) {
+      // Disable CSS caching in production - only if splitChunks exists
+      if (!config.optimization.splitChunks.cacheGroups) {
+        config.optimization.splitChunks.cacheGroups = {};
+      }
       config.optimization.splitChunks.cacheGroups.styles = {
         name: 'styles',
         test: /\.(css|scss|sass)$/,
