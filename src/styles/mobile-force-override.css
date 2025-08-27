@@ -831,11 +831,41 @@
   html body .sectors-section .section-subtitle,
   html body .home-page .services-section .section-subtitle,
   html body .home-page .sectors-section .section-subtitle {
-    color: #e3f2fd !important;
-    font-weight: 500 !important;
-    font-size: 1.1rem !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 1.2rem !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8) !important;
     opacity: 1 !important;
+    margin-bottom: 15px !important;
+    text-align: center !important;
+  }
+  
+  /* CORREÇÕES ESPECÍFICAS PARA SEÇÕES HOMEPAGE */
+  html body .home-page .services-section,
+  html body .home-page .sectors-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+    padding: 80px 0 !important;
+  }
+  
+  html body .home-page .services-section h2,
+  html body .home-page .sectors-section h2 {
+    color: #ffffff !important;
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.7) !important;
+    margin-bottom: 25px !important;
+    text-align: center !important;
+  }
+  
+  html body .home-page .services-section p,
+  html body .home-page .sectors-section p {
+    color: #ffffff !important;
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
   }
   
   html body .home-page .services-section h2,
@@ -869,6 +899,92 @@
     backdrop-filter: blur(15px) !important;
   }
   
+  /* CORREÇÕES ESPECÍFICAS PARA BOTÕES COM ÍCONES */
+  html body .btn-primary,
+  html body .btn-secondary,
+  html body .btn-outline,
+  html body .btn-pattern,
+  html body button,
+  html body .button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 12px 24px !important;
+    border-radius: 25px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    white-space: nowrap !important;
+  }
+  
+  html body .btn-primary i,
+  html body .btn-secondary i,
+  html body .btn-outline i,
+  html body .btn-pattern i,
+  html body button i,
+  html body .button i {
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+  }
+  
+  /* CORREÇÕES PARA SEÇÃO DE CONTATO */
+  html body .contact-section,
+  html body .contact-cta,
+  html body .contact-info {
+    background: #2d3748 !important;
+    color: #ffffff !important;
+    padding: 60px 0 !important;
+  }
+  
+  html body .contact-section *,
+  html body .contact-cta *,
+  html body .contact-info * {
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+  }
+  
+  html body .contact-section h2,
+  html body .contact-cta h2,
+  html body .contact-info h2 {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 20px !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+  }
+  
+  html body .contact-section p,
+  html body .contact-cta p,
+  html body .contact-info p {
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 15px !important;
+  }
+  
+  html body .contact-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+    padding: 25px !important;
+    margin-bottom: 25px !important;
+    backdrop-filter: blur(10px) !important;
+  }
+  
+  html body .contact-card h3 {
+    color: #ffffff !important;
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+    text-align: center !important;
+  }
+  
+  html body .contact-card .btn-pattern {
+    width: 100% !important;
+    justify-content: center !important;
+    margin-top: 15px !important;
+  }
+  
   /* CORREÇÕES ESPECÍFICAS PARA TEXTOS EM FUNDOS AZUIS ESCUROS */
   html body .services-section .section-description,
   html body .sectors-section .section-description,
@@ -885,9 +1001,55 @@
   html body p:contains("para o sucesso do seu negócio"),
   html body p:contains("Soluções contábeis específicas"),
   html body p:contains("diferentes segmentos do mercado") {
-    color: #e8f4fd !important;
-    font-weight: 500 !important;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7) !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 1.2rem !important;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8) !important;
+    text-align: center !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* FORÇA MÁXIMA PARA HOMEPAGE - REMOVER CONFLITOS */
+  html body.home-page .services-section,
+  html body.home-page .sectors-section,
+  html body[data-page="home"] .services-section,
+  html body[data-page="home"] .sectors-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+    color: #ffffff !important;
+    padding: 80px 0 !important;
+  }
+  
+  html body.home-page .services-section *,
+  html body.home-page .sectors-section *,
+  html body[data-page="home"] .services-section *,
+  html body[data-page="home"] .sectors-section * {
+    color: #ffffff !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+  }
+  
+  html body.home-page .services-section h2,
+  html body.home-page .sectors-section h2,
+  html body[data-page="home"] .services-section h2,
+  html body[data-page="home"] .sectors-section h2 {
+    color: #ffffff !important;
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8) !important;
+    margin-bottom: 25px !important;
+    text-align: center !important;
+  }
+  
+  html body.home-page .services-section p,
+  html body.home-page .sectors-section p,
+  html body[data-page="home"] .services-section p,
+  html body[data-page="home"] .sectors-section p {
+    color: #ffffff !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8) !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
   }
   
   /* CORREÇÃO PARA BOTÃO "O QUE OFERECEMOS" */
@@ -905,6 +1067,10 @@
     backdrop-filter: blur(15px) !important;
     font-size: 0.95rem !important;
     letter-spacing: 0.5px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
   }
   
   html body .cta-button:hover,
@@ -912,6 +1078,64 @@
   html body .offer-button:hover {
     background: rgba(255, 255, 255, 0.25) !important;
     border-color: rgba(255, 255, 255, 0.6) !important;
+  }
+  
+  /* FORÇA MÁXIMA PARA BOTÕES DA HOMEPAGE */
+  html body .hero-section .btn-primary,
+  html body .hero-section .btn-secondary,
+  html body .hero-section button,
+  html body .cta-section .btn-primary,
+  html body .cta-section .btn-secondary,
+  html body .cta-section button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 15px 30px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    white-space: nowrap !important;
+    min-width: 200px !important;
+  }
+  
+  html body .hero-section .btn-primary i,
+  html body .hero-section .btn-secondary i,
+  html body .hero-section button i,
+  html body .cta-section .btn-primary i,
+  html body .cta-section .btn-secondary i,
+  html body .cta-section button i {
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+    font-size: 1.1rem !important;
+  }
+  
+  /* BOTÕES ESPECÍFICOS DA SEÇÃO DE CONTATO */
+  html body .contact-card .btn-pattern,
+  html body .contact-info .btn-pattern,
+  html body .contact-section .btn-pattern {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    padding: 15px 25px !important;
+    border-radius: 25px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    width: 100% !important;
+    margin-top: 15px !important;
+  }
+  
+  html body .contact-card .btn-pattern i,
+  html body .contact-info .btn-pattern i,
+  html body .contact-section .btn-pattern i {
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+    font-size: 1.1rem !important;
   }
   
   /* PADRONIZAÇÃO PARA TODAS AS PÁGINAS */
