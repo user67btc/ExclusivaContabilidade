@@ -946,54 +946,61 @@
     backdrop-filter: blur(15px) !important;
   }
   
-  /* CORREÇÕES ESPECÍFICAS PARA BOTÕES COM ÍCONES */
-  html body .btn-pattern i,
-  html body .cta-button i,
-  html body .contact-btn i,
-  html body button i,
-  html body a i {
-    margin-right: 8px !important;
-    vertical-align: middle !important;
+  /* CORREÇÕES ESPECÍFICAS PARA BOTÕES COM ÍCONES - MOBILE */
+  @media (max-width: 768px) {
+    html body .btn-pattern i,
+    html body .cta-button i,
+    html body .contact-btn i,
+    html body button i,
+    html body a i {
+      margin-right: 8px !important;
+      vertical-align: middle !important;
+    }
+    
+    html body .btn-pattern,
+    html body .cta-button,
+    html body .contact-btn {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      gap: 8px !important;
+    }
   }
   
-  html body .btn-pattern,
-  html body .cta-button,
-  html body .contact-btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    gap: 8px !important;
-  }
-  
-  /* FORÇA MÁXIMA PARA SEÇÕES PROBLEMÁTICAS */
-  html body .home-page .services-section,
-  html body .home-page .sectors-section,
-  html body .services-section,
-  html body .sectors-section {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
-  }
-  
-  html body .home-page .services-section h2,
-  html body .home-page .sectors-section h2,
-  html body .services-section h2,
-  html body .sectors-section h2 {
-    color: #ffffff !important;
-    font-weight: 800 !important;
-    font-size: 2.2rem !important;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7) !important;
-    margin-bottom: 20px !important;
-  }
-  
-  html body .home-page .services-section p,
-  html body .home-page .sectors-section p,
-  html body .services-section p,
-  html body .sectors-section p {
-    color: #e8f4fd !important;
-    font-weight: 500 !important;
-    font-size: 1.1rem !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
-    line-height: 1.6 !important;
+  /* FORÇA MÁXIMA PARA SEÇÕES PROBLEMÁTICAS - MOBILE */
+  @media (max-width: 768px) {
+    html body .home-page .services-section,
+    html body .home-page .sectors-section,
+    html body .services-section,
+    html body .sectors-section {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+      padding: 40px 0 !important;
+    }
+    
+    html body .home-page .services-section h2,
+    html body .home-page .sectors-section h2,
+    html body .services-section h2,
+    html body .sectors-section h2 {
+      color: #ffffff !important;
+      font-weight: 800 !important;
+      font-size: 1.8rem !important;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7) !important;
+      margin-bottom: 15px !important;
+      line-height: 1.2 !important;
+    }
+    
+    html body .home-page .services-section p,
+    html body .home-page .sectors-section p,
+    html body .services-section p,
+    html body .sectors-section p {
+      color: #e8f4fd !important;
+      font-weight: 500 !important;
+      font-size: 1rem !important;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+      line-height: 1.5 !important;
+      padding: 0 20px !important;
+    }
   }
   
   /* CORREÇÕES ESPECÍFICAS PARA TEXTOS EM FUNDOS AZUIS ESCUROS */
@@ -1041,118 +1048,127 @@
     border-color: rgba(255, 255, 255, 0.6) !important;
   }
   
-  /* PADRONIZAÇÃO PARA TODAS AS PÁGINAS */
-  html body[data-page="sobre"] .page-hero,
-  html body[data-page="blog"] .page-hero,
-  html body[data-page="faq"] .page-hero,
-  html body[data-page="contato"] .page-hero {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
-    color: #ffffff !important;
-    padding: 80px 0 !important;
+  /* PADRONIZAÇÃO MOBILE PARA TODAS AS PÁGINAS */
+  @media (max-width: 768px) {
+    html body[data-page="sobre"] .page-hero,
+    html body[data-page="blog"] .page-hero,
+    html body[data-page="faq"] .page-hero,
+    html body[data-page="contato"] .page-hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+      color: #ffffff !important;
+      padding: 60px 0 40px 0 !important;
+    }
   }
   
-  html body[data-page="sobre"] .page-hero *,
-  html body[data-page="blog"] .page-hero *,
-  html body[data-page="faq"] .page-hero *,
-  html body[data-page="contato"] .page-hero * {
-    color: #ffffff !important;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
-  }
-  
-  html body[data-page="sobre"] .page-hero h1,
-  html body[data-page="blog"] .page-hero h1,
-  html body[data-page="faq"] .page-hero h1,
-  html body[data-page="contato"] .page-hero h1 {
-    font-size: 2.5rem !important;
-    font-weight: 800 !important;
-    margin-bottom: 20px !important;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
-  }
-  
-  html body[data-page="sobre"] .page-content,
-  html body[data-page="blog"] .page-content,
-  html body[data-page="faq"] .page-content,
-  html body[data-page="contato"] .page-content {
-    padding: 60px 0 !important;
-  }
-  
-  html body[data-page="sobre"] .section-header-pattern,
-  html body[data-page="blog"] .section-header-pattern,
-  html body[data-page="faq"] .section-header-pattern,
-  html body[data-page="contato"] .section-header-pattern {
-    text-align: center !important;
-    margin-bottom: 50px !important;
-  }
-  
-  html body[data-page="sobre"] .section-subtitle,
-  html body[data-page="blog"] .section-subtitle,
-  html body[data-page="faq"] .section-subtitle,
-  html body[data-page="contato"] .section-subtitle {
-    color: #1e40af !important;
-    font-size: 1rem !important;
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1px !important;
-    margin-bottom: 10px !important;
-    display: block !important;
-  }
-  
-  html body[data-page="sobre"] .content-card,
-  html body[data-page="blog"] .content-card,
-  html body[data-page="faq"] .content-card,
-  html body[data-page="contato"] .content-card {
-    background: #ffffff !important;
-    border-radius: 15px !important;
-    padding: 30px !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
-    margin-bottom: 30px !important;
-    border: 1px solid rgba(30, 64, 175, 0.1) !important;
-  }
-  
-  html body[data-page="sobre"] .page-cta,
-  html body[data-page="blog"] .page-cta,
-  html body[data-page="faq"] .page-cta,
-  html body[data-page="contato"] .page-cta {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
-    color: #ffffff !important;
-    padding: 80px 0 !important;
-  }
-  
-  html body[data-page="sobre"] .page-cta *,
-  html body[data-page="blog"] .page-cta *,
-  html body[data-page="faq"] .page-cta *,
-  html body[data-page="contato"] .page-cta * {
-    color: #ffffff !important;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
-  }
-  
-  html body[data-page="sobre"] .btn-pattern,
-  html body[data-page="blog"] .btn-pattern,
-  html body[data-page="faq"] .btn-pattern,
-  html body[data-page="contato"] .btn-pattern {
-    padding: 12px 30px !important;
-    border-radius: 25px !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-    display: inline-block !important;
-    transition: all 0.3s ease !important;
-  }
-  
-  html body[data-page="sobre"] .btn-primary,
-  html body[data-page="blog"] .btn-primary,
-  html body[data-page="faq"] .btn-primary,
-  html body[data-page="contato"] .btn-primary {
-    background: #ffffff !important;
-    color: #1e40af !important;
-    border: 2px solid #ffffff !important;
-  }
-  
-  html body[data-page="sobre"] .btn-outline,
-  html body[data-page="blog"] .btn-outline,
-  html body[data-page="faq"] .btn-outline,
-  html body[data-page="contato"] .btn-outline {
-    background: transparent !important;
-    color: #ffffff !important;
-    border: 2px solid rgba(255, 255, 255, 0.6) !important;
+  @media (max-width: 768px) {
+    html body[data-page="sobre"] .page-hero *,
+    html body[data-page="blog"] .page-hero *,
+    html body[data-page="faq"] .page-hero *,
+    html body[data-page="contato"] .page-hero * {
+      color: #ffffff !important;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+    }
+    
+    html body[data-page="sobre"] .page-hero h1,
+    html body[data-page="blog"] .page-hero h1,
+    html body[data-page="faq"] .page-hero h1,
+    html body[data-page="contato"] .page-hero h1 {
+      font-size: 1.8rem !important;
+      font-weight: 800 !important;
+      margin-bottom: 15px !important;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+      line-height: 1.2 !important;
+    }
+    
+    html body[data-page="sobre"] .page-content,
+    html body[data-page="blog"] .page-content,
+    html body[data-page="faq"] .page-content,
+    html body[data-page="contato"] .page-content {
+      padding: 40px 0 !important;
+    }
+    
+    html body[data-page="sobre"] .section-header-pattern,
+    html body[data-page="blog"] .section-header-pattern,
+    html body[data-page="faq"] .section-header-pattern,
+    html body[data-page="contato"] .section-header-pattern {
+      text-align: center !important;
+      margin-bottom: 30px !important;
+      padding: 0 20px !important;
+    }
+    
+    html body[data-page="sobre"] .section-subtitle,
+    html body[data-page="blog"] .section-subtitle,
+    html body[data-page="faq"] .section-subtitle,
+    html body[data-page="contato"] .section-subtitle {
+      color: #1e40af !important;
+      font-size: 0.9rem !important;
+      font-weight: 600 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 1px !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+    
+    html body[data-page="sobre"] .content-card,
+    html body[data-page="blog"] .content-card,
+    html body[data-page="faq"] .content-card,
+    html body[data-page="contato"] .content-card {
+      background: #ffffff !important;
+      border-radius: 12px !important;
+      padding: 20px !important;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+      margin-bottom: 20px !important;
+      border: 1px solid rgba(30, 64, 175, 0.1) !important;
+      margin-left: 15px !important;
+      margin-right: 15px !important;
+    }
+    
+    html body[data-page="sobre"] .page-cta,
+    html body[data-page="blog"] .page-cta,
+    html body[data-page="faq"] .page-cta,
+    html body[data-page="contato"] .page-cta {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+      color: #ffffff !important;
+      padding: 50px 0 !important;
+    }
+    
+    html body[data-page="sobre"] .page-cta *,
+    html body[data-page="blog"] .page-cta *,
+    html body[data-page="faq"] .page-cta *,
+    html body[data-page="contato"] .page-cta * {
+      color: #ffffff !important;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+    }
+    
+    html body[data-page="sobre"] .btn-pattern,
+    html body[data-page="blog"] .btn-pattern,
+    html body[data-page="faq"] .btn-pattern,
+    html body[data-page="contato"] .btn-pattern {
+      padding: 10px 25px !important;
+      border-radius: 20px !important;
+      font-weight: 600 !important;
+      text-decoration: none !important;
+      display: inline-block !important;
+      transition: all 0.3s ease !important;
+      font-size: 0.9rem !important;
+    }
+    
+    html body[data-page="sobre"] .btn-primary,
+    html body[data-page="blog"] .btn-primary,
+    html body[data-page="faq"] .btn-primary,
+    html body[data-page="contato"] .btn-primary {
+      background: #ffffff !important;
+      color: #1e40af !important;
+      border: 2px solid #ffffff !important;
+    }
+    
+    html body[data-page="sobre"] .btn-outline,
+    html body[data-page="blog"] .btn-outline,
+    html body[data-page="faq"] .btn-outline,
+    html body[data-page="contato"] .btn-outline {
+      background: transparent !important;
+      color: #ffffff !important;
+      border: 2px solid rgba(255, 255, 255, 0.6) !important;
+    }
   }
 }
