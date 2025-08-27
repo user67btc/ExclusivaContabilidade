@@ -1138,53 +1138,81 @@
     font-size: 1.1rem !important;
   }
   
-  /* PADRONIZAÇÃO PARA TODAS AS PÁGINAS */
+  /* PADRONIZAÇÃO GLOBAL PARA TODAS AS PÁGINAS - FORÇA MÁXIMA */
+  html body .page-hero,
+  html body[data-page] .page-hero,
   html body[data-page="sobre"] .page-hero,
   html body[data-page="blog"] .page-hero,
   html body[data-page="faq"] .page-hero,
-  html body[data-page="contato"] .page-hero {
+  html body[data-page="contato"] .page-hero,
+  html body[data-page="servicos"] .page-hero,
+  html body[data-page="setores"] .page-hero {
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
     color: #ffffff !important;
     padding: 80px 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
   }
   
+  html body .page-hero *,
+  html body[data-page] .page-hero *,
   html body[data-page="sobre"] .page-hero *,
   html body[data-page="blog"] .page-hero *,
   html body[data-page="faq"] .page-hero *,
-  html body[data-page="contato"] .page-hero * {
+  html body[data-page="contato"] .page-hero *,
+  html body[data-page="servicos"] .page-hero *,
+  html body[data-page="setores"] .page-hero * {
     color: #ffffff !important;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
   }
   
+  html body .page-hero h1,
+  html body[data-page] .page-hero h1,
   html body[data-page="sobre"] .page-hero h1,
   html body[data-page="blog"] .page-hero h1,
   html body[data-page="faq"] .page-hero h1,
-  html body[data-page="contato"] .page-hero h1 {
+  html body[data-page="contato"] .page-hero h1,
+  html body[data-page="servicos"] .page-hero h1,
+  html body[data-page="setores"] .page-hero h1 {
     font-size: 2.5rem !important;
     font-weight: 800 !important;
     margin-bottom: 20px !important;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+    color: #ffffff !important;
   }
   
+  html body .page-content,
+  html body[data-page] .page-content,
   html body[data-page="sobre"] .page-content,
   html body[data-page="blog"] .page-content,
   html body[data-page="faq"] .page-content,
-  html body[data-page="contato"] .page-content {
+  html body[data-page="contato"] .page-content,
+  html body[data-page="servicos"] .page-content,
+  html body[data-page="setores"] .page-content {
     padding: 60px 0 !important;
+    background: #f8fafc !important;
   }
   
+  html body .section-header-pattern,
+  html body[data-page] .section-header-pattern,
   html body[data-page="sobre"] .section-header-pattern,
   html body[data-page="blog"] .section-header-pattern,
   html body[data-page="faq"] .section-header-pattern,
-  html body[data-page="contato"] .section-header-pattern {
+  html body[data-page="contato"] .section-header-pattern,
+  html body[data-page="servicos"] .section-header-pattern,
+  html body[data-page="setores"] .section-header-pattern {
     text-align: center !important;
     margin-bottom: 50px !important;
   }
   
+  html body .section-subtitle,
+  html body[data-page] .section-subtitle,
   html body[data-page="sobre"] .section-subtitle,
   html body[data-page="blog"] .section-subtitle,
   html body[data-page="faq"] .section-subtitle,
-  html body[data-page="contato"] .section-subtitle {
+  html body[data-page="contato"] .section-subtitle,
+  html body[data-page="servicos"] .section-subtitle,
+  html body[data-page="setores"] .section-subtitle {
     color: #1e40af !important;
     font-size: 1rem !important;
     font-weight: 600 !important;
@@ -1194,10 +1222,14 @@
     display: block !important;
   }
   
+  html body .content-card,
+  html body[data-page] .content-card,
   html body[data-page="sobre"] .content-card,
   html body[data-page="blog"] .content-card,
   html body[data-page="faq"] .content-card,
-  html body[data-page="contato"] .content-card {
+  html body[data-page="contato"] .content-card,
+  html body[data-page="servicos"] .content-card,
+  html body[data-page="setores"] .content-card {
     background: #ffffff !important;
     border-radius: 15px !important;
     padding: 30px !important;
@@ -1206,50 +1238,98 @@
     border: 1px solid rgba(30, 64, 175, 0.1) !important;
   }
   
+  html body .page-cta,
+  html body[data-page] .page-cta,
   html body[data-page="sobre"] .page-cta,
   html body[data-page="blog"] .page-cta,
   html body[data-page="faq"] .page-cta,
-  html body[data-page="contato"] .page-cta {
+  html body[data-page="contato"] .page-cta,
+  html body[data-page="servicos"] .page-cta,
+  html body[data-page="setores"] .page-cta {
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
     color: #ffffff !important;
     padding: 80px 0 !important;
   }
   
+  html body .page-cta *,
+  html body[data-page] .page-cta *,
   html body[data-page="sobre"] .page-cta *,
   html body[data-page="blog"] .page-cta *,
   html body[data-page="faq"] .page-cta *,
-  html body[data-page="contato"] .page-cta * {
+  html body[data-page="contato"] .page-cta *,
+  html body[data-page="servicos"] .page-cta *,
+  html body[data-page="setores"] .page-cta * {
     color: #ffffff !important;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
   }
   
+  html body .btn-pattern,
+  html body[data-page] .btn-pattern,
   html body[data-page="sobre"] .btn-pattern,
   html body[data-page="blog"] .btn-pattern,
   html body[data-page="faq"] .btn-pattern,
-  html body[data-page="contato"] .btn-pattern {
+  html body[data-page="contato"] .btn-pattern,
+  html body[data-page="servicos"] .btn-pattern,
+  html body[data-page="setores"] .btn-pattern {
     padding: 12px 30px !important;
     border-radius: 25px !important;
     font-weight: 600 !important;
     text-decoration: none !important;
-    display: inline-block !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
     transition: all 0.3s ease !important;
   }
   
+  html body .btn-primary,
+  html body[data-page] .btn-primary,
   html body[data-page="sobre"] .btn-primary,
   html body[data-page="blog"] .btn-primary,
   html body[data-page="faq"] .btn-primary,
-  html body[data-page="contato"] .btn-primary {
+  html body[data-page="contato"] .btn-primary,
+  html body[data-page="servicos"] .btn-primary,
+  html body[data-page="setores"] .btn-primary {
     background: #ffffff !important;
     color: #1e40af !important;
     border: 2px solid #ffffff !important;
   }
   
+  html body .btn-outline,
+  html body[data-page] .btn-outline,
   html body[data-page="sobre"] .btn-outline,
   html body[data-page="blog"] .btn-outline,
   html body[data-page="faq"] .btn-outline,
-  html body[data-page="contato"] .btn-outline {
+  html body[data-page="contato"] .btn-outline,
+  html body[data-page="servicos"] .btn-outline,
+  html body[data-page="setores"] .btn-outline {
     background: transparent !important;
     color: #ffffff !important;
     border: 2px solid rgba(255, 255, 255, 0.6) !important;
+  }
+  
+  /* FORÇA MÁXIMA PARA BREADCRUMBS */
+  html body .breadcrumb,
+  html body[data-page] .breadcrumb {
+    background: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  
+  html body .breadcrumb-item,
+  html body[data-page] .breadcrumb-item {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  html body .breadcrumb-item a,
+  html body[data-page] .breadcrumb-item a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+  
+  html body .breadcrumb-item.active,
+  html body[data-page] .breadcrumb-item.active {
+    color: #ffffff !important;
+    font-weight: 600 !important;
   }
 }
