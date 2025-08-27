@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Layout from '../components/layout/Layout';
 import Hero from '../components/sections/Hero';
 import Services from '../components/sections/Services';
@@ -7,10 +8,15 @@ import ContactCTA from '../components/sections/ContactCTA';
 import SEOHead from '../components/SEOHead';
 
 export default function Home() {
-  // Adicionar classe ao body para identificar homepage
-  if (typeof window !== 'undefined') {
+  // Adicionar classe e data-page ao body para identificar homepage
+  useEffect(() => {
     document.body.classList.add('home-page');
-  }
+    document.body.setAttribute('data-page', 'home');
+    return () => {
+      document.body.classList.remove('home-page');
+      document.body.removeAttribute('data-page');
+    };
+  }, []);
   // Dados estruturados específicos para a página inicial
   const schemaData = [
     {

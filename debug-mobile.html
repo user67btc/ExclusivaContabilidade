@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Mobile CSS - Exclusiva</title>
+    <style>
+        /* Simulação do CSS que deveria estar sendo aplicado */
+        @media (max-width: 768px) {
+            .page-hero {
+                background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+                color: #ffffff !important;
+                padding: 50px 0 !important;
+                text-align: center !important;
+            }
+            
+            .page-hero * {
+                color: #ffffff !important;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+            }
+            
+            .page-hero h1 {
+                font-size: 1.8rem !important;
+                font-weight: 800 !important;
+                margin-bottom: 15px !important;
+                text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+                line-height: 1.2 !important;
+            }
+            
+            .footer *,
+            .links-section * {
+                color: #ffffff !important;
+                font-weight: 500 !important;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+            }
+            
+            .badge,
+            .specialization-badge {
+                background: #ffffff !important;
+                color: #1e3a8a !important;
+                font-weight: 800 !important;
+                text-shadow: none !important;
+                border: 2px solid #ffffff !important;
+                padding: 6px 12px !important;
+                border-radius: 15px !important;
+                font-size: 0.75rem !important;
+                text-transform: uppercase !important;
+                letter-spacing: 1px !important;
+            }
+        }
+        
+        /* Teste de elementos */
+        .test-container {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .test-hero {
+            background: #f0f0f0;
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        
+        .test-footer {
+            background: #333;
+            color: #999;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        
+        .test-badge {
+            background: #e0e0e0;
+            color: #666;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Debug Mobile CSS - Exclusiva Contabilidade</h1>
+        <p>Este arquivo testa se as regras CSS mobile estão funcionando corretamente.</p>
+        
+        <div class="test-hero page-hero">
+            <h1>Teste Hero Section</h1>
+            <p>Este texto deveria estar branco com fundo azul gradiente no mobile</p>
+        </div>
+        
+        <div class="test-footer footer">
+            <h3>Teste Footer</h3>
+            <p>Este texto deveria estar branco no mobile</p>
+            <a href="#">Link de teste</a>
+        </div>
+        
+        <div class="test-footer links-section">
+            <h3>Teste Links Section</h3>
+            <p>Este texto deveria estar branco no mobile</p>
+            <a href="#">Link de teste</a>
+        </div>
+        
+        <div>
+            <span class="test-badge badge">Badge Teste</span>
+            <span class="test-badge specialization-badge">Especialização</span>
+        </div>
+        
+        <script>
+            // Debug info
+            console.log('Viewport width:', window.innerWidth);
+            console.log('CSS media query (max-width: 768px) matches:', window.matchMedia('(max-width: 768px)').matches);
+            
+            // Verificar se CSS está sendo aplicado
+            const hero = document.querySelector('.page-hero');
+            if (hero) {
+                const styles = window.getComputedStyle(hero);
+                console.log('Hero background:', styles.background);
+                console.log('Hero color:', styles.color);
+                console.log('Hero padding:', styles.padding);
+            }
+            
+            // Verificar data-page
+            console.log('Body data-page:', document.body.getAttribute('data-page'));
+            console.log('Body classes:', document.body.className);
+        </script>
+    </div>
+</body>
+</html>
