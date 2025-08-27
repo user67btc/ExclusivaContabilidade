@@ -1,0 +1,192 @@
+/* ===== SOLUÇÃO NUCLEAR FINAL - CSS MÁXIMA ESPECIFICIDADE ===== */
+/* ForceStyles.js falhou - usando CSS com força máxima */
+
+/* FORÇA NUCLEAR GLOBAL - APLICAÇÃO IMEDIATA */
+html body div#__next * {
+  /* Reset de especificidade máxima */
+}
+
+/* FOOTER - FORÇA TEXTO BRANCO ABSOLUTA */
+html body div#__next .footer,
+html body div#__next .footer *,
+html body div#__next .footer h3,
+html body div#__next .footer h4,
+html body div#__next .footer p,
+html body div#__next .footer a,
+html body div#__next .footer li,
+html body div#__next .footer span,
+html body div#__next .links-section,
+html body div#__next .links-section *,
+html body div#__next .links-section h3,
+html body div#__next .links-section h4,
+html body div#__next .links-section p,
+html body div#__next .links-section a,
+html body div#__next .links-section li,
+html body div#__next .quick-links,
+html body div#__next .quick-links *,
+html body div#__next .quick-links h3,
+html body div#__next .quick-links h4,
+html body div#__next .quick-links p,
+html body div#__next .quick-links a,
+html body div#__next .quick-links li {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* BADGES - FORÇA FUNDO BRANCO ABSOLUTA */
+html body div#__next .badge,
+html body div#__next .specialization-badge,
+html body div#__next .section-badge,
+html body div#__next *[class*="badge"],
+html body div#__next *[class*="specialization"],
+html body div#__next .services-section .badge,
+html body div#__next .sectors-section .badge,
+html body div#__next .hero-section .badge,
+html body div#__next .page-hero .badge {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #1e3a8a !important;
+  font-weight: 800 !important;
+  text-shadow: none !important;
+  border: 2px solid #ffffff !important;
+  padding: 8px 16px !important;
+  border-radius: 20px !important;
+  font-size: 0.8rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* HERO SECTIONS - FORÇA GRADIENTE AZUL */
+html body div#__next .page-hero,
+html body div#__next .hero-section,
+html body div#__next .content-hero,
+html body div#__next .services-hero,
+html body div#__next .about-hero,
+html body div#__next *[class*="hero"] {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+  background-color: #1e3a8a !important;
+  color: #ffffff !important;
+  padding: 60px 0 !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+/* HERO SECTIONS - FORÇA TEXTO BRANCO EM FILHOS */
+html body div#__next .page-hero *,
+html body div#__next .hero-section *,
+html body div#__next .content-hero *,
+html body div#__next .services-hero *,
+html body div#__next .about-hero *,
+html body div#__next *[class*="hero"] * {
+  color: #ffffff !important;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* SEÇÕES HOMEPAGE - FORÇA FUNDO AZUL */
+html body div#__next .services-section,
+html body div#__next .sectors-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+  background-color: #1e3a8a !important;
+  color: #ffffff !important;
+  padding: 80px 0 !important;
+}
+
+/* SEÇÕES HOMEPAGE - FORÇA TEXTO BRANCO EM FILHOS */
+html body div#__next .services-section *,
+html body div#__next .sectors-section * {
+  color: #ffffff !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* TÍTULOS - FORÇA MÁXIMA */
+html body div#__next .services-section h2,
+html body div#__next .sectors-section h2,
+html body div#__next .page-hero h1,
+html body div#__next .hero-section h1 {
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 24px !important;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8) !important;
+  color: #ffffff !important;
+}
+
+/* TEXTOS PROBLEMÁTICOS ESPECÍFICOS */
+html body div#__next .contact-info,
+html body div#__next .contact-info *,
+html body div#__next .services-list,
+html body div#__next .services-list *,
+html body div#__next .sectors-list,
+html body div#__next .sectors-list * {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* FORCE OVERRIDE PARA ELEMENTOS ESPECÍFICOS DOS SCREENSHOTS */
+html body div#__next *[class*="links"],
+html body div#__next *[class*="quick"],
+html body div#__next *[class*="footer"],
+html body div#__next *[class*="services"],
+html body div#__next *[class*="contato"] {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* MOBILE ESPECÍFICO - FORÇA MÁXIMA */
+@media (max-width: 768px) {
+  html body div#__next .footer,
+  html body div#__next .footer *,
+  html body div#__next .links-section,
+  html body div#__next .links-section *,
+  html body div#__next .quick-links,
+  html body div#__next .quick-links * {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.9) !important;
+    font-size: 1.1rem !important;
+  }
+  
+  html body div#__next .badge,
+  html body div#__next .specialization-badge,
+  html body div#__next .section-badge {
+    background: #ffffff !important;
+    color: #1e3a8a !important;
+    font-weight: 900 !important;
+    padding: 10px 20px !important;
+    border-radius: 25px !important;
+    font-size: 0.9rem !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+  }
+}
+
+/* FORÇA APLICAÇÃO IMEDIATA - SEM HOVER OU ESTADOS */
+html body div#__next .footer:hover,
+html body div#__next .footer:focus,
+html body div#__next .footer:active,
+html body div#__next .footer *:hover,
+html body div#__next .footer *:focus,
+html body div#__next .footer *:active {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* OVERRIDE ABSOLUTO PARA QUALQUER CONFLITO */
+html body div#__next * {
+  /* Força aplicação de estilos críticos */
+}
+
+html body div#__next .footer * {
+  color: #ffffff !important;
+}
+
+html body div#__next .badge {
+  background: #ffffff !important;
+  color: #1e3a8a !important;
+}
