@@ -1,0 +1,18 @@
+/* FORÇA ABSOLUTA - html body div#__next */
+html body div#__next .footer,
+html body div#__next .footer *,
+html body div#__next .links-section *,
+html body div#__next .quick-links * {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+html body div#__next .badge,
+html body div#__next .specialization-badge {
+  background: #ffffff !important;
+  color: #1e3a8a !important;
+  font-weight: 800 !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
