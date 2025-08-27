@@ -25,21 +25,9 @@ const nextConfig = {
   },
   // Disable CSS optimization that might cache styles
   optimizeFonts: false,
-  // Force fresh CSS compilation
+  // Simplified webpack config to avoid build errors
   webpack: (config, { dev }) => {
-    if (!dev && config.optimization && config.optimization.splitChunks) {
-      // Disable CSS caching in production - only if splitChunks exists
-      if (!config.optimization.splitChunks.cacheGroups) {
-        config.optimization.splitChunks.cacheGroups = {};
-      }
-      config.optimization.splitChunks.cacheGroups.styles = {
-        name: 'styles',
-        test: /\.(css|scss|sass)$/,
-        chunks: 'all',
-        enforce: true,
-        reuseExistingChunk: false,
-      };
-    }
+    // Only set alias - remove problematic splitChunks config
     config.resolve.alias['@'] = path.resolve(__dirname, 'src');
     return config;
   },
