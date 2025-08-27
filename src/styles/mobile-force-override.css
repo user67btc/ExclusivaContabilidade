@@ -2,6 +2,75 @@
 /* Este arquivo força a aplicação dos estilos mobile sobrescrevendo todos os outros */
 
 @media (max-width: 768px) {
+  
+  /* CORREÇÕES CRÍTICAS PARA TEXTOS ILEGÍVEIS NO MOBILE */
+  
+  /* Links Rápidos e Footer - Força máxima para texto branco */
+  html body .footer *,
+  html body .links-section *,
+  html body .quick-links *,
+  html body .footer-content *,
+  html body .footer a,
+  html body .footer p,
+  html body .footer h3,
+  html body .footer h4,
+  html body .footer li,
+  html body .links-section a,
+  html body .links-section p,
+  html body .links-section h3,
+  html body .links-section h4,
+  html body .links-section li {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  /* Badge Especialização - Força fundo branco sólido */
+  html body .specialization-badge,
+  html body .badge,
+  html body .section-badge,
+  html body *[class*="badge"],
+  html body *[class*="specialization"],
+  html body *[data-badge],
+  html body .services-section .badge,
+  html body .sectors-section .badge {
+    background: #ffffff !important;
+    color: #1e3a8a !important;
+    font-weight: 800 !important;
+    text-shadow: none !important;
+    border: 2px solid #ffffff !important;
+    padding: 6px 12px !important;
+    border-radius: 15px !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+  }
+  
+  /* Cards de Benefícios - Força texto branco em fundos escuros */
+  html body .benefit-card *,
+  html body .feature-card *,
+  html body .advantage-card *,
+  html body .contact-card *,
+  html body .info-card *,
+  html body .dark-card *,
+  html body .blue-card *,
+  html body .gradient-card * {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+  }
+  
+  /* Ícones de benefícios - Força visibilidade */
+  html body .benefit-icon,
+  html body .feature-icon,
+  html body .contact-icon,
+  html body .info-icon {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 50% !important;
+    padding: 8px !important;
+    margin-bottom: 10px !important;
+  }
   /* FORÇA GRID 1FR PARA SETORES - APENAS HOMEPAGE */
   html body.home-page div.sectors-section div.container div.sectors-grid,
   html body.home-page div.sectors-section div.sectors-grid,
@@ -660,57 +729,60 @@
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
   }
   
-  /* CORREÇÕES ESPECÍFICAS PARA FOOTER E LINKS RÁPIDOS */
-  html body .footer,
-  html body .footer-section,
-  html body .links-section {
-    background: #1a1a1a !important;
-    color: #ffffff !important;
-    padding: 40px 0 !important;
-  }
-  
-  html body .footer h3,
-  html body .footer h4,
-  html body .footer .footer-title,
-  html body .links-section h3,
-  html body .links-section h4 {
-    color: #ffffff !important;
-    font-weight: 700 !important;
-    font-size: 1.2rem !important;
-    margin-bottom: 20px !important;
-    text-shadow: none !important;
-  }
-  
-  html body .footer p,
-  html body .footer a,
-  html body .footer li,
-  html body .links-section p,
-  html body .links-section a,
-  html body .links-section li {
-    color: #e0e0e0 !important;
-    font-size: 0.95rem !important;
-    line-height: 1.6 !important;
-    text-decoration: none !important;
-    transition: color 0.3s ease !important;
-  }
-  
-  html body .footer a:hover,
-  html body .links-section a:hover {
-    color: #ffffff !important;
-    text-decoration: underline !important;
-  }
-  
-  html body .footer ul,
-  html body .links-section ul {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  
-  html body .footer ul li,
-  html body .links-section ul li {
-    margin-bottom: 8px !important;
-    padding-left: 0 !important;
+  /* CORREÇÕES ESPECÍFICAS PARA FOOTER E LINKS RÁPIDOS - MOBILE */
+  @media (max-width: 768px) {
+    html body .footer,
+    html body .footer-section,
+    html body .links-section {
+      background: #1a1a1a !important;
+      color: #ffffff !important;
+      padding: 30px 0 !important;
+    }
+    
+    html body .footer h3,
+    html body .footer h4,
+    html body .footer .footer-title,
+    html body .links-section h3,
+    html body .links-section h4 {
+      color: #ffffff !important;
+      font-weight: 700 !important;
+      font-size: 1.1rem !important;
+      margin-bottom: 15px !important;
+      text-shadow: none !important;
+    }
+    
+    html body .footer p,
+    html body .footer a,
+    html body .footer li,
+    html body .links-section p,
+    html body .links-section a,
+    html body .links-section li {
+      color: #ffffff !important;
+      font-size: 0.9rem !important;
+      line-height: 1.5 !important;
+      text-decoration: none !important;
+      transition: color 0.3s ease !important;
+      font-weight: 500 !important;
+    }
+    
+    html body .footer a:hover,
+    html body .links-section a:hover {
+      color: #e0e0e0 !important;
+      text-decoration: underline !important;
+    }
+    
+    html body .footer ul,
+    html body .links-section ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    
+    html body .footer ul li,
+    html body .links-section ul li {
+      margin-bottom: 8px !important;
+      padding-left: 0 !important;
+    }
   }
   
   /* CORREÇÕES DE CONTRASTE PARA TEXTOS EM DESTAQUE */
@@ -935,15 +1007,38 @@
   
   /* FORÇA MÁXIMA PARA BADGE ESPECIALIZAÇÃO */
   html body .specialization-badge,
-  html body .section-badge,
   html body *[class*="badge"],
-  html body *[class*="specialization"] {
+  html body *[class*="specialization"],
+  html body .badge,
+  html body .specialization-badge,
+  html body .section-badge {
     background: rgba(255, 255, 255, 0.9) !important;
     color: #1e3a8a !important;
     font-weight: 800 !important;
     text-shadow: none !important;
     border: 2px solid #ffffff !important;
     backdrop-filter: blur(15px) !important;
+  }
+  
+  /* CORREÇÕES ESPECÍFICAS PARA BADGES E ESPECIALIZAÇÃO - MOBILE */
+  @media (max-width: 768px) {
+    html body *[class*="badge"],
+    html body *[class*="specialization"],
+    html body .badge,
+    html body .specialization-badge,
+    html body .section-badge {
+      background: #ffffff !important;
+      color: #1e3a8a !important;
+      font-weight: 800 !important;
+      text-shadow: none !important;
+      border: 2px solid #ffffff !important;
+      backdrop-filter: blur(15px) !important;
+      padding: 8px 16px !important;
+      border-radius: 20px !important;
+      font-size: 0.8rem !important;
+      text-transform: uppercase !important;
+      letter-spacing: 1px !important;
+    }
   }
   
   /* CORREÇÕES ESPECÍFICAS PARA BOTÕES COM ÍCONES - MOBILE */
