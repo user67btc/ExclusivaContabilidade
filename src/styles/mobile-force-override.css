@@ -3,6 +3,88 @@
 
 @media (max-width: 768px) {
   
+  /* RESET COMPLETO - FORÇA MÁXIMA ESPECIFICIDADE */
+  
+  /* PADRONIZAÇÃO GLOBAL DE TODAS AS PÁGINAS */
+  html body .page-hero,
+  html body[data-page="sobre"] .page-hero,
+  html body[data-page="blog"] .page-hero,
+  html body[data-page="faq"] .page-hero,
+  html body[data-page="contato"] .page-hero,
+  html body[data-page="servicos"] .page-hero,
+  html body .hero-section,
+  html body .content-hero,
+  html body .services-hero,
+  html body .about-hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+    color: #ffffff !important;
+    padding: 50px 0 !important;
+    text-align: center !important;
+    margin: 0 !important;
+  }
+  
+  html body .page-hero *,
+  html body[data-page="sobre"] .page-hero *,
+  html body[data-page="blog"] .page-hero *,
+  html body[data-page="faq"] .page-hero *,
+  html body[data-page="contato"] .page-hero *,
+  html body[data-page="servicos"] .page-hero *,
+  html body .hero-section *,
+  html body .content-hero *,
+  html body .services-hero *,
+  html body .about-hero * {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  html body .page-hero h1,
+  html body[data-page="sobre"] .page-hero h1,
+  html body[data-page="blog"] .page-hero h1,
+  html body[data-page="faq"] .page-hero h1,
+  html body[data-page="contato"] .page-hero h1,
+  html body[data-page="servicos"] .page-hero h1,
+  html body .hero-section h1,
+  html body .content-hero h1,
+  html body .services-hero h1,
+  html body .about-hero h1 {
+    font-size: 1.8rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 15px !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* SEÇÕES DE CONTEÚDO PADRONIZADAS */
+  html body .content-section,
+  html body[data-page="sobre"] .content-section,
+  html body[data-page="blog"] .content-section,
+  html body[data-page="faq"] .content-section,
+  html body[data-page="contato"] .content-section,
+  html body[data-page="servicos"] .content-section,
+  html body .page-content,
+  html body .main-content {
+    padding: 40px 0 !important;
+    background: #f8fafc !important;
+  }
+  
+  html body .content-card,
+  html body[data-page="sobre"] .content-card,
+  html body[data-page="blog"] .content-card,
+  html body[data-page="faq"] .content-card,
+  html body[data-page="contato"] .content-card,
+  html body[data-page="servicos"] .content-card,
+  html body .card,
+  html body .info-card,
+  html body .feature-card {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+    margin-bottom: 20px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  
   /* CORREÇÕES CRÍTICAS PARA TEXTOS ILEGÍVEIS NO MOBILE */
   
   /* Links Rápidos e Footer - Força máxima para texto branco */
@@ -70,6 +152,28 @@
     border-radius: 50% !important;
     padding: 8px !important;
     margin-bottom: 10px !important;
+  }
+  
+  /* SEÇÕES HOMEPAGE - FORÇA APLICAÇÃO */
+  html body .services-section,
+  html body .sectors-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+    color: #ffffff !important;
+    padding: 40px 0 !important;
+  }
+  
+  html body .services-section *,
+  html body .sectors-section * {
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+  }
+  
+  html body .services-section h2,
+  html body .sectors-section h2 {
+    font-size: 1.8rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 15px !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
   }
   /* FORÇA GRID 1FR PARA SETORES - APENAS HOMEPAGE */
   html body.home-page div.sectors-section div.container div.sectors-grid,
@@ -729,61 +833,6 @@
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
   }
   
-  /* CORREÇÕES ESPECÍFICAS PARA FOOTER E LINKS RÁPIDOS - MOBILE */
-  @media (max-width: 768px) {
-    html body .footer,
-    html body .footer-section,
-    html body .links-section {
-      background: #1a1a1a !important;
-      color: #ffffff !important;
-      padding: 30px 0 !important;
-    }
-    
-    html body .footer h3,
-    html body .footer h4,
-    html body .footer .footer-title,
-    html body .links-section h3,
-    html body .links-section h4 {
-      color: #ffffff !important;
-      font-weight: 700 !important;
-      font-size: 1.1rem !important;
-      margin-bottom: 15px !important;
-      text-shadow: none !important;
-    }
-    
-    html body .footer p,
-    html body .footer a,
-    html body .footer li,
-    html body .links-section p,
-    html body .links-section a,
-    html body .links-section li {
-      color: #ffffff !important;
-      font-size: 0.9rem !important;
-      line-height: 1.5 !important;
-      text-decoration: none !important;
-      transition: color 0.3s ease !important;
-      font-weight: 500 !important;
-    }
-    
-    html body .footer a:hover,
-    html body .links-section a:hover {
-      color: #e0e0e0 !important;
-      text-decoration: underline !important;
-    }
-    
-    html body .footer ul,
-    html body .links-section ul {
-      list-style: none !important;
-      padding: 0 !important;
-      margin: 0 !important;
-    }
-    
-    html body .footer ul li,
-    html body .links-section ul li {
-      margin-bottom: 8px !important;
-      padding-left: 0 !important;
-    }
-  }
   
   /* CORREÇÕES DE CONTRASTE PARA TEXTOS EM DESTAQUE */
   html body .highlight-text,
@@ -1005,98 +1054,28 @@
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
   }
   
-  /* FORÇA MÁXIMA PARA BADGE ESPECIALIZAÇÃO */
-  html body .specialization-badge,
-  html body *[class*="badge"],
-  html body *[class*="specialization"],
-  html body .badge,
-  html body .specialization-badge,
-  html body .section-badge {
-    background: rgba(255, 255, 255, 0.9) !important;
-    color: #1e3a8a !important;
-    font-weight: 800 !important;
-    text-shadow: none !important;
-    border: 2px solid #ffffff !important;
-    backdrop-filter: blur(15px) !important;
+  
+  
+  /* BOTÕES COM ÍCONES - FORÇA APLICAÇÃO */
+  html body .btn-pattern i,
+  html body .cta-button i,
+  html body .contact-btn i,
+  html body button i,
+  html body a i {
+    margin-right: 8px !important;
+    vertical-align: middle !important;
   }
   
-  /* CORREÇÕES ESPECÍFICAS PARA BADGES E ESPECIALIZAÇÃO - MOBILE */
-  @media (max-width: 768px) {
-    html body *[class*="badge"],
-    html body *[class*="specialization"],
-    html body .badge,
-    html body .specialization-badge,
-    html body .section-badge {
-      background: #ffffff !important;
-      color: #1e3a8a !important;
-      font-weight: 800 !important;
-      text-shadow: none !important;
-      border: 2px solid #ffffff !important;
-      backdrop-filter: blur(15px) !important;
-      padding: 8px 16px !important;
-      border-radius: 20px !important;
-      font-size: 0.8rem !important;
-      text-transform: uppercase !important;
-      letter-spacing: 1px !important;
-    }
+  html body .btn-pattern,
+  html body .cta-button,
+  html body .contact-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 8px !important;
   }
   
-  /* CORREÇÕES ESPECÍFICAS PARA BOTÕES COM ÍCONES - MOBILE */
-  @media (max-width: 768px) {
-    html body .btn-pattern i,
-    html body .cta-button i,
-    html body .contact-btn i,
-    html body button i,
-    html body a i {
-      margin-right: 8px !important;
-      vertical-align: middle !important;
-    }
-    
-    html body .btn-pattern,
-    html body .cta-button,
-    html body .contact-btn {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      text-align: center !important;
-      gap: 8px !important;
-    }
-  }
-  
-  /* FORÇA MÁXIMA PARA SEÇÕES PROBLEMÁTICAS - MOBILE */
-  @media (max-width: 768px) {
-    html body .home-page .services-section,
-    html body .home-page .sectors-section,
-    html body .services-section,
-    html body .sectors-section {
-      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
-      padding: 40px 0 !important;
-    }
-    
-    html body .home-page .services-section h2,
-    html body .home-page .sectors-section h2,
-    html body .services-section h2,
-    html body .sectors-section h2 {
-      color: #ffffff !important;
-      font-weight: 800 !important;
-      font-size: 1.8rem !important;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7) !important;
-      margin-bottom: 15px !important;
-      line-height: 1.2 !important;
-    }
-    
-    html body .home-page .services-section p,
-    html body .home-page .sectors-section p,
-    html body .services-section p,
-    html body .sectors-section p {
-      color: #e8f4fd !important;
-      font-weight: 500 !important;
-      font-size: 1rem !important;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
-      line-height: 1.5 !important;
-      padding: 0 20px !important;
-    }
-  }
   
   /* CORREÇÕES ESPECÍFICAS PARA TEXTOS EM FUNDOS AZUIS ESCUROS */
   html body .services-section .section-description,
@@ -1144,16 +1123,6 @@
   }
   
   /* PADRONIZAÇÃO MOBILE PARA TODAS AS PÁGINAS */
-  @media (max-width: 768px) {
-    html body[data-page="sobre"] .page-hero,
-    html body[data-page="blog"] .page-hero,
-    html body[data-page="faq"] .page-hero,
-    html body[data-page="contato"] .page-hero {
-      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
-      color: #ffffff !important;
-      padding: 60px 0 40px 0 !important;
-    }
-  }
   
   @media (max-width: 768px) {
     html body[data-page="sobre"] .page-hero *,

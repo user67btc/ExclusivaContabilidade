@@ -6,7 +6,7 @@ import GoogleAnalytics from '../components/analytics/GoogleAnalytics';
 import FacebookPixel from '../components/analytics/FacebookPixel';
 import { Inter } from 'next/font/google';
 
-// Importar estilos globais
+// Importar estilos globais - ORDEM CRÍTICA PARA MOBILE
 import '../styles/globals.css';
 import '../styles/bootstrap.min.css';
 import '../styles/all.min.css';
@@ -15,9 +15,6 @@ import '../styles/components.css';
 import '../styles/cards.css';
 import '../styles/forms.css';
 import '../styles/buttons.css';
-import '../styles/responsive.css';
-import '../styles/mobile-responsive-2024.css';
-import '../styles/mobile-force-override.css';
 import '../styles/hero-breadcrumb.css';
 import '../styles/section-spacing-fix.css';
 import '../styles/global-page-patterns.css';
@@ -28,6 +25,7 @@ import '../styles/contact-cta.css';
 import '../styles/whatsapp-float.css';
 import '../styles/scroll-top.css';
 import '../styles/hero-2025-trends.css';
+// MOBILE STYLES - DEVEM VIR POR ÚLTIMO PARA SOBRESCREVER
 import '../styles/mobile-responsive-2024.css';
 import '../styles/mobile-force-override.css';
 
