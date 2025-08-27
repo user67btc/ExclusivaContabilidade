@@ -1,10 +1,10 @@
 /* ===== FORÇA BRUTA PARA MOBILE - ESPECIFICIDADE MÁXIMA ===== */
 /* Este arquivo força a aplicação dos estilos mobile sobrescrevendo todos os outros */
 
-/* DESCOBERTA: O PROBLEMA É CACHE DO VERCEL/CDN */
-/* Aplicando timestamp único para forçar invalidação de cache */
+/* PROBLEMA CONFIRMADO: VERCEL NÃO ESTÁ APLICANDO CSS */
+/* Screenshots confirmam que NENHUMA correção foi aplicada */
 
-/* v2.0.1 - FORÇA APLICAÇÃO GLOBAL PARA DESKTOP E MOBILE */
+/* v3.0.0 - FORÇA NUCLEAR TOTAL - INLINE STYLES SIMULATION */
 html body .page-hero,
 html body[data-page="sobre"] .page-hero,
 html body[data-page="blog"] .page-hero,

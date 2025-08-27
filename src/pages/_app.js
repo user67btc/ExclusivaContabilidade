@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { Inter } from 'next/font/google';
 import { AuthProvider } from '../contexts/AuthContext';
 import { NotificationProvider } from '../contexts/NotificationContext';
 import GoogleAnalytics from '../components/analytics/GoogleAnalytics';
 import FacebookPixel from '../components/analytics/FacebookPixel';
-import { Inter } from 'next/font/google';
+import ForceStyles from '../components/ForceStyles';
 
-// Importar estilos globais - ORDEM CRÍTICA PARA MOBILE
+// CSS imports - ORDEM CRÍTICA: mobile por último para sobrescrever
 import '../styles/globals.css';
 import '../styles/bootstrap.min.css';
 import '../styles/all.min.css';
@@ -37,6 +38,9 @@ function MyApp({ Component, pageProps }) {
     <div className={inter.className}>
       <NotificationProvider>
         <AuthProvider>
+          {/* FORÇA NUCLEAR: Componente JavaScript para aplicar estilos inline */}
+          <ForceStyles />
+          
           {/* Analytics Components - Carregam apenas se as variáveis estiverem configuradas */}
           <GoogleAnalytics />
           <FacebookPixel />

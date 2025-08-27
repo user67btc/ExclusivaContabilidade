@@ -2,7 +2,7 @@
 const path = require('path');
 
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   swcMinify: true,
   eslint: {
     ignoreDuringBuilds: true,
@@ -11,11 +11,32 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ['localhost', 'exclusivacontabilidade.com.br'],
+    domains: ['localhost'],
     unoptimized: true
   },
   trailingSlash: true,
-  webpack: (config) => {
+  generateBuildId: async () => {
+    // Force new build ID to invalidate cache
+    return `build-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
+  },
+  // Force CSS regeneration
+  experimental: {
+    forceSwcTransforms: true,
+  },
+  // Disable CSS optimization that might cache styles
+  optimizeFonts: false,
+  // Force fresh CSS compilation
+  webpack: (config, { dev }) => {
+    if (!dev) {
+      // Disable CSS caching in production
+      config.optimization.splitChunks.cacheGroups.styles = {
+        name: 'styles',
+        test: /\.(css|scss|sass)$/,
+        chunks: 'all',
+        enforce: true,
+        reuseExistingChunk: false,
+      };
+    }
     config.resolve.alias['@'] = path.resolve(__dirname, 'src');
     return config;
   },
