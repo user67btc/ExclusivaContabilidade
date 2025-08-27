@@ -24,6 +24,9 @@ import '../styles/hero-2025-trends.css';
 // MOBILE STYLES - DEVEM VIR POR ÚLTIMO PARA SOBRESCREVER
 import '../styles/mobile-responsive-2024.css';
 import '../styles/mobile-force-override.css';
+// SOLUÇÃO NUCLEAR FINAL - CSS MÁXIMA ESPECIFICIDADE
+import '../styles/nuclear-mobile-fix.css';
+
 
 // Fonte Inter via next/font (melhor performance e estabilidade)
 const inter = Inter({ subsets: ['latin'] });
