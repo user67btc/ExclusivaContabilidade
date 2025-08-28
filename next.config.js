@@ -27,16 +27,6 @@ const nextConfig = {
   optimizeFonts: false,
   // Force fresh CSS compilation
   webpack: (config, { dev }) => {
-    if (!dev) {
-      // Disable CSS caching in production
-      config.optimization.splitChunks.cacheGroups.styles = {
-        name: 'styles',
-        test: /\.(css|scss|sass)$/,
-        chunks: 'all',
-        enforce: true,
-        reuseExistingChunk: false,
-      };
-    }
     config.resolve.alias['@'] = path.resolve(__dirname, 'src');
     return config;
   },
