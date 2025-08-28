@@ -1,16 +1,24 @@
-/* ===== CORREÇÃO MOBILE-ONLY - PRESERVA DESKTOP ===== */
-/* Aplicação restrita apenas para mobile - não afeta desktop */
+/* ===== CORREÇÃO MOBILE-ONLY - MÁXIMA ESPECIFICIDADE ===== */
+/* Aplicação restrita apenas para mobile - sobreescreve footer.css */
 
-/* MOBILE-ONLY: FOOTER - FORÇA TEXTO BRANCO */
+/* MOBILE-ONLY: FOOTER - FORÇA TEXTO BRANCO - ESPECIFICIDADE MÁXIMA */
 @media (max-width: 768px) {
-  html body div#__next .footer,
-  html body div#__next .footer *,
-  html body div#__next .footer h3,
-  html body div#__next .footer h4,
-  html body div#__next .footer p,
-  html body div#__next .footer a,
-  html body div#__next .footer li,
-  html body div#__next .footer span,
+  html body div#__next div.site-footer .footer,
+  html body div#__next div.site-footer .footer *,
+  html body div#__next div.site-footer .footer h3,
+  html body div#__next div.site-footer .footer h4,
+  html body div#__next div.site-footer .footer p,
+  html body div#__next div.site-footer .footer a,
+  html body div#__next div.site-footer .footer li,
+  html body div#__next div.site-footer .footer span,
+  html body div#__next div.site-footer .footer-links,
+  html body div#__next div.site-footer .footer-links *,
+  html body div#__next div.site-footer .footer-links a,
+  html body div#__next div.site-footer .footer-widget,
+  html body div#__next div.site-footer .footer-widget *,
+  html body div#__next div.site-footer .footer-widget h4,
+  html body div#__next div.site-footer .footer-widget p,
+  html body div#__next div.site-footer .footer-widget a,
   html body div#__next .links-section,
   html body div#__next .links-section *,
   html body div#__next .links-section h3,
