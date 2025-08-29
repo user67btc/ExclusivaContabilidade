@@ -102,6 +102,32 @@
   }
 }
 
+/* MOBILE-ONLY: CORREÇÃO ESPECÍFICA PARA SEÇÕES COM FUNDO BRANCO */
+@media (max-width: 768px) {
+  html body div#__next .white-section,
+  html body div#__next .content-section,
+  html body div#__next .providers-section,
+  html body div#__next .services-grid,
+  html body div#__next .cards-container,
+  html body div#__next *[style*="background: white"],
+  html body div#__next *[style*="background-color: white"],
+  html body div#__next *[style*="background: #fff"],
+  html body div#__next *[style*="background-color: #fff"] {
+    background: #f8fafc !important;
+    background-color: #f8fafc !important;
+    padding: 40px 20px !important;
+  }
+  
+  html body div#__next .white-section *,
+  html body div#__next .content-section *,
+  html body div#__next .providers-section *,
+  html body div#__next .services-grid *,
+  html body div#__next .cards-container * {
+    color: #1a202c !important;
+    text-shadow: none !important;
+  }
+}
+
 /* MOBILE-ONLY: TEXTOS PROBLEMÁTICOS ESPECÍFICOS */
 @media (max-width: 768px) {
   html body div#__next .contact-info,
@@ -113,5 +139,121 @@
     color: #ffffff !important;
     font-weight: 600 !important;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8) !important;
+  }
+}
+
+/* MOBILE-ONLY: CORREÇÃO CRÍTICA PARA CARDS - FORÇA TEXTO ESCURO */
+@media (max-width: 768px) {
+  html body div#__next .card,
+  html body div#__next .service-card,
+  html body div#__next .provider-card,
+  html body div#__next .sector-card,
+  html body div#__next .content-card,
+  html body div#__next *[class*="card"],
+  html body div#__next *[class*="Card"] {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #1a202c !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    margin: 16px 0 !important;
+  }
+  
+  html body div#__next .card *,
+  html body div#__next .service-card *,
+  html body div#__next .provider-card *,
+  html body div#__next .sector-card *,
+  html body div#__next .content-card *,
+  html body div#__next *[class*="card"] *,
+  html body div#__next *[class*="Card"] * {
+    color: #1a202c !important;
+    text-shadow: none !important;
+  }
+  
+  html body div#__next .card h1,
+  html body div#__next .card h2,
+  html body div#__next .card h3,
+  html body div#__next .card h4,
+  html body div#__next .card h5,
+  html body div#__next .card h6,
+  html body div#__next .service-card h1,
+  html body div#__next .service-card h2,
+  html body div#__next .service-card h3,
+  html body div#__next .service-card h4,
+  html body div#__next .service-card h5,
+  html body div#__next .service-card h6,
+  html body div#__next .provider-card h1,
+  html body div#__next .provider-card h2,
+  html body div#__next .provider-card h3,
+  html body div#__next .provider-card h4,
+  html body div#__next .provider-card h5,
+  html body div#__next .provider-card h6,
+  html body div#__next *[class*="card"] h1,
+  html body div#__next *[class*="card"] h2,
+  html body div#__next *[class*="card"] h3,
+  html body div#__next *[class*="card"] h4,
+  html body div#__next *[class*="card"] h5,
+  html body div#__next *[class*="card"] h6,
+  html body div#__next *[class*="Card"] h1,
+  html body div#__next *[class*="Card"] h2,
+  html body div#__next *[class*="Card"] h3,
+  html body div#__next *[class*="Card"] h4,
+  html body div#__next *[class*="Card"] h5,
+  html body div#__next *[class*="Card"] h6 {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    margin-bottom: 12px !important;
+  }
+  
+  html body div#__next .card p,
+  html body div#__next .service-card p,
+  html body div#__next .provider-card p,
+  html body div#__next .sector-card p,
+  html body div#__next .content-card p,
+  html body div#__next *[class*="card"] p,
+  html body div#__next *[class*="Card"] p {
+    color: #4a5568 !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+    line-height: 1.6 !important;
+    margin-bottom: 16px !important;
+  }
+  
+  html body div#__next .card ul,
+  html body div#__next .card li,
+  html body div#__next .service-card ul,
+  html body div#__next .service-card li,
+  html body div#__next .provider-card ul,
+  html body div#__next .provider-card li,
+  html body div#__next *[class*="card"] ul,
+  html body div#__next *[class*="card"] li,
+  html body div#__next *[class*="Card"] ul,
+  html body div#__next *[class*="Card"] li {
+    color: #4a5568 !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+  }
+  
+  html body div#__next .card .btn,
+  html body div#__next .card button,
+  html body div#__next .service-card .btn,
+  html body div#__next .service-card button,
+  html body div#__next .provider-card .btn,
+  html body div#__next .provider-card button,
+  html body div#__next *[class*="card"] .btn,
+  html body div#__next *[class*="card"] button,
+  html body div#__next *[class*="Card"] .btn,
+  html body div#__next *[class*="Card"] button {
+    background: #1e40af !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    text-shadow: none !important;
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.3) !important;
   }
 }
