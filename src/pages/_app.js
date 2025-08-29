@@ -7,8 +7,9 @@ import GoogleAnalytics from '../components/analytics/GoogleAnalytics';
 import FacebookPixel from '../components/analytics/FacebookPixel';
 import ForceStyles from '../components/ForceStyles';
 
-// CSS imports - ORDEM CRÍTICA: mobile por último para sobrescrever
+// CSS imports - ORDEM CRÍTICA: footer.css primeiro, mobile nuclear por último
 import '../styles/globals.css';
+import '../styles/footer.css';
 import '../styles/cards.css';
 import '../styles/forms.css';
 import '../styles/hero-breadcrumb.css';
@@ -24,7 +25,7 @@ import '../styles/hero-2025-trends.css';
 // MOBILE STYLES - DEVEM VIR POR ÚLTIMO PARA SOBRESCREVER
 import '../styles/mobile-responsive-2024.css';
 import '../styles/mobile-force-override.css';
-// SOLUÇÃO NUCLEAR FINAL - CSS MÁXIMA ESPECIFICIDADE
+// SOLUÇÃO NUCLEAR FINAL - CSS MÁXIMA ESPECIFICIDADE - SEMPRE POR ÚLTIMO
 import '../styles/nuclear-mobile-fix.css';
 
 // Fonte Inter via next/font (melhor performance e estabilidade)

@@ -2,94 +2,128 @@ import { useEffect } from 'react';
 
 const ForceStyles = () => {
   useEffect(() => {
-    // FORÇA NUCLEAR: Aplicar estilos via JavaScript inline
     const applyForceStyles = () => {
-      // Hero sections - FORÇA GRADIENTE AZUL
-      const heroSelectors = [
-        '.page-hero',
-        '.hero-section', 
-        '.content-hero',
-        '.services-hero',
-        '.about-hero'
+      // MOBILE ONLY - Aplica apenas em telas <= 768px
+      if (window.innerWidth > 768) return;
+
+      // Footer - FORÇA TEXTO BRANCO ABSOLUTA - TODOS OS SELETORES POSSÍVEIS
+      const footerSelectors = [
+        '.footer', '.footer *', '.site-footer', '.site-footer *',
+        '.footer-widget', '.footer-widget *', '.footer-links', '.footer-links *',
+        '.footer-contact', '.footer-contact *', '.links-section', '.links-section *',
+        '.quick-links', '.quick-links *', '.footer-bottom', '.footer-bottom *',
+        '[class*="footer"]', '[class*="footer"] *', '[class*="links"]', '[class*="links"] *'
       ];
       
-      heroSelectors.forEach(selector => {
-        const elements = document.querySelectorAll(selector);
-        elements.forEach(el => {
-          el.style.background = 'linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%)';
-          el.style.color = '#ffffff';
-          el.style.padding = '50px 0';
-          el.style.textAlign = 'center';
-          el.style.margin = '0';
-          
-          // Força texto branco em todos os filhos
-          const children = el.querySelectorAll('*');
-          children.forEach(child => {
-            child.style.color = '#ffffff';
-            child.style.textShadow = '0 2px 4px rgba(0, 0, 0, 0.5)';
+      footerSelectors.forEach(selector => {
+        try {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach(el => {
+            if (el && el.style) {
+              el.style.setProperty('color', '#ffffff', 'important');
+              el.style.setProperty('font-weight', '600', 'important');
+              el.style.setProperty('text-shadow', '0 2px 4px rgba(0, 0, 0, 0.8)', 'important');
+              el.style.setProperty('opacity', '1', 'important');
+              el.style.setProperty('visibility', 'visible', 'important');
+            }
           });
-        });
+        } catch (e) {
+          console.log('Seletor inválido:', selector);
+        }
       });
 
-      // Footer - FORÇA TEXTO BRANCO
-      const footerElements = document.querySelectorAll('.footer, .footer *, .links-section, .links-section *');
-      footerElements.forEach(el => {
-        el.style.color = '#ffffff';
-        el.style.fontWeight = '500';
-        el.style.textShadow = '0 1px 2px rgba(0, 0, 0, 0.3)';
-      });
-
-      // Badges - FORÇA FUNDO BRANCO
+      // Badges - FORÇA FUNDO BRANCO ABSOLUTA
       const badgeSelectors = [
-        '.specialization-badge',
-        '.badge', 
-        '.section-badge',
-        '[class*="badge"]',
-        '[class*="specialization"]'
+        '.badge', '.specialization-badge', '.section-badge',
+        '[class*="badge"]', '[class*="specialization"]', '[class*="section-badge"]'
       ];
       
       badgeSelectors.forEach(selector => {
-        const elements = document.querySelectorAll(selector);
-        elements.forEach(el => {
-          el.style.background = '#ffffff';
-          el.style.color = '#1e3a8a';
-          el.style.fontWeight = '800';
-          el.style.textShadow = 'none';
-          el.style.border = '2px solid #ffffff';
-          el.style.padding = '6px 12px';
-          el.style.borderRadius = '15px';
-          el.style.fontSize = '0.75rem';
-          el.style.textTransform = 'uppercase';
-          el.style.letterSpacing = '1px';
-        });
+        try {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach(el => {
+            if (el && el.style) {
+              el.style.setProperty('background', '#ffffff', 'important');
+              el.style.setProperty('background-color', '#ffffff', 'important');
+              el.style.setProperty('color', '#1e3a8a', 'important');
+              el.style.setProperty('font-weight', '800', 'important');
+              el.style.setProperty('text-shadow', 'none', 'important');
+              el.style.setProperty('border', '2px solid #ffffff', 'important');
+              el.style.setProperty('padding', '8px 16px', 'important');
+              el.style.setProperty('border-radius', '20px', 'important');
+              el.style.setProperty('box-shadow', '0 2px 8px rgba(0, 0, 0, 0.3)', 'important');
+            }
+          });
+        } catch (e) {
+          console.log('Seletor badge inválido:', selector);
+        }
+      });
+
+      // Hero sections - FORÇA GRADIENTE AZUL
+      const heroSelectors = [
+        '.page-hero', '.hero-section', '.content-hero', '.services-hero', '.about-hero',
+        '[class*="hero"]'
+      ];
+      
+      heroSelectors.forEach(selector => {
+        try {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach(el => {
+            if (el && el.style) {
+              el.style.setProperty('background', 'linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%)', 'important');
+              el.style.setProperty('background-color', '#1e3a8a', 'important');
+              el.style.setProperty('color', '#ffffff', 'important');
+              el.style.setProperty('padding', '60px 0', 'important');
+              el.style.setProperty('text-align', 'center', 'important');
+              
+              const children = el.querySelectorAll('*');
+              children.forEach(child => {
+                if (child && child.style) {
+                  child.style.setProperty('color', '#ffffff', 'important');
+                  child.style.setProperty('text-shadow', '0 2px 6px rgba(0, 0, 0, 0.7)', 'important');
+                }
+              });
+            }
+          });
+        } catch (e) {
+          console.log('Seletor hero inválido:', selector);
+        }
       });
 
       // Seções homepage - FORÇA FUNDO AZUL
-      const sectionElements = document.querySelectorAll('.services-section, .sectors-section');
-      sectionElements.forEach(el => {
-        el.style.background = 'linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%)';
-        el.style.color = '#ffffff';
-        el.style.padding = '60px 0';
-        
-        const children = el.querySelectorAll('*');
-        children.forEach(child => {
-          child.style.color = '#ffffff';
-          child.style.textShadow = '0 1px 3px rgba(0, 0, 0, 0.4)';
-        });
+      const sectionSelectors = ['.services-section', '.sectors-section'];
+      sectionSelectors.forEach(selector => {
+        try {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach(el => {
+            if (el && el.style) {
+              el.style.setProperty('background', 'linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%)', 'important');
+              el.style.setProperty('background-color', '#1e3a8a', 'important');
+              el.style.setProperty('color', '#ffffff', 'important');
+              el.style.setProperty('padding', '80px 0', 'important');
+              
+              const children = el.querySelectorAll('*');
+              children.forEach(child => {
+                if (child && child.style) {
+                  child.style.setProperty('color', '#ffffff', 'important');
+                  child.style.setProperty('text-shadow', '0 1px 4px rgba(0, 0, 0, 0.6)', 'important');
+                }
+              });
+            }
+          });
+        } catch (e) {
+          console.log('Seletor section inválido:', selector);
+        }
       });
 
-      // Textos problemáticos identificados nos screenshots
-      const problemTexts = document.querySelectorAll('.quick-links, .services-list, .contact-info');
-      problemTexts.forEach(el => {
-        el.style.color = '#ffffff';
-        el.style.fontWeight = '600';
-        el.style.textShadow = '0 2px 4px rgba(0, 0, 0, 0.6)';
-      });
+      console.log('ForceStyles aplicado para mobile - largura:', window.innerWidth);
     };
 
     // Aplica imediatamente
     applyForceStyles();
     
+    // Aplica após 500ms, 1s, 2s, 3s para garantir que funcione
+    setTimeout(applyForceStyles, 500);
     // Aplica novamente após 1 segundo (para componentes que carregam depois)
     setTimeout(applyForceStyles, 1000);
     
