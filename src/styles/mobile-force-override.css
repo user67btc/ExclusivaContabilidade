@@ -847,7 +847,7 @@ html body .sectors-section h2 {
   
   html body .sectors-specialized-section .section-subtitle {
     font-size: 1rem !important;
-    color: #64748b !important;
+    color: #1a202c !important;
     line-height: 1.5 !important;
     margin-bottom: 0 !important;
   }
@@ -1027,9 +1027,9 @@ html body .sectors-section h2 {
   }
   
   html body .btn-secondary {
-    background: #718096 !important;
+    background: #1a202c !important;
     color: white !important;
-    box-shadow: 0 4px 12px rgba(113, 128, 150, 0.3) !important;
+    box-shadow: 0 4px 12px rgba(26, 32, 44, 0.3) !important;
   }
   
   /* ALINHAMENTO DE TEXTOS - MELHOR ESTÉTICA */
