@@ -1,10 +1,10 @@
 /* ===== FORÇA BRUTA PARA MOBILE - ESPECIFICIDADE MÁXIMA ===== */
 /* Este arquivo força a aplicação dos estilos mobile sobrescrevendo todos os outros */
 
-/* PROBLEMA CONFIRMADO: VERCEL NÃO ESTÁ APLICANDO CSS */
-/* Screenshots confirmam que NENHUMA correção foi aplicada */
+/* ANÁLISE SCREENSHOTS: Problemas críticos de contraste identificados */
+/* v4.0.0 - CORREÇÕES ESPECÍFICAS BASEADAS EM SCREENSHOTS REAIS */
 
-/* v3.0.0 - FORÇA NUCLEAR TOTAL - INLINE STYLES SIMULATION */
+/* v4.0.0 - FORÇA NUCLEAR TOTAL - INLINE STYLES SIMULATION */
 html body .page-hero,
 html body[data-page="sobre"] .page-hero,
 html body[data-page="blog"] .page-hero,
@@ -112,6 +112,218 @@ html body .sectors-section h2 {
 @media (max-width: 768px) {
   
   /* RESET COMPLETO - FORÇA MÁXIMA ESPECIFICIDADE */
+  /* BASEADO EM ANÁLISE DE SCREENSHOTS MOBILE REAIS */
+  
+  /* CORREÇÃO CRÍTICA: HERO SECTION - TEXTO BRANCO GARANTIDO */
+  html body .hero-section,
+  html body .page-hero,
+  html body .main-hero,
+  html body .content-hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+    color: #ffffff !important;
+    padding: 60px 20px !important;
+    text-align: center !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+  
+  html body .hero-section *,
+  html body .page-hero *,
+  html body .main-hero *,
+  html body .content-hero * {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+    font-weight: 600 !important;
+  }
+  
+  html body .hero-section h1,
+  html body .page-hero h1,
+  html body .main-hero h1,
+  html body .content-hero h1 {
+    color: #ffffff !important;
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7) !important;
+    margin-bottom: 16px !important;
+    line-height: 1.2 !important;
+  }
+  
+  html body .hero-section p,
+  html body .page-hero p,
+  html body .main-hero p,
+  html body .content-hero p {
+    color: #ffffff !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+    opacity: 0.95 !important;
+  }
+  
+  /* CORREÇÃO CRÍTICA: BADGES ESTATÍSTICAS - FUNDO BRANCO SÓLIDO */
+  html body .stats-badge,
+  html body .number-badge,
+  html body .metric-badge,
+  html body .achievement-badge,
+  html body .stats-item,
+  html body .stats-number,
+  html body .stats-container .stats-item,
+  html body .hero-stats .stats-item,
+  html body .hero-section .stats-item {
+    background: #ffffff !important;
+    color: #1e3a8a !important;
+    font-weight: 800 !important;
+    text-shadow: none !important;
+    border: 3px solid #ffffff !important;
+    border-radius: 12px !important;
+    padding: 16px 20px !important;
+    margin: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    backdrop-filter: none !important;
+  }
+  
+  html body .stats-badge *,
+  html body .number-badge *,
+  html body .metric-badge *,
+  html body .achievement-badge *,
+  html body .stats-item *,
+  html body .stats-number *,
+  html body .stats-container .stats-item *,
+  html body .hero-stats .stats-item *,
+  html body .hero-section .stats-item * {
+    color: #1e3a8a !important;
+    font-weight: 800 !important;
+    text-shadow: none !important;
+  }
+  
+  html body .stats-item .number,
+  html body .stats-item .value,
+  html body .stats-badge .number,
+  html body .stats-badge .value {
+    color: #1e3a8a !important;
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+    text-shadow: none !important;
+  }
+  
+  html body .stats-item .label,
+  html body .stats-item .text,
+  html body .stats-badge .label,
+  html body .stats-badge .text {
+    color: #1e3a8a !important;
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    text-shadow: none !important;
+  }
+  
+  /* CORREÇÃO CRÍTICA: SEÇÃO 'NOSSOS SERVIÇOS' - FUNDO AZUL COM TEXTO BRANCO */
+  html body .services-section,
+  html body .our-services,
+  html body .what-we-offer-section,
+  html body .services-overview {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%) !important;
+    color: #ffffff !important;
+    padding: 60px 20px !important;
+    text-align: center !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+  
+  html body .services-section *,
+  html body .our-services *,
+  html body .what-we-offer-section *,
+  html body .services-overview * {
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+  }
+  
+  html body .services-section h2,
+  html body .our-services h2,
+  html body .what-we-offer-section h2,
+  html body .services-overview h2 {
+    color: #ffffff !important;
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+    margin-bottom: 20px !important;
+  }
+  
+  html body .services-section p,
+  html body .our-services p,
+  html body .what-we-offer-section p,
+  html body .services-overview p {
+    color: #ffffff !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+    opacity: 0.95 !important;
+  }
+  
+  html body .services-section .btn,
+  html body .services-section .cta-button,
+  html body .our-services .btn,
+  html body .our-services .cta-button {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.6) !important;
+    font-weight: 800 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+  }
+  
+  /* CORREÇÃO CRÍTICA: CARDS PRESTADORES DE SERVIÇOS - CONTRASTE MELHORADO */
+  html body .service-provider-card,
+  html body .provider-card,
+  html body .professional-card,
+  html body .team-card {
+    background: #ffffff !important;
+    color: #1a202c !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    margin: 16px !important;
+    border: 1px solid rgba(30, 64, 175, 0.1) !important;
+  }
+  
+  html body .service-provider-card h3,
+  html body .provider-card h3,
+  html body .professional-card h3,
+  html body .team-card h3 {
+    color: #1a202c !important;
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+    text-shadow: none !important;
+  }
+  
+  html body .service-provider-card p,
+  html body .provider-card p,
+  html body .professional-card p,
+  html body .team-card p {
+    color: #4a5568 !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-shadow: none !important;
+  }
+  
+  html body .service-provider-card .btn,
+  html body .provider-card .btn,
+  html body .professional-card .btn,
+  html body .team-card .btn {
+    background: #1e40af !important;
+    color: #ffffff !important;
+    padding: 12px 20px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
+  }
   
   /* PADRONIZAÇÃO GLOBAL DE TODAS AS PÁGINAS */
   html body .page-hero,
@@ -1136,12 +1348,17 @@ html body .sectors-section h2 {
   html body .services-section .section-subtitle,
   html body .sectors-section .section-subtitle,
   html body .home-page .services-section .section-subtitle,
-  html body .home-page .sectors-section .section-subtitle {
-    color: #e3f2fd !important;
+  html body .home-page .sectors-section .section-subtitle,
+  html body .section-description,
+  html body .service-description,
+  html body .content-description {
+    color: #ffffff !important;
     font-weight: 500 !important;
     font-size: 1.1rem !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
-    opacity: 1 !important;
+    opacity: 0.95 !important;
+    line-height: 1.5 !important;
+    margin-bottom: 20px !important;
   }
   
   html body .home-page .services-section h2,
@@ -1164,36 +1381,83 @@ html body .sectors-section h2 {
   
   
   
-  /* BOTÕES COM ÍCONES - FORÇA APLICAÇÃO */
-  html body .btn-pattern i,
-  html body .cta-button i,
-  html body .contact-btn i,
-  html body button i,
-  html body a i {
-    margin-right: 8px !important;
-    vertical-align: middle !important;
-  }
-  
-  html body .btn-pattern,
+  /* CORREÇÕES ESPECÍFICAS PARA BOTÕES E ELEMENTOS INTERATIVOS */
+  html body .btn,
   html body .cta-button,
-  html body .contact-btn {
-    display: flex !important;
+  html body .contact-button,
+  html body .btn-whatsapp,
+  html body .btn-primary,
+  html body .btn-secondary,
+  html body .action-button {
+    display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    text-align: center !important;
     gap: 8px !important;
+    padding: 14px 24px !important;
+    border-radius: 8px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    min-height: 48px !important;
+    transition: all 0.3s ease !important;
+    text-align: center !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+  
+  html body .btn-whatsapp {
+    background: #25D366 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
+  }
+  
+  html body .btn-primary {
+    background: #1e40af !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3) !important;
+  }
+  
+  html body .btn-secondary {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(10px) !important;
+  }
+  
+  html body .btn i,
+  html body .cta-button i,
+  html body .contact-button i,
+  html body .btn-whatsapp i,
+  html body .action-button i {
+    margin-right: 0 !important;
+    font-size: 1.1rem !important;
+    vertical-align: middle !important;
   }
   
   
   /* CORREÇÕES ESPECÍFICAS PARA TEXTOS EM FUNDOS AZUIS ESCUROS */
   html body .services-section .section-description,
   html body .sectors-section .section-description,
-  html body .home-page .section-description {
-    color: #e3f2fd !important;
+  html body .home-page .section-description,
+  html body .hero-description,
+  html body .main-description {
+    color: #ffffff !important;
     font-weight: 500 !important;
     font-size: 1.1rem !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
-    line-height: 1.5 !important;
+    line-height: 1.6 !important;
+    opacity: 0.95 !important;
+    margin-bottom: 24px !important;
+  }
+  
+  /* FORÇA MÁXIMA PARA TEXTOS ESPECÍFICOS PROBLEMÁTICOS */
+  html body *:contains("Soluções contábeis inteligentes"),
+  html body *:contains("empresas que buscam crescimento"),
+  html body *:contains("sustentável e conformidade fiscal"),
+  html body *:contains("Campo Grande - MS") {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7) !important;
   }
   
   /* CORREÇÕES PARA TEXTOS ESPECÍFICOS PROBLEMÁTICOS */
@@ -1206,21 +1470,44 @@ html body .sectors-section h2 {
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7) !important;
   }
   
-  /* CORREÇÃO PARA BOTÃO "O QUE OFERECEMOS" */
+  /* CORREÇÃO PARA BOTÕES ESPECÍFICOS */
   html body .cta-button,
   html body .section-cta,
   html body .offer-button,
-  html body button:contains("O QUE OFERECEMOS"),
   html body .services-cta,
-  html body .what-we-offer {
+  html body .what-we-offer,
+  html body .analysis-button,
+  html body .contact-specialist {
     background: rgba(255, 255, 255, 0.2) !important;
     color: #ffffff !important;
     border: 2px solid rgba(255, 255, 255, 0.6) !important;
     font-weight: 800 !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
     backdrop-filter: blur(15px) !important;
-    font-size: 0.95rem !important;
+    font-size: 1rem !important;
     letter-spacing: 0.5px !important;
+    padding: 14px 28px !important;
+    border-radius: 8px !important;
+    text-transform: uppercase !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    min-height: 48px !important;
+  }
+  
+  html body .analysis-button {
+    background: #ffffff !important;
+    color: #1e40af !important;
+    border: 2px solid #ffffff !important;
+    text-shadow: none !important;
+    font-weight: 700 !important;
+  }
+  
+  html body .contact-specialist {
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
   }
   
   html body .cta-button:hover,
