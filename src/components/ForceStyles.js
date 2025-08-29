@@ -116,16 +116,108 @@ const ForceStyles = () => {
         }
       });
 
+      // CARDS - FORÇA TEXTO ESCURO ABSOLUTA - PROBLEMA CRÍTICO
+      const cardSelectors = [
+        '.card', '.service-card', '.provider-card', '.sector-card', '.content-card',
+        '[class*="card"]', '[class*="Card"]', '.card-content', '.card-body'
+      ];
+      
+      cardSelectors.forEach(selector => {
+        try {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach(el => {
+            if (el && el.style) {
+              // Força fundo branco sólido
+              el.style.setProperty('background', '#ffffff', 'important');
+              el.style.setProperty('background-color', '#ffffff', 'important');
+              el.style.setProperty('border', '1px solid #e2e8f0', 'important');
+              el.style.setProperty('border-radius', '12px', 'important');
+              el.style.setProperty('padding', '24px', 'important');
+              el.style.setProperty('box-shadow', '0 4px 12px rgba(0, 0, 0, 0.1)', 'important');
+              
+              // Força todos os filhos a terem texto escuro
+              const allChildren = el.querySelectorAll('*');
+              allChildren.forEach(child => {
+                if (child && child.style) {
+                  child.style.setProperty('color', '#1a202c', 'important');
+                  child.style.setProperty('text-shadow', 'none', 'important');
+                }
+              });
+              
+              // Força títulos específicos
+              const titles = el.querySelectorAll('h1, h2, h3, h4, h5, h6');
+              titles.forEach(title => {
+                if (title && title.style) {
+                  title.style.setProperty('color', '#1a202c', 'important');
+                  title.style.setProperty('font-weight', '700', 'important');
+                  title.style.setProperty('text-shadow', 'none', 'important');
+                }
+              });
+              
+              // Força parágrafos e listas
+              const texts = el.querySelectorAll('p, li, span, div');
+              texts.forEach(text => {
+                if (text && text.style) {
+                  text.style.setProperty('color', '#4a5568', 'important');
+                  text.style.setProperty('text-shadow', 'none', 'important');
+                }
+              });
+              
+              // Força botões dentro dos cards
+              const buttons = el.querySelectorAll('button, .btn, a[class*="btn"]');
+              buttons.forEach(btn => {
+                if (btn && btn.style) {
+                  btn.style.setProperty('background', '#1e40af', 'important');
+                  btn.style.setProperty('color', '#ffffff', 'important');
+                  btn.style.setProperty('border', 'none', 'important');
+                  btn.style.setProperty('padding', '12px 24px', 'important');
+                  btn.style.setProperty('border-radius', '8px', 'important');
+                  btn.style.setProperty('font-weight', '600', 'important');
+                }
+              });
+            }
+          });
+        } catch (e) {
+          console.log('Seletor card inválido:', selector);
+        }
+      });
+      
+      // FORÇA ESPECÍFICA PARA TEXTOS PROBLEMÁTICOS
+      const problematicTexts = [
+        'Prestadores de Serviços', 'Soluções contábeis', 'especializadas para',
+        'profissionais liberais', 'empresas de', 'marketing', 'consultoria',
+        'demais prestadores', 'Tributação otimizada', 'Gestão de notas fiscais',
+        'Relatórios gerenciais'
+      ];
+      
+      problematicTexts.forEach(text => {
+        const elements = document.querySelectorAll('*');
+        elements.forEach(el => {
+          if (el && el.textContent && el.textContent.includes(text)) {
+            if (el.style) {
+              el.style.setProperty('color', '#1a202c', 'important');
+              el.style.setProperty('font-weight', '600', 'important');
+              el.style.setProperty('text-shadow', 'none', 'important');
+            }
+          }
+        });
+      });
+
       console.log('ForceStyles aplicado para mobile - largura:', window.innerWidth);
     };
 
     // Aplica imediatamente
     applyForceStyles();
     
-    // Aplica após 500ms, 1s, 2s, 3s para garantir que funcione
+    // Aplica múltiplas vezes para garantir que funcione
     setTimeout(applyForceStyles, 500);
-    // Aplica novamente após 1 segundo (para componentes que carregam depois)
     setTimeout(applyForceStyles, 1000);
+    setTimeout(applyForceStyles, 2000);
+    setTimeout(applyForceStyles, 3000);
+    
+    // Aplica a cada 5 segundos por 30 segundos para garantir
+    const interval = setInterval(applyForceStyles, 5000);
+    setTimeout(() => clearInterval(interval), 30000);
     
     // Aplica quando a página terminar de carregar
     window.addEventListener('load', applyForceStyles);
