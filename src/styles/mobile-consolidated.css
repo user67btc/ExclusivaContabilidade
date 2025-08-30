@@ -1,0 +1,197 @@
+/* MOBILE CONSOLIDATED FIX - SINGLE SOURCE OF TRUTH */
+/* Consolidates all mobile fixes into one optimized file */
+@media (max-width: 768px) {
+  
+  /* ========== SECTOR CARDS - PRIMARY ISSUE ========== */
+  /* Superar sectors.css especificidade: body .sector-card */
+  html body div#__next section.sectors-section .sectors-grid .sector-card,
+  html body div#__next .sectors-section .sectors-grid .sector-card {
+    background: #ffffff !important;
+    color: #1a202c !important;
+    text-shadow: none !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content {
+    background: #ffffff !important;
+    color: #1a202c !important;
+    text-shadow: none !important;
+    padding: 24px !important;
+  }
+  
+  /* Títulos - Superar sectors.css linha 388 */
+  html body div#__next section.sectors-section .sectors-grid .sector-card h3,
+  html body div#__next .sectors-section .sectors-grid .sector-card h3 {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+  }
+  
+  /* Descrições - Superar sectors.css linha 402 */
+  html body div#__next section.sectors-section .sectors-grid .sector-card p,
+  html body div#__next .sectors-section .sectors-grid .sector-card p,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-description-contrast,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-description-contrast {
+    color: #2d3748 !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+  }
+  
+  /* Listas - Superar sectors.css linha 433 */
+  html body div#__next section.sectors-section .sectors-grid .sector-card li,
+  html body div#__next .sectors-section .sectors-grid .sector-card li,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-features li,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-features li {
+    color: #2d3748 !important;
+    text-shadow: none !important;
+    font-weight: 500 !important;
+  }
+  
+  /* ========== SERVICE CARDS ========== */
+  html body div#__next .service-card {
+    background: #ffffff !important;
+    color: #1a202c !important;
+    text-shadow: none !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+  }
+  
+  html body div#__next .service-card h3 {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+  }
+  
+  html body div#__next .service-card p {
+    color: #2d3748 !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+  }
+  
+  /* ========== BUTTONS IN CARDS ========== */
+  html body div#__next .sector-card .btn-primary,
+  html body div#__next .sector-card .cta-button,
+  html body div#__next .service-card .btn-primary,
+  html body div#__next .service-card .btn-link {
+    background: #1e40af !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+  }
+  
+  /* ========== HERO SECTION ========== */
+  html body div#__next .hero-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%) !important;
+    color: #ffffff !important;
+  }
+  
+  html body div#__next .hero-section h1,
+  html body div#__next .hero-section .hero-title-modern {
+    color: #ffffff !important;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  html body div#__next .hero-section p,
+  html body div#__next .hero-section .hero-subtitle-modern {
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  /* ========== STATISTICS ========== */
+  html body div#__next .hero-social-proof-enhanced .proof-number,
+  html body div#__next .proof-item-enhanced .proof-number {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  html body div#__next .hero-social-proof-enhanced .proof-label,
+  html body div#__next .proof-item-enhanced .proof-label {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  /* ========== HEADER ========== */
+  html body div#__next header,
+  html body div#__next .header {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  html body div#__next header .navbar-brand,
+  html body div#__next header .nav-link {
+    color: #1a202c !important;
+    text-shadow: none !important;
+  }
+  
+  /* ========== FOOTER ========== */
+  html body div#__next footer,
+  html body div#__next .footer,
+  html body div#__next .site-footer {
+    background: #0f172a !important;
+    color: #ffffff !important;
+  }
+  
+  html body div#__next footer a,
+  html body div#__next .footer a,
+  html body div#__next .footer-links a,
+  html body div#__next .site-footer a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none !important;
+  }
+  
+  html body div#__next footer a:hover,
+  html body div#__next .footer a:hover,
+  html body div#__next .site-footer a:hover {
+    color: #ffffff !important;
+  }
+  
+  /* ========== SERVICES SECTION ========== */
+  html body div#__next .services-section {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%) !important;
+    color: #ffffff !important;
+  }
+  
+  html body div#__next .services-section h2,
+  html body div#__next .services-section h3 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  html body div#__next .services-section p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* ========== BADGES ========== */
+  html body div#__next .badge,
+  html body div#__next .card-badge,
+  html body div#__next .btn-badge {
+    background: #1e40af !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    padding: 4px 12px !important;
+    border-radius: 20px !important;
+  }
+  
+  /* ========== GLASSMORPHISM OVERRIDE ========== */
+  html body div#__next .glassmorphism {
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+  
+  /* ========== GLOBAL TEXT SHADOW REMOVAL ========== */
+  html body div#__next .sector-card *,
+  html body div#__next .service-card * {
+    text-shadow: none !important;
+  }
+}

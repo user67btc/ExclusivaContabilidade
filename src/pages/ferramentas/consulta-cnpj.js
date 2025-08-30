@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '../../components/layout/Layout';
-import SEOHead from '../../components/SEOHead';
+import SEOHead from '../../components/SEO/SEOHead';
 import { useInView } from 'react-intersection-observer';
 import ShareTools from '../../components/common/ShareTools';
 import { getConsultaCnpjJsonLd, getToolKeywords, getToolDescription, getToolTitle } from '../../utils/seoTools';

@@ -4,7 +4,7 @@ import Layout from '../../components/layout/Layout';
 import { useInView } from 'react-intersection-observer';
 
 // Componentes
-import SEOHead from '../../components/SEOHead';
+import SEOHead from '../../components/SEO/SEOHead';
 import ShareTools from '../../components/common/ShareTools';
 
 const CalculadoraImpostos = () => {

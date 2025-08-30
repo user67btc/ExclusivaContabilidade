@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '../../components/layout/Layout';
-import SEOHead from '../../components/SEOHead';
+import SEOHead from '../../components/SEO/SEOHead';
 import { useInView } from 'react-intersection-observer';
 import SimuladorRegimesTributarios from '../../components/ferramentas/SimuladorRegimesTributarios';
 import ShareTools from '../../components/common/ShareTools';

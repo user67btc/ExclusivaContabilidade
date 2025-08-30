@@ -5,7 +5,7 @@ import Services from '../components/sections/Services';
 import Sectors from '../components/sections/Sectors';
 import FAQ from '../components/sections/FAQ';
 import ContactCTA from '../components/sections/ContactCTA';
-import SEOHead from '../components/SEOHead';
+import SEOHead from '../components/SEO/SEOHead';
 
 export default function Home() {
   // Adicionar classe e data-page ao body para identificar homepage
