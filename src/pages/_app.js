@@ -30,6 +30,7 @@ import '../styles/mobile-force-override.css';
 import '../styles/nuclear-mobile-fix.css';
 import '../styles/nuclear-card-fix.css';
 import '../styles/absolute-mobile-fix.css';
+import '../styles/sector-card-fix.css';
 
 // Fonte Inter via next/font (melhor performance e estabilidade)
 const inter = Inter({ subsets: ['latin'] });
