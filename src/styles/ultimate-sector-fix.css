@@ -1,0 +1,276 @@
+/* ULTIMATE MOBILE FIX: MÁXIMA ESPECIFICIDADE PARA SUPERAR SECTORS.CSS */
+@media (max-width: 768px) {
+  
+  /* ESPECIFICIDADE NUCLEAR: html body div#__next main section.sectors-section .sectors-grid .sector-card */
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card,
+  html body div#__next section.sectors-section .sectors-grid .sector-card,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card,
+  html body div#__next .sectors-section .sectors-grid div .sector-card,
+  html body div#__next .sectors-section .sectors-grid .sector-card {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #1a202c !important;
+    text-shadow: none !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA SECTOR-CARD-CONTENT */
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #1a202c !important;
+    text-shadow: none !important;
+  }
+  
+  /* SUPERAR sectors.css LINHA 388: body .sector-card h3 { color: #0f172a !important } */
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content h3,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content h3,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content h3,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content h3,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content h3,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content h3,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content h3,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content h3,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content h3,
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card h3,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card h3,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card h3,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card h3,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card h3,
+  html body div#__next section.sectors-section .sectors-grid .sector-card h3,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card h3,
+  html body div#__next .sectors-section .sectors-grid div .sector-card h3,
+  html body div#__next .sectors-section .sectors-grid .sector-card h3 {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    font-size: 1.25rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* SUPERAR sectors.css LINHA 402: .sector-description-contrast { color: #1e293b !important } */
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content p,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content p,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content p,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content p,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content p,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content p,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content p,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content p,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content p,
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content .sector-description-contrast,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content .sector-description-contrast,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content .sector-description-contrast,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content .sector-description-contrast,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content .sector-description-contrast,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content .sector-description-contrast,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content .sector-description-contrast,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content .sector-description-contrast,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content .sector-description-contrast {
+    color: #2d3748 !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* SUPERAR sectors.css LINHA 433: .sector-features li { color: #0f172a !important } */
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content ul,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content ul,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content ul,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content ul,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content ul,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content ul,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content ul,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content ul,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content ul,
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content .sector-features,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content .sector-features,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content .sector-features,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content .sector-features,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content .sector-features,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content .sector-features,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content .sector-features,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content .sector-features,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content .sector-features {
+    color: #2d3748 !important;
+    text-shadow: none !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content ul li,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content ul li,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content ul li,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content ul li,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content ul li,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content ul li,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content ul li,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content ul li,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content ul li,
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content .sector-features li,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content .sector-features li,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content .sector-features li,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content .sector-features li,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content .sector-features li,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content .sector-features li,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content .sector-features li,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content .sector-features li,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content .sector-features li {
+    color: #2d3748 !important;
+    text-shadow: none !important;
+    font-weight: 500 !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA BOTÕES DOS SECTOR CARDS */
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content .btn-primary,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content .btn-primary,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content .btn-primary,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content .btn-primary,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content .btn-primary,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content .btn-primary,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content .btn-primary,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content .btn-primary,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content .btn-primary,
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content .cta-button,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content .cta-button,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content .cta-button,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content .cta-button,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content .cta-button,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content .cta-button,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content .cta-button,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content .cta-button,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content .cta-button {
+    background: #1e40af !important;
+    background-color: #1e40af !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA TODOS OS ELEMENTOS DENTRO DE SECTOR CARDS */
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card *,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card *,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card *,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card *,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card *,
+  html body div#__next section.sectors-section .sectors-grid .sector-card *,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card *,
+  html body div#__next .sectors-section .sectors-grid div .sector-card *,
+  html body div#__next .sectors-section .sectors-grid .sector-card * {
+    text-shadow: none !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA GLASSMORPHISM CLASS */
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .glassmorphism,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .glassmorphism,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .glassmorphism,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .glassmorphism,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .glassmorphism,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .glassmorphism,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .glassmorphism,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .glassmorphism,
+  html body div#__next .sectors-section .sectors-grid .sector-card .glassmorphism {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    backdrop-filter: none !important;
+    border: none !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA ÍCONES DENTRO DOS SECTOR CARDS */
+  html body div#__next main section.sectors-section .container .sectors-grid div .sector-card .sector-card-content i,
+  html body div#__next main section.sectors-section .sectors-grid div .sector-card .sector-card-content i,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content i,
+  html body div#__next section.sectors-section .container .sectors-grid div .sector-card .sector-card-content i,
+  html body div#__next section.sectors-section .sectors-grid div .sector-card .sector-card-content i,
+  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content i,
+  html body div#__next .sectors-section .container .sectors-grid div .sector-card .sector-card-content i,
+  html body div#__next .sectors-section .sectors-grid div .sector-card .sector-card-content i,
+  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content i {
+    color: #1e40af !important;
+  }
+  
+  /* FORÇA NUCLEAR ESPECÍFICA PARA O PRIMEIRO CARD (PRESTADORES DE SERVIÇOS) */
+  html body div#__next main section.sectors-section .container .sectors-grid div:first-child .sector-card,
+  html body div#__next main section.sectors-section .sectors-grid div:first-child .sector-card,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card:first-child,
+  html body div#__next section.sectors-section .container .sectors-grid div:first-child .sector-card,
+  html body div#__next section.sectors-section .sectors-grid div:first-child .sector-card,
+  html body div#__next section.sectors-section .sectors-grid .sector-card:first-child,
+  html body div#__next .sectors-section .container .sectors-grid div:first-child .sector-card,
+  html body div#__next .sectors-section .sectors-grid div:first-child .sector-card,
+  html body div#__next .sectors-section .sectors-grid .sector-card:first-child {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+  }
+  
+  html body div#__next main section.sectors-section .container .sectors-grid div:first-child .sector-card .sector-card-content,
+  html body div#__next main section.sectors-section .sectors-grid div:first-child .sector-card .sector-card-content,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card:first-child .sector-card-content,
+  html body div#__next section.sectors-section .container .sectors-grid div:first-child .sector-card .sector-card-content,
+  html body div#__next section.sectors-section .sectors-grid div:first-child .sector-card .sector-card-content,
+  html body div#__next section.sectors-section .sectors-grid .sector-card:first-child .sector-card-content,
+  html body div#__next .sectors-section .container .sectors-grid div:first-child .sector-card .sector-card-content,
+  html body div#__next .sectors-section .sectors-grid div:first-child .sector-card .sector-card-content,
+  html body div#__next .sectors-section .sectors-grid .sector-card:first-child .sector-card-content {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+  }
+  
+  html body div#__next main section.sectors-section .container .sectors-grid div:first-child .sector-card h3,
+  html body div#__next main section.sectors-section .sectors-grid div:first-child .sector-card h3,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card:first-child h3,
+  html body div#__next section.sectors-section .container .sectors-grid div:first-child .sector-card h3,
+  html body div#__next section.sectors-section .sectors-grid div:first-child .sector-card h3,
+  html body div#__next section.sectors-section .sectors-grid .sector-card:first-child h3,
+  html body div#__next .sectors-section .container .sectors-grid div:first-child .sector-card h3,
+  html body div#__next .sectors-section .sectors-grid div:first-child .sector-card h3,
+  html body div#__next .sectors-section .sectors-grid .sector-card:first-child h3 {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+  }
+  
+  html body div#__next main section.sectors-section .container .sectors-grid div:first-child .sector-card p,
+  html body div#__next main section.sectors-section .sectors-grid div:first-child .sector-card p,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card:first-child p,
+  html body div#__next section.sectors-section .container .sectors-grid div:first-child .sector-card p,
+  html body div#__next section.sectors-section .sectors-grid div:first-child .sector-card p,
+  html body div#__next section.sectors-section .sectors-grid .sector-card:first-child p,
+  html body div#__next .sectors-section .container .sectors-grid div:first-child .sector-card p,
+  html body div#__next .sectors-section .sectors-grid div:first-child .sector-card p,
+  html body div#__next .sectors-section .sectors-grid .sector-card:first-child p {
+    color: #2d3748 !important;
+    font-weight: 500 !important;
+  }
+  
+  html body div#__next main section.sectors-section .container .sectors-grid div:first-child .sector-card li,
+  html body div#__next main section.sectors-section .sectors-grid div:first-child .sector-card li,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card:first-child li,
+  html body div#__next section.sectors-section .container .sectors-grid div:first-child .sector-card li,
+  html body div#__next section.sectors-section .sectors-grid div:first-child .sector-card li,
+  html body div#__next section.sectors-section .sectors-grid .sector-card:first-child li,
+  html body div#__next .sectors-section .container .sectors-grid div:first-child .sector-card li,
+  html body div#__next .sectors-section .sectors-grid div:first-child .sector-card li,
+  html body div#__next .sectors-section .sectors-grid .sector-card:first-child li {
+    color: #2d3748 !important;
+    font-weight: 500 !important;
+  }
+}
