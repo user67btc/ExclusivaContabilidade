@@ -32,6 +32,7 @@ import '../styles/nuclear-card-fix.css';
 import '../styles/absolute-mobile-fix.css';
 import '../styles/sector-card-fix.css';
 import '../styles/ultimate-sector-fix.css';
+import '../styles/comprehensive-mobile-fix.css';
 
 // Fonte Inter via next/font (melhor performance e estabilidade)
 const inter = Inter({ subsets: ['latin'] });
