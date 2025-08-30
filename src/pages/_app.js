@@ -18,6 +18,7 @@ import '../styles/global-page-patterns.css';
 import '../styles/global-visual-upgrade-2025.css';
 import '../styles/setores-conversion.css';
 import '../styles/sectors.css';
+import '../styles/services.css';
 import '../styles/contact-cta.css';
 import '../styles/whatsapp-float.css';
 import '../styles/scroll-top.css';
