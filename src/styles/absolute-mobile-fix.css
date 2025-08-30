@@ -1,0 +1,288 @@
+/* MOBILE-ONLY: FORÇA ABSOLUTA SEM VARIÁVEIS CSS - ESPECIFICIDADE MÁXIMA */
+@media (max-width: 768px) {
+  /* FORÇA NUCLEAR PARA SERVICE CARDS - SEM VARIÁVEIS CSS */
+  html body div#__next main section div.container div.row div.col-md-4 .service-card,
+  html body div#__next main section div.container div.row div.col-md-6 .service-card,
+  html body div#__next main section div.container div.row div.col-lg-4 .service-card,
+  html body div#__next main section div.container div.row div.col-lg-6 .service-card,
+  html body div#__next main section div.container div.row div[class*="col"] .service-card,
+  html body div#__next main section div.container .services-grid .service-card,
+  html body div#__next main section .services-section .service-card,
+  html body div#__next .services-section .service-card,
+  html body div#__next .service-card {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    color: #1a202c !important;
+    text-shadow: none !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA TÍTULOS DOS SERVICE CARDS */
+  html body div#__next main section div.container div.row div.col-md-4 .service-card h1,
+  html body div#__next main section div.container div.row div.col-md-4 .service-card h2,
+  html body div#__next main section div.container div.row div.col-md-4 .service-card h3,
+  html body div#__next main section div.container div.row div.col-md-4 .service-card h4,
+  html body div#__next main section div.container div.row div.col-md-4 .service-card h5,
+  html body div#__next main section div.container div.row div.col-md-4 .service-card h6,
+  html body div#__next main section div.container div.row div.col-md-6 .service-card h1,
+  html body div#__next main section div.container div.row div.col-md-6 .service-card h2,
+  html body div#__next main section div.container div.row div.col-md-6 .service-card h3,
+  html body div#__next main section div.container div.row div.col-md-6 .service-card h4,
+  html body div#__next main section div.container div.row div.col-md-6 .service-card h5,
+  html body div#__next main section div.container div.row div.col-md-6 .service-card h6,
+  html body div#__next main section div.container div.row div.col-lg-4 .service-card h1,
+  html body div#__next main section div.container div.row div.col-lg-4 .service-card h2,
+  html body div#__next main section div.container div.row div.col-lg-4 .service-card h3,
+  html body div#__next main section div.container div.row div.col-lg-4 .service-card h4,
+  html body div#__next main section div.container div.row div.col-lg-4 .service-card h5,
+  html body div#__next main section div.container div.row div.col-lg-4 .service-card h6,
+  html body div#__next main section div.container div.row div.col-lg-6 .service-card h1,
+  html body div#__next main section div.container div.row div.col-lg-6 .service-card h2,
+  html body div#__next main section div.container div.row div.col-lg-6 .service-card h3,
+  html body div#__next main section div.container div.row div.col-lg-6 .service-card h4,
+  html body div#__next main section div.container div.row div.col-lg-6 .service-card h5,
+  html body div#__next main section div.container div.row div.col-lg-6 .service-card h6,
+  html body div#__next main section div.container div[class*="col"] .service-card h1,
+  html body div#__next main section div.container div[class*="col"] .service-card h2,
+  html body div#__next main section div.container div[class*="col"] .service-card h3,
+  html body div#__next main section div.container div[class*="col"] .service-card h4,
+  html body div#__next main section div.container div[class*="col"] .service-card h5,
+  html body div#__next main section div.container div[class*="col"] .service-card h6,
+  html body div#__next main section div.container .services-grid .service-card h1,
+  html body div#__next main section div.container .services-grid .service-card h2,
+  html body div#__next main section div.container .services-grid .service-card h3,
+  html body div#__next main section div.container .services-grid .service-card h4,
+  html body div#__next main section div.container .services-grid .service-card h5,
+  html body div#__next main section div.container .services-grid .service-card h6,
+  html body div#__next main section .services-section .service-card h1,
+  html body div#__next main section .services-section .service-card h2,
+  html body div#__next main section .services-section .service-card h3,
+  html body div#__next main section .services-section .service-card h4,
+  html body div#__next main section .services-section .service-card h5,
+  html body div#__next main section .services-section .service-card h6,
+  html body div#__next .services-section .service-card h1,
+  html body div#__next .services-section .service-card h2,
+  html body div#__next .services-section .service-card h3,
+  html body div#__next .services-section .service-card h4,
+  html body div#__next .services-section .service-card h5,
+  html body div#__next .services-section .service-card h6,
+  html body div#__next .service-card h1,
+  html body div#__next .service-card h2,
+  html body div#__next .service-card h3,
+  html body div#__next .service-card h4,
+  html body div#__next .service-card h5,
+  html body div#__next .service-card h6 {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    font-size: 1.25rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA PARÁGRAFOS DOS SERVICE CARDS */
+  html body div#__next main section div.container div.row div.col-md-4 .service-card p,
+  html body div#__next main section div.container div.row div.col-md-6 .service-card p,
+  html body div#__next main section div.container div.row div.col-lg-4 .service-card p,
+  html body div#__next main section div.container div.row div.col-lg-6 .service-card p,
+  html body div#__next main section div.container div[class*="col"] .service-card p,
+  html body div#__next main section div.container .services-grid .service-card p,
+  html body div#__next main section .services-section .service-card p,
+  html body div#__next .services-section .service-card p,
+  html body div#__next .service-card p {
+    color: #2d3748 !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA PROVIDER CARDS */
+  html body div#__next main section div.container div.row div.col-md-4 .provider-card,
+  html body div#__next main section div.container div.row div.col-md-6 .provider-card,
+  html body div#__next main section div.container div.row div.col-lg-4 .provider-card,
+  html body div#__next main section div.container div.row div.col-lg-6 .provider-card,
+  html body div#__next main section div.container div[class*="col"] .provider-card,
+  html body div#__next .provider-card {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    color: #1a202c !important;
+    text-shadow: none !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA TÍTULOS DOS PROVIDER CARDS */
+  html body div#__next main section div.container div.row div.col-md-4 .provider-card h1,
+  html body div#__next main section div.container div.row div.col-md-4 .provider-card h2,
+  html body div#__next main section div.container div.row div.col-md-4 .provider-card h3,
+  html body div#__next main section div.container div.row div.col-md-4 .provider-card h4,
+  html body div#__next main section div.container div.row div.col-md-4 .provider-card h5,
+  html body div#__next main section div.container div.row div.col-md-4 .provider-card h6,
+  html body div#__next main section div.container div.row div.col-md-6 .provider-card h1,
+  html body div#__next main section div.container div.row div.col-md-6 .provider-card h2,
+  html body div#__next main section div.container div.row div.col-md-6 .provider-card h3,
+  html body div#__next main section div.container div.row div.col-md-6 .provider-card h4,
+  html body div#__next main section div.container div.row div.col-md-6 .provider-card h5,
+  html body div#__next main section div.container div.row div.col-md-6 .provider-card h6,
+  html body div#__next main section div.container div.row div.col-lg-4 .provider-card h1,
+  html body div#__next main section div.container div.row div.col-lg-4 .provider-card h2,
+  html body div#__next main section div.container div.row div.col-lg-4 .provider-card h3,
+  html body div#__next main section div.container div.row div.col-lg-4 .provider-card h4,
+  html body div#__next main section div.container div.row div.col-lg-4 .provider-card h5,
+  html body div#__next main section div.container div.row div.col-lg-4 .provider-card h6,
+  html body div#__next main section div.container div.row div.col-lg-6 .provider-card h1,
+  html body div#__next main section div.container div.row div.col-lg-6 .provider-card h2,
+  html body div#__next main section div.container div.row div.col-lg-6 .provider-card h3,
+  html body div#__next main section div.container div.row div.col-lg-6 .provider-card h4,
+  html body div#__next main section div.container div.row div.col-lg-6 .provider-card h5,
+  html body div#__next main section div.container div.row div.col-lg-6 .provider-card h6,
+  html body div#__next main section div.container div[class*="col"] .provider-card h1,
+  html body div#__next main section div.container div[class*="col"] .provider-card h2,
+  html body div#__next main section div.container div[class*="col"] .provider-card h3,
+  html body div#__next main section div.container div[class*="col"] .provider-card h4,
+  html body div#__next main section div.container div[class*="col"] .provider-card h5,
+  html body div#__next main section div.container div[class*="col"] .provider-card h6,
+  html body div#__next .provider-card h1,
+  html body div#__next .provider-card h2,
+  html body div#__next .provider-card h3,
+  html body div#__next .provider-card h4,
+  html body div#__next .provider-card h5,
+  html body div#__next .provider-card h6 {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    font-size: 1.25rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA PARÁGRAFOS DOS PROVIDER CARDS */
+  html body div#__next main section div.container div.row div.col-md-4 .provider-card p,
+  html body div#__next main section div.container div.row div.col-md-6 .provider-card p,
+  html body div#__next main section div.container div.row div.col-lg-4 .provider-card p,
+  html body div#__next main section div.container div.row div.col-lg-6 .provider-card p,
+  html body div#__next main section div.container div[class*="col"] .provider-card p,
+  html body div#__next .provider-card p {
+    color: #2d3748 !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA TODOS OS OUTROS CARDS */
+  html body div#__next main section div.container div.row div[class*="col"] .card,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"],
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"],
+  html body div#__next .card,
+  html body div#__next *[class*="card"],
+  html body div#__next *[class*="Card"] {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    color: #1a202c !important;
+    text-shadow: none !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA TÍTULOS DE TODOS OS CARDS */
+  html body div#__next main section div.container div.row div[class*="col"] .card h1,
+  html body div#__next main section div.container div.row div[class*="col"] .card h2,
+  html body div#__next main section div.container div.row div[class*="col"] .card h3,
+  html body div#__next main section div.container div.row div[class*="col"] .card h4,
+  html body div#__next main section div.container div.row div[class*="col"] .card h5,
+  html body div#__next main section div.container div.row div[class*="col"] .card h6,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] h1,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] h2,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] h3,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] h4,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] h5,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] h6,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] h1,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] h2,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] h3,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] h4,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] h5,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] h6,
+  html body div#__next .card h1,
+  html body div#__next .card h2,
+  html body div#__next .card h3,
+  html body div#__next .card h4,
+  html body div#__next .card h5,
+  html body div#__next .card h6,
+  html body div#__next *[class*="card"] h1,
+  html body div#__next *[class*="card"] h2,
+  html body div#__next *[class*="card"] h3,
+  html body div#__next *[class*="card"] h4,
+  html body div#__next *[class*="card"] h5,
+  html body div#__next *[class*="card"] h6,
+  html body div#__next *[class*="Card"] h1,
+  html body div#__next *[class*="Card"] h2,
+  html body div#__next *[class*="Card"] h3,
+  html body div#__next *[class*="Card"] h4,
+  html body div#__next *[class*="Card"] h5,
+  html body div#__next *[class*="Card"] h6 {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA PARÁGRAFOS DE TODOS OS CARDS */
+  html body div#__next main section div.container div.row div[class*="col"] .card p,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] p,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] p,
+  html body div#__next .card p,
+  html body div#__next *[class*="card"] p,
+  html body div#__next *[class*="Card"] p {
+    color: #2d3748 !important;
+    font-weight: 500 !important;
+    text-shadow: none !important;
+  }
+  
+  /* FORÇA NUCLEAR PARA LISTAS E SPANS EM CARDS */
+  html body div#__next main section div.container div.row div[class*="col"] .card ul,
+  html body div#__next main section div.container div.row div[class*="col"] .card li,
+  html body div#__next main section div.container div.row div[class*="col"] .card span,
+  html body div#__next main section div.container div.row div[class*="col"] .card div,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] ul,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] li,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] span,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="card"] div,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] ul,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] li,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] span,
+  html body div#__next main section div.container div.row div[class*="col"] *[class*="Card"] div,
+  html body div#__next .card ul,
+  html body div#__next .card li,
+  html body div#__next .card span,
+  html body div#__next .card div,
+  html body div#__next *[class*="card"] ul,
+  html body div#__next *[class*="card"] li,
+  html body div#__next *[class*="card"] span,
+  html body div#__next *[class*="card"] div,
+  html body div#__next *[class*="Card"] ul,
+  html body div#__next *[class*="Card"] li,
+  html body div#__next *[class*="Card"] span,
+  html body div#__next *[class*="Card"] div,
+  html body div#__next .service-card ul,
+  html body div#__next .service-card li,
+  html body div#__next .service-card span,
+  html body div#__next .service-card div,
+  html body div#__next .provider-card ul,
+  html body div#__next .provider-card li,
+  html body div#__next .provider-card span,
+  html body div#__next .provider-card div {
+    color: #2d3748 !important;
+    text-shadow: none !important;
+  }
+}

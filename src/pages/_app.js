@@ -29,6 +29,7 @@ import '../styles/mobile-force-override.css';
 // SOLUÇÃO NUCLEAR FINAL - CSS MÁXIMA ESPECIFICIDADE - SEMPRE POR ÚLTIMO
 import '../styles/nuclear-mobile-fix.css';
 import '../styles/nuclear-card-fix.css';
+import '../styles/absolute-mobile-fix.css';
 
 // Fonte Inter via next/font (melhor performance e estabilidade)
 const inter = Inter({ subsets: ['latin'] });
