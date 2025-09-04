@@ -54,8 +54,16 @@
   
   /* ========== HERO SECTION MOBILE - CLEAN LAYOUT ========== */
   /* Remove visual pollution from cards on mobile */
-  html body div#__next .hero-section .bento-grid {
+  html body div#__next .hero-section .bento-grid,
+  html body div#__next .hero-section .bento-grid-enhanced,
+  html body div#__next .bento-grid-enhanced,
+  html body div#__next .bento-card-enhanced {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
   }
 
   html body div#__next .hero-section {
@@ -103,6 +111,37 @@
     padding: 0 !important;
     font-weight: 500 !important;
   }
+
+  /* NUCLEAR OVERRIDE - Force hide all bento elements with maximum specificity */
+  html body div#__next .hero-section .bento-grid-enhanced,
+  html body div#__next .bento-grid-enhanced,
+  html body div#__next .bento-card-enhanced,
+  html body div#__next .hero-visual-content,
+  html body div#__next .hero-main-image-modern,
+  html body div#__next [class*="bento"],
+  html body div#__next [class*="card-enhanced"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+    overflow: hidden !important;
+    z-index: -1 !important;
+  }
+
+  /* Force hero section to be responsive and clean */
+  html body div#__next .hero-section {
+    padding: 80px 20px 60px !important;
+    margin-top: 70px !important;
+  }
+
+  html body div#__next .hero-section .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
 
   /* ========== STATISTICS MOBILE - CLEAN LAYOUT ========== */
   html body div#__next .hero-social-proof-enhanced {
