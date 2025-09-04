@@ -67,7 +67,7 @@
   }
 
   html body div#__next .hero-section {
-    padding: 80px 16px 40px !important;
+    padding: 100px 16px 60px !important;
     min-height: auto !important;
     background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%) !important;
     color: #ffffff !important;
@@ -106,20 +106,16 @@
     word-wrap: break-word !important;
   }
 
-  /* Simple value proposition instead of cards */
+
+  /* Clean CTA section without visual clutter */
   html body div#__next .hero-section .hero-cta {
-    margin-bottom: 2rem !important;
+    margin-bottom: 1rem !important;
+    padding: 0 !important;
   }
 
   html body div#__next .hero-section .hero-cta::after {
-    content: "✓ Compliance Garantido  ✓ Resposta < 2h  ✓ Zero Multas" !important;
-    display: block !important;
-    text-align: center !important;
-    font-size: 0.9rem !important;
-    color: rgba(255, 255, 255, 0.8) !important;
-    margin-top: 1.5rem !important;
-    padding: 0 !important;
-    font-weight: 500 !important;
+    content: "" !important;
+    display: none !important;
   }
 
   /* NUCLEAR OVERRIDE - Force hide all bento elements with maximum specificity */
@@ -164,43 +160,25 @@
   }
 
 
-  /* ========== STATISTICS MOBILE - CLEAN LAYOUT ========== */
-  html body div#__next .hero-social-proof-enhanced {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 15px !important;
-    padding: 20px !important;
-    margin-top: 30px !important;
-    background: rgba(255, 255, 255, 0.05) !important;
-    border-radius: 16px !important;
-    backdrop-filter: blur(10px) !important;
-  }
-  
-  html body div#__next .proof-item-enhanced {
-    text-align: center !important;
-    padding: 16px 8px !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    border-radius: 12px !important;
-    backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  }
-  
-  html body div#__next .proof-number {
-    font-size: 28px !important;
-    font-weight: 800 !important;
-    color: #ffffff !important;
-    margin-bottom: 6px !important;
-    display: block !important;
-    line-height: 1.1 !important;
-  }
-  
-  html body div#__next .proof-label {
-    font-size: 11px !important;
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-weight: 600 !important;
-    line-height: 1.2 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
+  /* ========== REMOVE ALL VISUAL POLLUTION ========== */
+  /* Hide statistics, badges, and unnecessary elements */
+  html body div#__next .hero-social-proof-enhanced,
+  html body div#__next .proof-item-enhanced,
+  html body div#__next .proof-number,
+  html body div#__next .proof-label,
+  html body div#__next .hero-section .badge,
+  html body div#__next .hero-section .card-badge,
+  html body div#__next .hero-section [class*="badge"],
+  html body div#__next .hero-section [class*="proof"],
+  html body div#__next .hero-section [class*="stats"],
+  html body div#__next .hero-section [class*="icon"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
   }
   
   /* ========== WHATSAPP BUTTON MOBILE ========== */
