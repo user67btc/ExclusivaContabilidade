@@ -1,75 +1,299 @@
 /* MOBILE CONSOLIDATED FIX - SINGLE SOURCE OF TRUTH */
 /* Consolidates all mobile fixes into one optimized file */
+/* CRITICAL: Must override sectors.css mobile rules with higher specificity */
 @media (max-width: 768px) {
   
-  /* ========== SECTOR CARDS - PRIMARY ISSUE ========== */
-  /* Superar sectors.css especificidade: body .sector-card */
-  html body div#__next section.sectors-section .sectors-grid .sector-card,
-  html body div#__next .sectors-section .sectors-grid .sector-card {
-    background: #ffffff !important;
-    color: #1a202c !important;
-    text-shadow: none !important;
-    border: 1px solid #e2e8f0 !important;
+  /* ========== MOBILE LAYOUT FIXES ========== */
+  html body div#__next {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Container responsivo */
+  html body div#__next .container,
+  html body div#__next .container-fluid {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    max-width: 100% !important;
+  }
+  
+  /* ========== VISUAL POLLUTION FIXES ========== */
+  /* Remove cursor pointers on mobile */
+  html body div#__next * {
+    cursor: default !important;
+  }
+  
+  /* Hide desktop-only elements */
+  html body div#__next .desktop-only,
+  html body div#__next .cursor-pointer {
+    display: none !important;
+  }
+  
+  /* Reduce badge pollution */
+  html body div#__next .badge-container {
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+  
+  html body div#__next .badge {
+    font-size: 10px !important;
+    padding: 4px 8px !important;
+    margin: 2px !important;
+    opacity: 0.9 !important;
+  }
+  
+  /* Clean card spacing */
+  html body div#__next .card,
+  html body div#__next .service-card,
+  html body div#__next .sector-card {
+    margin-bottom: 24px !important;
+    padding: 20px !important;
     border-radius: 12px !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
   }
   
-  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-card-content,
-  html body div#__next .sectors-section .sectors-grid .sector-card .sector-card-content {
-    background: #ffffff !important;
-    color: #1a202c !important;
-    text-shadow: none !important;
-    padding: 24px !important;
+  /* ========== HERO SECTION MOBILE ========== */
+  html body div#__next .hero-section {
+    padding: 40px 20px !important;
+    min-height: auto !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
   }
   
-  /* Títulos - Superar sectors.css linha 388 */
-  html body div#__next section.sectors-section .sectors-grid .sector-card h3,
-  html body div#__next .sectors-section .sectors-grid .sector-card h3 {
-    color: #1a202c !important;
-    font-weight: 700 !important;
-    text-shadow: none !important;
+  html body div#__next .hero-section h1,
+  html body div#__next .hero-section .hero-title-modern {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 16px !important;
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
   }
   
-  /* Descrições - Superar sectors.css linha 402 */
-  html body div#__next section.sectors-section .sectors-grid .sector-card p,
-  html body div#__next .sectors-section .sectors-grid .sector-card p,
-  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-description-contrast,
-  html body div#__next .sectors-section .sectors-grid .sector-card .sector-description-contrast {
-    color: #2d3748 !important;
-    font-weight: 500 !important;
-    text-shadow: none !important;
+  html body div#__next .hero-section p,
+  html body div#__next .hero-section .hero-subtitle-modern {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 24px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
   }
   
-  /* Listas - Superar sectors.css linha 433 */
-  html body div#__next section.sectors-section .sectors-grid .sector-card li,
-  html body div#__next .sectors-section .sectors-grid .sector-card li,
-  html body div#__next section.sectors-section .sectors-grid .sector-card .sector-features li,
-  html body div#__next .sectors-section .sectors-grid .sector-card .sector-features li {
-    color: #2d3748 !important;
-    text-shadow: none !important;
-    font-weight: 500 !important;
+  /* ========== STATISTICS MOBILE - CLEAN LAYOUT ========== */
+  html body div#__next .hero-social-proof-enhanced {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px !important;
+    padding: 20px !important;
+    margin-top: 30px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px !important;
+    backdrop-filter: blur(10px) !important;
   }
   
-  /* ========== SERVICE CARDS ========== */
-  html body div#__next .service-card {
-    background: #ffffff !important;
-    color: #1a202c !important;
-    text-shadow: none !important;
-    border: 1px solid #e2e8f0 !important;
+  html body div#__next .proof-item-enhanced {
+    text-align: center !important;
+    padding: 16px 8px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
     border-radius: 12px !important;
-    padding: 24px !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
   }
   
-  html body div#__next .service-card h3 {
-    color: #1a202c !important;
-    font-weight: 700 !important;
-    text-shadow: none !important;
+  html body div#__next .proof-number {
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin-bottom: 6px !important;
+    display: block !important;
+    line-height: 1.1 !important;
   }
   
-  html body div#__next .service-card p {
-    color: #2d3748 !important;
+  html body div#__next .proof-label {
+    font-size: 11px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+  }
+  
+  /* ========== WHATSAPP BUTTON MOBILE ========== */
+  html body div#__next .whatsapp-float,
+  html body div#__next .whatsapp-button {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    background: #25d366 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4) !important;
+  }
+  
+  /* ========== BADGES MOBILE - REDUCED POLLUTION ========== */
+  html body div#__next .badge,
+  html body div#__next .card-badge {
+    font-size: 9px !important;
+    padding: 3px 8px !important;
+    border-radius: 12px !important;
+    background: rgba(30, 64, 175, 0.8) !important;
+    color: #ffffff !important;
     font-weight: 500 !important;
+    margin: 2px !important;
+    display: inline-block !important;
+    backdrop-filter: blur(4px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.3px !important;
+  }
+  
+  /* NUCLEAR BADGE POLLUTION CLEANUP */
+  html body div#__next .badge:nth-child(n+3) {
+    display: none !important;
+  }
+  
+  /* Hide desktop hover cursors completely */
+  html body div#__next .sector-card:hover,
+  html body div#__next .service-card:hover,
+  html body div#__next *:hover {
+    transform: none !important;
+    cursor: default !important;
+  }
+  
+  /* Remove all desktop visual effects */
+  html body div#__next .hover-effect,
+  html body div#__next .desktop-cursor,
+  html body div#__next .tooltip {
+    display: none !important;
+  }
+  
+  /* Clean badge positioning */
+  html body div#__next .badge {
+    position: static !important;
+    float: none !important;
+    margin: 2px 4px 2px 0 !important;
+  }
+  
+  /* ========== CARDLESS MOBILE DESIGN 2024 ========== */
+  /* Based on UX research: Single Column Layout - Clean vertical list without cards */
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .row .sector-card.sector-card.sector-card.sector-card,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-radius: 0 !important;
+    padding: 24px 0 !important;
+    transition: none !important;
+    border: none !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    position: relative !important;
+    overflow: visible !important;
+    min-height: auto !important;
+    height: auto !important;
+    display: block !important;
+    flex-direction: column !important;
+    box-shadow: none !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+    margin: 0 !important;
+    left: unset !important;
+    right: unset !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    cursor: default !important;
     text-shadow: none !important;
+  }
+  
+  /* CARDLESS CONTENT DESIGN - Clean list item styling */
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content.sector-card-content.sector-card-content,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content.sector-card-content.sector-card-content {
+    background: transparent !important;
+    color: #374151 !important;
+    text-shadow: none !important;
+    padding: 0 20px !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    backdrop-filter: none !important;
+    display: block !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    min-height: auto !important;
+  }
+  
+  /* CLEAN LIST TITLES - Minimalist typography */
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content h3.sector-card-content.sector-card-content,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content h3.sector-card-content.sector-card-content,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card h3.sector-card-content.sector-card-content,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card h3.sector-card-content.sector-card-content {
+    color: #111827 !important;
+    font-weight: 600 !important;
+    text-shadow: none !important;
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    margin: 0 0 8px 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    letter-spacing: -0.3px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+  
+  /* CLEAN LIST DESCRIPTIONS - Readable text */
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content p.sector-card-content.sector-card-content,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content p.sector-card-content.sector-card-content,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card p.sector-card-content.sector-card-content,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card p.sector-card-content.sector-card-content {
+    color: #6b7280 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin: 0 0 12px 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+  
+  /* NUCLEAR LISTS OVERRIDE */
+  html body div#__next main section.sectors-section .container .sectors-grid .sector-card .sector-card-content ul,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content ul,
+  html body div#__next main section.sectors-section .container .sectors-grid .sector-card ul,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card ul,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-features {
+    margin: 16px 0 !important;
+    padding-left: 0 !important;
+    list-style: none !important;
+  }
+  
+  html body div#__next main section.sectors-section .container .sectors-grid .sector-card .sector-card-content li,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content li,
+  html body div#__next main section.sectors-section .container .sectors-grid .sector-card li,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card li,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-features li {
+    color: #4a5568 !important;
+    text-shadow: none !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    padding: 4px 0 !important;
+    position: relative !important;
+    padding-left: 20px !important;
+  }
+  
+  html body div#__next main section.sectors-section .container .sectors-grid .sector-card .sector-card-content li:before,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content li:before,
+  html body div#__next main section.sectors-section .container .sectors-grid .sector-card li:before,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card li:before,
+  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-features li:before {
+    content: "✓" !important;
+    position: absolute !important;
+    left: 0 !important;
+    color: #1e40af !important;
+    font-weight: 600 !important;
   }
   
   /* ========== BUTTONS IN CARDS ========== */
@@ -80,42 +304,270 @@
     background: #1e40af !important;
     color: #ffffff !important;
     border: none !important;
-    padding: 12px 24px !important;
+    padding: 10px 20px !important;
     border-radius: 8px !important;
     font-weight: 600 !important;
     text-decoration: none !important;
+    font-size: 14px !important;
+    margin-top: 16px !important;
+    display: inline-block !important;
+    transition: all 0.3s ease !important;
   }
   
-  /* ========== HERO SECTION ========== */
-  html body div#__next .hero-section {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%) !important;
+  html body div#__next .sector-card .btn-primary:hover,
+  html body div#__next .sector-card .cta-button:hover {
+    background: #1e3a8a !important;
+    transform: translateY(-2px) !important;
+  }
+  
+  /* ========== CONTENT SECTIONS - CLEAN LAYOUT ========== */
+  html body div#__next .content-section,
+  html body div#__next .about-section,
+  html body div#__next .benefits-section {
+    padding: 40px 20px !important;
+    background: #f8fafc !important;
+    margin: 0 !important;
+  }
+  
+  html body div#__next .content-section h2,
+  html body div#__next .about-section h2,
+  html body div#__next .benefits-section h2 {
+    font-size: 17px !important;
+    line-height: 1.3 !important;
+    margin: 0 0 16px 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    letter-spacing: -0.3px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  }
+  
+  html body div#__next .content-section p,
+  html body div#__next .about-section p,
+  html body div#__next .benefits-section p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #4a5568 !important;
+    margin-bottom: 20px !important;
+    text-align: left !important;
+  }
+  
+  /* ========== BUTTON CLEANUP ========== */
+  html body div#__next .cta-section,
+  html body div#__next .call-to-action {
+    padding: 30px 20px !important;
+    text-align: center !important;
+    background: #ffffff !important;
+    margin: 20px 0 !important;
+  }
+  
+  html body div#__next .cta-button,
+  html body div#__next .btn-cta {
+    background: #1e40af !important;
     color: #ffffff !important;
+    padding: 14px 28px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    border: none !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    margin: 10px auto !important;
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3) !important;
+    transition: all 0.3s ease !important;
   }
   
-  html body div#__next .hero-section h1,
-  html body div#__next .hero-section .hero-title-modern {
-    color: #ffffff !important;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  html body div#__next .cta-button:hover,
+  html body div#__next .btn-cta:hover {
+    background: #1e3a8a !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(30, 64, 175, 0.4) !important;
   }
   
-  html body div#__next .hero-section p,
-  html body div#__next .hero-section .hero-subtitle-modern {
-    color: rgba(255, 255, 255, 0.85) !important;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  /* ========== MODERN MOBILE HEADER 2024 ========== */
+  /* Based on USA best practices: Clean, minimal, touch-optimized */
+  html body div#__next .site-header {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    padding: 12px 0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: none !important;
+  }
+
+  html body div#__next .site-header .container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    max-width: 100% !important;
+    padding: 0 16px !important;
+    margin: 0 auto !important;
+    height: 56px !important;
+  }
+
+  /* Logo optimized for mobile */
+  html body div#__next .site-header .site-logo {
+    z-index: 1001 !important;
+    flex-shrink: 0 !important;
+  }
+
+  html body div#__next .site-header .site-logo img {
+    max-height: 40px !important;
+    width: auto !important;
+    transition: none !important;
   }
   
-  /* ========== STATISTICS ========== */
-  html body div#__next .hero-social-proof-enhanced .proof-number,
-  html body div#__next .proof-item-enhanced .proof-number {
-    color: #ffffff !important;
-    font-weight: 800 !important;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  /* Modern hamburger menu */
+  html body div#__next .site-header .menu-toggle {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: none !important;
+    border: none !important;
+    font-size: 20px !important;
+    color: #374151 !important;
+    cursor: pointer !important;
+    z-index: 1001 !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    transition: background-color 0.2s ease !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  html body div#__next .site-header .menu-toggle:hover,
+  html body div#__next .site-header .menu-toggle:active {
+    background: #f3f4f6 !important;
   }
   
-  html body div#__next .hero-social-proof-enhanced .proof-label,
-  html body div#__next .proof-item-enhanced .proof-label {
-    color: rgba(255, 255, 255, 0.8) !important;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) !important;
+  /* Full-screen mobile navigation */
+  html body div#__next .site-header .main-navigation {
+    position: fixed !important;
+    top: 0 !important;
+    right: -100% !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background: #ffffff !important;
+    padding: 80px 0 20px 0 !important;
+    overflow-y: auto !important;
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: block !important;
+    z-index: 1000 !important;
+    box-shadow: none !important;
+  }
+  
+  html body div#__next .site-header .main-navigation.active {
+    right: 0 !important;
+  }
+  
+  html body div#__next .site-header .main-navigation .show-submenu {
+    max-height: 300px !important;
+  }
+  
+  /* Clean navigation list */
+  html body div#__next .site-header .main-navigation ul {
+    flex-direction: column !important;
+    width: 100% !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  html body div#__next .site-header .main-navigation li {
+    margin: 0 !important;
+    width: 100% !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+  }
+  
+  /* Touch-optimized navigation links */
+  html body div#__next .site-header .main-navigation a {
+    padding: 20px 24px !important;
+    color: #111827 !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    transition: background-color 0.2s ease !important;
+    min-height: 56px !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+  
+  html body div#__next .site-header .main-navigation a:hover,
+  html body div#__next .site-header .main-navigation a:active {
+    background: #f9fafb !important;
+    color: #2563eb !important;
+  }
+  
+  html body div#__next .site-header .main-navigation a:active {
+    background: #f9fafb !important;
+    color: #2563eb !important;
+  }
+  
+  /* Submenu styling */
+  html body div#__next .site-header .main-navigation .has-submenu > a {
+    position: relative !important;
+  }
+
+  html body div#__next .site-header .main-navigation .mobile-dropdown-icon {
+    font-size: 14px !important;
+    color: #6b7280 !important;
+    transition: transform 0.2s ease !important;
+  }
+
+  html body div#__next .site-header .main-navigation .submenu-active .mobile-dropdown-icon {
+    transform: rotate(180deg) !important;
+  }
+
+  html body div#__next .site-header .main-navigation .sub-menu {
+    background: #f8fafc !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 0.3s ease !important;
+    position: static !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    padding: 0 !important;
+  }
+  
+  html body div#__next .site-header .main-navigation .sub-menu a {
+    padding: 16px 24px 16px 48px !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    color: #6b7280 !important;
+    border-bottom: none !important;
+  }
+
+  html body div#__next .site-header .main-navigation .sub-menu a:hover,
+  html body div#__next .site-header .main-navigation .sub-menu a:active {
+    background: #f1f5f9 !important;
+    color: #2563eb !important;
+  }
+  
+  /* Overlay when menu is open */
+  html body.menu-open::before {
+    content: '' !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    z-index: 999 !important;
+    opacity: 1 !important;
+    transition: opacity 0.3s ease !important;
+  }
+
+  html body.menu-open {
+    overflow: hidden !important;
   }
   
   /* ========== HEADER ========== */
@@ -126,18 +578,14 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
   }
   
-  html body div#__next header .navbar-brand,
-  html body div#__next header .nav-link {
-    color: #1a202c !important;
-    text-shadow: none !important;
-  }
-  
-  /* ========== FOOTER ========== */
+  /* ========== FOOTER MOBILE ========== */
   html body div#__next footer,
   html body div#__next .footer,
   html body div#__next .site-footer {
     background: #0f172a !important;
     color: #ffffff !important;
+    padding: 30px 20px !important;
+    text-align: center !important;
   }
   
   html body div#__next footer a,
@@ -146,6 +594,8 @@
   html body div#__next .site-footer a {
     color: rgba(255, 255, 255, 0.8) !important;
     text-decoration: none !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
   }
   
   html body div#__next footer a:hover,
@@ -154,44 +604,208 @@
     color: #ffffff !important;
   }
   
-  /* ========== SERVICES SECTION ========== */
+  /* ========== SERVICES SECTION MOBILE ========== */
   html body div#__next .services-section {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%) !important;
-    color: #ffffff !important;
+    padding: 40px 20px !important;
+    background: #f8fafc !important;
   }
   
-  html body div#__next .services-section h2,
-  html body div#__next .services-section h3 {
-    color: #ffffff !important;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  html body div#__next .services-section h2 {
+    font-size: 24px !important;
+    color: #1a202c !important;
+    text-align: center !important;
+    margin-bottom: 30px !important;
+    font-weight: 700 !important;
   }
   
-  html body div#__next .services-section p {
-    color: rgba(255, 255, 255, 0.9) !important;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+  html body div#__next .services-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
   }
   
-  /* ========== BADGES ========== */
-  html body div#__next .badge,
-  html body div#__next .card-badge,
-  html body div#__next .btn-badge {
-    background: #1e40af !important;
-    color: #ffffff !important;
-    font-weight: 600 !important;
-    padding: 4px 12px !important;
-    border-radius: 20px !important;
+  html body div#__next .service-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    margin-bottom: 20px !important;
+  }
+  
+  html body div#__next .service-card h3 {
+    color: #1a202c !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+  }
+  
+  html body div#__next .service-card p {
+    color: #4a5568 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 16px !important;
   }
   
   /* ========== GLASSMORPHISM OVERRIDE ========== */
   html body div#__next .glassmorphism {
-    background: #ffffff !important;
-    backdrop-filter: none !important;
-    border: 1px solid #e2e8f0 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 16px !important;
   }
   
-  /* ========== GLOBAL TEXT SHADOW REMOVAL ========== */
+  /* ========== GLOBAL MOBILE FIXES ========== */
+  html body div#__next * {
+    box-sizing: border-box !important;
+  }
+  
   html body div#__next .sector-card *,
-  html body div#__next .service-card * {
+  html body div#__next .service-card *,
+  html body div#__next .content-section * {
     text-shadow: none !important;
+  }
+  
+  /* Prevent horizontal scroll */
+  html body div#__next {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  
+  /* Responsive images */
+  html body div#__next img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Responsive tables */
+  html body div#__next table {
+    width: 100% !important;
+    font-size: 14px !important;
+  }
+  
+  /* ========== FINAL CLEANUP - REMOVE VISUAL POLLUTION ========== */
+  /* NUCLEAR HOVER EFFECTS REMOVAL */
+  html body div#__next .hover-effect,
+  html body div#__next *[class*="hover"],
+  html body div#__next .tooltip,
+  html body div#__next .cursor-pointer {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* NUCLEAR CURSOR CLEANUP + HOVER DISABLE */
+  html body div#__next *,
+  html body div#__next *:hover,
+  html body div#__next *:focus,
+  html body div#__next *:active {
+    cursor: default !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* DISABLE ALL INTERACTIONS FOR CARDLESS DESIGN */
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card:hover,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card:hover *,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card:hover .sector-card-content,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card:hover h3,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card:hover p {
+    transform: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+    background: transparent !important;
+    color: inherit !important;
+    filter: none !important;
+    scale: 1 !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* HIDE CARD HEADERS AND IMAGES FOR CLEAN LIST */
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card .sector-card-header,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card .sector-image-wrapper,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card .sector-image,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card .sector-icon-large {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Clean up text overflow issues */
+  html body div#__next .text-truncate {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+  
+  /* CLEAN SECTION SPACING FOR LIST LAYOUT */
+  html body div#__next section {
+    margin-bottom: 0 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* SECTORS SECTION - CLEAN LIST CONTAINER */
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section {
+    background: #ffffff !important;
+    padding: 40px 0 !important;
+  }
+
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container,
+  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid {
+    display: block !important;
+    grid-template-columns: none !important;
+    gap: 0 !important;
+    padding: 0 20px !important;
+    max-width: 100% !important;
+  }
+  
+  html body div#__next section:last-child {
+    border-bottom: none !important;
+  }
+  
+  /* NUCLEAR BUTTON CLEANUP */
+  html body div#__next button,
+  html body div#__next .btn,
+  html body div#__next a {
+    cursor: default !important;
+    user-select: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+  
+  html body div#__next button:hover,
+  html body div#__next .btn:hover,
+  html body div#__next a:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* NUCLEAR BADGE POSITIONING */
+  html body div#__next .badge-absolute,
+  html body div#__next .badge {
+    position: static !important;
+    float: none !important;
+    margin: 2px 4px 2px 0 !important;
+    z-index: 1 !important;
+  }
+  
+  /* REMOVE DESKTOP ANIMATIONS */
+  html body div#__next * {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  /* FORCE MOBILE LAYOUT */
+  html body div#__next .desktop-only,
+  html body div#__next .d-none.d-md-block,
+  html body div#__next .d-none.d-lg-block {
+    display: none !important;
   }
 }

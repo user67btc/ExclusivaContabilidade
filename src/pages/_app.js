@@ -5,6 +5,7 @@ import { AuthProvider } from '../contexts/AuthContext';
 import { NotificationProvider } from '../contexts/NotificationContext';
 import { GoogleAnalytics, FacebookPixel } from '../components/analytics';
 import ClientBootstrap from '../components/ClientBootstrap';
+import MobileForceFix from '../components/MobileForceFix';
 
 // CSS imports - ORDEM CRÍTICA: footer.css primeiro, mobile nuclear por último
 import '../styles/globals.css';
@@ -22,7 +23,7 @@ import '../styles/contact-cta.css';
 import '../styles/whatsapp-float.css';
 import '../styles/scroll-top.css';
 import '../styles/hero-2025-trends.css';
-// MOBILE STYLES - CONSOLIDATED SINGLE FILE
+// MOBILE STYLES - CONSOLIDATED SINGLE FILE (MUST BE LAST TO OVERRIDE ALL)
 import '../styles/mobile-consolidated.css';
 
 // Fonte Inter via next/font (melhor performance e estabilidade)
@@ -35,6 +36,9 @@ function MyApp({ Component, pageProps }) {
         <AuthProvider>
           {/* FORÇA NUCLEAR: Componente JavaScript para aplicar estilos inline */}
           <ClientBootstrap />
+          
+          {/* MOBILE FORCE FIX: Aplica estilos mobile via JavaScript inline */}
+          <MobileForceFix />
           
           {/* Analytics Components - Carregam apenas se as variáveis estiverem configuradas */}
           <GoogleAnalytics />
