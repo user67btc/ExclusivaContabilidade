@@ -111,7 +111,7 @@
 
   /* ========== HERO SECTION - DARK BLUE FORMAL PALETTE ========== */
   html body div#__next .hero-section {
-    padding: 100px 20px 60px !important; /* Adjusted top padding for larger header */
+    padding: 108px 20px 60px !important; /* Adjusted for nuclear header height (88px + 20px) */
     min-height: 100vh !important;
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
     color: #ffffff !important;
@@ -743,18 +743,21 @@
     color: #ffffff !important;
   }
   
-  /* ========== USA 2024 MOBILE HEADER - WHITE BACKGROUND ========== */
+  /* ========== NUCLEAR MOBILE HEADER - MAXIMUM SPECIFICITY ========== */
   html body div#__next header,
   html body div#__next .navbar,
   html body div#__next .header,
-  html body div#__next .site-header {
+  html body div#__next .site-header,
+  html body div#__next header.site-header,
+  html body div#__next .site-header.site-header,
+  html body div#__next .site-header.site-header.site-header {
     background: #ffffff !important;
-    padding: 16px 20px !important; /* Increased padding for larger header */
+    padding: 20px 20px !important; /* Nuclear padding override */
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    z-index: 1000 !important;
+    z-index: 9999 !important; /* Nuclear z-index */
     width: 100% !important;
     box-sizing: border-box !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
@@ -764,8 +767,9 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    min-height: 80px !important; /* Increased header height */
-    position: relative !important;
+    min-height: 88px !important; /* Nuclear header height */
+    height: 88px !important; /* Force exact height */
+    max-height: 88px !important; /* Prevent shrinking */
   }
 
   /* Nuclear header background override - White Background */
@@ -793,28 +797,38 @@
     background: #ffffff !important;
   }
 
-  /* USA 2024 Logo Standards - Touch-Optimized */
-  html body div#__next .site-header .site-logo {
-    z-index: 1001 !important;
+  /* ========== NUCLEAR LOGO CONTAINER - MAXIMUM SPECIFICITY ========== */
+  html body div#__next .site-header .site-logo,
+  html body div#__next header .site-logo,
+  html body div#__next .site-header.site-header .site-logo,
+  html body div#__next .site-header.site-header.site-header .site-logo {
+    z-index: 10000 !important; /* Nuclear z-index */
     flex-shrink: 0 !important;
-    min-height: 60px !important; /* Increased for larger header */
+    min-height: 70px !important; /* Nuclear height for larger header */
+    height: 70px !important; /* Force exact height */
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
     left: 20px !important;
-    width: 60px !important; /* Increased width for larger logo */
+    width: 70px !important; /* Nuclear width for larger logo */
   }
 
+  /* ========== NUCLEAR LOGO IMAGE - MAXIMUM SPECIFICITY ========== */
   html body div#__next .site-header .site-logo img,
   html body div#__next header .site-logo img,
   html body div#__next .navbar .site-logo img,
-  html body div#__next .header .site-logo img {
-    max-height: 56px !important; /* Increased logo size for better visibility */
+  html body div#__next .header .site-logo img,
+  html body div#__next .site-header.site-header .site-logo img,
+  html body div#__next .site-header.site-header.site-header .site-logo img {
+    max-height: 64px !important; /* Nuclear logo size - significantly larger */
+    min-height: 64px !important; /* Force minimum size */
+    height: 64px !important; /* Force exact height */
     width: auto !important;
     filter: none !important;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     box-shadow: none !important;
+    transform: scale(1) !important; /* Prevent any scaling down */
   }
 
   /* Remove logo filters on all header contexts */
