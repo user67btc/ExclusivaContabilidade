@@ -3,9 +3,9 @@
    Padronização do espaçamento entre todas as seções do site
    ========================================================================== */
 
-/* RESET DE MARGENS PARA TODAS AS SEÇÕES */
+/* RESET DE MARGENS PARA TODAS AS SEÇÕES - MOBILE DISABLED */
+/* MOBILE: Let mobile-consolidated.css handle hero-section completely */
 section,
-.hero-section,
 .services-section,
 .sectors-section,
 .faq-section,
@@ -16,9 +16,19 @@ section,
   margin-bottom: 0 !important;
 }
 
-/* ESPAÇAMENTO PADRÃO ENTRE SEÇÕES */
-.hero-section {
-  padding-bottom: 8rem !important;
+/* DESKTOP ONLY - Hero section margin reset */
+@media (min-width: 992px) {
+  .hero-section {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* ESPAÇAMENTO PADRÃO ENTRE SEÇÕES - DESKTOP ONLY */
+@media (min-width: 992px) {
+  .hero-section {
+    padding-bottom: 8rem !important;
+  }
 }
 
 .services-section {
