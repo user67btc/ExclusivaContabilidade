@@ -111,12 +111,15 @@
 
   /* ========== HERO SECTION - DARK BLUE FORMAL PALETTE ========== */
   html body div#__next .hero-section {
-    padding: 108px 20px 60px !important; /* Adjusted for nuclear header height (88px + 20px) */
-    min-height: 100vh !important;
+    padding-top: 128px !important; /* Nuclear spacing: 88px header + 40px margin */
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 60px !important;
+    min-height: calc(100vh - 88px) !important; /* Subtract header height */
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
     color: #ffffff !important;
     text-align: center !important;
-    margin-top: 0 !important;
+    margin-top: 88px !important; /* Nuclear margin to clear fixed header */
     position: relative !important;
     overflow: hidden !important;
     display: flex !important;
@@ -804,14 +807,14 @@
   html body div#__next .site-header.site-header.site-header .site-logo {
     z-index: 10000 !important; /* Nuclear z-index */
     flex-shrink: 0 !important;
-    min-height: 70px !important; /* Nuclear height for larger header */
-    height: 70px !important; /* Force exact height */
+    min-height: 48px !important; /* Proportional height */
+    height: 48px !important; /* Force exact height */
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
     left: 20px !important;
-    width: 70px !important; /* Nuclear width for larger logo */
+    width: 120px !important; /* Wider container for better proportion */
   }
 
   /* ========== NUCLEAR LOGO IMAGE - MAXIMUM SPECIFICITY ========== */
@@ -821,14 +824,16 @@
   html body div#__next .header .site-logo img,
   html body div#__next .site-header.site-header .site-logo img,
   html body div#__next .site-header.site-header.site-header .site-logo img {
-    max-height: 64px !important; /* Nuclear logo size - significantly larger */
-    min-height: 64px !important; /* Force minimum size */
-    height: 64px !important; /* Force exact height */
+    max-height: 40px !important; /* Proportional logo size */
+    min-height: 40px !important; /* Force minimum size */
+    height: 40px !important; /* Force exact height */
     width: auto !important;
+    max-width: 110px !important; /* Prevent logo from being too wide */
     filter: none !important;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     box-shadow: none !important;
     transform: scale(1) !important; /* Prevent any scaling down */
+    object-fit: contain !important; /* Maintain aspect ratio */
   }
 
   /* Remove logo filters on all header contexts */
