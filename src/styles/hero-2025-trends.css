@@ -678,45 +678,42 @@
 }
 
 @media (max-width: 768px) {
+  /* DISABLE ALL HERO STYLES ON MOBILE - LET MOBILE-CONSOLIDATED.CSS TAKE OVER */
   .hero-section {
-    padding: 3rem 0 !important;
+    all: unset !important;
   }
   
   .container-fluid {
-    padding: 0 1.5rem !important;
+    all: unset !important;
   }
   
   .hero-grid {
-    gap: 3rem !important;
+    all: unset !important;
   }
   
   .hero-title-modern {
-    font-size: 2.8rem !important;
+    all: unset !important;
   }
   
   .hero-main-image-modern {
-    height: 250px !important;
+    display: none !important;
   }
   
   .bento-grid-enhanced {
-    grid-template-columns: 1fr !important;
-    padding: 1.5rem !important;
-    gap: 1rem !important;
+    display: none !important;
   }
   
   .hero-cta-group {
-    flex-direction: column !important;
-    align-items: center !important;
+    all: unset !important;
   }
   
   .btn-modern {
-    width: 100% !important;
-    max-width: 320px !important;
+    all: unset !important;
   }
   
   .hero-trust-elements,
   .hero-social-proof {
-    justify-content: center !important;
+    display: none !important;
   }
 }
 
