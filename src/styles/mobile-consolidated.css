@@ -111,7 +111,7 @@
 
   /* ========== HERO SECTION - DARK BLUE FORMAL PALETTE ========== */
   html body div#__next .hero-section {
-    padding: 88px 20px 60px !important; /* Adjusted top padding to account for header height */
+    padding: 100px 20px 60px !important; /* Adjusted top padding for larger header */
     min-height: 100vh !important;
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
     color: #ffffff !important;
@@ -749,7 +749,7 @@
   html body div#__next .header,
   html body div#__next .site-header {
     background: #ffffff !important;
-    padding: 12px 20px !important;
+    padding: 16px 20px !important; /* Increased padding for larger header */
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
@@ -763,8 +763,8 @@
     -webkit-backdrop-filter: none !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important; /* Center content for alignment */
-    min-height: 68px !important;
+    justify-content: center !important;
+    min-height: 80px !important; /* Increased header height */
     position: relative !important;
   }
 
@@ -797,20 +797,20 @@
   html body div#__next .site-header .site-logo {
     z-index: 1001 !important;
     flex-shrink: 0 !important;
-    min-height: 48px !important;
+    min-height: 60px !important; /* Increased for larger header */
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    left: 20px !important; /* Position on left side */
-    width: 48px !important; /* Same width as menu button for center alignment */
+    left: 20px !important;
+    width: 60px !important; /* Increased width for larger logo */
   }
 
   html body div#__next .site-header .site-logo img,
   html body div#__next header .site-logo img,
   html body div#__next .navbar .site-logo img,
   html body div#__next .header .site-logo img {
-    max-height: 48px !important; /* Match menu button height for alignment */
+    max-height: 56px !important; /* Increased logo size for better visibility */
     width: auto !important;
     filter: none !important;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
