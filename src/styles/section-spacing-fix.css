@@ -67,8 +67,9 @@ section,
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
+  /* DISABLE HERO SECTION STYLES ON MOBILE - LET MOBILE-CONSOLIDATED.CSS HANDLE IT */
   .hero-section {
-    padding-bottom: 4rem !important;
+    all: unset !important;
   }
   
   .services-section,
