@@ -743,12 +743,12 @@
     color: #ffffff !important;
   }
   
-  /* ========== USA 2024 MOBILE HEADER - DARK BLUE FORMAL PALETTE ========== */
+  /* ========== USA 2024 MOBILE HEADER - WHITE BACKGROUND ========== */
   html body div#__next header,
   html body div#__next .navbar,
   html body div#__next .header,
   html body div#__next .site-header {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
+    background: #ffffff !important;
     padding: 12px 20px !important;
     position: fixed !important;
     top: 0 !important;
@@ -757,40 +757,39 @@
     z-index: 1000 !important;
     width: 100% !important;
     box-sizing: border-box !important;
-    border-bottom: none !important;
-    box-shadow: 0 4px 20px rgba(30, 58, 138, 0.3) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
+    justify-content: space-between !important;
     min-height: 68px !important;
-    position: relative !important;
   }
 
-  /* Nuclear header background override - Dark Blue Formal */
+  /* Nuclear header background override - White Background */
   html body div#__next .site-header,
   html body div#__next .site-header *,
   html body div#__next .site-header .container,
   html body div#__next .site-header .navbar-brand,
   html body div#__next .site-header .nav-wrapper {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
-    background-color: #1e3a8a !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
   }
 
-  /* Remove any white backgrounds from header */
+  /* Ensure white background for header */
   html body div#__next header,
   html body div#__next header *,
   html body div#__next .site-header,
   html body div#__next .site-header * {
-    background-color: transparent !important;
+    background-color: #ffffff !important;
     background-image: none !important;
   }
 
-  /* Apply dark blue formal gradient to all header elements */
+  /* Maintain white background for header */
   html body div#__next header,
   html body div#__next .site-header {
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
+    background: #ffffff !important;
   }
 
   /* USA 2024 Logo Standards - Touch-Optimized */
@@ -800,20 +799,18 @@
     min-height: 44px !important;
     display: flex !important;
     align-items: center !important;
-    position: absolute !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important; /* Center logo horizontally */
+    position: static !important; /* Remove absolute positioning */
   }
 
   html body div#__next .site-header .site-logo img,
   html body div#__next header .site-logo img,
   html body div#__next .navbar .site-logo img,
   html body div#__next .header .site-logo img {
-    max-height: 52px !important; /* Increased size for better visibility */
+    max-height: 52px !important;
     width: auto !important;
     filter: none !important;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3) !important; /* Subtle white glow */
+    box-shadow: none !important; /* Remove shadow */
   }
 
   /* Remove logo filters on all header contexts */
@@ -824,7 +821,7 @@
     filter: none !important; /* Preserve original logo colors */
   }
   
-  /* USA 2024 Hamburger Menu - Dark Formal */
+  /* USA 2024 Hamburger Menu - White Background */
   html body div#__next .site-header .menu-toggle {
     display: flex !important;
     align-items: center !important;
@@ -832,33 +829,32 @@
     background: none !important;
     border: none !important;
     font-size: 24px !important;
-    color: #ffffff !important;
+    color: #333333 !important;
     padding: 12px !important;
     border-radius: 8px !important;
     min-width: 48px !important;
     min-height: 48px !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2) !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     cursor: pointer !important;
     -webkit-tap-highlight-color: transparent !important;
-    position: absolute !important;
-    right: 20px !important; /* Position menu button on the right */
+    position: static !important; /* Remove absolute positioning */
     flex-shrink: 0 !important;
   }
 
   /* Hamburger menu active state */
   html body div#__next .site-header .menu-toggle:active {
     transform: scale(0.95) !important;
-    background: rgba(255, 255, 255, 0.25) !important;
+    background: rgba(0, 0, 0, 0.1) !important;
   }
 
   html body div#__next .site-header .menu-toggle:hover {
-    background: rgba(255, 255, 255, 0.2) !important;
-    border-color: rgba(255, 255, 255, 0.4) !important;
+    background: rgba(0, 0, 0, 0.08) !important;
+    border-color: rgba(0, 0, 0, 0.2) !important;
   }
   
   /* Full-screen mobile navigation */
