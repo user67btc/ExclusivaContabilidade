@@ -109,10 +109,11 @@
     overflow: hidden !important;
   }
 
+  /* ========== HERO SECTION - DARK FORMAL PALETTE ========== */
   html body div#__next .hero-section {
-    padding: 100px 16px 60px !important; /* Increased top padding to account for header */
+    padding: 100px 16px 60px !important;
     min-height: 100vh !important;
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
     color: #ffffff !important;
     text-align: center !important;
     margin-top: 0 !important;
@@ -284,38 +285,38 @@
     visibility: visible !important;
   }
 
-  /* USA 2024 Button Standards - Touch-First Design */
+  /* USA 2024 Button Standards - Dark Formal Design */
   html body div#__next .hero-section .btn,
   html body div#__next .hero-section .cta-button,
   html body div#__next .hero-section .btn-modern,
   html body div#__next .hero-section .hero-btn-primary,
   html body div#__next .hero-section .btn-outline,
   html body div#__next .hero-section .btn-secondary {
-    min-height: 48px !important; /* USA standard minimum touch target */
-    padding: 16px 32px !important; /* Increased for better touch area */
-    font-size: 16px !important; /* USA standard button text size */
-    margin: 12px auto !important; /* Increased spacing between buttons */
-    width: calc(100% - 32px) !important; /* Full width with margins */
-    max-width: 280px !important; /* Optimal mobile width */
+    min-height: 48px !important;
+    padding: 16px 32px !important;
+    font-size: 16px !important;
+    margin: 12px auto !important;
+    width: calc(100% - 32px) !important;
+    max-width: 280px !important;
     display: block !important;
     text-align: center !important;
     box-sizing: border-box !important;
-    background: rgba(255, 255, 255, 0.15) !important;
+    background: rgba(255, 255, 255, 0.08) !important; /* Darker for formal look */
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important; /* Subtle border */
     color: #ffffff !important;
     border-radius: 12px !important;
     font-weight: 600 !important;
     text-decoration: none !important;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important; /* Darker shadow */
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     cursor: pointer !important;
     position: relative !important;
     overflow: hidden !important;
   }
 
-  /* Button hover/active states for better feedback */
+  /* Button hover/active states - Dark Formal */
   html body div#__next .hero-section .btn:active,
   html body div#__next .hero-section .cta-button:active,
   html body div#__next .hero-section .btn-modern:active,
@@ -323,7 +324,8 @@
   html body div#__next .hero-section .btn-outline:active,
   html body div#__next .hero-section .btn-secondary:active {
     transform: translateY(1px) !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
   }
 
 
@@ -626,21 +628,21 @@
     box-sizing: border-box !important;
   }
   
-  /* USA 2024 Section Headings - Improved Hierarchy */
+  /* USA 2024 Section Headings - Dark Formal Hierarchy */
   html body div#__next .content-section h2,
   html body div#__next .about-section h2,
   html body div#__next .benefits-section h2 {
-    font-size: clamp(24px, 6vw, 32px) !important; /* Larger for better hierarchy */
-    line-height: 1.25 !important; /* USA standard for headings */
-    margin: 0 0 24px 0 !important; /* 24px spacing for visual separation */
+    font-size: clamp(24px, 6vw, 32px) !important;
+    line-height: 1.25 !important;
+    margin: 0 0 24px 0 !important;
     padding: 0 16px !important;
     text-align: center !important;
     font-weight: 700 !important;
-    color: #1e40af !important;
+    color: #e2e8f0 !important; /* Light gray for dark backgrounds */
     word-wrap: break-word !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    letter-spacing: -0.01em !important; /* Slight tightening for better readability */
+    letter-spacing: -0.01em !important;
   }
   
   /* USA 2024 Body Text Standards */
@@ -658,20 +660,20 @@
     box-sizing: border-box !important;
   }
   
-  /* ========== CTA SECTIONS - CORPORATE STYLE ========== */
+  /* ========== CTA SECTIONS - DARK FORMAL STYLE ========== */
   html body div#__next .cta-section,
   html body div#__next .call-to-action,
   html body div#__next .contact-cta-section {
     padding: 30px 20px !important;
     text-align: center !important;
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
     color: white !important;
-    margin: 20px 0 !important;
+    margin: 0 !important;
     position: relative !important;
     overflow: hidden !important;
+    box-sizing: border-box !important;
   }
 
-  /* CTA sections overlay */
   html body div#__next .cta-section::before,
   html body div#__next .call-to-action::before,
   html body div#__next .contact-cta-section::before {
@@ -693,26 +695,26 @@
     z-index: 2 !important;
   }
   
-  /* USA 2024 CTA Button Standards */
+  /* USA 2024 CTA Button Standards - Dark Formal */
   html body div#__next .cta-button,
   html body div#__next .btn-cta,
   html body div#__next .btn-primary,
   html body div#__next .hero-btn-primary {
-    min-height: 48px !important; /* USA minimum touch target */
-    background: rgba(255, 255, 255, 0.15) !important;
+    min-height: 48px !important;
+    background: rgba(255, 255, 255, 0.08) !important; /* Darker for formal look */
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important; /* Subtle border */
     color: #ffffff !important;
-    padding: 16px 32px !important; /* Increased touch area */
+    padding: 16px 32px !important;
     border-radius: 12px !important;
     font-weight: 600 !important;
     font-size: 16px !important;
     text-decoration: none !important;
     display: block !important;
-    margin: 12px auto !important; /* 8px minimum spacing */
-    max-width: 320px !important; /* Optimal thumb reach */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+    margin: 12px auto !important;
+    max-width: 320px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important; /* Darker shadow */
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     text-align: center !important;
     box-sizing: border-box !important;
@@ -730,38 +732,38 @@
     color: #ffffff !important;
   }
   
-  /* ========== USA 2024 MOBILE HEADER STANDARDS ========== */
+  /* ========== USA 2024 MOBILE HEADER - DARK FORMAL PALETTE ========== */
   html body div#__next header,
   html body div#__next .navbar,
   html body div#__next .header,
   html body div#__next .site-header {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
-    padding: 16px 16px !important; /* Increased padding for better touch targets */
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
+    padding: 16px 16px !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     width: 100% !important;
     z-index: 1000 !important;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15) !important; /* Enhanced shadow for depth */
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3) !important; /* Darker shadow for formal look */
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
     box-sizing: border-box !important;
-    min-height: 64px !important; /* USA standard header height */
+    min-height: 64px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
   }
 
-  /* Nuclear header background override */
+  /* Nuclear header background override - Dark Formal */
   html body div#__next .site-header,
   html body div#__next .site-header *,
   html body div#__next .site-header .container,
   html body div#__next .site-header .navbar-brand,
   html body div#__next .site-header .nav-wrapper {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
-    background-color: #1e40af !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
+    background-color: #0f172a !important;
   }
 
   /* Remove any white backgrounds from header */
@@ -773,10 +775,10 @@
     background-image: none !important;
   }
 
-  /* Apply gradient to all header elements */
+  /* Apply dark formal gradient to all header elements */
   html body div#__next header,
   html body div#__next .site-header {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
   }
 
   /* USA 2024 Logo Standards - Touch-Optimized */
@@ -806,27 +808,27 @@
     filter: invert(1) brightness(2) !important;
   }
   
-  /* USA 2024 Hamburger Menu Standards */
+  /* USA 2024 Hamburger Menu - Dark Formal */
   html body div#__next .site-header .menu-toggle {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     background: none !important;
     border: none !important;
-    font-size: 24px !important; /* Increased for better visibility */
+    font-size: 24px !important;
     color: #ffffff !important;
     cursor: pointer !important;
-    padding: 14px !important; /* Increased for better touch area */
+    padding: 14px !important;
     border-radius: 12px !important;
-    background: rgba(255, 255, 255, 0.2) !important; /* More visible background */
+    background: rgba(255, 255, 255, 0.1) !important; /* Darker for formal look */
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border: 2px solid rgba(255, 255, 255, 0.4) !important; /* More visible border */
+    border: 2px solid rgba(255, 255, 255, 0.2) !important; /* Subtle border */
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
-    min-width: 52px !important; /* Increased for better visibility */
-    min-height: 52px !important; /* Increased for better visibility */
+    min-width: 52px !important;
+    min-height: 52px !important;
     z-index: 1001 !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important; /* Added shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important; /* Darker shadow */
   }
 
   /* Hamburger menu active state */
