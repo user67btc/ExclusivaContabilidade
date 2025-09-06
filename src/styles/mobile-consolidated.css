@@ -763,9 +763,9 @@
     -webkit-backdrop-filter: none !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: space-between !important;
+    justify-content: center !important; /* Center content for alignment */
     min-height: 68px !important;
-    gap: 16px !important; /* Add space between logo and menu */
+    position: relative !important;
   }
 
   /* Nuclear header background override - White Background */
@@ -797,11 +797,13 @@
   html body div#__next .site-header .site-logo {
     z-index: 1001 !important;
     flex-shrink: 0 !important;
-    min-height: 48px !important; /* Match menu button height */
+    min-height: 48px !important;
     display: flex !important;
     align-items: center !important;
-    position: static !important;
-    margin-right: auto !important;
+    justify-content: center !important;
+    position: absolute !important;
+    left: 20px !important; /* Position on left side */
+    width: 48px !important; /* Same width as menu button for center alignment */
   }
 
   html body div#__next .site-header .site-logo img,
@@ -844,9 +846,9 @@
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     cursor: pointer !important;
     -webkit-tap-highlight-color: transparent !important;
-    position: static !important;
+    position: absolute !important;
+    right: 20px !important; /* Position on right side */
     flex-shrink: 0 !important;
-    margin-left: auto !important; /* Ensure menu stays on the right */
   }
 
   /* Hamburger menu active state */
