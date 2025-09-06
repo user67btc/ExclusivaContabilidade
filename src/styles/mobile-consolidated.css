@@ -3,7 +3,7 @@
 /* CRITICAL: Must override sectors.css mobile rules with higher specificity */
 @media (max-width: 768px) {
   
-  /* ========== MOBILE LAYOUT FIXES ========== */
+  /* ========== MOBILE LAYOUT FIXES - USA 2024 STANDARDS ========== */
   html, body {
     width: 100% !important;
     max-width: 100vw !important;
@@ -11,6 +11,8 @@
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
+    font-size: 16px !important; /* USA standard base font size */
+    line-height: 1.5 !important; /* USA accessibility standard */
   }
 
   html body div#__next {
@@ -22,10 +24,10 @@
     box-sizing: border-box !important;
   }
   
-  /* Container responsivo */
+  /* Container responsivo - USA 2024 margins */
   html body div#__next .container,
   html body div#__next .container-fluid {
-    padding-left: 16px !important;
+    padding-left: 16px !important; /* USA minimum 16px margin from edges */
     padding-right: 16px !important;
     max-width: 100% !important;
     width: 100% !important;
@@ -82,7 +84,7 @@
   }
 
   html body div#__next .hero-section {
-    padding: 80px 16px 40px !important;
+    padding: 120px 16px 80px !important; /* Increased top padding for better visual balance */
     min-height: 100vh !important;
     background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
     color: #ffffff !important;
@@ -256,29 +258,42 @@
     visibility: visible !important;
   }
 
-  /* Responsive buttons */
+  /* USA 2024 Button Standards - Touch-First Design */
   html body div#__next .hero-section .btn,
   html body div#__next .hero-section .cta-button,
   html body div#__next .hero-section .btn-modern,
   html body div#__next .hero-section .hero-btn-primary {
-    padding: 14px 24px !important;
-    font-size: 16px !important;
-    margin: 8px auto !important;
+    min-height: 48px !important; /* USA standard minimum touch target */
+    padding: 16px 32px !important; /* Increased for better touch area */
+    font-size: 16px !important; /* USA standard button text size */
+    margin: 12px auto !important; /* 8px minimum spacing between elements */
     width: auto !important;
-    max-width: 90% !important;
+    max-width: 320px !important; /* Optimal thumb reach width */
     display: block !important;
     text-align: center !important;
     box-sizing: border-box !important;
-    background: rgba(255, 255, 255, 0.2) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
     color: #ffffff !important;
     border-radius: 12px !important;
     font-weight: 600 !important;
     text-decoration: none !important;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important; /* USA standard 200ms animation */
+    cursor: pointer !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  /* Button hover/active states for better feedback */
+  html body div#__next .hero-section .btn:active,
+  html body div#__next .hero-section .cta-button:active,
+  html body div#__next .hero-section .btn-modern:active,
+  html body div#__next .hero-section .hero-btn-primary:active {
+    transform: translateY(1px) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
   }
 
 
@@ -542,35 +557,38 @@
     z-index: 2 !important;
   }
   
+  /* Hero subtitle - USA 2024 Typography Standards */
   html body div#__next .hero-section p,
   html body div#__next .hero-section .hero-subtitle,
   html body div#__next .hero-section .hero-subtitle-modern {
-    font-size: clamp(14px, 4vw, 18px) !important;
-    line-height: 1.5 !important;
-    margin: 0 0 30px 0 !important;
-    padding: 0 16px !important;
+    font-size: clamp(16px, 4.5vw, 20px) !important; /* Larger for better readability */
+    line-height: 1.6 !important; /* USA standard for body text readability */
+    margin: 0 0 32px 0 !important; /* Increased spacing for better visual hierarchy */
+    padding: 0 24px !important; /* More padding for better text containment */
     text-align: center !important;
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: rgba(255, 255, 255, 0.95) !important; /* Higher contrast for accessibility */
     font-weight: 400 !important;
     opacity: 1 !important;
-    text-shadow: none !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important; /* Subtle depth */
     word-wrap: break-word !important;
-    max-width: 100% !important;
+    max-width: 600px !important; /* USA standard max line length for readability */
+    margin-left: auto !important;
+    margin-right: auto !important;
     box-sizing: border-box !important;
   }
   
   html body div#__next .hero-section h1,
   html body div#__next .hero-section .hero-title,
   html body div#__next .hero-section .hero-title-modern {
-    font-size: clamp(24px, 6vw, 32px) !important;
+    font-size: clamp(28px, 7vw, 36px) !important;
     line-height: 1.2 !important;
-    margin: 0 0 20px 0 !important;
+    margin: 0 0 24px 0 !important;
     padding: 0 16px !important;
     text-align: center !important;
-    letter-spacing: -0.5px !important;
+    letter-spacing: -0.02em !important;
     font-weight: 700 !important;
     color: #ffffff !important;
-    text-shadow: none !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
     word-wrap: break-word !important;
     hyphens: auto !important;
@@ -578,28 +596,36 @@
     box-sizing: border-box !important;
   }
   
+  /* USA 2024 Section Headings - Improved Hierarchy */
   html body div#__next .content-section h2,
   html body div#__next .about-section h2,
   html body div#__next .benefits-section h2 {
-    font-size: 24px !important;
-    line-height: 1.3 !important;
-    margin: 0 0 16px 0 !important;
-    padding: 0 !important;
+    font-size: clamp(24px, 6vw, 32px) !important; /* Larger for better hierarchy */
+    line-height: 1.25 !important; /* USA standard for headings */
+    margin: 0 0 24px 0 !important; /* 24px spacing for visual separation */
+    padding: 0 16px !important;
     text-align: center !important;
-    letter-spacing: -0.3px !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-    color: rgba(255, 255, 255, 0.95) !important;
     font-weight: 700 !important;
+    color: #1e40af !important;
+    word-wrap: break-word !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    letter-spacing: -0.01em !important; /* Slight tightening for better readability */
   }
   
+  /* USA 2024 Body Text Standards */
   html body div#__next .content-section p,
   html body div#__next .about-section p,
   html body div#__next .benefits-section p {
-    font-size: 16px !important;
-    line-height: 1.6 !important;
-    color: rgba(255, 255, 255, 0.9) !important;
-    margin-bottom: 20px !important;
+    font-size: 16px !important; /* USA standard body text size */
+    line-height: 1.6 !important; /* USA accessibility standard */
+    color: rgba(255, 255, 255, 0.95) !important; /* Higher contrast for accessibility */
+    margin-bottom: 24px !important; /* 8px grid spacing */
     text-align: left !important;
+    padding: 0 24px !important; /* Increased padding for better text containment */
+    word-wrap: break-word !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
   
   /* ========== CTA SECTIONS - CORPORATE STYLE ========== */
@@ -637,24 +663,30 @@
     z-index: 2 !important;
   }
   
+  /* USA 2024 CTA Button Standards */
   html body div#__next .cta-button,
   html body div#__next .btn-cta,
   html body div#__next .btn-primary,
   html body div#__next .hero-btn-primary {
-    background: rgba(255, 255, 255, 0.2) !important;
+    min-height: 48px !important; /* USA minimum touch target */
+    background: rgba(255, 255, 255, 0.15) !important;
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
     color: #ffffff !important;
-    padding: 14px 28px !important;
+    padding: 16px 32px !important; /* Increased touch area */
     border-radius: 12px !important;
     font-weight: 600 !important;
     font-size: 16px !important;
     text-decoration: none !important;
-    display: inline-block !important;
-    margin: 10px auto !important;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: block !important;
+    margin: 12px auto !important; /* 8px minimum spacing */
+    max-width: 320px !important; /* Optimal thumb reach */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
   }
   
   html body div#__next .cta-button:hover,
@@ -668,34 +700,46 @@
     color: #ffffff !important;
   }
   
-  /* ========== MODERN MOBILE HEADER 2024 ========== */
-  /* Based on USA best practices: Clean, minimal, touch-optimized */
+  /* ========== USA 2024 MOBILE HEADER STANDARDS ========== */
+  html body div#__next header,
   html body div#__next .navbar,
-  html body div#__next .navbar-expand-lg {
+  html body div#__next .header {
     background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
-    box-shadow: 0 4px 20px rgba(30, 64, 175, 0.3) !important;
-    padding: 12px 0 !important;
+    padding: 16px 16px !important; /* Increased padding for better touch targets */
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15) !important; /* Enhanced shadow for depth */
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-sizing: border-box !important;
+    min-height: 64px !important; /* USA standard header height */
+    display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
-    max-width: 100% !important;
-    padding: 0 16px !important;
-    margin: 0 auto !important;
-    height: 56px !important;
   }
 
-  /* Logo optimized for mobile */
+  /* USA 2024 Logo Standards - Touch-Optimized */
   html body div#__next .site-header .site-logo {
     z-index: 1001 !important;
     flex-shrink: 0 !important;
+    min-height: 44px !important; /* USA minimum touch target */
+    display: flex !important;
+    align-items: center !important;
   }
 
   html body div#__next .site-header .site-logo img {
-    max-height: 40px !important;
+    max-height: 44px !important; /* Increased for better visibility */
     width: auto !important;
-    transition: none !important;
+    filter: invert(1) brightness(2) !important;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important; /* USA standard animation */
   }
   
-  /* Modern hamburger menu */
+  /* USA 2024 Hamburger Menu Standards */
   html body div#__next .site-header .menu-toggle {
     display: flex !important;
     align-items: center !important;
@@ -703,20 +747,29 @@
     background: none !important;
     border: none !important;
     font-size: 20px !important;
-    color: #374151 !important;
+    color: #ffffff !important;
     cursor: pointer !important;
+    padding: 12px !important; /* Increased for better touch area */
+    border-radius: 12px !important; /* Rounded for modern feel */
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important; /* USA standard animation */
+    min-width: 48px !important; /* USA minimum touch target */
+    min-height: 48px !important; /* USA minimum touch target */
     z-index: 1001 !important;
-    padding: 12px !important;
-    border-radius: 8px !important;
-    transition: background-color 0.2s ease !important;
-    min-width: 44px !important;
-    min-height: 44px !important;
-    -webkit-tap-highlight-color: transparent !important;
   }
 
-  html body div#__next .site-header .menu-toggle:hover,
+  /* Hamburger menu active state */
   html body div#__next .site-header .menu-toggle:active {
-    background: #f3f4f6 !important;
+    transform: scale(0.95) !important;
+    background: rgba(255, 255, 255, 0.25) !important;
+  }
+
+  html body div#__next .site-header .menu-toggle:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
   }
   
   /* Full-screen mobile navigation */
