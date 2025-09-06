@@ -109,11 +109,11 @@
     overflow: hidden !important;
   }
 
-  /* ========== HERO SECTION - DARK FORMAL PALETTE ========== */
+  /* ========== HERO SECTION - DARK BLUE FORMAL PALETTE ========== */
   html body div#__next .hero-section {
     padding: 100px 16px 60px !important;
     min-height: 100vh !important;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
     color: #ffffff !important;
     text-align: center !important;
     margin-top: 0 !important;
@@ -285,7 +285,7 @@
     visibility: visible !important;
   }
 
-  /* USA 2024 Button Standards - Dark Formal Design */
+  /* USA 2024 Button Standards - Dark Blue Formal Design */
   html body div#__next .hero-section .btn,
   html body div#__next .hero-section .cta-button,
   html body div#__next .hero-section .btn-modern,
@@ -301,15 +301,15 @@
     display: block !important;
     text-align: center !important;
     box-sizing: border-box !important;
-    background: rgba(255, 255, 255, 0.08) !important; /* Darker for formal look */
+    background: rgba(255, 255, 255, 0.12) !important; /* Lighter for blue background */
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border: 2px solid rgba(255, 255, 255, 0.2) !important; /* Subtle border */
+    border: 2px solid rgba(255, 255, 255, 0.25) !important; /* More visible border */
     color: #ffffff !important;
     border-radius: 12px !important;
     font-weight: 600 !important;
     text-decoration: none !important;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important; /* Darker shadow */
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3) !important; /* Blue shadow */
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     cursor: pointer !important;
     position: relative !important;
@@ -628,7 +628,7 @@
     box-sizing: border-box !important;
   }
   
-  /* USA 2024 Section Headings - Dark Formal Hierarchy */
+  /* USA 2024 Section Headings - Dark Blue Formal Hierarchy */
   html body div#__next .content-section h2,
   html body div#__next .about-section h2,
   html body div#__next .benefits-section h2 {
@@ -638,7 +638,7 @@
     padding: 0 16px !important;
     text-align: center !important;
     font-weight: 700 !important;
-    color: #e2e8f0 !important; /* Light gray for dark backgrounds */
+    color: #ffffff !important; /* White for better contrast on blue backgrounds */
     word-wrap: break-word !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
@@ -660,13 +660,13 @@
     box-sizing: border-box !important;
   }
   
-  /* ========== CTA SECTIONS - DARK FORMAL STYLE ========== */
+  /* ========== CTA SECTIONS - DARK BLUE FORMAL STYLE ========== */
   html body div#__next .cta-section,
   html body div#__next .call-to-action,
   html body div#__next .contact-cta-section {
     padding: 30px 20px !important;
     text-align: center !important;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
     color: white !important;
     margin: 0 !important;
     position: relative !important;
@@ -695,16 +695,16 @@
     z-index: 2 !important;
   }
   
-  /* USA 2024 CTA Button Standards - Dark Formal */
+  /* USA 2024 CTA Button Standards - Dark Blue Formal */
   html body div#__next .cta-button,
   html body div#__next .btn-cta,
   html body div#__next .btn-primary,
   html body div#__next .hero-btn-primary {
     min-height: 48px !important;
-    background: rgba(255, 255, 255, 0.08) !important; /* Darker for formal look */
+    background: rgba(255, 255, 255, 0.12) !important; /* Lighter for blue background */
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border: 2px solid rgba(255, 255, 255, 0.2) !important; /* Subtle border */
+    border: 2px solid rgba(255, 255, 255, 0.25) !important; /* More visible border */
     color: #ffffff !important;
     padding: 16px 32px !important;
     border-radius: 12px !important;
@@ -714,7 +714,7 @@
     display: block !important;
     margin: 12px auto !important;
     max-width: 320px !important;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important; /* Darker shadow */
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3) !important; /* Blue shadow */
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     text-align: center !important;
     box-sizing: border-box !important;
@@ -732,12 +732,12 @@
     color: #ffffff !important;
   }
   
-  /* ========== USA 2024 MOBILE HEADER - DARK FORMAL PALETTE ========== */
+  /* ========== USA 2024 MOBILE HEADER - DARK BLUE FORMAL PALETTE ========== */
   html body div#__next header,
   html body div#__next .navbar,
   html body div#__next .header,
   html body div#__next .site-header {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
     padding: 16px 16px !important;
     position: fixed !important;
     top: 0 !important;
@@ -745,10 +745,10 @@
     right: 0 !important;
     width: 100% !important;
     z-index: 1000 !important;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3) !important; /* Darker shadow for formal look */
+    box-shadow: 0 4px 24px rgba(30, 58, 138, 0.3) !important; /* Blue shadow for formal look */
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
     box-sizing: border-box !important;
     min-height: 64px !important;
     display: flex !important;
@@ -756,14 +756,14 @@
     justify-content: space-between !important;
   }
 
-  /* Nuclear header background override - Dark Formal */
+  /* Nuclear header background override - Dark Blue Formal */
   html body div#__next .site-header,
   html body div#__next .site-header *,
   html body div#__next .site-header .container,
   html body div#__next .site-header .navbar-brand,
   html body div#__next .site-header .nav-wrapper {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
-    background-color: #0f172a !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
+    background-color: #1e3a8a !important;
   }
 
   /* Remove any white backgrounds from header */
@@ -775,10 +775,10 @@
     background-image: none !important;
   }
 
-  /* Apply dark formal gradient to all header elements */
+  /* Apply dark blue formal gradient to all header elements */
   html body div#__next header,
   html body div#__next .site-header {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
   }
 
   /* USA 2024 Logo Standards - Touch-Optimized */
