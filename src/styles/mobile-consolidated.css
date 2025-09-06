@@ -109,17 +109,21 @@
     overflow: hidden !important;
   }
 
-  /* ========== HERO SECTION - DARK BLUE FORMAL PALETTE ========== */
-  html body div#__next .hero-section {
-    padding-top: 128px !important; /* Nuclear spacing: 88px header + 40px margin */
+  /* ========== NUCLEAR HERO SECTION - MAXIMUM SPECIFICITY ========== */
+  html body div#__next .hero-section,
+  html body div#__next section.hero-section,
+  html body div#__next .hero-section.hero-section,
+  html body div#__next section.hero-section.hero-section {
+    padding-top: 0 !important; /* Remove all top padding */
     padding-left: 20px !important;
     padding-right: 20px !important;
     padding-bottom: 60px !important;
-    min-height: calc(100vh - 88px) !important; /* Subtract header height */
+    min-height: 100vh !important; /* Full viewport height */
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
     color: #ffffff !important;
     text-align: center !important;
     margin-top: 88px !important; /* Nuclear margin to clear fixed header */
+    margin-bottom: 0 !important; /* Remove bottom margin */
     position: relative !important;
     overflow: hidden !important;
     display: flex !important;
