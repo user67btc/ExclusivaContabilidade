@@ -87,7 +87,9 @@
     margin: 0 auto !important;
   }
 
-  html body div#__next .hero-section h1 {
+  /* Hero title styling */
+  html body div#__next .hero-section h1,
+  html body div#__next .hero-section .hero-title-modern {
     font-size: 2.2rem !important;
     line-height: 1.2 !important;
     margin-bottom: 1rem !important;
@@ -95,27 +97,65 @@
     max-width: 100% !important;
     word-wrap: break-word !important;
     hyphens: auto !important;
+    color: #ffffff !important;
+    text-align: center !important;
+    display: block !important;
+    visibility: visible !important;
   }
 
-  html body div#__next .hero-section .hero-subtitle {
+  /* Hero subtitle styling */
+  html body div#__next .hero-section .hero-subtitle,
+  html body div#__next .hero-section .hero-subtitle-modern,
+  html body div#__next .hero-section p {
     font-size: 1rem !important;
     margin-bottom: 1.5rem !important;
     opacity: 0.9 !important;
     line-height: 1.5 !important;
     max-width: 100% !important;
     word-wrap: break-word !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-align: center !important;
+    display: block !important;
+    visibility: visible !important;
   }
 
 
-  /* Clean CTA section without visual clutter */
-  html body div#__next .hero-section .hero-cta {
-    margin-bottom: 1rem !important;
+  /* Hero CTA buttons styling */
+  html body div#__next .hero-section .hero-cta,
+  html body div#__next .hero-section .hero-cta-group {
+    margin-bottom: 2rem !important;
     padding: 0 !important;
+    text-align: center !important;
+    display: block !important;
+    visibility: visible !important;
   }
 
-  html body div#__next .hero-section .hero-cta::after {
-    content: "" !important;
-    display: none !important;
+  html body div#__next .hero-section .btn-modern,
+  html body div#__next .hero-section .cta-primary,
+  html body div#__next .hero-section .cta-secondary {
+    display: inline-block !important;
+    visibility: visible !important;
+    margin: 8px 4px !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease !important;
+  }
+
+  html body div#__next .hero-section .btn-primary-modern,
+  html body div#__next .hero-section .cta-primary {
+    background: #ffffff !important;
+    color: #1e40af !important;
+    border: 2px solid #ffffff !important;
+  }
+
+  html body div#__next .hero-section .btn-secondary-enhanced,
+  html body div#__next .hero-section .cta-secondary {
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
   }
 
   /* NUCLEAR OVERRIDE - Force hide all bento elements with maximum specificity */
@@ -137,13 +177,33 @@
     z-index: -1 !important;
   }
 
+  /* FORCE SHOW ESSENTIAL HERO CONTENT */
+  html body div#__next .hero-section .hero-main-content,
+  html body div#__next .hero-section .hero-title-modern,
+  html body div#__next .hero-section .hero-subtitle-modern,
+  html body div#__next .hero-section .hero-cta-group,
+  html body div#__next .hero-section .btn-modern {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+    height: auto !important;
+    width: auto !important;
+    left: auto !important;
+    z-index: auto !important;
+  }
+
   /* Force hero section to be responsive and clean */
-  html body div#__next .hero-section .container {
+  html body div#__next .hero-section .container,
+  html body div#__next .hero-section .container-fluid,
+  html body div#__next .hero-section .hero-grid {
     max-width: 100% !important;
     padding: 0 16px !important;
     margin: 0 auto !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    display: block !important;
+    visibility: visible !important;
   }
 
   /* Responsive buttons */
