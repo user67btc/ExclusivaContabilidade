@@ -110,7 +110,7 @@
   }
 
   html body div#__next .hero-section {
-    padding: 80px 16px 60px !important; /* Reduced top padding to fix spacing issue */
+    padding: 100px 16px 60px !important; /* Increased top padding to account for header */
     min-height: 100vh !important;
     background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
     color: #ffffff !important;
@@ -294,7 +294,7 @@
     min-height: 48px !important; /* USA standard minimum touch target */
     padding: 16px 32px !important; /* Increased for better touch area */
     font-size: 16px !important; /* USA standard button text size */
-    margin: 8px auto !important; /* Consistent spacing */
+    margin: 12px auto !important; /* Increased spacing between buttons */
     width: calc(100% - 32px) !important; /* Full width with margins */
     max-width: 280px !important; /* Optimal mobile width */
     display: block !important;
@@ -610,12 +610,12 @@
   html body div#__next .hero-section h1,
   html body div#__next .hero-section .hero-title,
   html body div#__next .hero-section .hero-title-modern {
-    font-size: clamp(28px, 7vw, 36px) !important;
-    line-height: 1.2 !important;
-    margin: 0 0 24px 0 !important;
-    padding: 0 16px !important;
+    font-size: clamp(24px, 6vw, 32px) !important; /* Reduced to prevent cutting */
+    line-height: 1.3 !important; /* Slightly increased for better readability */
+    margin: 0 0 20px 0 !important; /* Reduced margin for better spacing */
+    padding: 0 20px !important; /* Increased padding for better containment */
     text-align: center !important;
-    letter-spacing: -0.02em !important;
+    letter-spacing: -0.01em !important; /* Slightly reduced for better fit */
     font-weight: 700 !important;
     color: #ffffff !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
@@ -813,19 +813,20 @@
     justify-content: center !important;
     background: none !important;
     border: none !important;
-    font-size: 20px !important;
+    font-size: 24px !important; /* Increased for better visibility */
     color: #ffffff !important;
     cursor: pointer !important;
-    padding: 12px !important; /* Increased for better touch area */
-    border-radius: 12px !important; /* Rounded for modern feel */
-    background: rgba(255, 255, 255, 0.15) !important;
+    padding: 14px !important; /* Increased for better touch area */
+    border-radius: 12px !important;
+    background: rgba(255, 255, 255, 0.2) !important; /* More visible background */
     backdrop-filter: blur(20px) !important;
     -webkit-backdrop-filter: blur(20px) !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important; /* USA standard animation */
-    min-width: 48px !important; /* USA minimum touch target */
-    min-height: 48px !important; /* USA minimum touch target */
+    border: 2px solid rgba(255, 255, 255, 0.4) !important; /* More visible border */
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+    min-width: 52px !important; /* Increased for better visibility */
+    min-height: 52px !important; /* Increased for better visibility */
     z-index: 1001 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important; /* Added shadow for depth */
   }
 
   /* Hamburger menu active state */
