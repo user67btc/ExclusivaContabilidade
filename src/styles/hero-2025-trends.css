@@ -677,45 +677,7 @@
   }
 }
 
-@media (max-width: 768px) {
-  /* DISABLE ALL HERO STYLES ON MOBILE - LET MOBILE-CONSOLIDATED.CSS TAKE OVER */
-  .hero-section {
-    all: unset !important;
-  }
-  
-  .container-fluid {
-    all: unset !important;
-  }
-  
-  .hero-grid {
-    all: unset !important;
-  }
-  
-  .hero-title-modern {
-    all: unset !important;
-  }
-  
-  .hero-main-image-modern {
-    display: none !important;
-  }
-  
-  .bento-grid-enhanced {
-    display: none !important;
-  }
-  
-  .hero-cta-group {
-    all: unset !important;
-  }
-  
-  .btn-modern {
-    all: unset !important;
-  }
-  
-  .hero-trust-elements,
-  .hero-social-proof {
-    display: none !important;
-  }
-}
+/* MOBILE STYLES REMOVED - LET MOBILE-CONSOLIDATED.CSS HANDLE EVERYTHING */
 
 /* ANIMAÇÕES AVANÇADAS 2025 */
 .hero-main-content {
