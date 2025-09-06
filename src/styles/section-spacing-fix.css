@@ -65,38 +65,6 @@ section,
   margin-top: 0 !important;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-  .hero-section {
-    padding-bottom: 4rem !important;
-  }
-  
-  .services-section,
-  .sectors-section,
-  .faq-section,
-  .contact-cta-section {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
-  }
-  
-  .services-section .section-header,
-  .sectors-section .section-header,
-  .faq-section .section-header,
-  .about-section .section-header {
-    margin-bottom: 2rem !important;
-  }
-}
+/* MOBILE STYLES REMOVED - LET MOBILE-CONSOLIDATED.CSS HANDLE EVERYTHING */
 
-@media (max-width: 576px) {
-  .hero-section {
-    padding-bottom: 3rem !important;
-  }
-  
-  .services-section,
-  .sectors-section,
-  .faq-section,
-  .contact-cta-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
+/* ALL MOBILE STYLES REMOVED - MOBILE-CONSOLIDATED.CSS IS THE SINGLE SOURCE */
