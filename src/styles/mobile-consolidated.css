@@ -96,17 +96,33 @@
   }
   
   /* ========== HERO SECTION MOBILE - CLEAN LAYOUT ========== */
-  /* Remove visual pollution from cards on mobile */
-  html body div#__next .hero-section .bento-grid,
+  /* NUCLEAR OVERRIDE - Force hide all visual elements with maximum specificity */
   html body div#__next .hero-section .bento-grid-enhanced,
   html body div#__next .bento-grid-enhanced,
-  html body div#__next .bento-card-enhanced {
+  html body div#__next .bento-card-enhanced,
+  html body div#__next .hero-visual-content,
+  html body div#__next .hero-section .hero-visual-content,
+  html body div#__next .hero-section .features-showcase,
+  html body div#__next .hero-section .floating-interactive,
+  html body div#__next .hero-section .hero-main-image-modern,
+  html body div#__next .hero-section .image-container-modern,
+  html body div#__next .hero-section .interactive-element,
+  html body div#__next .hero-section .feature-highlight,
+  html body div#__next .hero-section .service-card,
+  html body div#__next .hero-section .sector-card,
+  html body div#__next .hero-section .card,
+  html body div#__next .hero-section .hero-grid .hero-visual-content,
+  html body div#__next .hero-section .hero-grid > div:last-child {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
     height: 0 !important;
     width: 0 !important;
     overflow: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+    z-index: -9999 !important;
   }
 
   /* ========== NUCLEAR HERO SECTION - ABSOLUTE POSITIONING ========== */
