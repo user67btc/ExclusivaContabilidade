@@ -211,26 +211,28 @@ h2.section-heading::after {
 
 /* ===== TEXTOS E PARÁGRAFOS ===== */
 
-/* Textos em seções escuras */
-.hero-section p,
-.services-section p,
-.sectors-section p,
-.about-section p,
-.contact-cta-section p {
-  color: rgba(255, 255, 255, 0.9) !important;
-  font-size: 1.1rem !important;
-  line-height: 1.6 !important;
-}
+/* Textos em seções escuras - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-section p,
+  .services-section p,
+  .sectors-section p,
+  .about-section p,
+  .contact-cta-section p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+  }
 
-/* Subtítulos */
-.hero-section h3,
-.services-section h3,
-.sectors-section h3,
-.about-section h3,
-.contact-section h3 {
-  color: rgba(255, 255, 255, 0.95);
-  font-weight: var(--font-weight-heading);
-  margin-bottom: 1rem;
+  /* Subtítulos */
+  .hero-section h3,
+  .services-section h3,
+  .sectors-section h3,
+  .about-section h3,
+  .contact-section h3 {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: var(--font-weight-heading);
+    margin-bottom: 1rem;
+  }
 }
 
 /* ===== ÍCONES MODERNOS ===== */
