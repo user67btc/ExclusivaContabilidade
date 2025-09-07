@@ -140,12 +140,12 @@
   html body div#__next .hero-section.hero-section,
   html body div#__next section.hero-section.hero-section {
     position: relative !important; /* Relative positioning to maintain document flow */
-    top: 0 !important; /* Reset top positioning */
+    top: 88px !important; /* Push down by exact header height */
     left: 0 !important;
     right: 0 !important;
     width: 100vw !important;
     min-height: calc(100vh - 88px) !important; /* Full height minus header */
-    padding-top: 128px !important; /* Header height (88px) + safe spacing (40px) */
+    padding-top: 40px !important; /* Internal spacing only */
     padding-bottom: 60px !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
