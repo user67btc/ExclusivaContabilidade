@@ -109,29 +109,29 @@
     overflow: hidden !important;
   }
 
-  /* ========== NUCLEAR HERO SECTION - MAXIMUM SPECIFICITY ========== */
+  /* ========== NUCLEAR HERO SECTION - ABSOLUTE POSITIONING ========== */
   html body div#__next .hero-section,
   html body div#__next section.hero-section,
   html body div#__next .hero-section.hero-section,
   html body div#__next section.hero-section.hero-section {
-    padding-top: 0 !important; /* Remove padding to eliminate gap */
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    padding-bottom: 60px !important;
-    min-height: 100vh !important; /* Full viewport height */
+    position: absolute !important; /* Absolute positioning for precise control */
+    top: 88px !important; /* Start exactly after header */
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    min-height: calc(100vh - 88px) !important; /* Full height minus header */
+    padding: 40px 20px 60px 20px !important; /* Internal spacing */
+    margin: 0 !important; /* Remove all margins */
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
     color: #ffffff !important;
     text-align: center !important;
-    margin-top: 88px !important; /* Exact header height margin */
-    margin-bottom: 0 !important; /* Remove bottom margin */
-    position: relative !important;
     overflow: hidden !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
     box-sizing: border-box !important;
-    top: 0 !important; /* Force position from top */
+    z-index: 1 !important; /* Below header but above other content */
   }
 
   /* Hero section overlay matching desktop */
@@ -280,6 +280,13 @@
     z-index: auto !important;
   }
 
+  /* ========== NUCLEAR BODY SPACING - PREVENT OVERLAP ========== */
+  html body div#__next {
+    padding-top: 88px !important; /* Space for fixed header */
+    position: relative !important;
+    min-height: 100vh !important;
+  }
+  
   /* Force hero section to be responsive and clean */
   html body div#__next .hero-section .container,
   html body div#__next .hero-section .container-fluid,
@@ -289,8 +296,8 @@
     margin: 0 auto !important;
     width: 100% !important;
     box-sizing: border-box !important;
-    display: block !important;
-    visibility: visible !important;
+    position: relative !important;
+    z-index: 2 !important;
   }
 
   /* USA 2024 Button Standards - Dark Blue Formal Design */
@@ -751,7 +758,7 @@
     color: #ffffff !important;
   }
   
-  /* ========== NUCLEAR MOBILE HEADER - MAXIMUM SPECIFICITY ========== */
+  /* ========== NUCLEAR MOBILE HEADER - ABSOLUTE CONTROL ========== */
   html body div#__next header,
   html body div#__next .navbar,
   html body div#__next .header,
@@ -759,26 +766,26 @@
   html body div#__next header.site-header,
   html body div#__next .site-header.site-header,
   html body div#__next .site-header.site-header.site-header {
-    background: #ffffff !important;
-    padding: 20px 20px !important; /* Nuclear padding override */
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    z-index: 9999 !important; /* Nuclear z-index */
-    width: 100% !important;
-    box-sizing: border-box !important;
+    width: 100vw !important;
+    height: 88px !important; /* Exact height */
+    min-height: 88px !important;
+    max-height: 88px !important;
+    padding: 20px !important;
+    margin: 0 !important;
+    background: #ffffff !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+    z-index: 10000 !important; /* Above everything */
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
-    min-height: 88px !important; /* Nuclear header height */
-    height: 88px !important; /* Force exact height */
-    max-height: 88px !important; /* Prevent shrinking */
-    margin-bottom: 0 !important; /* Remove any bottom margin */
-    border-bottom: none !important; /* Remove border that creates gap */
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
 
   /* Nuclear header background override - White Background */
