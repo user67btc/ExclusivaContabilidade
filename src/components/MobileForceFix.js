@@ -35,7 +35,7 @@ const MobileForceFix = () => {
             .hero-section {
               position: relative !important;
               top: 0 !important;
-              padding-top: 108px !important;
+              padding-top: 96px !important;
               padding-bottom: 60px !important;
               padding-left: 20px !important;
               padding-right: 20px !important;
