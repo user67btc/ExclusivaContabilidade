@@ -134,19 +134,23 @@
     z-index: -9999 !important;
   }
 
-  /* ========== NUCLEAR HERO SECTION - ABSOLUTE POSITIONING ========== */
+  /* ========== NUCLEAR HERO SECTION - DEFINITIVE OVERLAP FIX ========== */
   html body div#__next .hero-section,
   html body div#__next section.hero-section,
   html body div#__next .hero-section.hero-section,
   html body div#__next section.hero-section.hero-section {
-    position: absolute !important; /* Absolute positioning for precise control */
-    top: 88px !important; /* Start exactly after header */
+    position: relative !important; /* Relative positioning to maintain document flow */
+    top: 0 !important; /* Reset top positioning */
     left: 0 !important;
     right: 0 !important;
     width: 100vw !important;
     min-height: calc(100vh - 88px) !important; /* Full height minus header */
-    padding: 40px 20px 60px 20px !important; /* Internal spacing */
+    padding-top: 128px !important; /* Header height (88px) + safe spacing (40px) */
+    padding-bottom: 60px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     margin: 0 !important; /* Remove all margins */
+    margin-top: 0 !important; /* Force zero top margin */
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
     color: #ffffff !important;
     text-align: center !important;
@@ -157,6 +161,29 @@
     align-items: center !important;
     box-sizing: border-box !important;
     z-index: 1 !important; /* Below header but above other content */
+  }
+
+  /* ========== NUCLEAR ANTI-OVERLAP SAFEGUARDS ========== */
+  /* Ensure hero section NEVER overlaps header under any circumstances */
+  html body div#__next .hero-section,
+  html body div#__next section.hero-section {
+    clear: both !important; /* Clear any floated elements */
+    transform: translateY(0) !important; /* Prevent any transforms that could cause overlap */
+    margin-top: 0 !important; /* Force zero margin-top */
+    top: auto !important; /* Override any conflicting top values */
+  }
+
+  /* Force body to account for fixed header */
+  html body div#__next {
+    padding-top: 0 !important; /* Let individual sections handle their spacing */
+  }
+
+  /* Ensure main content starts after header */
+  html body div#__next main {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    position: relative !important;
+    z-index: 0 !important;
   }
 
   /* ========== NUCLEAR SERVICES SECTION HIDING ========== */
@@ -213,47 +240,57 @@
     margin: 0 auto !important;
   }
 
-  /* Hero title styling */
+  /* Hero title styling - Marketing Optimized */
   html body div#__next .hero-section h1,
   html body div#__next .hero-section .hero-title-modern {
-    font-size: 2.2rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 1rem !important;
-    font-weight: 800 !important;
+    font-size: clamp(28px, 7vw, 36px) !important; /* Larger for impact */
+    line-height: 1.1 !important; /* Tighter for mobile */
+    margin-bottom: 16px !important;
+    font-weight: 800 !important; /* Bolder for authority */
+    color: #ffffff !important;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4) !important;
+    letter-spacing: -0.03em !important;
     max-width: 100% !important;
     word-wrap: break-word !important;
     hyphens: auto !important;
-    color: #ffffff !important;
     text-align: center !important;
-    display: block !important;
-    visibility: visible !important;
+    position: relative !important;
+    z-index: 3 !important;
   }
 
-  /* Hero subtitle styling */
+  /* Hero subtitle styling - Conversion Focused */
   html body div#__next .hero-section .hero-subtitle,
   html body div#__next .hero-section .hero-subtitle-modern,
   html body div#__next .hero-section p {
-    font-size: 1rem !important;
-    margin-bottom: 1.5rem !important;
-    opacity: 0.9 !important;
-    line-height: 1.5 !important;
-    max-width: 100% !important;
-    word-wrap: break-word !important;
-    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: clamp(16px, 4.2vw, 18px) !important;
+    margin-bottom: 24px !important;
+    opacity: 0.95 !important;
+    line-height: 1.4 !important;
+    color: rgba(255, 255, 255, 0.98) !important;
+    max-width: 320px !important; /* Constrain for readability */
+    margin-left: auto !important;
+    margin-right: auto !important;
     text-align: center !important;
-    display: block !important;
-    visibility: visible !important;
+    font-weight: 500 !important; /* Slightly bolder */
+    position: relative !important;
+    z-index: 3 !important;
   }
-
 
   /* Hero CTA buttons styling */
   html body div#__next .hero-section .hero-cta,
   html body div#__next .hero-section .hero-cta-group {
-    margin-bottom: 2rem !important;
-    padding: 0 !important;
+    margin-bottom: 32px !important;
+    padding: 0 16px !important;
     text-align: center !important;
-    display: block !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
     visibility: visible !important;
+    position: relative !important;
+    z-index: 10 !important;
   }
 
   html body div#__next .hero-section .btn-modern,
@@ -270,18 +307,23 @@
     transition: all 0.3s ease !important;
   }
 
+  /* Primary CTA - Maximum Conversion */
   html body div#__next .hero-section .btn-primary-modern,
   html body div#__next .hero-section .cta-primary {
-    background: #ffffff !important;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
     color: #1e40af !important;
-    border: 2px solid #ffffff !important;
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 16px 48px rgba(255, 255, 255, 0.2), 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-2px) !important;
   }
 
+  /* Secondary CTA - WhatsApp Optimized */
   html body div#__next .hero-section .btn-secondary-enhanced,
   html body div#__next .hero-section .cta-secondary {
-    background: transparent !important;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
     color: #ffffff !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    border: 3px solid #25D366 !important;
+    box-shadow: 0 16px 48px rgba(37, 211, 102, 0.3) !important;
   }
 
   /* NUCLEAR OVERRIDE - Force hide all bento elements with maximum specificity */
@@ -326,6 +368,24 @@
     min-height: 100vh !important;
   }
   
+  /* Trust Badge - Marketing Psychology */
+  html body div#__next .hero-section::after {
+    content: 'CRC Ativo' !important;
+    position: absolute !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    z-index: 5 !important;
+  }
+  
   /* Force hero section to be responsive and clean */
   html body div#__next .hero-section .container,
   html body div#__next .hero-section .container-fluid,
@@ -346,29 +406,27 @@
   html body div#__next .hero-section .hero-btn-primary,
   html body div#__next .hero-section .btn-outline,
   html body div#__next .hero-section .btn-secondary {
-    min-height: 48px !important;
-    padding: 16px 32px !important;
-    font-size: 16px !important;
-    margin: 16px auto !important;
-    width: calc(100% - 32px) !important;
-    max-width: 280px !important;
-    display: flex !important; /* Changed to flex for icon spacing */
+    min-height: 56px !important; /* Larger touch target */
+    padding: 18px 36px !important;
+    font-size: 17px !important; /* Optimal mobile size */
+    font-weight: 700 !important; /* Bold for action */
+    border-radius: 16px !important; /* More modern */
+    border: 3px solid transparent !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    text-align: center !important;
-    box-sizing: border-box !important;
-    background: rgba(255, 255, 255, 0.15) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    border: 2px solid rgba(255, 255, 255, 0.4) !important;
-    color: #ffffff !important;
-    border-radius: 12px !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-    box-shadow: 0 8px 24px rgba(30, 58, 138, 0.4) !important;
-    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
-    cursor: pointer !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
     position: relative !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    gap: 10px !important;
+    width: 100% !important; /* Full width on mobile */
+    max-width: 280px !important;
+    margin: 8px auto !important;
     overflow: hidden !important;
     gap: 8px !important; /* Space between icon and text */
   }
