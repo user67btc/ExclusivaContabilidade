@@ -112,7 +112,16 @@
   html body div#__next .hero-section .sector-card,
   html body div#__next .hero-section .card,
   html body div#__next .hero-section .hero-grid .hero-visual-content,
-  html body div#__next .hero-section .hero-grid > div:last-child {
+  html body div#__next .hero-section .hero-grid > div:last-child,
+  html body div#__next .hero-section .service-card-inner,
+  html body div#__next .hero-section .sector-card-header,
+  html body div#__next .hero-section .sector-card-content,
+  html body div#__next .hero-section .contact-card,
+  html body div#__next .hero-section .contact-info-cards,
+  html body div#__next .hero-section [class*="card"],
+  html body div#__next .hero-section [class*="Card"],
+  html body div#__next .hero-section .services-grid,
+  html body div#__next .hero-section .sectors-grid {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
