@@ -43,40 +43,44 @@
 
 /* ===== SEÇÕES PRINCIPAIS - PADRÃO HERO ===== */
 
-/* Aplicar fundo gradiente corporativo em seções principais */
-.hero-section,
-.services-section,
-.sectors-section,
-.about-section,
-.contact-cta-section {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
-  color: white !important;
+/* Aplicar fundo gradiente corporativo em seções principais - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-section,
+  .services-section,
+  .sectors-section,
+  .about-section,
+  .contact-cta-section {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
+    color: white !important;
+  }
 }
 
-/* Overlay sutil para todas as seções */
-.hero-section::before,
-.services-section::before,
-.sectors-section::before,
-.about-section::before,
-.contact-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
+/* Overlay sutil para todas as seções - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-section::before,
+  .services-section::before,
+  .sectors-section::before,
+  .about-section::before,
+  .contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
 
-/* Conteúdo sempre acima do overlay */
-.hero-section > *,
-.services-section > *,
-.sectors-section > *,
-.about-section > *,
-.contact-section > * {
-  position: relative;
-  z-index: 2;
+  /* Conteúdo sempre acima do overlay */
+  .hero-section > *,
+  .services-section > *,
+  .sectors-section > *,
+  .about-section > *,
+  .contact-section > * {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 /* ===== CARDS GLASSMORPHISM CORPORATIVO ===== */
