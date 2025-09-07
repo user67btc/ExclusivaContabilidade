@@ -3,270 +3,300 @@
    Aplicação das melhores práticas de escritórios de contabilidade modernos
    ========================================================================== */
 
-/* DESIGN MINIMALISTA E LIMPO - TENDÊNCIA #1 */
-.hero-section {
-  position: relative;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%);
-  color: white;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 8rem 0 0 0 !important;
-  margin-top: 80px !important;
-  margin-bottom: 0 !important;
+/* DESIGN MINIMALISTA E LIMPO - TENDÊNCIA #1 - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-section {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%);
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 8rem 0 0 0 !important;
+    margin-top: 80px !important;
+    margin-bottom: 0 !important;
+  }
 }
 
-/* CONTAINER COM ESPAÇAMENTO GENEROSO */
-.container-fluid {
-  width: 100% !important;
-  max-width: 1400px !important;
-  margin: 0 auto !important;
-  padding: 0 3rem !important; /* Mais espaço lateral */
+/* CONTAINER COM ESPAÇAMENTO GENEROSO - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .container-fluid {
+    width: 100% !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 0 3rem !important; /* Mais espaço lateral */
+  }
 }
 
-/* GRID OTIMIZADO PARA 2025 */
-.hero-grid {
-  display: grid !important;
-  grid-template-columns: 1.2fr 0.8fr !important; /* Proporção otimizada */
-  gap: 4rem !important; /* Espaçamento generoso */
-  align-items: center !important;
-  position: relative !important;
-  z-index: 20 !important;
-  min-height: 650px !important;
+/* GRID OTIMIZADO PARA 2025 - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-grid {
+    display: grid !important;
+    grid-template-columns: 1.2fr 0.8fr !important; /* Proporção otimizada */
+    gap: 4rem !important; /* Espaçamento generoso */
+    align-items: center !important;
+    position: relative !important;
+    z-index: 20 !important;
+    min-height: 650px !important;
+  }
 }
 
-/* COLUNA ESQUERDA - TIPOGRAFIA PROFISSIONAL */
-.hero-main-content {
-  position: relative !important;
-  z-index: 25 !important;
-  color: #ffffff !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  max-width: 600px !important;
+/* COLUNA ESQUERDA - TIPOGRAFIA PROFISSIONAL - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-main-content {
+    position: relative !important;
+    z-index: 25 !important;
+    color: #ffffff !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    max-width: 600px !important;
+  }
 }
 
-/* BADGE MODERNO 2025 */
-.hero-badge-modern {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0.75rem !important;
-  background: rgba(59, 130, 246, 0.1) !important;
-  border: 1px solid rgba(59, 130, 246, 0.2) !important;
-  color: #60a5fa !important;
-  padding: 0.75rem 1.5rem !important;
-  border-radius: 50px !important;
-  font-size: 0.9rem !important;
-  font-weight: 600 !important;
-  margin-bottom: 2.5rem !important;
-  width: fit-content !important;
-  backdrop-filter: blur(10px) !important;
-  transition: all 0.3s ease !important;
+/* BADGE MODERNO 2025 - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-badge-modern {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    background: rgba(59, 130, 246, 0.1) !important;
+    border: 1px solid rgba(59, 130, 246, 0.2) !important;
+    color: #60a5fa !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 50px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 2.5rem !important;
+    width: fit-content !important;
+    backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .hero-badge-modern:hover {
+    background: rgba(59, 130, 246, 0.15) !important;
+    transform: translateY(-2px) !important;
+  }
 }
 
-.hero-badge-modern:hover {
-  background: rgba(59, 130, 246, 0.15) !important;
-  transform: translateY(-2px) !important;
+/* TÍTULO PRINCIPAL - TIPOGRAFIA BOLD 2025 - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-title-modern {
+    font-size: 4rem !important; /* Maior para impacto */
+    font-weight: 800 !important; /* Mais bold */
+    line-height: 1.1 !important;
+    margin-bottom: 2rem !important;
+    color: #ffffff !important;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+    letter-spacing: -0.02em !important; /* Spacing otimizado */
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 50%, #1e40af 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    position: relative !important;
+  }
 }
 
-/* TÍTULO PRINCIPAL - TIPOGRAFIA BOLD 2025 */
-.hero-title-modern {
-  font-size: 4rem !important; /* Maior para impacto */
-  font-weight: 800 !important; /* Mais bold */
-  line-height: 1.1 !important;
-  margin-bottom: 2rem !important;
-  color: #ffffff !important;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
-  letter-spacing: -0.02em !important; /* Spacing otimizado */
+/* SUBTÍTULO COM MELHOR LEGIBILIDADE - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-subtitle-modern {
+    font-size: 1.3rem !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    line-height: 1.7 !important; /* Melhor legibilidade */
+    margin-bottom: 3rem !important;
+    max-width: 550px !important;
+    font-weight: 400 !important;
+  }
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 50%, #1e40af 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-  position: relative !important;
+/* ENHANCED TRUST ELEMENTS - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-trust-elements-enhanced {
+    display: flex !important;
+    gap: 1.5rem !important;
+    margin-bottom: 2rem !important;
+    flex-wrap: wrap !important;
+  }
 }
 
-/* SUBTÍTULO COM MELHOR LEGIBILIDADE */
-.hero-subtitle-modern {
-  font-size: 1.3rem !important;
-  color: rgba(255, 255, 255, 0.85) !important;
-  line-height: 1.7 !important; /* Melhor legibilidade */
-  margin-bottom: 3rem !important;
-  max-width: 550px !important;
-  font-weight: 400 !important;
+@media (min-width: 769px) {
+  .trust-item-enhanced {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    background: rgba(59, 130, 246, 0.08) !important;
+    border: 1px solid rgba(59, 130, 246, 0.2) !important;
+    padding: 0.75rem 1.25rem !important;
+    border-radius: 25px !important;
+    backdrop-filter: blur(10px) !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .trust-item-enhanced:hover {
+    background: rgba(59, 130, 246, 0.12) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15) !important;
+  }
 }
 
-/* ENHANCED TRUST ELEMENTS */
-.hero-trust-elements-enhanced {
-  display: flex !important;
-  gap: 1.5rem !important;
-  margin-bottom: 2rem !important;
-  flex-wrap: wrap !important;
+@media (min-width: 769px) {
+  .trust-icon-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 28px !important;
+    height: 28px !important;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
+    border-radius: 50% !important;
+    color: white !important;
+    font-size: 0.9rem !important;
+  }
+
+  .trust-text {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+  }
+
+  .verified-badge {
+    color: #10b981 !important;
+    font-size: 1.1rem !important;
+    filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.3)) !important;
+  }
 }
 
-.trust-item-enhanced {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.75rem !important;
-  background: rgba(59, 130, 246, 0.08) !important;
-  border: 1px solid rgba(59, 130, 246, 0.2) !important;
-  padding: 0.75rem 1.25rem !important;
-  border-radius: 25px !important;
-  backdrop-filter: blur(10px) !important;
-  transition: all 0.3s ease !important;
-  position: relative !important;
-  overflow: hidden !important;
+/* ENHANCED SOCIAL PROOF CARDS - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .hero-social-proof-enhanced {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.2rem !important;
+    margin-top: 1.5rem !important;
+  }
 }
 
-.trust-item-enhanced:hover {
-  background: rgba(59, 130, 246, 0.12) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15) !important;
+@media (min-width: 769px) {
+  .proof-item-enhanced {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px !important;
+    padding: 1.5rem 1rem !important;
+    text-align: center !important;
+    backdrop-filter: blur(20px) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .proof-item-enhanced:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .proof-item-enhanced::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #3b82f6, #1d4ed8, #3b82f6) !important;
+    background-size: 200% 100% !important;
+    animation: shimmer 2s infinite !important;
+  }
 }
 
-.trust-icon-wrapper {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 28px !important;
-  height: 28px !important;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
-  border-radius: 50% !important;
-  color: white !important;
-  font-size: 0.9rem !important;
+@media (min-width: 769px) {
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  .proof-icon {
+    width: 40px !important;
+    height: 40px !important;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 1rem !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3) !important;
+  }
+
+  .proof-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
+
+  .proof-number {
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    line-height: 1 !important;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+    display: inline-block !important;
+  }
+
+  .proof-plus {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    color: #3b82f6 !important;
+    display: inline-block !important;
+    margin-left: 0.2rem !important;
+  }
+
+  .proof-label {
+    font-size: 0.95rem !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-top: 0.5rem !important;
+  }
 }
 
-.trust-text {
-  color: rgba(255, 255, 255, 0.9) !important;
-  font-weight: 600 !important;
-  font-size: 0.95rem !important;
+/* ENHANCED SECONDARY BUTTON - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .btn-secondary-enhanced {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+    padding: 1rem 2rem !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    backdrop-filter: blur(20px) !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
 }
 
-.verified-badge {
-  color: #10b981 !important;
-  font-size: 1.1rem !important;
-  filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.3)) !important;
-}
-
-/* ENHANCED SOCIAL PROOF CARDS */
-.hero-social-proof-enhanced {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 1.2rem !important;
-  margin-top: 1.5rem !important;
-}
-
-.proof-item-enhanced {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 16px !important;
-  padding: 1.5rem 1rem !important;
-  text-align: center !important;
-  backdrop-filter: blur(20px) !important;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-.proof-item-enhanced:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
-  transform: translateY(-8px) !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
-}
-
-.proof-item-enhanced::before {
-  content: '' !important;
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  height: 3px !important;
-  background: linear-gradient(90deg, #3b82f6, #1d4ed8, #3b82f6) !important;
-  background-size: 200% 100% !important;
-  animation: shimmer 2s infinite !important;
-}
-
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-
-.proof-icon {
-  width: 40px !important;
-  height: 40px !important;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  margin: 0 auto 1rem !important;
-  color: white !important;
-  font-size: 1.2rem !important;
-  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3) !important;
-}
-
-.proof-content {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 0.5rem !important;
-}
-
-.proof-number {
-  font-size: 2.5rem !important;
-  font-weight: 800 !important;
-  color: #ffffff !important;
-  line-height: 1 !important;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
-  display: inline-block !important;
-}
-
-.proof-plus {
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
-  color: #3b82f6 !important;
-  display: inline-block !important;
-  margin-left: 0.2rem !important;
-}
-
-.proof-label {
-  font-size: 0.95rem !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-  font-weight: 500 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.5px !important;
-  margin-top: 0.5rem !important;
-}
-
-/* ENHANCED SECONDARY BUTTON */
-.btn-secondary-enhanced {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  color: #ffffff !important;
-  padding: 1rem 2rem !important;
-  border-radius: 12px !important;
-  font-weight: 600 !important;
-  font-size: 1rem !important;
-  text-decoration: none !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0.75rem !important;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  backdrop-filter: blur(20px) !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-.btn-secondary-enhanced:hover {
-  background: rgba(37, 211, 102, 0.15) !important;
-  border-color: rgba(37, 211, 102, 0.3) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.2) !important;
-  color: #ffffff !important;
-  text-decoration: none !important;
+@media (min-width: 769px) {
+  .btn-secondary-enhanced:hover {
+    background: rgba(37, 211, 102, 0.15) !important;
+    border-color: rgba(37, 211, 102, 0.3) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.2) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
 }
 
 .btn-secondary-enhanced i {
