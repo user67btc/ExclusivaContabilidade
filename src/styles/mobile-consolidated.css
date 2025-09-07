@@ -145,7 +145,7 @@
     right: 0 !important;
     width: 100vw !important;
     min-height: calc(100vh - 88px) !important; /* Full height minus header */
-    padding-top: 128px !important; /* Header height (88px) + safe spacing (40px) */
+    padding-top: 108px !important; /* Header height (88px) + proportional spacing (20px) */
     padding-bottom: 60px !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
