@@ -31,10 +31,25 @@ const MobileForceFix = () => {
               max-width: 100% !important;
             }
             
-            /* Hero section mobile */
+            /* Hero section mobile - UPDATED TO MATCH CSS */
             .hero-section {
-              padding: 40px 20px !important;
-              min-height: auto !important;
+              position: relative !important;
+              top: 0 !important;
+              padding-top: 108px !important;
+              padding-bottom: 60px !important;
+              padding-left: 20px !important;
+              padding-right: 20px !important;
+              margin: 0 !important;
+              margin-top: 0 !important;
+              min-height: calc(100vh - 88px) !important;
+              background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
+              color: #ffffff !important;
+              display: flex !important;
+              flex-direction: column !important;
+              justify-content: center !important;
+              align-items: center !important;
+              box-sizing: border-box !important;
+              z-index: 1 !important;
             }
             
             .hero-section h1, .hero-title-modern {
@@ -173,12 +188,25 @@ const MobileForceFix = () => {
               transition: all 0.3s ease !important;
             }
             
-            /* Navigation mobile */
-            .navbar {
-              padding: 10px 20px !important;
-              background: rgba(255, 255, 255, 0.95) !important;
-              backdrop-filter: blur(10px) !important;
-              border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+            /* Header mobile - UPDATED TO MATCH CSS */
+            header, .navbar, .site-header {
+              position: fixed !important;
+              top: 0 !important;
+              left: 0 !important;
+              right: 0 !important;
+              width: 100vw !important;
+              height: 88px !important;
+              min-height: 88px !important;
+              max-height: 88px !important;
+              padding: 20px !important;
+              margin: 0 !important;
+              background: #ffffff !important;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+              z-index: 10000 !important;
+              display: flex !important;
+              align-items: center !important;
+              justify-content: space-between !important;
+              box-sizing: border-box !important;
             }
             
             .navbar-brand {
