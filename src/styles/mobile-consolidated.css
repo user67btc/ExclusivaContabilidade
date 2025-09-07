@@ -145,7 +145,7 @@
     right: 0 !important;
     width: 100vw !important;
     min-height: calc(100vh - 88px) !important; /* Full height minus header */
-    padding-top: 108px !important; /* Header height (88px) + proportional spacing (20px) */
+    padding-top: 96px !important; /* Header height (88px) + minimal spacing (8px) */
     padding-bottom: 60px !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -276,21 +276,18 @@
     z-index: 3 !important;
   }
 
-  /* Hero CTA buttons styling */
+  /* Hero CTA buttons styling - USA 2024 Standards */
   html body div#__next .hero-section .hero-cta,
   html body div#__next .hero-section .hero-cta-group {
-    margin-bottom: 32px !important;
-    padding: 0 16px !important;
-    text-align: center !important;
+    margin-bottom: 24px !important;
+    padding: 0 20px !important;
     display: flex !important;
     flex-direction: column !important;
     gap: 16px !important;
     align-items: center !important;
     justify-content: center !important;
     width: 100% !important;
-    visibility: visible !important;
-    position: relative !important;
-    z-index: 10 !important;
+    max-width: 320px !important;
   }
 
   html body div#__next .hero-section .btn-modern,
@@ -820,28 +817,27 @@
   html body div#__next .btn-cta,
   html body div#__next .btn-primary,
   html body div#__next .hero-btn-primary {
-    min-height: 48px !important;
     background: rgba(255, 255, 255, 0.15) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
     color: #ffffff !important;
-    padding: 16px 32px !important;
     border-radius: 12px !important;
+    padding: 18px 36px !important; /* Increased for better touch targets */
+    min-height: 56px !important; /* Increased from 48px to 56px for better accessibility */
+    min-width: 140px !important;
     font-weight: 600 !important;
     font-size: 16px !important;
     text-decoration: none !important;
-    display: flex !important; /* Changed to flex for icon spacing */
+    display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    margin: 16px auto !important;
-    max-width: 320px !important;
+    margin: 12px auto !important;
+    max-width: 300px !important;
     box-shadow: 0 8px 24px rgba(30, 58, 138, 0.4) !important;
     transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     text-align: center !important;
     box-sizing: border-box !important;
     cursor: pointer !important;
-    gap: 8px !important; /* Space between icon and text */
+    gap: 8px !important;
   }
   
   html body div#__next .cta-button:hover,
