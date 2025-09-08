@@ -56,13 +56,18 @@
   html body div#__next .bento-grid-enhanced,
   html body div#__next .bento-grid,
   html body div#__next .bento-card,
-  html body div#__next .bento-card-enhanced {
+  html body div#__next .bento-card-enhanced,
+  html body div#__next .hero-visual-content,
+  html body div#__next .hero-main-image-modern,
+  html body div#__next .image-container-modern {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
     height: 0 !important;
     width: 0 !important;
     overflow: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
   }
 
   /* Hide WhatsApp floating button on mobile for cleaner look */
@@ -286,6 +291,22 @@
     padding: 0 !important;
     max-width: 100% !important;
     margin: 0 auto !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+
+  /* Force clean trust elements positioning */
+  html body div#__next .hero-trust-elements-enhanced {
+    position: relative !important;
+    z-index: 10 !important;
+    margin: 20px auto !important;
+    max-width: 300px !important;
+  }
+
+  html body div#__next .trust-item-enhanced {
+    flex-shrink: 0 !important;
+    min-width: auto !important;
+    max-width: 140px !important;
   }
 
   /* Hero title styling - Marketing Optimized */
@@ -371,14 +392,19 @@
     box-shadow: 0 16px 48px rgba(37, 211, 102, 0.3) !important;
   }
 
-  /* NUCLEAR OVERRIDE - Force hide all bento elements with maximum specificity */
+  /* NUCLEAR OVERRIDE - Force hide all visual elements with maximum specificity */
   html body div#__next .hero-section .bento-grid-enhanced,
   html body div#__next .bento-grid-enhanced,
   html body div#__next .bento-card-enhanced,
   html body div#__next .hero-visual-content,
   html body div#__next .hero-main-image-modern,
+  html body div#__next .image-container-modern,
+  html body div#__next .hero-section .hero-visual-content,
+  html body div#__next .hero-section .features-showcase,
+  html body div#__next .hero-section .floating-interactive,
   html body div#__next [class*="bento"],
-  html body div#__next [class*="card-enhanced"] {
+  html body div#__next [class*="card-enhanced"],
+  html body div#__next [class*="visual-content"] {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
@@ -386,8 +412,10 @@
     width: 0 !important;
     position: absolute !important;
     left: -9999px !important;
+    top: -9999px !important;
     overflow: hidden !important;
-    z-index: -1 !important;
+    z-index: -9999 !important;
+    transform: scale(0) !important;
   }
 
   /* FORCE SHOW ESSENTIAL HERO CONTENT */
