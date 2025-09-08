@@ -186,18 +186,66 @@
     z-index: 0 !important;
   }
 
-  /* ========== NUCLEAR SERVICES SECTION HIDING ========== */
+  /* ========== SERVICES SECTION RESTORED ========== */
   html body div#__next .services-section {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    overflow: hidden !important;
-    position: absolute !important;
-    left: -9999px !important;
-    top: -9999px !important;
-    z-index: -9999 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    width: 100% !important;
+    overflow: visible !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    z-index: 1 !important;
+  }
+
+  /* ========== SECTORS SECTION RESTORED ========== */
+  html body div#__next .sectors-section,
+  html body div#__next section.sectors-section {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    width: 100% !important;
+    overflow: visible !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    z-index: 1 !important;
+    background: #ffffff !important;
+    padding: 60px 0 !important;
+    margin: 0 !important;
+  }
+
+  /* ========== FAQ SECTION RESTORED ========== */
+  html body div#__next .faq-section,
+  html body div#__next section.faq-section {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    width: 100% !important;
+    overflow: visible !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    z-index: 1 !important;
+  }
+
+  /* ========== CONTACT CTA SECTION RESTORED ========== */
+  html body div#__next .contact-cta-section,
+  html body div#__next section.contact-cta-section {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    width: 100% !important;
+    overflow: visible !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    z-index: 1 !important;
   }
 
   /* Hero section overlay matching desktop */
