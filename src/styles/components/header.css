@@ -3,16 +3,18 @@
 
 /* ===== HEADER CONTAINER ===== */
 .site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background-color: var(--bg-primary);
-  border-bottom: 1px solid var(--border-light);
-  box-shadow: var(--shadow-sm);
-  z-index: 1000;
-  transition: all var(--transition-fast);
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 70px !important;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  z-index: 10000 !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 20px !important;
 }
 
 .site-header.scrolled {
@@ -21,27 +23,30 @@
 }
 
 /* ===== HEADER LAYOUT ===== */
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  padding: 0 var(--spacing-5);
-  max-width: 1200px;
-  margin: 0 auto;
+.header-container,
+.container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
 }
 
 /* ===== LOGO ===== */
 .site-logo {
-  display: flex;
-  align-items: center;
-  z-index: var(--z-modal);
+  display: flex !important;
+  align-items: center !important;
+  flex: 1 !important;
+  z-index: 10001 !important;
 }
 
 .site-logo img {
-  height: 50px;
-  width: auto;
-  transition: height var(--transition-fast);
+  height: 48px !important;
+  width: auto !important;
+  max-height: 48px !important;
 }
 
 .site-header.scrolled .site-logo img {
@@ -51,23 +56,17 @@
 /* ===== MOBILE HEADER OPTIMIZATIONS ===== */
 @media (max-width: 767px) {
   .site-header {
-    height: 64px;
-  }
-  
-  .header-container {
-    padding: 0 var(--spacing-4);
+    height: 64px !important;
+    padding: 0 16px !important;
   }
   
   .site-logo {
-    flex: 1;
+    flex: 1 !important;
   }
   
   .site-logo img {
-    height: 42px;
-  }
-  
-  .site-header.scrolled .site-logo img {
-    height: 38px;
+    height: 42px !important;
+    max-height: 42px !important;
   }
 }
 
@@ -161,31 +160,29 @@
 
 /* ===== MOBILE MENU TOGGLE ===== */
 .menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: var(--spacing-2);
-  border-radius: var(--radius-md);
-  transition: background-color var(--transition-fast);
-  z-index: 1001;
-  flex-shrink: 0;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 8px !important;
+  border-radius: 6px !important;
+  z-index: 10001 !important;
+  flex-shrink: 0 !important;
 }
 
 .menu-toggle:hover {
   background-color: var(--bg-secondary);
 }
 
-.menu-toggle-icon {
-  font-size: 20px;
-  color: var(--primary);
-  transition: transform var(--transition-fast);
-  font-weight: 600;
+.menu-toggle i {
+  font-size: 20px !important;
+  color: #1e40af !important;
+  font-weight: 600 !important;
 }
 
 .menu-toggle.active .menu-toggle-icon {
@@ -195,15 +192,20 @@
 /* ===== MOBILE STYLES ===== */
 @media (max-width: 991px) {
   .header-container {
-    padding: var(--spacing-3) var(--spacing-4);
+    padding: 0 var(--spacing-4);
+    height: 64px;
+  }
+  
+  .site-logo {
+    flex: 1;
   }
   
   .site-logo img {
-    height: 50px;
+    height: 42px;
   }
   
   .site-header.scrolled .site-logo img {
-    height: 45px;
+    height: 38px;
   }
   
   .menu-toggle {
@@ -220,10 +222,10 @@
     background-color: var(--bg-primary);
     border-left: 1px solid var(--border-light);
     box-shadow: var(--shadow-xl);
-    padding: var(--spacing-20) var(--spacing-6) var(--spacing-6);
+    padding: 80px var(--spacing-6) var(--spacing-6);
     overflow-y: auto;
     transition: right var(--transition-normal);
-    z-index: var(--z-fixed);
+    z-index: 999;
   }
   
   .main-navigation.active {
