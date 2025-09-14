@@ -854,7 +854,9 @@
     }
   }
 
-  /* ===== SEÇÃO DE SETORES - DESIGN CORPORATIVO ===== */
+  /* ===== SEÇÃO DE SETORES - DESIGN CORPORATIVO - FORÇA NUCLEAR ===== */
+  html body div#__next main .sectors-section,
+  html body .sectors-section,
   .sectors-section {
     background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%) !important;
     padding: 4rem 1rem !important;
@@ -862,7 +864,9 @@
     margin-top: -2rem !important;
   }
 
-  /* CABEÇALHO DA SEÇÃO SETORES */
+  /* CABEÇALHO DA SEÇÃO SETORES - FORÇA NUCLEAR */
+  html body div#__next main .sectors-section .section-header,
+  html body .sectors-section .section-header,
   .sectors-section .section-header {
     text-align: center !important;
     margin-bottom: 3rem !important;
@@ -871,7 +875,9 @@
     margin-right: auto !important;
   }
 
-  /* BADGE "ESPECIALIZAÇÃO" */
+  /* BADGE "ESPECIALIZAÇÃO" - FORÇA NUCLEAR */
+  html body div#__next main .sectors-section .section-badge,
+  html body .sectors-section .section-badge,
   .sectors-section .section-badge {
     display: inline-block !important;
     padding: 0.5rem 1.25rem !important;
@@ -887,7 +893,9 @@
     backdrop-filter: blur(10px) !important;
   }
 
-  /* TÍTULO DA SEÇÃO SETORES */
+  /* TÍTULO DA SEÇÃO SETORES - FORÇA NUCLEAR */
+  html body div#__next main .sectors-section .section-title,
+  html body .sectors-section .section-title,
   .sectors-section .section-title {
     font-size: 1.75rem !important;
     line-height: 1.3 !important;
@@ -898,7 +906,9 @@
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   }
 
-  /* SUBTÍTULO DA SEÇÃO SETORES */
+  /* SUBTÍTULO DA SEÇÃO SETORES - FORÇA NUCLEAR */
+  html body div#__next main .sectors-section .section-subtitle,
+  html body .sectors-section .section-subtitle,
   .sectors-section .section-subtitle {
     font-size: 1rem !important;
     line-height: 1.6 !important;
@@ -910,7 +920,9 @@
     margin-right: auto !important;
   }
 
-  /* GRID DE SETORES */
+  /* GRID DE SETORES - FORÇA NUCLEAR */
+  html body div#__next main .sectors-grid,
+  html body .sectors-grid,
   .sectors-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
@@ -920,7 +932,9 @@
     padding: 0 0.5rem !important;
   }
 
-  /* CARDS DE SETORES - DESIGN PREMIUM */
+  /* CARDS DE SETORES - DESIGN PREMIUM - FORÇA NUCLEAR */
+  html body div#__next main .sector-card,
+  html body .sector-card,
   .sector-card {
     background: #ffffff !important;
     border-radius: 16px !important;
@@ -933,6 +947,8 @@
     margin-bottom: 1.5rem !important;
   }
 
+  html body div#__next main .sector-card::before,
+  html body .sector-card::before,
   .sector-card::before {
     content: '' !important;
     position: absolute !important;
@@ -946,17 +962,23 @@
     transition: transform 0.4s ease !important;
   }
 
+  html body div#__next main .sector-card:hover,
+  html body .sector-card:hover,
   .sector-card:hover {
     transform: translateY(-8px) !important;
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18) !important;
     border-color: rgba(30, 58, 138, 0.1) !important;
   }
 
+  html body div#__next main .sector-card:hover::before,
+  html body .sector-card:hover::before,
   .sector-card:hover::before {
     transform: scaleX(1) !important;
   }
 
-  /* ÍCONE DO SETOR - DESIGN PREMIUM */
+  /* ÍCONE DO SETOR - DESIGN PREMIUM - FORÇA NUCLEAR */
+  html body div#__next main .sector-card .sector-icon,
+  html body .sector-card .sector-icon,
   .sector-card .sector-icon {
     width: 72px !important;
     height: 72px !important;
@@ -973,13 +995,20 @@
     position: relative !important;
   }
 
+  html body div#__next main .sector-card:hover .sector-icon,
+  html body .sector-card:hover .sector-icon,
   .sector-card:hover .sector-icon {
     transform: scale(1.05) rotate(2deg) !important;
     box-shadow: 0 12px 32px rgba(30, 58, 138, 0.35) !important;
   }
 
-  /* TÍTULO DO SETOR */
-  .sector-card .sector-title {
+  /* TÍTULO DO SETOR - FORÇA NUCLEAR */
+  html body div#__next main .sector-card .sector-title,
+  html body .sector-card .sector-title,
+  .sector-card .sector-title,
+  html body div#__next main .sector-card h3,
+  html body .sector-card h3,
+  .sector-card h3 {
     font-size: 1.25rem !important;
     line-height: 1.3 !important;
     font-weight: 700 !important;
@@ -989,12 +1018,22 @@
     transition: color 0.3s ease !important;
   }
 
-  .sector-card:hover .sector-title {
+  html body div#__next main .sector-card:hover .sector-title,
+  html body .sector-card:hover .sector-title,
+  .sector-card:hover .sector-title,
+  html body div#__next main .sector-card:hover h3,
+  html body .sector-card:hover h3,
+  .sector-card:hover h3 {
     color: #1e3a8a !important;
   }
 
-  /* DESCRIÇÃO DO SETOR */
-  .sector-card .sector-description {
+  /* DESCRIÇÃO DO SETOR - FORÇA NUCLEAR */
+  html body div#__next main .sector-card .sector-description,
+  html body .sector-card .sector-description,
+  .sector-card .sector-description,
+  html body div#__next main .sector-card p,
+  html body .sector-card p,
+  .sector-card p {
     font-size: 0.9rem !important;
     line-height: 1.6 !important;
     color: #64748b !important;
@@ -1002,8 +1041,16 @@
     font-weight: 400 !important;
   }
 
-  /* BOTÃO SAIBA MAIS DO SETOR */
-  .sector-card .sector-link {
+  /* BOTÃO SAIBA MAIS DO SETOR - FORÇA NUCLEAR */
+  html body div#__next main .sector-card .sector-link,
+  html body .sector-card .sector-link,
+  .sector-card .sector-link,
+  html body div#__next main .sector-card .btn,
+  html body .sector-card .btn,
+  .sector-card .btn,
+  html body div#__next main .sector-card .cta-button,
+  html body .sector-card .cta-button,
+  .sector-card .cta-button {
     display: inline-flex !important;
     align-items: center !important;
     gap: 0.5rem !important;
@@ -1020,18 +1067,30 @@
     cursor: pointer !important;
   }
 
-  .sector-card .sector-link:hover {
+  html body div#__next main .sector-card .sector-link:hover,
+  html body .sector-card .sector-link:hover,
+  .sector-card .sector-link:hover,
+  html body div#__next main .sector-card .btn:hover,
+  html body .sector-card .btn:hover,
+  .sector-card .btn:hover,
+  html body div#__next main .sector-card .cta-button:hover,
+  html body .sector-card .cta-button:hover,
+  .sector-card .cta-button:hover {
     background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%) !important;
     transform: translateY(-2px) !important;
     box-shadow: 0 8px 24px rgba(30, 58, 138, 0.3) !important;
   }
 
+  html body div#__next main .sector-card .sector-link::after,
+  html body .sector-card .sector-link::after,
   .sector-card .sector-link::after {
     content: '→' !important;
     font-size: 1rem !important;
     transition: transform 0.3s ease !important;
   }
 
+  html body div#__next main .sector-card .sector-link:hover::after,
+  html body .sector-card .sector-link:hover::after,
   .sector-card .sector-link:hover::after {
     transform: translateX(4px) !important;
   }
