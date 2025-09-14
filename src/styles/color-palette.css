@@ -1,0 +1,137 @@
+/* ===== NOVA PALETA DE CORES - EXCLUSIVA CONTÁBIL ===== */
+/* Baseada na logo oficial da empresa */
+
+:root {
+  /* CORES PRIMÁRIAS - Extraídas da logo */
+  --primary-color: #1e3a8a; /* Azul escuro principal da logo */
+  --primary-dark: #1e40af; /* Azul mais escuro para hover */
+  --primary-light: #3b82f6; /* Azul médio para elementos secundários */
+  --secondary-color: #0ea5e9; /* Azul claro (ciano) da logo */
+  
+  /* CORES DE APOIO */
+  --accent-color: #06b6d4; /* Ciano vibrante */
+  --success-color: #10b981; /* Verde para sucesso */
+  --warning-color: #f59e0b; /* Amarelo para avisos */
+  --error-color: #ef4444; /* Vermelho para erros */
+  
+  /* CORES NEUTRAS */
+  --text-primary: #1e293b; /* Texto principal */
+  --text-secondary: #64748b; /* Texto secundário */
+  --text-light: #94a3b8; /* Texto claro */
+  --text-white: #ffffff; /* Texto branco */
+  
+  /* BACKGROUNDS */
+  --bg-primary: #ffffff; /* Fundo principal */
+  --bg-secondary: #f8fafc; /* Fundo secundário */
+  --bg-dark: #0f172a; /* Fundo escuro */
+  --bg-gradient: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
+  
+  /* BORDERS */
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --border-dark: #475569;
+  
+  /* SHADOWS */
+  --shadow-sm: 0 1px 2px rgba(30, 58, 138, 0.05);
+  --shadow-md: 0 4px 6px rgba(30, 58, 138, 0.07);
+  --shadow-lg: 0 10px 15px rgba(30, 58, 138, 0.1);
+  --shadow-xl: 0 20px 25px rgba(30, 58, 138, 0.1);
+  
+  /* BOTÕES */
+  --btn-primary-bg: #1e3a8a;
+  --btn-primary-hover: #1e40af;
+  --btn-secondary-bg: #0ea5e9;
+  --btn-secondary-hover: #0284c7;
+  --btn-success-bg: #10b981;
+  --btn-success-hover: #059669;
+}
+
+/* ===== APLICAÇÃO DA PALETA ===== */
+
+/* Cores primárias globais */
+.text-primary { color: var(--primary-color); }
+.text-secondary { color: var(--secondary-color); }
+.bg-primary { background-color: var(--primary-color); }
+.bg-secondary { background-color: var(--secondary-color); }
+.border-primary { border-color: var(--primary-color); }
+
+/* Gradientes */
+.gradient-primary {
+  background: var(--bg-gradient);
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+}
+
+/* Botões com nova paleta */
+.btn-primary-new {
+  background: var(--btn-primary-bg);
+  color: var(--text-white);
+  border: 1px solid var(--btn-primary-bg);
+  transition: all 0.3s ease;
+}
+
+.btn-primary-new:hover {
+  background: var(--btn-primary-hover);
+  border-color: var(--btn-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary-new {
+  background: var(--btn-secondary-bg);
+  color: var(--text-white);
+  border: 1px solid var(--btn-secondary-bg);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-new:hover {
+  background: var(--btn-secondary-hover);
+  border-color: var(--btn-secondary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Cards com nova paleta */
+.card-new {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.card-new:hover {
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-color);
+}
+
+/* Ícones */
+.icon-primary {
+  color: var(--primary-color);
+}
+
+.icon-secondary {
+  color: var(--secondary-color);
+}
+
+/* Badges */
+.badge-primary {
+  background: var(--primary-color);
+  color: var(--text-white);
+}
+
+.badge-secondary {
+  background: var(--secondary-color);
+  color: var(--text-white);
+}
