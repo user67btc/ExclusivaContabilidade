@@ -27,8 +27,8 @@ import '../styles/scroll-top.css';
 import '../styles/cards-unified.css';
 // MOBILE STYLES - DESABILITADO - conflita com versão consolidada
 // import '../styles/mobile-clean.css';
-// MOBILE HEADER FIX - versão consolidada com cascade layers
-import '../styles/mobile-header-fix-CONSOLIDATED.css';
+// MOBILE HEADER FIX - FORÇA NUCLEAR DIRETA
+import '../styles/mobile-header-fix.css';
 
 // Fonte Inter via next/font (melhor performance e estabilidade)
 const inter = Inter({ subsets: ['latin'] });
