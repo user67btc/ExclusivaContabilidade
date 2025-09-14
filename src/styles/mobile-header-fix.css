@@ -274,31 +274,67 @@
   .hero-content {
     text-align: center !important;
     padding: 0 1rem !important;
-    max-width: 100% !important;
   }
 
-  .hero-title,
-  .hero-section h1 {
-    font-size: 1.75rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 1rem !important;
+  /* REMOVE TEXTO SOBREPOSTO DESNECESSÁRIO */
+  html body div#__next .hero-section .hero-pre-title,
+  html body div#__next .hero-section .pre-heading,
+  html body div#__next .hero-section .subtitle-overlay {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Título hero - limpo e direto */
+  html body div#__next .hero-title {
+    font-size: 1.8rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 1.25rem !important;
     font-weight: 700 !important;
     color: #ffffff !important;
-    text-align: center !important;
-    word-wrap: break-word !important;
-    hyphens: auto !important;
-  }
-
-  .hero-subtitle,
-  .hero-section p {
-    font-size: 0.95rem !important;
-    line-height: 1.4 !important;
-    margin-bottom: 2rem !important;
-    color: rgba(255, 255, 255, 0.9) !important;
     text-align: center !important;
     max-width: 90% !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  /* FORÇA TÍTULO EM UMA LINHA QUANDO POSSÍVEL */
+  html body div#__next .hero-title br {
+    display: none !important;
+  }
+
+  /* Subtítulo hero - mais conciso */
+  html body div#__next .hero-subtitle {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 2.5rem !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-align: center !important;
+    max-width: 85% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-weight: 400 !important;
+  }
+
+  /* REMOVE BADGES E ELEMENTOS DESNECESSÁRIOS */
+  html body div#__next .hero-section .badge,
+  html body div#__next .hero-section .trust-badge,
+  html body div#__next .hero-section .sem-compromisso,
+  html body div#__next .hero-section [class*="badge"],
+  html body div#__next .hero-section .floating-badge,
+  html body div#__next .hero-section .overlay-text,
+  html body div#__next .hero-section .hero-overlay {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* LIMPA ELEMENTOS FLUTUANTES E SOBREPOSTOS */
+  html body div#__next .hero-section::before,
+  html body div#__next .hero-section::after {
+    display: none !important;
   }
 
   /* ===== BOTÕES CTA PADRONIZADOS - BASEADO EM BEST PRACTICES ===== */
@@ -341,21 +377,41 @@
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25) !important;
   }
 
-  /* Correção específica para botões largos demais */
+  /* Botões otimizados - tamanhos consistentes */
   html body div#__next .hero-section .cta-button,
   html body div#__next .hero-section .btn-primary {
-    width: auto !important;
-    max-width: 150px !important;
-    min-width: 140px !important;
+    width: 100% !important;
+    max-width: 180px !important;
+    min-width: 160px !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    border-radius: 10px !important;
     flex: 0 0 auto !important;
   }
 
   html body div#__next .hero-section .btn-secondary,
   html body div#__next .hero-section .btn-outline {
-    width: auto !important;
-    max-width: 130px !important;
-    min-width: 120px !important;
+    width: 100% !important;
+    max-width: 160px !important;
+    min-width: 140px !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    border-radius: 10px !important;
     flex: 0 0 auto !important;
+  }
+
+  /* Em mobile, botões ocupam largura total */
+  @media (max-width: 399px) {
+    html body div#__next .hero-section .cta-button,
+    html body div#__next .hero-section .btn-primary,
+    html body div#__next .hero-section .btn-secondary,
+    html body div#__next .hero-section .btn-outline {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: auto !important;
+    }
   }
 
   /* Botão secundário - Especialista */
@@ -401,21 +457,29 @@
     box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3) !important;
   }
 
-  /* Container dos botões CTA - layout horizontal otimizado */
+  /* Container dos botões CTA - layout limpo e centrado */
   html body div#__next .cta-buttons,
   html body div#__next .hero-cta-buttons,
   html body div#__next .hero-buttons {
     display: flex !important;
-    flex-direction: row !important;
-    gap: 0.75rem !important;
+    flex-direction: column !important;
+    gap: 0.875rem !important;
     justify-content: center !important;
     align-items: center !important;
-    margin: 2rem 0 !important;
-    flex-wrap: wrap !important;
+    margin: 2.5rem auto 3rem auto !important;
     width: 100% !important;
-    max-width: 320px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    max-width: 280px !important;
+  }
+
+  /* Layout horizontal apenas em telas maiores */
+  @media (min-width: 400px) {
+    html body div#__next .cta-buttons,
+    html body div#__next .hero-cta-buttons,
+    html body div#__next .hero-buttons {
+      flex-direction: row !important;
+      gap: 0.75rem !important;
+      max-width: 320px !important;
+    }
   }
 
   /* Responsividade para botões lado a lado em telas maiores */
