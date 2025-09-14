@@ -1,6 +1,11 @@
-/* ===== SISTEMA DE DESIGN CORPORATIVO UNIFICADO ===== */
-/* Padrão profissional baseado em escritórios renomados dos EUA */
-/* Aplicação consistente em todas as seções e dispositivos */
+/* ARQUIVO DESABILITADO - SUBSTITUÍDO PELA NOVA ARQUITETURA CSS MODULAR */
+/* Este arquivo foi substituído por: design-system.css + components/header.css + components/hero.css + components/cards.css */
+/* NÃO REMOVER - Manter para referência histórica */
+
+/*
+===== SISTEMA DE DESIGN CORPORATIVO UNIFICADO =====
+Padrão profissional baseado em escritórios renomados dos EUA
+Aplicação consistente em todas as seções e dispositivos
 
 /* ===== HEADER MOBILE ===== */
 html body div#__next .header,
@@ -28,7 +33,7 @@ html body .header,
 }
 
 .logo {
-  height: 45px !important;
+  height: 50px !important;
   width: auto !important;
 }
 
@@ -38,7 +43,13 @@ html body .header,
   font-size: 1.5rem !important;
   color: #1e3a8a !important;
   cursor: pointer !important;
-  padding: 0.5rem !important;
+  padding: 0.75rem !important;
+  width: 44px !important;
+  height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-right: 0.5rem !important;
 }
 
 /* ===== PADRÃO CORPORATIVO UNIFICADO - TODAS AS SEÇÕES ===== */
