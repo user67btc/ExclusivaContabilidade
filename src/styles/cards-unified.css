@@ -10,7 +10,7 @@
   margin-bottom: 0;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 50%, var(--primary-light) 100%);
   border-top: none;
 }
 
@@ -21,7 +21,7 @@
   margin-bottom: 0;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 25%, var(--primary-light) 50%, var(--secondary-color) 75%, var(--accent-color) 100%);
   color: white;
 }
 
@@ -166,7 +166,7 @@
 .sector-card .sector-icon {
   width: 64px;
   height: 64px;
-  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -203,7 +203,7 @@
 .sector-card .btn,
 .service-card .cta-button,
 .sector-card .cta-button {
-  background: #3b82f6;
+  background: var(--btn-primary-bg);
   color: white;
   border: none;
   border-radius: 12px;
@@ -225,9 +225,9 @@
 .sector-card .btn:hover,
 .service-card .cta-button:hover,
 .sector-card .cta-button:hover {
-  background: #2563eb;
+  background: var(--btn-primary-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
 }
 
 /* ===== ELEMENTOS ESPECÍFICOS SECTORS ===== */
