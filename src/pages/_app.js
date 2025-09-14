@@ -27,8 +27,8 @@ import '../styles/scroll-top.css';
 import '../styles/cards-unified.css';
 // MOBILE STYLES - DESABILITADO - conflita com versão consolidada
 // import '../styles/mobile-clean.css';
-// MOBILE HEADER FIX - FORÇA NUCLEAR DIRETA
-import '../styles/mobile-header-fix.css';
+// SISTEMA DE DESIGN CORPORATIVO UNIFICADO - PADRÃO PROFISSIONAL
+import '../styles/mobile-header-fix-CLEAN.css';
 
 // Fonte Inter via next/font (melhor performance e estabilidade)
 const inter = Inter({ subsets: ['latin'] });
