@@ -1,0 +1,462 @@
+/* ===== SISTEMA DE DESIGN CORPORATIVO UNIFICADO ===== */
+/* Padrão profissional baseado em escritórios renomados dos EUA */
+/* Aplicação consistente em todas as seções e dispositivos */
+
+/* ===== HEADER MOBILE ===== */
+html body div#__next .header,
+html body .header,
+.header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1000 !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  height: 70px !important;
+  padding: 0 1rem !important;
+}
+
+.header .container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+.logo {
+  height: 45px !important;
+  width: auto !important;
+}
+
+.menu-toggle {
+  background: none !important;
+  border: none !important;
+  font-size: 1.5rem !important;
+  color: #1e3a8a !important;
+  cursor: pointer !important;
+  padding: 0.5rem !important;
+}
+
+/* ===== PADRÃO CORPORATIVO UNIFICADO - TODAS AS SEÇÕES ===== */
+
+/* HERO SECTION */
+html body div#__next main .hero-section,
+html body .hero-section,
+.hero-section {
+  background: #ffffff !important;
+  padding: 8rem 1rem 6rem 1rem !important;
+  text-align: center !important;
+  position: relative !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+/* SERVICES SECTION */
+html body div#__next main .services-section,
+html body .services-section,
+.services-section {
+  background: #ffffff !important;
+  padding: 6rem 1rem 5rem 1rem !important;
+  position: relative !important;
+}
+
+/* SECTORS SECTION */
+html body div#__next main .sectors-section,
+html body .sectors-section,
+.sectors-section {
+  background: #ffffff !important;
+  padding: 6rem 1rem 5rem 1rem !important;
+  position: relative !important;
+}
+
+/* ===== BADGES UNIFICADOS ===== */
+html body div#__next main .section-badge,
+html body .section-badge,
+.section-badge,
+html body div#__next main .hero-badge,
+html body .hero-badge,
+.hero-badge {
+  display: inline-block !important;
+  padding: 0.5rem 1.25rem !important;
+  background: rgba(30, 58, 138, 0.1) !important;
+  color: #1e3a8a !important;
+  border: 1px solid rgba(30, 58, 138, 0.2) !important;
+  border-radius: 20px !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* ===== TÍTULOS UNIFICADOS ===== */
+html body div#__next main .section-title,
+html body .section-title,
+.section-title,
+html body div#__next main .hero-title,
+html body .hero-title,
+.hero-title {
+  font-size: 2rem !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  margin-bottom: 1rem !important;
+  letter-spacing: -0.01em !important;
+  text-align: center !important;
+}
+
+/* ===== SUBTÍTULOS UNIFICADOS ===== */
+html body div#__next main .section-subtitle,
+html body .section-subtitle,
+.section-subtitle,
+html body div#__next main .hero-subtitle,
+html body .hero-subtitle,
+.hero-subtitle {
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+  color: #64748b !important;
+  font-weight: 400 !important;
+  margin-bottom: 3rem !important;
+  max-width: 500px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+/* ===== GRIDS UNIFICADOS ===== */
+html body div#__next main .services-grid,
+html body .services-grid,
+.services-grid,
+html body div#__next main .sectors-grid,
+html body .sectors-grid,
+.sectors-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 2rem !important;
+  max-width: 420px !important;
+  margin: 0 auto !important;
+  padding: 0 0.5rem !important;
+}
+
+/* ===== CARDS UNIFICADOS ===== */
+html body div#__next main .service-card,
+html body .service-card,
+.service-card,
+html body div#__next main .sector-card,
+html body .sector-card,
+.sector-card {
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  padding: 2rem 1.5rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid #e2e8f0 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  margin-bottom: 1.5rem !important;
+}
+
+html body div#__next main .service-card:hover,
+html body .service-card:hover,
+.service-card:hover,
+html body div#__next main .sector-card:hover,
+html body .sector-card:hover,
+.sector-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12) !important;
+  border-color: rgba(30, 58, 138, 0.2) !important;
+}
+
+/* ===== ÍCONES UNIFICADOS ===== */
+html body div#__next main .service-icon,
+html body .service-icon,
+.service-icon,
+html body div#__next main .sector-icon,
+html body .sector-icon,
+.sector-icon {
+  width: 72px !important;
+  height: 72px !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%) !important;
+  border-radius: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 1.5rem !important;
+  color: #ffffff !important;
+  font-size: 1.75rem !important;
+  box-shadow: 0 8px 24px rgba(30, 58, 138, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+html body div#__next main .service-card:hover .service-icon,
+html body .service-card:hover .service-icon,
+.service-card:hover .service-icon,
+html body div#__next main .sector-card:hover .sector-icon,
+html body .sector-card:hover .sector-icon,
+.sector-card:hover .sector-icon {
+  transform: scale(1.05) rotate(2deg) !important;
+  box-shadow: 0 12px 32px rgba(30, 58, 138, 0.3) !important;
+}
+
+/* ===== TÍTULOS DOS CARDS UNIFICADOS ===== */
+html body div#__next main .service-title,
+html body .service-title,
+.service-title,
+html body div#__next main .sector-title,
+html body .sector-title,
+.sector-title,
+html body div#__next main .service-card h3,
+html body .service-card h3,
+.service-card h3,
+html body div#__next main .sector-card h3,
+html body .sector-card h3,
+.sector-card h3 {
+  font-size: 1.25rem !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  margin-bottom: 1rem !important;
+  letter-spacing: -0.01em !important;
+  transition: color 0.3s ease !important;
+}
+
+html body div#__next main .service-card:hover .service-title,
+html body .service-card:hover .service-title,
+.service-card:hover .service-title,
+html body div#__next main .sector-card:hover .sector-title,
+html body .sector-card:hover .sector-title,
+.sector-card:hover .sector-title,
+html body div#__next main .service-card:hover h3,
+html body .service-card:hover h3,
+.service-card:hover h3,
+html body div#__next main .sector-card:hover h3,
+html body .sector-card:hover h3,
+.sector-card:hover h3 {
+  color: #1e3a8a !important;
+}
+
+/* ===== DESCRIÇÕES DOS CARDS UNIFICADAS ===== */
+html body div#__next main .service-description,
+html body .service-description,
+.service-description,
+html body div#__next main .sector-description,
+html body .sector-description,
+.sector-description,
+html body div#__next main .service-card p,
+html body .service-card p,
+.service-card p,
+html body div#__next main .sector-card p,
+html body .sector-card p,
+.sector-card p {
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+  color: #64748b !important;
+  margin-bottom: 1.5rem !important;
+  font-weight: 400 !important;
+}
+
+/* ===== BOTÕES UNIFICADOS ===== */
+html body div#__next main .service-link,
+html body .service-link,
+.service-link,
+html body div#__next main .sector-link,
+html body .sector-link,
+.sector-link,
+html body div#__next main .btn,
+html body .btn,
+.btn,
+html body div#__next main .cta-button,
+html body .cta-button,
+.cta-button,
+html body div#__next main .hero-btn-primary,
+html body .hero-btn-primary,
+.hero-btn-primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.875rem 1.5rem !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%) !important;
+  color: #ffffff !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 16px rgba(30, 58, 138, 0.2) !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+html body div#__next main .hero-btn-secondary,
+html body .hero-btn-secondary,
+.hero-btn-secondary {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.875rem 1.5rem !important;
+  background: #ffffff !important;
+  color: #1e3a8a !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid #1e3a8a !important;
+  cursor: pointer !important;
+}
+
+/* HOVER EFFECTS DOS BOTÕES */
+html body div#__next main .service-link:hover,
+html body .service-link:hover,
+.service-link:hover,
+html body div#__next main .sector-link:hover,
+html body .sector-link:hover,
+.sector-link:hover,
+html body div#__next main .btn:hover,
+html body .btn:hover,
+.btn:hover,
+html body div#__next main .cta-button:hover,
+html body .cta-button:hover,
+.cta-button:hover,
+html body div#__next main .hero-btn-primary:hover,
+html body .hero-btn-primary:hover,
+.hero-btn-primary:hover {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(30, 58, 138, 0.3) !important;
+}
+
+html body div#__next main .hero-btn-secondary:hover,
+html body .hero-btn-secondary:hover,
+.hero-btn-secondary:hover {
+  background: #f8fafc !important;
+  transform: translateY(-2px) !important;
+  border-color: #3b82f6 !important;
+  color: #3b82f6 !important;
+}
+
+/* SETAS DOS BOTÕES */
+html body div#__next main .service-link::after,
+html body .service-link::after,
+.service-link::after,
+html body div#__next main .sector-link::after,
+html body .sector-link::after,
+.sector-link::after {
+  content: '→' !important;
+  font-size: 1rem !important;
+  transition: transform 0.3s ease !important;
+}
+
+html body div#__next main .service-link:hover::after,
+html body .service-link:hover::after,
+.service-link:hover::after,
+html body div#__next main .sector-link:hover::after,
+html body .sector-link:hover::after,
+.sector-link:hover::after {
+  transform: translateX(4px) !important;
+}
+
+/* ===== RESPONSIVIDADE UNIFICADA ===== */
+
+/* TABLETS */
+@media (min-width: 768px) {
+  .services-grid,
+  .sectors-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    max-width: 860px !important;
+    gap: 2.5rem !important;
+  }
+  
+  .section-title,
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+  
+  .services-section,
+  .sectors-section {
+    padding: 8rem 2rem 6rem 2rem !important;
+  }
+  
+  .hero-section {
+    padding: 10rem 2rem 8rem 2rem !important;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .services-grid,
+  .sectors-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    max-width: 1280px !important;
+    gap: 3rem !important;
+  }
+  
+  .services-section,
+  .sectors-section {
+    padding: 10rem 2rem 8rem 2rem !important;
+  }
+  
+  .hero-section {
+    padding: 12rem 2rem 10rem 2rem !important;
+  }
+}
+
+/* ===== TRUST BADGES ===== */
+.trust-badges,
+.hero-trust-badges {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  margin: 3rem 0 2rem 0 !important;
+  flex-wrap: wrap !important;
+  max-width: 320px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.trust-badge,
+.hero-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.5rem 1rem !important;
+  background: rgba(30, 58, 138, 0.05) !important;
+  border: 1px solid rgba(30, 58, 138, 0.1) !important;
+  border-radius: 20px !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  color: #1e3a8a !important;
+  transition: all 0.3s ease !important;
+}
+
+.trust-badge:hover,
+.hero-badge:hover {
+  background: rgba(30, 58, 138, 0.1) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.15) !important;
+}
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  width: 60px !important;
+  height: 60px !important;
+  background: #25d366 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3) !important;
+  z-index: 999 !important;
+  transition: transform 0.3s ease !important;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4) !important;
+}
