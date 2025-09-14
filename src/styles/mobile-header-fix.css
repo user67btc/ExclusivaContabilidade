@@ -78,8 +78,11 @@
     background-size: 100% !important;
   }
 
-  /* Menu mobile expandido - ESPECIFICIDADE NUCLEAR */
-  html body div#__next .navbar-collapse,
+  /* Menu mobile expandido - ESPECIFICIDADE MÁXIMA */
+  html body div#__next main .navbar-collapse,
+  html body div#__next header .navbar-collapse,
+  html body div#__next .site-header .navbar-collapse,
+  html body div#__next .navbar .navbar-collapse,
   html body div#__next .mobile-menu {
     background: #ffffff !important;
     margin-top: 0.5rem !important;
@@ -92,28 +95,51 @@
     left: 0 !important;
     right: 0 !important;
     z-index: 999 !important;
-    display: none !important; /* OCULTO POR PADRÃO */
+    display: none !important; /* FORÇA OCULTO */
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
 
-  /* Menu mobile quando expandido/ativo */
-  html body div#__next .navbar-collapse.show,
-  html body div#__next .navbar-collapse.collapse.show,
+  /* Menu mobile quando expandido/ativo - ESPECIFICIDADE MÁXIMA */
+  html body div#__next main .navbar-collapse.show,
+  html body div#__next header .navbar-collapse.show,
+  html body div#__next .site-header .navbar-collapse.show,
+  html body div#__next .navbar .navbar-collapse.show,
+  html body div#__next main .navbar-collapse.collapse.show,
+  html body div#__next header .navbar-collapse.collapse.show,
+  html body div#__next .site-header .navbar-collapse.collapse.show,
+  html body div#__next .navbar .navbar-collapse.collapse.show,
   html body div#__next .navbar-collapse.collapsing,
   html body div#__next .mobile-menu.show,
   html body div#__next .mobile-menu.active,
   html body div#__next .mobile-menu.open {
     display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
   }
 
-  /* Transição suave para o menu */
-  html body div#__next .navbar-collapse {
+  /* Transições suaves - ESPECIFICIDADE MÁXIMA */
+  html body div#__next main .navbar-collapse,
+  html body div#__next header .navbar-collapse,
+  html body div#__next .site-header .navbar-collapse,
+  html body div#__next .navbar .navbar-collapse {
     transition: all 0.3s ease-in-out !important;
   }
 
-  html body div#__next .navbar-collapse.collapsing {
+  html body div#__next main .navbar-collapse.collapsing,
+  html body div#__next header .navbar-collapse.collapsing,
+  html body div#__next .site-header .navbar-collapse.collapsing,
+  html body div#__next .navbar .navbar-collapse.collapsing {
     height: 0 !important;
     overflow: hidden !important;
     transition: height 0.35s ease !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
   html body div#__next .navbar-nav,
