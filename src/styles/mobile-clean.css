@@ -212,6 +212,12 @@
 
   .navbar-collapse {
     margin-top: 1rem;
+    display: none; /* OCULTO POR PADRÃO */
+  }
+
+  .navbar-collapse.show,
+  .navbar-collapse.collapse.show {
+    display: block; /* VISÍVEL APENAS QUANDO ATIVO */
   }
 
   .navbar-nav {
