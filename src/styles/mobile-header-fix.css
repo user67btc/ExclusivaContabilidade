@@ -44,6 +44,12 @@
     padding: 0.5rem !important;
     color: var(--primary-color) !important;
     font-size: 1.5rem !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 44px !important;
+    height: 44px !important;
   }
 
   html body div#__next .navbar-toggler:focus,
@@ -51,6 +57,25 @@
     box-shadow: none !important;
     outline: 2px solid var(--primary-color) !important;
     outline-offset: 2px !important;
+  }
+
+  /* Estados do menu hamburger */
+  html body div#__next .navbar-toggler:not(.collapsed),
+  html body div#__next .menu-toggle.active {
+    color: var(--primary-dark) !important;
+  }
+
+  /* Ícone do hamburger */
+  html body div#__next .navbar-toggler-icon,
+  html body div#__next .menu-toggle-icon {
+    display: inline-block !important;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    vertical-align: middle !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 100% !important;
   }
 
   /* Menu mobile expandido - ESPECIFICIDADE NUCLEAR */
@@ -67,6 +92,28 @@
     left: 0 !important;
     right: 0 !important;
     z-index: 999 !important;
+    display: none !important; /* OCULTO POR PADRÃO */
+  }
+
+  /* Menu mobile quando expandido/ativo */
+  html body div#__next .navbar-collapse.show,
+  html body div#__next .navbar-collapse.collapse.show,
+  html body div#__next .navbar-collapse.collapsing,
+  html body div#__next .mobile-menu.show,
+  html body div#__next .mobile-menu.active,
+  html body div#__next .mobile-menu.open {
+    display: block !important;
+  }
+
+  /* Transição suave para o menu */
+  html body div#__next .navbar-collapse {
+    transition: all 0.3s ease-in-out !important;
+  }
+
+  html body div#__next .navbar-collapse.collapsing {
+    height: 0 !important;
+    overflow: hidden !important;
+    transition: height 0.35s ease !important;
   }
 
   html body div#__next .navbar-nav,
