@@ -5,7 +5,7 @@ import { AuthProvider } from '../contexts/AuthContext';
 import { NotificationProvider } from '../contexts/NotificationContext';
 import { GoogleAnalytics, FacebookPixel } from '../components/analytics';
 import ClientBootstrap from '../components/ClientBootstrap';
-import MobileForceFix from '../components/MobileForceFix';
+// import MobileForceFix from '../components/MobileForceFix'; // DESABILITADO - Conflita com CSS otimizado
 
 // CSS imports - ORDEM OTIMIZADA: base styles primeiro, nova paleta, cards unificados, mobile limpo por último
 import '../styles/globals.css';
@@ -39,8 +39,8 @@ function MyApp({ Component, pageProps }) {
           {/* FORÇA NUCLEAR: Componente JavaScript para aplicar estilos inline */}
           <ClientBootstrap />
           
-          {/* MOBILE FORCE FIX: Aplica estilos mobile via JavaScript inline */}
-          <MobileForceFix />
+          {/* MOBILE FORCE FIX: DESABILITADO - Conflitava com CSS otimizado */}
+          {/* <MobileForceFix /> */}
           
           {/* Analytics Components - Carregam apenas se as variáveis estiverem configuradas */}
           <GoogleAnalytics />
