@@ -46,6 +46,21 @@
   height: 50px;
 }
 
+/* ===== MOBILE HEADER OPTIMIZATIONS ===== */
+@media (max-width: 767px) {
+  .header-container {
+    padding: var(--spacing-4) var(--spacing-5);
+  }
+  
+  .site-logo img {
+    height: 45px; /* Logo maior em mobile */
+  }
+  
+  .site-header.scrolled .site-logo img {
+    height: 40px;
+  }
+}
+
 /* ===== NAVIGATION DESKTOP ===== */
 .main-navigation {
   display: flex;
@@ -140,8 +155,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   background: none;
   border: none;
   cursor: pointer;
@@ -149,6 +164,7 @@
   border-radius: var(--radius-md);
   transition: background-color var(--transition-fast);
   z-index: var(--z-modal);
+  margin-right: var(--spacing-1);
 }
 
 .menu-toggle:hover {
