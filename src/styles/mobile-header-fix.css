@@ -284,18 +284,26 @@
     visibility: hidden !important;
   }
 
-  /* Título hero - limpo e direto */
+  /* Título hero - moderno e proporcional */
   html body div#__next .hero-title {
-    font-size: 1.8rem !important;
-    line-height: 1.25 !important;
-    margin-bottom: 1.25rem !important;
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1rem !important;
     font-weight: 700 !important;
     color: #ffffff !important;
     text-align: center !important;
-    max-width: 90% !important;
+    max-width: 85% !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    letter-spacing: -0.02em !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  /* Título alternativo moderno - baseado em SaaS 2024 */
+  html body div#__next .hero-title.modern-headline {
+    font-size: 1.6rem !important;
+    line-height: 1.25 !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
   }
 
   /* FORÇA TÍTULO EM UMA LINHA QUANDO POSSÍVEL */
@@ -303,16 +311,59 @@
     display: none !important;
   }
 
-  /* Subtítulo hero - mais conciso */
+  /* Subtítulo hero - mais impactante */
   html body div#__next .hero-subtitle {
-    font-size: 0.9rem !important;
-    line-height: 1.5 !important;
-    margin-bottom: 2.5rem !important;
-    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 2rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
     text-align: center !important;
-    max-width: 85% !important;
+    max-width: 80% !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    font-weight: 400 !important;
+  }
+
+  /* OCULTA TEXTO ORIGINAL E SUBSTITUI */
+  html body div#__next .hero-title {
+    text-indent: -9999px !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+
+  html body div#__next .hero-subtitle {
+    text-indent: -9999px !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+
+  /* NOVO TEXTO MODERNO - BASEADO EM FINTECH 2024 */
+  html body div#__next .hero-title:before {
+    content: "Acelere o Crescimento do Seu Negócio" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    text-indent: 0 !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    text-align: center !important;
+    line-height: 1.3 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  html body div#__next .hero-subtitle:before {
+    content: "Contabilidade inteligente e consultoria estratégica para empresas que querem crescer mais e pagar menos impostos" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    text-indent: 0 !important;
+    font-size: 0.95rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
     font-weight: 400 !important;
   }
 
@@ -377,29 +428,85 @@
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25) !important;
   }
 
-  /* Botões otimizados - tamanhos consistentes */
+  /* Botões modernos - baseados em fintech 2024 */
   html body div#__next .hero-section .cta-button,
   html body div#__next .hero-section .btn-primary {
     width: 100% !important;
-    max-width: 180px !important;
-    min-width: 160px !important;
-    padding: 1rem 1.5rem !important;
-    font-size: 0.9rem !important;
+    max-width: 200px !important;
+    min-width: 180px !important;
+    padding: 1.1rem 1.75rem !important;
+    font-size: 0.95rem !important;
     font-weight: 600 !important;
-    border-radius: 10px !important;
+    border-radius: 12px !important;
     flex: 0 0 auto !important;
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%) !important;
+    box-shadow: 0 4px 16px rgba(30, 64, 175, 0.3) !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+  }
+
+  /* OCULTA TEXTO ORIGINAL DOS BOTÕES */
+  html body div#__next .hero-section .cta-button,
+  html body div#__next .hero-section .btn-primary {
+    text-indent: -9999px !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  /* NOVO TEXTO DO BOTÃO PRIMÁRIO */
+  html body div#__next .hero-section .cta-button:before,
+  html body div#__next .hero-section .btn-primary:before {
+    content: "Análise Gratuita" !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-indent: 0 !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    white-space: nowrap !important;
   }
 
   html body div#__next .hero-section .btn-secondary,
   html body div#__next .hero-section .btn-outline {
     width: 100% !important;
-    max-width: 160px !important;
-    min-width: 140px !important;
-    padding: 1rem 1.5rem !important;
-    font-size: 0.9rem !important;
+    max-width: 180px !important;
+    min-width: 160px !important;
+    padding: 1.1rem 1.75rem !important;
+    font-size: 0.95rem !important;
     font-weight: 600 !important;
-    border-radius: 10px !important;
+    border-radius: 12px !important;
     flex: 0 0 auto !important;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
+    border: none !important;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3) !important;
+    color: #ffffff !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+  }
+
+  /* OCULTA TEXTO ORIGINAL DO BOTÃO SECUNDÁRIO */
+  html body div#__next .hero-section .btn-secondary,
+  html body div#__next .hero-section .btn-outline {
+    text-indent: -9999px !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  /* NOVO TEXTO DO BOTÃO SECUNDÁRIO */
+  html body div#__next .hero-section .btn-secondary:before,
+  html body div#__next .hero-section .btn-outline:before {
+    content: "Falar com Especialista" !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-indent: 0 !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    white-space: nowrap !important;
   }
 
   /* Em mobile, botões ocupam largura total */
@@ -499,32 +606,82 @@
     }
   }
 
-  /* ===== TIPOGRAFIA MELHORADA ===== */
-  .hero-title {
-    font-size: 1.75rem !important;
-    line-height: 1.3 !important;
-    font-weight: 700 !important;
-    margin-bottom: 1rem !important;
-    text-align: center !important;
-  }
-
-  /* Correção para palavra "Contabilidade" em destaque */
-  .hero-title .highlight,
-  .hero-title [style*="color"] {
+  /* ===== CARDS CRC ATIVO E AVALIAÇÃO - DESIGN FINTECH ===== */
+  html body div#__next .trust-badge,
+  html body div#__next .hero-badge,
+  html body div#__next [data-badge="crc"],
+  html body div#__next [data-badge="avaliacao"] {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.5rem 0.875rem !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 8px !important;
     color: #ffffff !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
   }
 
-  .hero-subtitle {
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-    color: rgba(255, 255, 255, 0.95) !important;
-    margin-bottom: 2rem !important;
-    text-align: center !important;
-    max-width: 90% !important;
+  /* FORÇA CARDS ESPECÍFICOS COM TEXTO CUSTOMIZADO */
+  html body div#__next .trust-badge.crc-ativo,
+  html body div#__next .trust-badge:contains("CRC") {
+    text-indent: -9999px !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  html body div#__next .trust-badge.crc-ativo:before {
+    content: "🏛️ CRC Ativo" !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-indent: 0 !important;
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    white-space: nowrap !important;
+  }
+
+  html body div#__next .trust-badge.avaliacao:before {
+    content: "⭐ 5.0 Avaliação" !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-indent: 0 !important;
+    font-size: 0.75rem !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    white-space: nowrap !important;
+  }
+
+  /* HOVER EFFECTS PARA CARDS */
+  html body div#__next .trust-badge:hover,
+  html body div#__next .hero-badge:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  /* CONTAINER DOS TRUST BADGES */
+  .trust-badges,
+  .hero-trust-badges {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    margin: 2.5rem 0 1.5rem 0 !important;
+    flex-wrap: wrap !important;
+    max-width: 300px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 100% !important;
   }
 
   /* ===== WHATSAPP FLOAT ===== */
