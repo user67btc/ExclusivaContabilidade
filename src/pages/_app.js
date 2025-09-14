@@ -7,24 +7,23 @@ import { GoogleAnalytics, FacebookPixel } from '../components/analytics';
 import ClientBootstrap from '../components/ClientBootstrap';
 import MobileForceFix from '../components/MobileForceFix';
 
-// CSS imports - ORDEM CRÍTICA: footer.css primeiro, mobile nuclear por último
+// CSS imports - ORDEM OTIMIZADA: base styles primeiro, cards unificados, mobile limpo por último
 import '../styles/globals.css';
 import '../styles/footer.css';
-import '../styles/cards.css';
 import '../styles/forms.css';
 import '../styles/hero-breadcrumb.css';
 import '../styles/section-spacing-fix.css';
 import '../styles/global-page-patterns.css';
 import '../styles/global-visual-upgrade-2025.css';
 import '../styles/setores-conversion.css';
-import '../styles/sectors.css';
-import '../styles/services.css';
 import '../styles/contact-cta.css';
 import '../styles/whatsapp-float.css';
 import '../styles/scroll-top.css';
 import '../styles/hero-2025-trends.css';
-// MOBILE STYLES - CONSOLIDATED SINGLE FILE (MUST BE LAST TO OVERRIDE ALL)
-import '../styles/mobile-consolidated.css';
+// CARDS UNIFICADOS - substitui services.css e sectors.css
+import '../styles/cards-unified.css';
+// MOBILE STYLES - apenas correções específicas mobile
+import '../styles/mobile-clean.css';
 
 // Fonte Inter via next/font (melhor performance e estabilidade)
 const inter = Inter({ subsets: ['latin'] });
