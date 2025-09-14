@@ -7,8 +7,9 @@ import { GoogleAnalytics, FacebookPixel } from '../components/analytics';
 import ClientBootstrap from '../components/ClientBootstrap';
 import MobileForceFix from '../components/MobileForceFix';
 
-// CSS imports - ORDEM OTIMIZADA: base styles primeiro, cards unificados, mobile limpo por último
+// CSS imports - ORDEM OTIMIZADA: base styles primeiro, nova paleta, cards unificados, mobile limpo por último
 import '../styles/globals.css';
+import '../styles/color-palette.css';
 import '../styles/footer.css';
 import '../styles/forms.css';
 import '../styles/hero-breadcrumb.css';
@@ -24,6 +25,8 @@ import '../styles/hero-2025-trends.css';
 import '../styles/cards-unified.css';
 // MOBILE STYLES - apenas correções específicas mobile
 import '../styles/mobile-clean.css';
+// MOBILE HEADER FIX - correções específicas do header mobile
+import '../styles/mobile-header-fix.css';
 
 // Fonte Inter via next/font (melhor performance e estabilidade)
 const inter = Inter({ subsets: ['latin'] });
