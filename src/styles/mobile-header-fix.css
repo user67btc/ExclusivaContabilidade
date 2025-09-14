@@ -1,11 +1,13 @@
 /* ===== CORREÇÃO HEADER MOBILE - EXCLUSIVA CONTÁBIL ===== */
 /* Baseado na análise da imagem fornecida */
+/* ESPECIFICIDADE NUCLEAR PARA SOBRESCREVER MOBILE-CONSOLIDATED.CSS */
 
 @media (max-width: 768px) {
-  /* ===== HEADER MOBILE PRINCIPAL ===== */
-  .navbar,
-  .header,
-  .site-header {
+  /* ===== HEADER MOBILE PRINCIPAL - ESPECIFICIDADE NUCLEAR ===== */
+  html body div#__next .navbar,
+  html body div#__next .header,
+  html body div#__next .site-header,
+  html body div#__next header {
     background: #ffffff !important;
     box-shadow: 0 2px 8px rgba(30, 58, 138, 0.1) !important;
     padding: 0.75rem 1rem !important;
@@ -18,25 +20,25 @@
     min-height: 60px !important;
   }
 
-  /* Logo no header */
-  .navbar-brand,
-  .header-logo {
+  /* Logo no header - ESPECIFICIDADE NUCLEAR */
+  html body div#__next .navbar-brand,
+  html body div#__next .header-logo {
     height: 40px !important;
     width: auto !important;
     display: flex !important;
     align-items: center !important;
   }
 
-  .navbar-brand img,
-  .header-logo img {
+  html body div#__next .navbar-brand img,
+  html body div#__next .header-logo img {
     height: 40px !important;
     width: auto !important;
     object-fit: contain !important;
   }
 
-  /* Menu hamburger */
-  .navbar-toggler,
-  .menu-toggle {
+  /* Menu hamburger - ESPECIFICIDADE NUCLEAR */
+  html body div#__next .navbar-toggler,
+  html body div#__next .menu-toggle {
     border: none !important;
     background: transparent !important;
     padding: 0.5rem !important;
@@ -44,16 +46,16 @@
     font-size: 1.5rem !important;
   }
 
-  .navbar-toggler:focus,
-  .menu-toggle:focus {
+  html body div#__next .navbar-toggler:focus,
+  html body div#__next .menu-toggle:focus {
     box-shadow: none !important;
     outline: 2px solid var(--primary-color) !important;
     outline-offset: 2px !important;
   }
 
-  /* Menu mobile expandido - Padrão iOS/Android */
-  .navbar-collapse,
-  .mobile-menu {
+  /* Menu mobile expandido - ESPECIFICIDADE NUCLEAR */
+  html body div#__next .navbar-collapse,
+  html body div#__next .mobile-menu {
     background: #ffffff !important;
     margin-top: 0.5rem !important;
     padding: 0.75rem 0 !important;
@@ -67,8 +69,8 @@
     z-index: 999 !important;
   }
 
-  .navbar-nav,
-  .mobile-menu-items {
+  html body div#__next .navbar-nav,
+  html body div#__next .mobile-menu-items {
     display: flex !important;
     flex-direction: column !important;
     gap: 0 !important;
@@ -76,20 +78,20 @@
     padding: 0 !important;
   }
 
-  /* Itens do menu com separação visual clara */
-  .nav-item,
-  .mobile-menu-item {
+  /* Itens do menu - ESPECIFICIDADE NUCLEAR */
+  html body div#__next .nav-item,
+  html body div#__next .mobile-menu-item {
     width: 100% !important;
     border-bottom: 1px solid #f1f5f9 !important;
   }
 
-  .nav-item:last-child,
-  .mobile-menu-item:last-child {
+  html body div#__next .nav-item:last-child,
+  html body div#__next .mobile-menu-item:last-child {
     border-bottom: none !important;
   }
 
-  .nav-link,
-  .mobile-menu-link {
+  html body div#__next .nav-link,
+  html body div#__next .mobile-menu-link {
     padding: 0.75rem 1rem !important;
     color: var(--text-primary) !important;
     font-size: 1rem !important;
