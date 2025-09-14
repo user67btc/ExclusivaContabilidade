@@ -3,30 +3,52 @@
 /* ESPECIFICIDADE NUCLEAR PARA SOBRESCREVER MOBILE-CONSOLIDATED.CSS */
 
 @media (max-width: 768px) {
-  /* ===== HEADER MOBILE PRINCIPAL - ESPECIFICIDADE NUCLEAR ===== */
-  html body div#__next .navbar,
-  html body div#__next .header,
-  html body div#__next .site-header,
-  html body div#__next header {
+  /* Header mobile - ESPECIFICIDADE NUCLEAR */
+  html body div#__next .site-header {
     background: #ffffff !important;
-    box-shadow: 0 2px 8px rgba(30, 58, 138, 0.1) !important;
+    box-shadow: 0 2px 12px rgba(30, 64, 175, 0.15) !important;
     padding: 0.75rem 1rem !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
+    width: 100% !important;
+    height: 70px !important;
     z-index: 1000 !important;
-    height: auto !important;
-    min-height: 60px !important;
-  }
-
-  /* Logo no header - ESPECIFICIDADE NUCLEAR */
-  html body div#__next .navbar-brand,
-  html body div#__next .header-logo {
-    height: 40px !important;
-    width: auto !important;
+    border-bottom: 2px solid var(--primary-color) !important;
     display: flex !important;
     align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  /* Container do header */
+  html body div#__next .site-header .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 100% !important;
+  }
+
+  /* Logo mobile - tamanho otimizado e alinhamento */
+  html body div#__next .site-header .site-logo {
+    z-index: 1001 !important;
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    margin-right: auto !important;
+  }
+
+  html body div#__next .site-header .site-logo img {
+    max-height: 42px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
   }
 
   html body div#__next .navbar-brand img,
@@ -36,20 +58,25 @@
     object-fit: contain !important;
   }
 
-  /* Menu hamburger - ESPECIFICIDADE NUCLEAR */
-  html body div#__next .navbar-toggler,
-  html body div#__next .menu-toggle {
-    border: none !important;
-    background: transparent !important;
-    padding: 0.5rem !important;
-    color: var(--primary-color) !important;
-    font-size: 1.5rem !important;
-    cursor: pointer !important;
+  /* Botão hamburger - posicionamento e estilo */
+  html body div#__next .site-header .menu-toggle {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     width: 44px !important;
     height: 44px !important;
+    background: transparent !important;
+    border: none !important;
+    color: var(--primary-color) !important;
+    font-size: 1.25rem !important;
+    cursor: pointer !important;
+    z-index: 1001 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-left: auto !important;
+    border-radius: 8px !important;
+    transition: background-color 0.2s ease !important;
+    flex: 0 0 auto !important;
   }
 
   html body div#__next .navbar-toggler:focus,
@@ -235,37 +262,43 @@
   /* ===== HERO SECTION MOBILE ===== */
   .hero-section {
     background: var(--bg-gradient) !important;
-    padding: 80px 1rem 3rem 1rem !important; /* Top padding para compensar header fixo */
+    padding-top: 90px !important; /* Espaço para header fixo */
+    padding-bottom: 3rem !important;
+    min-height: auto !important;
     width: 100% !important;
-    min-height: 240px !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
   }
 
   .hero-content {
-    width: 100% !important;
+    text-align: center !important;
+    padding: 0 1rem !important;
     max-width: 100% !important;
-    padding: 0 !important;
   }
 
   .hero-title,
   .hero-section h1 {
     font-size: 1.75rem !important;
     line-height: 1.2 !important;
-    color: #ffffff !important;
-    font-weight: 700 !important;
     margin-bottom: 1rem !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    text-align: center !important;
+    word-wrap: break-word !important;
+    hyphens: auto !important;
   }
 
   .hero-subtitle,
   .hero-section p {
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
     margin-bottom: 2rem !important;
-    font-weight: 400 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-align: center !important;
+    max-width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   /* ===== BOTÕES CTA PADRONIZADOS - BASEADO EM BEST PRACTICES ===== */
@@ -275,49 +308,70 @@
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 14px 24px !important;
-    text-decoration: none !important;
+    padding: 0.875rem 1.25rem !important;
+    font-size: 0.85rem !important;
     font-weight: 600 !important;
-    font-size: 16px !important;
-    line-height: 1.4 !important;
-    border-radius: 12px !important;
-    min-height: 48px !important;
-    min-width: 120px !important;
-    max-width: 280px !important;
-    width: auto !important;
-    margin: 0.5rem !important;
-    gap: 0.5rem !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    position: relative !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
     cursor: pointer !important;
-    user-select: none !important;
-    -webkit-tap-highlight-color: transparent !important;
+    min-height: 48px !important;
+    gap: 0.5rem !important;
+    flex: 0 1 auto !important;
+    max-width: 160px !important;
+    white-space: nowrap !important;
   }
 
-  /* Botão "Análise Gratuita" - Padrão de conversão otimizado */
-  .btn-analise,
-  .cta-primary,
-  [data-cta="analise"] {
-    background: #ffffff !important;
-    color: var(--primary-color) !important;
-    border: 2px solid #ffffff !important;
+  /* Botão primário - Análise Gratuita */
+  html body div#__next .cta-button,
+  html body div#__next .btn-primary,
+  html body div#__next .btn-cta {
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
     box-shadow: 0 4px 12px rgba(30, 58, 138, 0.15) !important;
   }
 
-  .btn-analise:hover,
-  .cta-primary:hover,
-  [data-cta="analise"]:hover {
-    background: #f8fafc !important;
-    color: var(--primary-dark) !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 8px 24px rgba(30, 58, 138, 0.25) !important;
-    border-color: #f8fafc !important;
+  html body div#__next .cta-button:hover,
+  html body div#__next .btn-secondary:hover,
+  html body div#__next .btn-outline:hover {
+    background: #128C7E !important;
+    border-color: #128C7E !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25) !important;
   }
 
-  .btn-analise:active,
-  .cta-primary:active,
-  [data-cta="analise"]:active {
-    transform: translateY(0) !important;
+  /* Correção específica para botões largos demais */
+  html body div#__next .hero-section .cta-button,
+  html body div#__next .hero-section .btn-primary {
+    width: auto !important;
+    max-width: 150px !important;
+    min-width: 140px !important;
+    flex: 0 0 auto !important;
+  }
+
+  html body div#__next .hero-section .btn-secondary,
+  html body div#__next .hero-section .btn-outline {
+    width: auto !important;
+    max-width: 130px !important;
+    min-width: 120px !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* Botão secundário - Especialista */
+  html body div#__next .btn-secondary,
+  html body div#__next .btn-outline {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.875rem 1.25rem !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid #25D366 !important;
+    background: #25D366 !important;
     box-shadow: 0 2px 8px rgba(30, 58, 138, 0.2) !important;
   }
 
@@ -347,14 +401,17 @@
     box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3) !important;
   }
 
-  /* Container dos botões CTA */
-  .cta-container,
-  .hero-buttons {
+  /* Container dos botões CTA - layout horizontal otimizado */
+  html body div#__next .cta-buttons,
+  html body div#__next .hero-cta-buttons,
+  html body div#__next .hero-buttons {
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: row !important;
+    gap: 0.75rem !important;
+    justify-content: center !important;
     align-items: center !important;
-    gap: 1rem !important;
-    margin-top: 2rem !important;
+    margin: 2rem 0 !important;
+    flex-wrap: wrap !important;
     width: 100% !important;
     max-width: 320px !important;
     margin-left: auto !important;
