@@ -854,6 +854,220 @@
     }
   }
 
+  /* ===== SEÇÃO DE SETORES - DESIGN CORPORATIVO ===== */
+  .sectors-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%) !important;
+    padding: 4rem 1rem !important;
+    position: relative !important;
+    margin-top: -2rem !important;
+  }
+
+  /* CABEÇALHO DA SEÇÃO SETORES */
+  .sectors-section .section-header {
+    text-align: center !important;
+    margin-bottom: 3rem !important;
+    max-width: 600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* BADGE "ESPECIALIZAÇÃO" */
+  .sectors-section .section-badge {
+    display: inline-block !important;
+    padding: 0.5rem 1.25rem !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 20px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 1.5rem !important;
+    backdrop-filter: blur(10px) !important;
+  }
+
+  /* TÍTULO DA SEÇÃO SETORES */
+  .sectors-section .section-title {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin-bottom: 1rem !important;
+    letter-spacing: -0.02em !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  /* SUBTÍTULO DA SEÇÃO SETORES */
+  .sectors-section .section-subtitle {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 400 !important;
+    margin-bottom: 3rem !important;
+    max-width: 500px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* GRID DE SETORES */
+  .sectors-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+    padding: 0 0.5rem !important;
+  }
+
+  /* CARDS DE SETORES - DESIGN PREMIUM */
+  .sector-card {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border-radius: 20px !important;
+    padding: 2.5rem 2rem !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .sector-card::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 5px !important;
+    background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 50%, #1e40af 100%) !important;
+    transform: scaleX(0) !important;
+    transform-origin: left !important;
+    transition: transform 0.4s ease !important;
+  }
+
+  .sector-card:hover {
+    transform: translateY(-12px) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    background: rgba(255, 255, 255, 1) !important;
+  }
+
+  .sector-card:hover::before {
+    transform: scaleX(1) !important;
+  }
+
+  /* ÍCONE DO SETOR - DESIGN PREMIUM */
+  .sector-card .sector-icon {
+    width: 80px !important;
+    height: 80px !important;
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #93c5fd 100%) !important;
+    border-radius: 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 2rem !important;
+    color: #ffffff !important;
+    font-size: 2rem !important;
+    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.3) !important;
+    transition: all 0.4s ease !important;
+    position: relative !important;
+  }
+
+  .sector-card:hover .sector-icon {
+    transform: scale(1.1) rotate(-3deg) !important;
+    box-shadow: 0 16px 40px rgba(59, 130, 246, 0.4) !important;
+  }
+
+  /* TÍTULO DO SETOR */
+  .sector-card .sector-title {
+    font-size: 1.4rem !important;
+    line-height: 1.25 !important;
+    font-weight: 800 !important;
+    color: #1e293b !important;
+    margin-bottom: 1.25rem !important;
+    letter-spacing: -0.02em !important;
+    transition: color 0.3s ease !important;
+  }
+
+  .sector-card:hover .sector-title {
+    color: #1e3a8a !important;
+  }
+
+  /* DESCRIÇÃO DO SETOR */
+  .sector-card .sector-description {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    color: #64748b !important;
+    margin-bottom: 2rem !important;
+    font-weight: 400 !important;
+  }
+
+  /* BOTÃO SAIBA MAIS DO SETOR */
+  .sector-card .sector-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    padding: 1rem 1.75rem !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%) !important;
+    color: #ffffff !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    border-radius: 14px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.25) !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+
+  .sector-card .sector-link:hover {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 30px rgba(30, 58, 138, 0.35) !important;
+  }
+
+  .sector-card .sector-link::after {
+    content: '→' !important;
+    font-size: 1.2rem !important;
+    transition: transform 0.3s ease !important;
+  }
+
+  .sector-card .sector-link:hover::after {
+    transform: translateX(6px) !important;
+  }
+
+  /* RESPONSIVIDADE SETORES - TABLETS */
+  @media (min-width: 768px) {
+    .sectors-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+      max-width: 860px !important;
+      gap: 2.5rem !important;
+    }
+    
+    .sectors-section .section-title {
+      font-size: 2.5rem !important;
+    }
+    
+    .sectors-section {
+      padding: 5rem 2rem !important;
+    }
+  }
+
+  /* RESPONSIVIDADE SETORES - DESKTOP */
+  @media (min-width: 1024px) {
+    .sectors-grid {
+      grid-template-columns: repeat(3, 1fr) !important;
+      max-width: 1280px !important;
+      gap: 3rem !important;
+    }
+    
+    .sectors-section {
+      padding: 6rem 2rem !important;
+    }
+  }
+
   /* ===== WHATSAPP FLOAT ===== */
   .whatsapp-float {
     position: fixed !important;
