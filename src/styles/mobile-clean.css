@@ -1,1737 +1,375 @@
-/* MOBILE CONSOLIDATED FIX - SINGLE SOURCE OF TRUTH */
-/* Consolidates all mobile fixes into one optimized file */
-/* CRITICAL: Must override sectors.css mobile rules with higher specificity */
+/* ===== MOBILE STYLES - LIMPO SEM DUPLICIDADES ===== */
+/* Apenas correções mobile específicas, sem duplicar estilos base */
+
+/* ===== HERO SECTION MOBILE ===== */
+
 @media (max-width: 768px) {
-  
-  /* ========== MOBILE LAYOUT FIXES - USA 2024 STANDARDS ========== */
-  html, body {
-    width: 100% !important;
-    max-width: 100vw !important;
-    overflow-x: hidden !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-    font-size: 16px !important; /* USA standard base font size */
-    line-height: 1.5 !important; /* USA accessibility standard */
-  }
-
-  html body div#__next {
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow-x: hidden !important;
-    width: 100% !important;
-    max-width: 100vw !important;
-    box-sizing: border-box !important;
-  }
-  
-  /* Container responsivo - USA 2024 margins */
-  html body div#__next .container,
-  html body div#__next .container-fluid {
-    padding-left: 16px !important; /* USA minimum 16px margin from edges */
-    padding-right: 16px !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-    box-sizing: border-box !important;
-  }
-  
-  /* ========== VISUAL POLLUTION FIXES ========== */
-  /* Remove cursor pointers on mobile */
-  html body div#__next * {
-    cursor: default !important;
-  }
-
-  /* Hide desktop-only elements on mobile */
-  html body div#__next .desktop-only,
-  html body div#__next .hide-mobile {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    overflow: hidden !important;
-  }
-
-  /* Hide bento grid cards completely */
-  html body div#__next .bento-grid-enhanced,
-  html body div#__next .bento-grid,
-  html body div#__next .bento-card,
-  html body div#__next .bento-card-enhanced,
-  html body div#__next .hero-visual-content,
-  html body div#__next .hero-main-image-modern,
-  html body div#__next .image-container-modern {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    overflow: hidden !important;
-    position: absolute !important;
-    left: -9999px !important;
-  }
-
-  /* Hide WhatsApp floating button on mobile for cleaner look */
-  html body div#__next .whatsapp-float,
-  html body div#__next .whatsapp-button,
-  html body div#__next .floating-whatsapp {
-    display: none !important;
-    visibility: hidden !important;
-  }
-
-  /* Reduce badge pollution */
-  html body div#__next .badge-container {
-    max-width: 100% !important;
-    overflow: hidden !important;
-  }
-  
-  html body div#__next .badge {
-    font-size: 10px !important;
-    padding: 4px 8px !important;
-    margin: 2px !important;
-    opacity: 0.9 !important;
-  }
-  
-  /* Clean card spacing */
-  html body div#__next .card,
-  html body div#__next .service-card,
-  html body div#__next .sector-card {
-    margin-bottom: 24px !important;
-    padding: 20px !important;
-    border-radius: 12px !important;
-  }
-  
-  /* ========== HERO SECTION MOBILE - CLEAN LAYOUT ========== */
-  /* NUCLEAR OVERRIDE - Force hide all visual elements with maximum specificity */
-  html body div#__next .hero-section .bento-grid-enhanced,
-  html body div#__next .bento-grid-enhanced,
-  html body div#__next .bento-card-enhanced,
-  html body div#__next .hero-visual-content,
-  html body div#__next .hero-section .hero-visual-content,
-  html body div#__next .hero-section .features-showcase,
-  html body div#__next .hero-section .floating-interactive,
-  html body div#__next .hero-section .hero-main-image-modern,
-  html body div#__next .hero-section .image-container-modern,
-  html body div#__next .hero-section .interactive-element,
-  html body div#__next .hero-section .feature-highlight,
-  html body div#__next .hero-section .service-card,
-  html body div#__next .hero-section .sector-card,
-  html body div#__next .hero-section .card,
-  html body div#__next .hero-section .hero-grid .hero-visual-content,
-  html body div#__next .hero-section .hero-grid > div:last-child,
-  html body div#__next .hero-section .service-card-inner,
-  html body div#__next .hero-section .sector-card-header,
-  html body div#__next .hero-section .sector-card-content,
-  html body div#__next .hero-section .contact-card,
-  html body div#__next .hero-section .contact-info-cards,
-  html body div#__next .hero-section [class*="card"],
-  html body div#__next .hero-section [class*="Card"],
-  html body div#__next .hero-section .services-grid,
-  html body div#__next .hero-section .sectors-grid {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    overflow: hidden !important;
-    position: absolute !important;
-    left: -9999px !important;
-    top: -9999px !important;
-    z-index: -9999 !important;
-  }
-
-  /* ========== NUCLEAR HERO SECTION - DEFINITIVE OVERLAP FIX ========== */
-  html body div#__next .hero-section,
-  html body div#__next section.hero-section,
-  html body div#__next .hero-section.hero-section,
-  html body div#__next section.hero-section.hero-section {
-    position: relative !important; /* Relative positioning to maintain document flow */
-    top: 0 !important; /* Reset top positioning */
-    left: 0 !important;
-    right: 0 !important;
-    width: 100vw !important;
-    min-height: calc(100vh - 88px) !important; /* Full height minus header */
-    padding-top: 96px !important; /* Header height (88px) + minimal spacing (8px) */
-    padding-bottom: 60px !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    margin: 0 !important; /* Remove all margins */
-    margin-top: 0 !important; /* Force zero top margin */
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
-    color: #ffffff !important;
-    text-align: center !important;
-    overflow: visible !important; /* Allow content to be visible */
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    box-sizing: border-box !important;
-    z-index: 1 !important; /* Below header but above other content */
-  }
-
-  /* ========== NUCLEAR ANTI-OVERLAP SAFEGUARDS ========== */
-  /* Ensure hero section NEVER overlaps header under any circumstances */
-  html body div#__next .hero-section,
-  html body div#__next section.hero-section {
-    clear: both !important; /* Clear any floated elements */
-    transform: translateY(0) !important; /* Prevent any transforms that could cause overlap */
-    margin-top: 0 !important; /* Force zero margin-top */
-    top: auto !important; /* Override any conflicting top values */
-  }
-
-  /* Force body to account for fixed header */
-  html body div#__next {
-    padding-top: 0 !important; /* Let individual sections handle their spacing */
-  }
-
-  /* Ensure main content starts after header */
-  html body div#__next main {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    position: relative !important;
-    z-index: 0 !important;
-  }
-
-  /* ========== SERVICES SECTION RESTORED ========== */
-  html body div#__next .services-section,
-  html body div#__next section.services-section {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    height: auto !important;
-    width: 100% !important;
-    position: relative !important;
-    z-index: 1 !important;
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
-    padding: 80px 20px !important;
-    margin: 0 !important;
-    overflow: visible !important;
-    min-height: auto !important;
-  }
-
-  /* Services grid - Mobile optimized */
-  html body div#__next .services-section .services-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 24px !important;
-    padding: 0 !important;
-    margin: 40px auto 0 !important;
-    width: 100% !important;
-    max-width: 400px !important;
-    box-sizing: border-box !important;
-  }
-
-  /* ========== SECTORS SECTION RESTORED ========== */
-  html body div#__next .sectors-section,
-  html body div#__next section.sectors-section {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%) !important;
-    padding: 60px 0 80px 0 !important;
-    margin: 0 !important;
-    width: 100% !important;
-    position: relative !important;
-    z-index: 1 !important;
-    min-height: auto !important;
-    overflow: visible !important;
-  }
-
-  /* Force all sector cards to be visible */
-  html body div#__next .sectors-section .sectors-grid > div {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    position: relative !important;
-    z-index: 10 !important;
-  }
-
-  /* Sectors section header */
-  html body div#__next .sectors-section .section-header {
-    text-align: center !important;
-    margin-bottom: 40px !important;
-    padding: 0 20px !important;
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-
-  html body div#__next .sectors-section .section-header h2 {
-    color: #ffffff !important;
-    font-size: 32px !important;
-    font-weight: 800 !important;
-    margin-bottom: 16px !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
-  }
-
-  html body div#__next .sectors-section .section-header p {
-    color: #e2e8f0 !important;
-    font-size: 16px !important;
-    line-height: 1.5 !important;
-    max-width: 600px !important;
-    margin: 0 auto !important;
-  }
-
-  html body div#__next .sectors-section .section-subtitle {
-    color: #60a5fa !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1px !important;
-    margin-bottom: 12px !important;
-    display: block !important;
-  }
-
-  /* Sectors grid mobile - SAME AS SERVICES */
-  html body div#__next .sectors-section .sectors-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 20px !important;
-    margin-top: 20px !important;
-    padding: 0 20px !important;
-    width: 100% !important;
-    max-width: 400px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    box-sizing: border-box !important;
-  }
-
-  /* ULTIMATE NUCLEAR OVERRIDE - MAXIMUM SPECIFICITY TO DEFEAT sectors.css */
-  html body div#__next main .sectors-section .sectors-grid .sector-card.sector-card.sector-card,
-  html body div#__next main .sectors-section .sectors-grid > div .sector-card.sector-card.sector-card,
-  html body div#__next main .sectors-section .container .sectors-grid .sector-card.sector-card.sector-card,
-  html body div#__next .sectors-section .sectors-grid .sector-card.animate-in.animate-in,
-  html body div#__next .sectors-section .sector-card.animate-in.animate-in {
-    background-color: #ffffff !important;
-    background-image: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
-    border-radius: 20px !important;
-    padding: 24px !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
-    border: 1px solid #e2e8f0 !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    position: relative !important;
-    overflow: hidden !important;
-    min-height: 240px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-    gap: 16px !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    z-index: 10 !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    margin-bottom: 0 !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    transform: none !important;
-    animation: none !important;
-  }
-
-  /* DESTROY sectors.css card header and create service-style icon */
-  html body div#__next .sectors-section .sector-card .sector-card-header {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    position: absolute !important;
-    left: -9999px !important;
-  }
-
-  /* CREATE service-style icon wrapper */
-  html body div#__next .sectors-section .sector-card::before {
-    content: '' !important;
-    width: 64px !important;
-    height: 64px !important;
-    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%) !important;
-    border-radius: 16px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin-bottom: 16px !important;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25) !important;
-    flex-shrink: 0 !important;
-    align-self: flex-start !important;
-    position: relative !important;
-    z-index: 20 !important;
-  }
-
-  /* Force sector card icon wrapper to appear - NUCLEAR OVERRIDE */
-  html body div#__next .sectors-section .sector-card .service-image-wrapper {
-    width: 64px !important;
-    height: 64px !important;
-    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%) !important;
-    border-radius: 16px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin-bottom: 16px !important;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25) !important;
-    flex-shrink: 0 !important;
-    align-self: flex-start !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    position: relative !important;
-    z-index: 20 !important;
-  }
-
-  html body div#__next .sectors-section .sector-card .sector-icon-large i {
-    font-size: 28px !important;
-    color: #ffffff !important;
-  }
-
-  /* DESTROY sectors.css card content structure */
-  html body div#__next .sectors-section .sector-card .sector-card-content {
-    all: unset !important;
-    flex: 1 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    position: relative !important;
-  }
-
-  html body div#__next .sectors-section .sector-card .sector-card-content::before {
-    display: none !important;
-  }
-
-  /* Sector card titles */
-  html body div#__next .sectors-section .sector-card h3,
-  html body div#__next .sectors-section .sector-card .sector-card-content h3 {
-    color: #0f172a !important;
-    font-size: 18px !important;
-    font-weight: 700 !important;
-    margin-bottom: 0 !important;
-    line-height: 1.3 !important;
-    letter-spacing: -0.01em !important;
-  }
-
-  /* Sector card descriptions */
-  html body div#__next .sectors-section .sector-card p,
-  html body div#__next .sectors-section .sector-card .sector-description-contrast,
-  html body div#__next .sectors-section .sector-card .sector-card-content p {
-    color: #64748b !important;
-    font-size: 14px !important;
-    line-height: 1.5 !important;
-    margin-bottom: 0 !important;
-    overflow: hidden !important;
-    display: -webkit-box !important;
-    -webkit-line-clamp: 3 !important;
-    -webkit-box-orient: vertical !important;
-    line-clamp: 3 !important;
-    flex: 1 !important;
-  }
-
-  /* NUCLEAR DESTRUCTION of all sectors.css specific elements */
-  html body div#__next .sectors-section .sector-card .sector-features,
-  html body div#__next .sectors-section .sector-card .sector-card-header,
-  html body div#__next .sectors-section .sector-card .sector-card-header .sector-image-wrapper,
-  html body div#__next .sectors-section .sector-card .sector-card-header .sector-image,
-  html body div#__next .sectors-section .sector-card .sector-image-wrapper,
-  html body div#__next .sectors-section .sector-card .sector-image,
-  html body div#__next .sectors-section .sector-card .sector-icon-large {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    position: absolute !important;
-    left: -9999px !important;
-    top: -9999px !important;
-    z-index: -9999 !important;
-  }
-
-  /* Sector card buttons - EXACT MATCH TO SERVICES */
-  html body div#__next .sectors-section .sector-card .btn-primary,
-  html body div#__next .sectors-section .sector-card .cta-button,
-  html body div#__next .sectors-section .sector-card .sector-card-content .btn-primary,
-  html body div#__next .sectors-section .sector-card .sector-card-content .cta-button {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 8px !important;
-    color: #ffffff !important;
-    background-color: #3b82f6 !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-    padding: 12px 20px !important;
-    border-radius: 12px !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3) !important;
-    width: 100% !important;
-    min-height: 44px !important;
-    margin-top: auto !important;
-  }
-
-  /* ========== FAQ SECTION RESTORED ========== */
-  html body div#__next .faq-section,
-  html body div#__next section.faq-section {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    background: #ffffff !important;
-    padding: 60px 20px !important;
-    margin: 0 !important;
-  }
-
-  /* ========== CONTACT CTA SECTION RESTORED ========== */
-  html body div#__next .contact-cta-section,
-  html body div#__next section.contact-cta-section {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    height: auto !important;
-    width: 100% !important;
-    overflow: visible !important;
-    position: relative !important;
-    left: auto !important;
-    top: auto !important;
-    z-index: 1 !important;
-  }
-
-  /* Hero section overlay matching desktop */
-  html body div#__next .hero-section::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    background: rgba(0, 0, 0, 0.1) !important;
-    z-index: 1 !important;
-  }
-
-  /* Hero content above overlay */
-  html body div#__next .hero-section > * {
-    position: relative !important;
-    z-index: 2 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Hero container responsive */
-  html body div#__next .hero-section .container,
-  html body div#__next .hero-section .container-fluid {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 16px !important;
-    margin: 0 auto !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Clean hero content for mobile */
-  html body div#__next .hero-section .hero-content {
-    text-align: center !important;
-    padding: 0 !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-    position: relative !important;
-    z-index: 10 !important;
-  }
-
-  /* Force clean trust elements positioning */
-  html body div#__next .hero-trust-elements-enhanced {
-    position: relative !important;
-    z-index: 10 !important;
-    margin: 20px auto !important;
-    max-width: 300px !important;
-  }
-
-  html body div#__next .trust-item-enhanced {
-    flex-shrink: 0 !important;
-    min-width: auto !important;
-    max-width: 140px !important;
-  }
-
-  /* Hero title styling - Marketing Optimized */
-  html body div#__next .hero-section h1,
-  html body div#__next .hero-section .hero-title-modern {
-    font-size: clamp(28px, 7vw, 36px) !important; /* Larger for impact */
-    line-height: 1.1 !important; /* Tighter for mobile */
-    margin-bottom: 16px !important;
-    font-weight: 800 !important; /* Bolder for authority */
-    color: #ffffff !important;
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4) !important;
-    letter-spacing: -0.03em !important;
-    max-width: 100% !important;
-    word-wrap: break-word !important;
-    hyphens: auto !important;
-    text-align: center !important;
-    position: relative !important;
-    z-index: 3 !important;
-  }
-
-  /* Hero subtitle styling - Conversion Focused */
-  html body div#__next .hero-section .hero-subtitle,
-  html body div#__next .hero-section .hero-subtitle-modern,
-  html body div#__next .hero-section p {
-    font-size: clamp(16px, 4.2vw, 18px) !important;
-    margin-bottom: 24px !important;
-    opacity: 0.95 !important;
-    line-height: 1.4 !important;
-    color: rgba(255, 255, 255, 0.98) !important;
-    max-width: 320px !important; /* Constrain for readability */
-    margin-left: auto !important;
-    margin-right: auto !important;
-    text-align: center !important;
-    font-weight: 500 !important; /* Slightly bolder */
-    position: relative !important;
-    z-index: 3 !important;
-  }
-
-  /* Hero CTA buttons styling - USA 2024 Standards */
-  html body div#__next .hero-section .hero-cta,
-  html body div#__next .hero-section .hero-cta-group {
-    margin-bottom: 24px !important;
-    padding: 0 20px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 16px !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    max-width: 320px !important;
-  }
-
-  html body div#__next .hero-section .btn-modern,
-  html body div#__next .hero-section .cta-primary,
-  html body div#__next .hero-section .cta-secondary {
-    display: inline-block !important;
-    visibility: visible !important;
-    margin: 8px 4px !important;
-    padding: 12px 24px !important;
-    border-radius: 8px !important;
-    text-decoration: none !important;
-    font-weight: 600 !important;
-    font-size: 14px !important;
-    transition: all 0.3s ease !important;
-  }
-
-  /* Primary CTA - Maximum Conversion */
-  html body div#__next .hero-section .btn-primary-modern,
-  html body div#__next .hero-section .cta-primary {
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%) !important;
-    color: #1e40af !important;
-    border: 3px solid #ffffff !important;
-    box-shadow: 0 16px 48px rgba(255, 255, 255, 0.2), 0 4px 16px rgba(0, 0, 0, 0.1) !important;
-    transform: translateY(-2px) !important;
-  }
-
-  /* Secondary CTA - WhatsApp Optimized */
-  html body div#__next .hero-section .btn-secondary-enhanced,
-  html body div#__next .hero-section .cta-secondary {
-    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
-    color: #ffffff !important;
-    border: 3px solid #25D366 !important;
-    box-shadow: 0 16px 48px rgba(37, 211, 102, 0.3) !important;
-  }
-
-  /* NUCLEAR OVERRIDE - Force hide all visual elements with maximum specificity */
-  html body div#__next .hero-section .bento-grid-enhanced,
-  html body div#__next .bento-grid-enhanced,
-  html body div#__next .bento-card-enhanced,
-  html body div#__next .hero-visual-content,
-  html body div#__next .hero-main-image-modern,
-  html body div#__next .image-container-modern,
-  html body div#__next .hero-section .hero-visual-content,
-  html body div#__next .hero-section .features-showcase,
-  html body div#__next .hero-section .floating-interactive,
-  html body div#__next [class*="bento"],
-  html body div#__next [class*="card-enhanced"],
-  html body div#__next [class*="visual-content"] {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    position: absolute !important;
-    left: -9999px !important;
-    top: -9999px !important;
-    overflow: hidden !important;
-    z-index: -9999 !important;
-    transform: scale(0) !important;
-  }
-
-  /* FORCE SHOW ESSENTIAL HERO CONTENT */
-  html body div#__next .hero-section .hero-main-content,
-  html body div#__next .hero-section .hero-title-modern,
-  html body div#__next .hero-section .hero-subtitle-modern,
-  html body div#__next .hero-section .hero-cta-group,
-  html body div#__next .hero-section .btn-modern {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    position: static !important;
-    height: auto !important;
-    width: auto !important;
-    left: auto !important;
-    z-index: auto !important;
-  }
-
-  /* ========== NUCLEAR BODY SPACING - PREVENT OVERLAP ========== */
-  html body div#__next {
-    padding-top: 88px !important; /* Space for fixed header */
-    position: relative !important;
-    min-height: 100vh !important;
-  }
-  
-  /* Trust Badge - Marketing Psychology */
-  html body div#__next .hero-section::after {
-    content: 'CRC Ativo' !important;
-    position: absolute !important;
-    bottom: 20px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    background: rgba(255, 255, 255, 0.15) !important;
-    backdrop-filter: blur(10px) !important;
-    padding: 8px 16px !important;
-    border-radius: 20px !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    color: #ffffff !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    z-index: 5 !important;
-  }
-  
-  /* Force hero section to be responsive and clean */
-  html body div#__next .hero-section .container,
-  html body div#__next .hero-section .container-fluid,
-  html body div#__next .hero-section .hero-grid {
-    max-width: 100% !important;
-    padding: 0 16px !important;
-    margin: 0 auto !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    position: relative !important;
-    z-index: 2 !important;
-  }
-
-  /* USA 2024 Button Standards - Dark Blue Formal Design */
-  html body div#__next .hero-section .btn,
-  html body div#__next .hero-section .cta-button,
-  html body div#__next .hero-section .btn-modern,
-  html body div#__next .hero-section .hero-btn-primary,
-  html body div#__next .hero-section .btn-outline,
-  html body div#__next .hero-section .btn-secondary {
-    min-height: 56px !important; /* Larger touch target */
-    padding: 18px 36px !important;
-    font-size: 17px !important; /* Optimal mobile size */
-    font-weight: 700 !important; /* Bold for action */
-    border-radius: 16px !important; /* More modern */
-    border: 3px solid transparent !important;
-    text-decoration: none !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    position: relative !important;
-    overflow: hidden !important;
-    cursor: pointer !important;
-    gap: 10px !important;
-    width: 100% !important; /* Full width on mobile */
-    max-width: 280px !important;
-    margin: 8px auto !important;
-    overflow: hidden !important;
-    gap: 8px !important; /* Space between icon and text */
-  }
-
-  /* Button hover/active states - Dark Blue Formal */
-  html body div#__next .hero-section .btn:active,
-  html body div#__next .hero-section .cta-button:active,
-  html body div#__next .hero-section .btn-modern:active,
-  html body div#__next .hero-section .hero-btn-primary:active,
-  html body div#__next .hero-section .btn-outline:active,
-  html body div#__next .hero-section .btn-secondary:active {
-    transform: translateY(1px) !important;
-    box-shadow: 0 4px 16px rgba(30, 58, 138, 0.6) !important;
-    background: rgba(255, 255, 255, 0.2) !important;
-    border-color: rgba(255, 255, 255, 0.5) !important;
-  }
-
-
-  /* ========== REMOVE ALL VISUAL POLLUTION ========== */
-  /* Hide statistics, badges, and unnecessary elements */
-  html body div#__next .hero-social-proof-enhanced,
-  html body div#__next .proof-item-enhanced,
-  html body div#__next .proof-number,
-  html body div#__next .proof-label,
-  html body div#__next .hero-section .badge,
-  html body div#__next .hero-section .card-badge,
-  html body div#__next .hero-section [class*="badge"],
-  html body div#__next .hero-section [class*="proof"],
-  html body div#__next .hero-section [class*="stats"],
-  html body div#__next .hero-section [class*="icon"] {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    position: absolute !important;
-    left: -9999px !important;
-  }
-  
-  /* ========== WHATSAPP BUTTON MOBILE ========== */
-  html body div#__next .whatsapp-float,
-  html body div#__next .whatsapp-button {
-    position: fixed !important;
-    bottom: 20px !important;
-    right: 20px !important;
-    z-index: 9999 !important;
-    width: 60px !important;
-    height: 60px !important;
-    border-radius: 50% !important;
-    background: #25d366 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4) !important;
-  }
-  
-  /* ========== BADGES MOBILE - REDUCED POLLUTION ========== */
-  html body div#__next .badge,
-  html body div#__next .card-badge {
-    font-size: 9px !important;
-    padding: 3px 8px !important;
-    border-radius: 12px !important;
-    background: rgba(30, 64, 175, 0.8) !important;
-    color: #ffffff !important;
-    font-weight: 500 !important;
-    margin: 2px !important;
-    display: inline-block !important;
-    backdrop-filter: blur(4px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.3px !important;
-  }
-  
-  /* NUCLEAR BADGE POLLUTION CLEANUP */
-  html body div#__next .badge:nth-child(n+3) {
-    display: none !important;
-  }
-  
-  /* Hide desktop hover cursors completely */
-  html body div#__next .sector-card:hover,
-  html body div#__next .service-card:hover,
-  html body div#__next *:hover {
-    transform: none !important;
-    cursor: default !important;
-  }
-  
-  /* Remove all desktop visual effects */
-  html body div#__next .hover-effect,
-  html body div#__next .desktop-cursor,
-  html body div#__next .tooltip {
-    display: none !important;
-  }
-  
-  /* Clean badge positioning */
-  html body div#__next .badge {
-    position: static !important;
-    float: none !important;
-    margin: 2px 4px 2px 0 !important;
-  }
-  
-  /* ========== CARDLESS MOBILE DESIGN 2024 ========== */
-  /* Based on UX research: Single Column Layout - Clean vertical list without cards */
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .row .sector-card.sector-card.sector-card.sector-card,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card {
-    background: transparent !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    border-radius: 0 !important;
-    padding: 24px 0 !important;
-    transition: none !important;
-    border: none !important;
-    border-bottom: 1px solid #f1f5f9 !important;
-    position: relative !important;
-    overflow: visible !important;
-    min-height: auto !important;
-    height: auto !important;
-    display: block !important;
-    flex-direction: column !important;
-    box-shadow: none !important;
-    justify-content: flex-start !important;
-    align-items: stretch !important;
-    margin: 0 !important;
-    left: unset !important;
-    right: unset !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    transform: none !important;
-    cursor: default !important;
-    text-shadow: none !important;
-  }
-  
-  /* CARDLESS CONTENT DESIGN - Clean list item styling */
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content.sector-card-content.sector-card-content,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content.sector-card-content.sector-card-content {
-    background: transparent !important;
-    color: #374151 !important;
-    text-shadow: none !important;
-    padding: 0 20px !important;
-    border-radius: 0 !important;
-    margin: 0 !important;
-    backdrop-filter: none !important;
-    display: block !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-    min-height: auto !important;
-  }
-  
-  /* CLEAN LIST TITLES - Minimalist typography */
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content h3.sector-card-content.sector-card-content,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content h3.sector-card-content.sector-card-content,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card h3.sector-card-content.sector-card-content,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card h3.sector-card-content.sector-card-content {
-    color: #111827 !important;
-    font-weight: 600 !important;
-    text-shadow: none !important;
-    font-size: 18px !important;
-    line-height: 1.4 !important;
-    margin: 0 0 8px 0 !important;
-    padding: 0 !important;
-    text-align: left !important;
-    letter-spacing: -0.3px !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  }
-  
-  /* CLEAN LIST DESCRIPTIONS - Readable text */
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content p.sector-card-content.sector-card-content,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card .sector-card-content.sector-card-content p.sector-card-content.sector-card-content,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container .sectors-grid .sector-card.sector-card.sector-card.sector-card p.sector-card-content.sector-card-content,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid .sector-card.sector-card.sector-card.sector-card p.sector-card-content.sector-card-content {
-    color: #6b7280 !important;
-    font-size: 14px !important;
-    line-height: 1.5 !important;
-    margin: 0 0 12px 0 !important;
-    padding: 0 !important;
-    text-align: left !important;
-    text-shadow: none !important;
-    opacity: 1 !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  }
-  
-  /* NUCLEAR LISTS OVERRIDE */
-  html body div#__next main section.sectors-section .container .sectors-grid .sector-card .sector-card-content ul,
-  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content ul,
-  html body div#__next main section.sectors-section .container .sectors-grid .sector-card ul,
-  html body div#__next main section.sectors-section .sectors-grid .sector-card ul,
-  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-features {
-    margin: 16px 0 !important;
-    padding-left: 0 !important;
-    list-style: none !important;
-  }
-  
-  html body div#__next main section.sectors-section .container .sectors-grid .sector-card .sector-card-content li,
-  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content li,
-  html body div#__next main section.sectors-section .container .sectors-grid .sector-card li,
-  html body div#__next main section.sectors-section .sectors-grid .sector-card li,
-  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-features li {
-    color: #4a5568 !important;
-    text-shadow: none !important;
-    font-weight: 400 !important;
-    font-size: 13px !important;
-    line-height: 1.4 !important;
-    padding: 4px 0 !important;
-    position: relative !important;
-    padding-left: 20px !important;
-  }
-  
-  html body div#__next main section.sectors-section .container .sectors-grid .sector-card .sector-card-content li:before,
-  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-card-content li:before,
-  html body div#__next main section.sectors-section .container .sectors-grid .sector-card li:before,
-  html body div#__next main section.sectors-section .sectors-grid .sector-card li:before,
-  html body div#__next main section.sectors-section .sectors-grid .sector-card .sector-features li:before {
-    content: "✓" !important;
-    position: absolute !important;
-    left: 0 !important;
-    color: #1e40af !important;
-    font-weight: 600 !important;
-  }
-  
-  /* ========== BUTTONS IN CARDS ========== */
-  html body div#__next .sector-card .btn-primary,
-  html body div#__next .sector-card .cta-button,
-  html body div#__next .service-card .btn-primary,
-  html body div#__next .service-card .btn-link {
-    background: #1e40af !important;
-    color: #ffffff !important;
-    border: none !important;
-    padding: 10px 20px !important;
-    border-radius: 8px !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-    font-size: 14px !important;
-    margin-top: 16px !important;
-    display: inline-block !important;
-    transition: all 0.3s ease !important;
-  }
-  
-  html body div#__next .sector-card .btn-primary:hover,
-  html body div#__next .sector-card .cta-button:hover {
-    background: #1e3a8a !important;
-    transform: translateY(-2px) !important;
-  }
-  
-  /* ========== CONTENT SECTIONS - CORPORATE STYLE ========== */
-  html body div#__next .content-section,
-  html body div#__next .about-section,
-  html body div#__next .benefits-section {
-    padding: 40px 20px !important;
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
-    color: white !important;
-    margin: 0 !important;
-    position: relative !important;
-    overflow: hidden !important;
-  }
-
-  /* Content sections overlay */
-  html body div#__next .content-section::before,
-  html body div#__next .about-section::before,
-  html body div#__next .benefits-section::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    background: rgba(0, 0, 0, 0.1) !important;
-    z-index: 1 !important;
-  }
-
-  /* Content above overlay */
-  html body div#__next .content-section > *,
-  html body div#__next .about-section > *,
-  html body div#__next .benefits-section > * {
-    position: relative !important;
-    z-index: 2 !important;
-  }
-  
-  /* Hero subtitle - USA 2024 Typography Standards */
-  html body div#__next .hero-section p,
-  html body div#__next .hero-section .hero-subtitle,
-  html body div#__next .hero-section .hero-subtitle-modern {
-    font-size: clamp(16px, 4.5vw, 20px) !important;
-    line-height: 1.6 !important;
-    margin: 0 0 24px 0 !important; /* Reduced margin for better spacing */
-    padding: 0 24px !important;
-    text-align: center !important;
-    color: rgba(255, 255, 255, 0.95) !important;
-    font-weight: 400 !important;
-    opacity: 1 !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
-    word-wrap: break-word !important;
-    max-width: 600px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    box-sizing: border-box !important;
-  }
-  
-  /* Hero title - USA 2024 Typography Standards */
-  html body div#__next .hero-section h1,
-  html body div#__next .hero-section .hero-title,
-  html body div#__next .hero-section .hero-title-modern,
-  html body div#__next .hero-section h1 span,
-  html body div#__next .hero-section .hero-title span,
-  html body div#__next .hero-section .hero-title-modern span {
-    font-size: clamp(24px, 6vw, 32px) !important;
-    line-height: 1.3 !important;
-    margin: 0 0 20px 0 !important;
-    padding: 0 20px !important;
-    text-align: center !important;
-    letter-spacing: -0.01em !important;
-    font-weight: 700 !important;
-    color: #ffffff !important; /* Force white color for all title elements */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-    word-wrap: break-word !important;
-    hyphens: auto !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-  }
-  
-  /* USA 2024 Section Headings - Dark Blue Formal Hierarchy */
-  html body div#__next .content-section h2,
-  html body div#__next .about-section h2,
-  html body div#__next .benefits-section h2 {
-    font-size: clamp(24px, 6vw, 32px) !important;
-    line-height: 1.25 !important;
-    margin: 0 0 24px 0 !important;
-    padding: 0 16px !important;
-    text-align: center !important;
-    font-weight: 700 !important;
-    color: #ffffff !important; /* White for better contrast on blue backgrounds */
-    word-wrap: break-word !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    letter-spacing: -0.01em !important;
-  }
-  
-  /* USA 2024 Body Text Standards */
-  html body div#__next .content-section p,
-  html body div#__next .about-section p,
-  html body div#__next .benefits-section p {
-    font-size: 16px !important; /* USA standard body text size */
-    line-height: 1.6 !important; /* USA accessibility standard */
-    color: rgba(255, 255, 255, 0.95) !important; /* Higher contrast for accessibility */
-    margin-bottom: 24px !important; /* 8px grid spacing */
-    text-align: left !important;
-    padding: 0 24px !important; /* Increased padding for better text containment */
-    word-wrap: break-word !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-  }
-  
-  /* ========== CTA SECTIONS - DARK BLUE FORMAL STYLE ========== */
-  html body div#__next .cta-section,
-  html body div#__next .call-to-action,
-  html body div#__next .contact-cta-section {
-    padding: 30px 20px !important;
-    text-align: center !important;
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%) !important;
-    color: white !important;
-    margin: 0 !important;
-    position: relative !important;
-    overflow: hidden !important;
-    box-sizing: border-box !important;
-  }
-
-  html body div#__next .cta-section::before,
-  html body div#__next .call-to-action::before,
-  html body div#__next .contact-cta-section::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    background: rgba(0, 0, 0, 0.1) !important;
-    z-index: 1 !important;
-  }
-
-  /* CTA content above overlay */
-  html body div#__next .cta-section > *,
-  html body div#__next .call-to-action > *,
-  html body div#__next .contact-cta-section > * {
-    position: relative !important;
-    z-index: 2 !important;
-  }
-  
-  /* USA 2024 CTA Button Standards - Dark Blue Formal */
-  html body div#__next .cta-button,
-  html body div#__next .btn-cta,
-  html body div#__next .btn-primary,
-  html body div#__next .hero-btn-primary {
-    background: rgba(255, 255, 255, 0.15) !important;
-    border: 2px solid rgba(255, 255, 255, 0.3) !important;
-    color: #ffffff !important;
-    border-radius: 12px !important;
-    padding: 18px 36px !important; /* Increased for better touch targets */
-    min-height: 56px !important; /* Increased from 48px to 56px for better accessibility */
-    min-width: 140px !important;
-    font-weight: 600 !important;
-    font-size: 16px !important;
-    text-decoration: none !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin: 12px auto !important;
-    max-width: 300px !important;
-    box-shadow: 0 8px 24px rgba(30, 58, 138, 0.4) !important;
-    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
-    text-align: center !important;
-    box-sizing: border-box !important;
-    cursor: pointer !important;
-    gap: 8px !important;
-  }
-  
-  html body div#__next .cta-button:hover,
-  html body div#__next .btn-cta:hover,
-  html body div#__next .btn-primary:hover,
-  html body div#__next .hero-btn-primary:hover {
-    background: rgba(255, 255, 255, 0.25) !important;
-    border-color: rgba(255, 255, 255, 0.5) !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2) !important;
-    color: #ffffff !important;
-  }
-  
-  /* ========== NUCLEAR MOBILE HEADER - ABSOLUTE CONTROL ========== */
-  html body div#__next header,
-  html body div#__next .navbar,
-  html body div#__next .header,
-  html body div#__next .site-header,
-  html body div#__next header.site-header,
-  html body div#__next .site-header.site-header,
-  html body div#__next .site-header.site-header.site-header {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100vw !important;
-    height: 88px !important; /* Exact height */
-    min-height: 88px !important;
-    max-height: 88px !important;
-    padding: 20px !important;
-    margin: 0 !important;
-    background: #ffffff !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
-    z-index: 10000 !important; /* Above everything */
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    box-sizing: border-box !important;
-    border: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-  }
-
-  /* Nuclear header background override - White Background */
-  html body div#__next .site-header,
-  html body div#__next .site-header *,
-  html body div#__next .site-header .container,
-  html body div#__next .site-header .navbar-brand,
-  html body div#__next .site-header .nav-wrapper {
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-  }
-
-  /* Ensure white background for header */
-  html body div#__next header,
-  html body div#__next header *,
-  html body div#__next .site-header,
-  html body div#__next .site-header * {
-    background-color: #ffffff !important;
-    background-image: none !important;
-  }
-
-  /* Maintain white background for header */
-  html body div#__next header,
-  html body div#__next .site-header {
-    background: #ffffff !important;
-  }
-
-  /* ========== NUCLEAR LOGO CONTAINER - MAXIMUM SPECIFICITY ========== */
-  html body div#__next .site-header .site-logo,
-  html body div#__next header .site-logo,
-  html body div#__next .site-header.site-header .site-logo,
-  html body div#__next .site-header.site-header.site-header .site-logo {
-    z-index: 10000 !important; /* Nuclear z-index */
-    flex-shrink: 0 !important;
-    min-height: 48px !important; /* Proportional height */
-    height: 48px !important; /* Force exact height */
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    position: absolute !important;
-    left: 20px !important;
-    width: 120px !important; /* Wider container for better proportion */
-  }
-
-  /* ========== NUCLEAR LOGO IMAGE - MAXIMUM SPECIFICITY ========== */
-  html body div#__next .site-header .site-logo img,
-  html body div#__next header .site-logo img,
-  html body div#__next .navbar .site-logo img,
-  html body div#__next .header .site-logo img,
-  html body div#__next .site-header.site-header .site-logo img,
-  html body div#__next .site-header.site-header.site-header .site-logo img {
-    max-height: 40px !important; /* Proportional logo size */
-    min-height: 40px !important; /* Force minimum size */
-    height: 40px !important; /* Force exact height */
-    width: auto !important;
-    max-width: 110px !important; /* Prevent logo from being too wide */
-    filter: none !important;
-    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
-    box-shadow: none !important;
-    transform: scale(1) !important; /* Prevent any scaling down */
-    object-fit: contain !important; /* Maintain aspect ratio */
-  }
-
-  /* Remove logo filters on all header contexts */
-  html body div#__next header img,
-  html body div#__next .site-header img,
-  html body div#__next .navbar img,
-  html body div#__next .header img {
-    filter: none !important; /* Preserve original logo colors */
-  }
-  
-  /* USA 2024 Hamburger Menu - White Background */
-  html body div#__next .site-header .menu-toggle {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background: none !important;
-    border: none !important;
-    font-size: 24px !important;
-    color: #333333 !important;
-    padding: 12px !important;
-    border-radius: 8px !important;
-    min-width: 48px !important;
-    min-height: 48px !important;
-    background: rgba(0, 0, 0, 0.05) !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) !important;
-    cursor: pointer !important;
-    -webkit-tap-highlight-color: transparent !important;
-    position: absolute !important;
-    right: 20px !important; /* Position on right side */
-    flex-shrink: 0 !important;
-  }
-
-  /* Hamburger menu active state */
-  html body div#__next .site-header .menu-toggle:active {
-    transform: scale(0.95) !important;
-    background: rgba(0, 0, 0, 0.1) !important;
-  }
-
-  html body div#__next .site-header .menu-toggle:hover {
-    background: rgba(0, 0, 0, 0.08) !important;
-    border-color: rgba(0, 0, 0, 0.2) !important;
-  }
-  
-  /* Full-screen mobile navigation */
-  html body div#__next .site-header .main-navigation {
-    position: fixed !important;
-    top: 0 !important;
-    right: -100% !important;
-    width: 100% !important;
-    height: 100vh !important;
-    background: #ffffff !important;
-    padding: 80px 0 20px 0 !important;
-    overflow-y: auto !important;
-    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    display: block !important;
-    z-index: 1000 !important;
-    box-shadow: none !important;
-  }
-  
-  html body div#__next .site-header .main-navigation.active {
-    right: 0 !important;
-  }
-  
-  html body div#__next .site-header .main-navigation .show-submenu {
-    max-height: 300px !important;
-  }
-  
-  /* Clean navigation list */
-  html body div#__next .site-header .main-navigation ul {
-    flex-direction: column !important;
-    width: 100% !important;
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  html body div#__next .site-header .main-navigation li {
-    margin: 0 !important;
-    width: 100% !important;
-    border-bottom: 1px solid #f1f5f9 !important;
-  }
-  
-  /* Touch-optimized navigation links */
-  html body div#__next .site-header .main-navigation a {
-    padding: 20px 24px !important;
-    color: #111827 !important;
-    text-decoration: none !important;
-    font-weight: 500 !important;
-    font-size: 16px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    transition: background-color 0.2s ease !important;
-    min-height: 56px !important;
-    -webkit-tap-highlight-color: transparent !important;
-  }
-  
-  html body div#__next .site-header .main-navigation a:hover,
-  html body div#__next .site-header .main-navigation a:active {
-    background: #f9fafb !important;
-    color: #2563eb !important;
-  }
-  
-  html body div#__next .site-header .main-navigation a:active {
-    background: #f9fafb !important;
-    color: #2563eb !important;
-  }
-  
-  /* Submenu styling */
-  html body div#__next .site-header .main-navigation .has-submenu > a {
-    position: relative !important;
-  }
-
-  html body div#__next .site-header .main-navigation .mobile-dropdown-icon {
-    font-size: 14px !important;
-    color: #6b7280 !important;
-    transition: transform 0.2s ease !important;
-  }
-
-  html body div#__next .site-header .main-navigation .submenu-active .mobile-dropdown-icon {
-    transform: rotate(180deg) !important;
-  }
-
-  html body div#__next .site-header .main-navigation .sub-menu {
-    background: #f8fafc !important;
-    max-height: 0 !important;
-    overflow: hidden !important;
-    transition: max-height 0.3s ease !important;
-    position: static !important;
-    box-shadow: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: none !important;
-    padding: 0 !important;
-  }
-  
-  html body div#__next .site-header .main-navigation .sub-menu a {
-    padding: 16px 24px 16px 48px !important;
-    font-size: 15px !important;
-    font-weight: 400 !important;
-    color: #6b7280 !important;
-    border-bottom: none !important;
-  }
-
-  html body div#__next .site-header .main-navigation .sub-menu a:hover,
-  html body div#__next .site-header .main-navigation .sub-menu a:active {
-    background: #f1f5f9 !important;
-    color: #2563eb !important;
-  }
-  
-  /* Overlay when menu is open */
-  html body.menu-open::before {
-    content: '' !important;
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    background: rgba(0, 0, 0, 0.4) !important;
-    z-index: 999 !important;
-    opacity: 1 !important;
-    transition: opacity 0.3s ease !important;
-  }
-
-  html body.menu-open {
-    overflow: hidden !important;
-  }
-  
-  /* ========== HEADER ========== */
-  html body div#__next header,
-  html body div#__next .header {
-    background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px) !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
-  }
-  
-  /* ========== FOOTER MOBILE ========== */
-  html body div#__next footer,
-  html body div#__next .footer,
-  html body div#__next .site-footer {
-    background: #0f172a !important;
-    color: #ffffff !important;
-    padding: 30px 20px !important;
-    text-align: center !important;
-  }
-  
-  html body div#__next footer a,
-  html body div#__next .footer a,
-  html body div#__next .footer-links a,
-  html body div#__next .site-footer a {
-    color: rgba(255, 255, 255, 0.8) !important;
-    text-decoration: none !important;
-    font-size: 14px !important;
-    line-height: 1.6 !important;
-  }
-  
-  html body div#__next footer a:hover,
-  html body div#__next .footer a:hover,
-  html body div#__next .site-footer a:hover {
-    color: #ffffff !important;
-  }
-  
-  /* ========== SERVICES SECTION MOBILE ========== */
-  html body div#__next .services-section {
-    padding: 60px 20px !important;
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
-    color: white !important;
-    margin: 0 !important;
-    position: relative !important;
-    overflow: hidden !important;
-  }
-
-  html body div#__next .services-section::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    background: rgba(0, 0, 0, 0.1) !important;
-    z-index: 1 !important;
-  }
-
-  html body div#__next .services-section > * {
-    position: relative !important;
-    z-index: 2 !important;
-  }
-
-  html body div#__next .services-section h2,
-  html body div#__next .services-section h3,
-  html body div#__next .services-section .section-title {
-    color: rgba(255, 255, 255, 0.95) !important;
-    text-shadow: none !important;
-  }
-
-  html body div#__next .services-section p {
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-size: 1.1rem !important;
-    line-height: 1.6 !important;
-  }
-
-  html body div#__next .services-section h2 {
-    font-size: 24px !important;
-    color: #1a202c !important;
-    text-align: center !important;
-    margin-bottom: 30px !important;
-    font-weight: 700 !important;
-  }
-  
-  html body div#__next .services-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-  }
-  
-  html body div#__next .service-card {
-    background: #ffffff !important;
-    border: 1px solid #e2e8f0 !important;
-    border-radius: 16px !important;
-    padding: 24px !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
-    margin-bottom: 20px !important;
-  }
-  
-  html body div#__next .service-card h3 {
-    color: #1a202c !important;
-    font-size: 18px !important;
-    font-weight: 700 !important;
-    margin-bottom: 12px !important;
-  }
-  
-  html body div#__next .service-card p {
-    color: #4a5568 !important;
-    font-size: 14px !important;
-    line-height: 1.5 !important;
-    margin-bottom: 16px !important;
-  }
-  
-  /* ========== GLASSMORPHISM OVERRIDE ========== */
-  html body div#__next .glassmorphism {
-    background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-radius: 16px !important;
-  }
-  
-  /* ========== GLOBAL MOBILE FIXES ========== */
-  html body div#__next * {
-    box-sizing: border-box !important;
-  }
-  
-  html body div#__next .sector-card *,
-  html body div#__next .service-card *,
-  html body div#__next .content-section * {
-    text-shadow: none !important;
-  }
-  
-  /* Prevent horizontal scroll */
-  html body div#__next {
-    max-width: 100vw !important;
-    overflow-x: hidden !important;
-  }
-  
-  /* Responsive images */
-  html body div#__next img {
-    max-width: 100% !important;
-    height: auto !important;
-  }
-  
-  /* Responsive tables */
-  html body div#__next table {
-    width: 100% !important;
-    font-size: 14px !important;
-  }
-  
-  /* ========== FINAL CLEANUP - REMOVE VISUAL POLLUTION ========== */
-  /* NUCLEAR HOVER EFFECTS REMOVAL */
-  html body div#__next .hover-effect,
-  html body div#__next *[class*="hover"],
-  html body div#__next .tooltip,
-  html body div#__next .cursor-pointer {
-    display: none !important;
-    visibility: hidden !important;
-  }
-  
-  /* NUCLEAR CURSOR CLEANUP + HOVER DISABLE */
-  html body div#__next *,
-  html body div#__next *:hover,
-  html body div#__next *:focus,
-  html body div#__next *:active {
-    cursor: default !important;
-    pointer-events: auto !important;
-    transform: none !important;
-    transition: none !important;
-    animation: none !important;
-  }
-
-  /* DISABLE ALL INTERACTIONS FOR CARDLESS DESIGN */
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card:hover,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card:hover *,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card:hover .sector-card-content,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card:hover h3,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card:hover p {
-    transform: none !important;
-    box-shadow: none !important;
-    border-color: transparent !important;
-    background: transparent !important;
-    color: inherit !important;
-    filter: none !important;
-    scale: 1 !important;
-    transition: none !important;
-    animation: none !important;
-  }
-
-  /* HIDE CARD HEADERS AND IMAGES FOR CLEAN LIST */
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card .sector-card-header,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card .sector-image-wrapper,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card .sector-image,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sector-card.sector-card.sector-card.sector-card .sector-icon-large {
-    display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    width: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  
-  /* Clean up text overflow issues */
-  html body div#__next .text-truncate {
-    white-space: normal !important;
-    overflow: visible !important;
-    text-overflow: clip !important;
-  }
-  
-  /* CLEAN SECTION SPACING FOR LIST LAYOUT */
-  html body div#__next section {
-    margin-bottom: 0 !important;
-    border-bottom: 1px solid #e2e8f0 !important;
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
-  }
-
-  /* SECTORS SECTION - CLEAN LIST CONTAINER */
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section {
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%) !important;
-    color: white !important;
-    padding: 60px 20px !important;
-    margin: 0 !important;
-    position: relative !important;
-    overflow: hidden !important;
-  }
-
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    background: rgba(0, 0, 0, 0.1) !important;
-    z-index: 1 !important;
-  }
-
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section > * {
-    position: relative !important;
-    z-index: 2 !important;
-  }
-
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section h2,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section h3,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .section-title {
-    color: rgba(255, 255, 255, 0.95) !important;
-    text-shadow: none !important;
-  }
-
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section p {
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-size: 1.1rem !important;
-    line-height: 1.6 !important;
-  }
-
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .container,
-  html body div#__next main section.sectors-section.sectors-section.sectors-section.sectors-section .sectors-grid {
-    display: block !important;
-    grid-template-columns: none !important;
-    gap: 0 !important;
-    padding: 0 20px !important;
-    max-width: 100% !important;
-  }
-  
-  html body div#__next section:last-child {
-    border-bottom: none !important;
-  }
-  
-  /* NUCLEAR BUTTON CLEANUP */
-  html body div#__next button,
-  html body div#__next .btn,
-  html body div#__next a {
-    cursor: default !important;
-    user-select: none !important;
-    transition: none !important;
-    transform: none !important;
-  }
-  
-  html body div#__next button:hover,
-  html body div#__next .btn:hover,
-  html body div#__next a:hover {
-    transform: none !important;
-    box-shadow: none !important;
-  }
-  
-  /* NUCLEAR BADGE POSITIONING */
-  html body div#__next .badge-absolute,
-  html body div#__next .badge {
-    position: static !important;
-    float: none !important;
-    margin: 2px 4px 2px 0 !important;
-    z-index: 1 !important;
-  }
-  
-  /* REMOVE DESKTOP ANIMATIONS */
-  html body div#__next * {
-    animation: none !important;
-    transition: none !important;
-  }
-  
-  /* FORCE MOBILE LAYOUT */
-  html body div#__next .desktop-only,
-  html body div#__next .d-none.d-md-block,
-  html body div#__next .d-none.d-lg-block {
-    display: none !important;
+  .hero-section {
+    padding: 2rem 0 1rem 0;
+    min-height: auto;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Trust badges - máximo 2 em mobile */
+  .trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .trust-badge:nth-child(n+3) {
+    display: none;
+  }
+
+  /* Ocultar elementos desktop */
+  .bento-cards,
+  .hero-stats,
+  .floating-elements {
+    display: none;
+  }
+}
+
+/* ===== SERVICES SECTION MOBILE ===== */
+
+@media (max-width: 768px) {
+  .services-section {
+    background: #f8fafc;
+    color: #1e293b;
+  }
+
+  .services-section .section-title {
+    color: #1e293b;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .services-section .section-subtitle {
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ===== SECTORS SECTION MOBILE ===== */
+
+@media (max-width: 768px) {
+  .sectors-section {
+    background: #ffffff;
+    color: #1e293b;
+  }
+
+  .sectors-section .section-title {
+    color: #1e293b;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .sectors-section .section-subtitle {
+    color: #64748b;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ===== FAQ SECTION MOBILE ===== */
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 3rem 0;
+    background: #f8fafc;
+  }
+
+  .faq-item {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .faq-question {
+    padding: 1rem;
+    font-size: 0.95rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+  }
+
+  .faq-answer {
+    padding: 1rem;
+    font-size: 0.9rem;
+    background: #ffffff;
+    border-left: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+}
+
+/* ===== CONTACT SECTION MOBILE ===== */
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 0;
+    background: #ffffff;
+  }
+
+  .contact-form {
+    padding: 0 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 0.875rem;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+}
+
+/* ===== FOOTER MOBILE ===== */
+
+@media (max-width: 768px) {
+  .site-footer {
+    background: #1e293b;
+    color: #ffffff;
+    padding: 2rem 0 1rem 0;
+  }
+
+  .footer-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .footer-links a:hover {
+    color: #3b82f6;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #374151;
+  }
+}
+
+/* ===== NAVEGAÇÃO MOBILE ===== */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .navbar-collapse {
+    margin-top: 1rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #1e293b;
+  }
+
+  .nav-link:hover {
+    color: #3b82f6;
+    background: #f1f5f9;
+    border-radius: 8px;
+  }
+}
+
+/* ===== WHATSAPP FLOAT MOBILE ===== */
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+
+  .whatsapp-float i {
+    color: #ffffff;
+    font-size: 28px;
+  }
+}
+
+/* ===== SCROLL TO TOP MOBILE ===== */
+
+@media (max-width: 768px) {
+  .scroll-top {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .scroll-top i {
+    color: #ffffff;
+    font-size: 20px;
+  }
+}
+
+/* ===== UTILITÁRIOS MOBILE ===== */
+
+@media (max-width: 768px) {
+  /* Ocultar elementos desktop */
+  .desktop-only {
+    display: none;
+  }
+
+  /* Mostrar elementos mobile */
+  .mobile-only {
+    display: block;
+  }
+
+  /* Espaçamento consistente */
+  .section {
+    padding: 3rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Tipografia mobile */
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Botões mobile */
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    min-height: 44px;
+  }
+
+  /* Formulários mobile */
+  .form-control {
+    font-size: 16px; /* Previne zoom no iOS */
+  }
+}
+
+/* ===== PERFORMANCE MOBILE ===== */
+
+@media (max-width: 768px) {
+  /* Desabilitar animações complexas em mobile */
+  .animate-on-scroll,
+  .fade-in,
+  .slide-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Reduzir sombras complexas */
+  .card,
+  .service-card,
+  .sector-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Simplificar gradientes */
+  .gradient-bg {
+    background: #f8fafc;
   }
 }
