@@ -11,6 +11,40 @@ export default function Header() {
   const navRef = useRef(null);
   const menuToggleRef = useRef(null);
 
+  // Force header to top with useEffect
+  useEffect(() => {
+    const header = document.querySelector('.site-header');
+    if (header) {
+      header.style.setProperty('position', 'fixed', 'important');
+      header.style.setProperty('top', '0', 'important');
+      header.style.setProperty('left', '0', 'important');
+      header.style.setProperty('right', '0', 'important');
+      header.style.setProperty('z-index', '10000', 'important');
+      header.style.setProperty('margin', '0', 'important');
+      header.style.setProperty('transform', 'translateZ(0)', 'important');
+      console.log('🔥 HEADER: Force positioned to top');
+    }
+    
+    // Also reset body margin/padding that might push header down
+    document.body.style.setProperty('margin', '0', 'important');
+    document.body.style.setProperty('padding', '0', 'important');
+    document.documentElement.style.setProperty('margin', '0', 'important');
+    document.documentElement.style.setProperty('padding', '0', 'important');
+    
+    // Force viewport to start at 0,0 with no white space
+    const viewport = document.querySelector('meta[name="viewport"]');
+    if (viewport) {
+      viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, viewport-fit=cover');
+    }
+    
+    // Remove any container margins that might create white space
+    const containers = document.querySelectorAll('.container, .container-fluid, #__next');
+    containers.forEach(container => {
+      container.style.setProperty('margin-top', '0', 'important');
+      container.style.setProperty('padding-top', '0', 'important');
+    });
+  }, []);
+
   // Controla a aparência do header ao rolar a página
   useEffect(() => {
     const handleScroll = () => {
@@ -109,16 +143,47 @@ export default function Header() {
   };
 
   return (
-    <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
-      <div className="container">
+    <header 
+      className={`site-header ${scrolled ? 'scrolled' : ''}`}
+      style={{
+        position: 'fixed !important',
+        top: '0 !important',
+        left: '0 !important',
+        right: '0 !important',
+        width: '100vw !important',
+        height: '80px !important',
+        zIndex: '10000 !important',
+        backgroundColor: '#ffffff !important',
+        borderBottom: '2px solid #1e40af !important',
+        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15) !important',
+        display: 'flex !important',
+        alignItems: 'center !important',
+        padding: '0 20px !important',
+        margin: '0 !important',
+        transform: 'translateZ(0) !important'
+      }}
+    >
+      <div className="container" style={{
+        width: '100%',
+        maxWidth: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        padding: '0',
+        margin: '0'
+      }}>
         <div className="site-logo">
           <Link href="/">
             <Image 
               src="/assets/images/logo.png" 
               alt="Exclusiva Assessoria Contábil" 
-              width={220} 
-              height={60} 
+              width={180} 
+              height={48} 
               priority
+              style={{
+                maxHeight: '48px',
+                width: 'auto'
+              }}
             />
           </Link>
         </div>
