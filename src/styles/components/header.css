@@ -1,0 +1,296 @@
+/* ===== HEADER COMPONENT - MODULAR & RESPONSIVE ===== */
+/* Substitui: header.css e conflitos em mobile-header-fix files */
+
+/* ===== HEADER CONTAINER ===== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  z-index: var(--z-fixed);
+  transition: all var(--transition-fast);
+}
+
+.site-header.scrolled {
+  box-shadow: var(--shadow-md);
+  border-bottom-color: var(--border-medium);
+}
+
+/* ===== HEADER LAYOUT ===== */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-4) var(--spacing-6);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== LOGO ===== */
+.site-logo {
+  display: flex;
+  align-items: center;
+  z-index: var(--z-modal);
+}
+
+.site-logo img {
+  height: 60px;
+  width: auto;
+  transition: height var(--transition-fast);
+}
+
+.site-header.scrolled .site-logo img {
+  height: 50px;
+}
+
+/* ===== NAVIGATION DESKTOP ===== */
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--spacing-2);
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-3) var(--spacing-4);
+  color: var(--text-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--primary);
+  background-color: var(--bg-secondary);
+}
+
+/* ===== DROPDOWN MENUS ===== */
+.nav-item.has-dropdown {
+  position: relative;
+}
+
+.dropdown-icon {
+  margin-left: var(--spacing-1);
+  font-size: var(--font-size-sm);
+  transition: transform var(--transition-fast);
+}
+
+.nav-item.has-dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all var(--transition-normal);
+  z-index: var(--z-dropdown);
+  padding: var(--spacing-2);
+}
+
+.nav-item.has-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: block;
+  padding: var(--spacing-3) var(--spacing-4);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.dropdown-item:hover {
+  color: var(--primary);
+  background-color: var(--bg-secondary);
+}
+
+/* ===== MOBILE MENU TOGGLE ===== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-2);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast);
+  z-index: var(--z-modal);
+}
+
+.menu-toggle:hover {
+  background-color: var(--bg-secondary);
+}
+
+.menu-toggle-icon {
+  font-size: var(--font-size-xl);
+  color: var(--primary);
+  transition: transform var(--transition-fast);
+}
+
+.menu-toggle.active .menu-toggle-icon {
+  transform: rotate(90deg);
+}
+
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 991px) {
+  .header-container {
+    padding: var(--spacing-3) var(--spacing-4);
+  }
+  
+  .site-logo img {
+    height: 50px;
+  }
+  
+  .site-header.scrolled .site-logo img {
+    height: 45px;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .main-navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 350px;
+    height: 100vh;
+    background-color: var(--bg-primary);
+    border-left: 1px solid var(--border-light);
+    box-shadow: var(--shadow-xl);
+    padding: var(--spacing-20) var(--spacing-6) var(--spacing-6);
+    overflow-y: auto;
+    transition: right var(--transition-normal);
+    z-index: var(--z-fixed);
+  }
+  
+  .main-navigation.active {
+    right: 0;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    gap: var(--spacing-1);
+  }
+  
+  .nav-link {
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-lg);
+  }
+  
+  /* Mobile dropdown behavior */
+  .nav-item.has-dropdown .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background-color: var(--bg-secondary);
+    margin-top: var(--spacing-2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal);
+  }
+  
+  .nav-item.has-dropdown.active .dropdown-menu {
+    max-height: 300px;
+  }
+  
+  .dropdown-item {
+    padding: var(--spacing-3) var(--spacing-6);
+    font-size: var(--font-size-base);
+  }
+}
+
+/* ===== MOBILE OVERLAY ===== */
+@media (max-width: 991px) {
+  .mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+    z-index: var(--z-modal-backdrop);
+  }
+  
+  .mobile-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* ===== ACCESSIBILITY ===== */
+.nav-link:focus,
+.dropdown-item:focus,
+.menu-toggle:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-navigation.active {
+  animation: slideInRight var(--transition-normal) ease-out;
+}
+
+.mobile-overlay.active {
+  animation: fadeIn var(--transition-normal) ease-out;
+}
