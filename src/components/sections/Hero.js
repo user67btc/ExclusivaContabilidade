@@ -152,8 +152,24 @@ function Hero() {
         <div className="hero-grid">
           {/* Coluna Principal - Texto */}
           <div className={`hero-main-content ${animated ? 'slide-up' : ''}`}>
-            <div className="hero-badge-modern">
-              <i className="fas fa-award"></i>
+            <div className="hero-badge" style={{
+              display: 'inline-flex !important',
+              alignItems: 'center',
+              padding: '18px 32px',
+              background: '#ffffff',
+              border: '2px solid rgba(59, 130, 246, 0.4)',
+              borderRadius: '50px',
+              fontSize: '13px',
+              fontWeight: '900',
+              color: '#1e40af',
+              marginBottom: '32px',
+              backdropFilter: 'blur(30px)',
+              boxShadow: '0 10px 40px rgba(0, 0, 0, 0.2)',
+              letterSpacing: '1.2px',
+              textTransform: 'uppercase',
+              zIndex: '1000'
+            }}>
+              <i className="fas fa-award" style={{ marginRight: '8px' }}></i>
               <span>Assessoria Contábil Especializada</span>
             </div>
             
